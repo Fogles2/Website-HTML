@@ -642,6 +642,281 @@ small,
   border-inline-start: var(--bs-alert-border);
 }
 
+/* Animated Back Glow Effect for Cards */
+/* Card with animated glow - Primary colors */
+.card-glow-primary {
+  position: relative;
+}
+.card-glow-primary::after {
+  position: absolute;
+  content: "";
+  top: 0.5rem;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.85);
+  -webkit-filter: blur(2rem);
+  -moz-filter: blur(2rem);
+  -ms-filter: blur(2rem);
+  filter: blur(2rem);
+  background: linear-gradient(270deg, #2A62FE, #5C65FF);
+  background-size: 200% 200%;
+  animation: animateGlow 8s ease infinite;
+  border-radius: inherit;
+}
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Card with animated glow - Secondary colors */
+.card-glow-secondary {
+  position: relative;
+}
+.card-glow-secondary::after {
+  position: absolute;
+  content: "";
+  top: 0.5rem;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.85);
+  -webkit-filter: blur(2rem);
+  -moz-filter: blur(2rem);
+  -ms-filter: blur(2rem);
+  filter: blur(2rem);
+  background: linear-gradient(270deg, #7734F9, #F67A3C);
+  background-size: 200% 200%;
+  animation: animateGlow 10s ease infinite;
+  border-radius: inherit;
+}
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Card with animated glow - Success colors */
+.card-glow-success {
+  position: relative;
+}
+.card-glow-success::after {
+  position: absolute;
+  content: "";
+  top: 0.5rem;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.85);
+  -webkit-filter: blur(2rem);
+  -moz-filter: blur(2rem);
+  -ms-filter: blur(2rem);
+  filter: blur(2rem);
+  background: linear-gradient(270deg, #0fffc1, #00d9ff);
+  background-size: 200% 200%;
+  animation: animateGlow 12s ease infinite;
+  border-radius: inherit;
+}
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Card with animated glow - Danger colors */
+.card-glow-danger {
+  position: relative;
+}
+.card-glow-danger::after {
+  position: absolute;
+  content: "";
+  top: 0.5rem;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.85);
+  -webkit-filter: blur(2rem);
+  -moz-filter: blur(2rem);
+  -ms-filter: blur(2rem);
+  filter: blur(2rem);
+  background: linear-gradient(270deg, #ff0057, #e64a19);
+  background-size: 200% 200%;
+  animation: animateGlow 9s ease infinite;
+  border-radius: inherit;
+}
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Card with animated glow - Purple gradient */
+.card-glow-purple {
+  position: relative;
+}
+.card-glow-purple::after {
+  position: absolute;
+  content: "";
+  top: 0.5rem;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.85);
+  -webkit-filter: blur(2rem);
+  -moz-filter: blur(2rem);
+  -ms-filter: blur(2rem);
+  filter: blur(2rem);
+  background: linear-gradient(270deg, #8a24ff, #e040fb);
+  background-size: 200% 200%;
+  animation: animateGlow 11s ease infinite;
+  border-radius: inherit;
+}
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Card with animated glow - Blue gradient */
+.card-glow-blue {
+  position: relative;
+}
+.card-glow-blue::after {
+  position: absolute;
+  content: "";
+  top: 0.5rem;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.85);
+  -webkit-filter: blur(2rem);
+  -moz-filter: blur(2rem);
+  -ms-filter: blur(2rem);
+  filter: blur(2rem);
+  background: linear-gradient(270deg, #2196f3, #1de9b6);
+  background-size: 200% 200%;
+  animation: animateGlow 10s ease infinite;
+  border-radius: inherit;
+}
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Card with animated glow - Custom cyan/purple */
+.card-glow-cyber {
+  position: relative;
+}
+.card-glow-cyber::after {
+  position: absolute;
+  content: "";
+  top: 0.5rem;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.9);
+  -webkit-filter: blur(2.5rem);
+  -moz-filter: blur(2.5rem);
+  -ms-filter: blur(2.5rem);
+  filter: blur(2.5rem);
+  background: linear-gradient(270deg, #0fffc1, #7e0fff);
+  background-size: 200% 200%;
+  animation: animateGlow 10s ease infinite;
+  border-radius: inherit;
+}
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Ensure cards with glow have proper stacking context */
+.card-glow-primary,
+.card-glow-secondary,
+.card-glow-success,
+.card-glow-danger,
+.card-glow-purple,
+.card-glow-blue,
+.card-glow-cyber {
+  overflow: visible;
+  z-index: 1;
+}
+.card-glow-primary > *,
+.card-glow-secondary > *,
+.card-glow-success > *,
+.card-glow-danger > *,
+.card-glow-purple > *,
+.card-glow-blue > *,
+.card-glow-cyber > * {
+  position: relative;
+  z-index: 2;
+}
+
 /* Avatar Style */
 .avatar {
   --avatar-size: 2rem;
@@ -1538,8 +1813,110 @@ small,
   --bs-card-spacer-y: 1.5rem;
   --bs-card-spacer-x: 1.5rem;
   --bs-border-radius: 0.5rem;
+  /* Darker blur gradient for cards */
+  background: rgba(15, 15, 25, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: all 0.3s ease;
+}
+.card:hover {
+  background: rgba(20, 20, 35, 0.8);
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.5);
+  transform: translateY(-4px);
+}
+.card {
+  /* Ensure text visibility in dark mode */
+}
+.card .card-title,
+.card .card-text,
+.card h1, .card h2, .card h3, .card h4, .card h5, .card h6,
+.card p, .card span, .card a {
+  color: rgba(255, 255, 255, 0.95);
+}
+.card .card-subtitle {
+  color: rgba(255, 255, 255, 0.7);
+}
+.card {
+  /* Light mode override */
+}
+[data-bs-theme=light] .card {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+}
+[data-bs-theme=light] .card:hover {
+  background: rgba(255, 255, 255, 0.85);
+  border-color: rgba(0, 0, 0, 0.15);
+}
+[data-bs-theme=light] .card .card-title,
+[data-bs-theme=light] .card .card-text,
+[data-bs-theme=light] .card h1, [data-bs-theme=light] .card h2, [data-bs-theme=light] .card h3, [data-bs-theme=light] .card h4, [data-bs-theme=light] .card h5, [data-bs-theme=light] .card h6,
+[data-bs-theme=light] .card p, [data-bs-theme=light] .card span, [data-bs-theme=light] .card a {
+  color: rgba(0, 0, 0, 0.87);
+}
+[data-bs-theme=light] .card .card-subtitle {
+  color: rgba(0, 0, 0, 0.6);
 }
 
+/* Card with gradient overlay */
+.card-gradient {
+  position: relative;
+  overflow: hidden;
+}
+.card-gradient::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(42, 98, 254, 0.15) 0%, rgba(92, 101, 255, 0.15) 100%);
+  z-index: 0;
+  transition: opacity 0.3s ease;
+}
+.card-gradient:hover::before {
+  opacity: 0.8;
+}
+.card-gradient > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Card with darker gradient for emphasis */
+.card-dark-gradient {
+  background: linear-gradient(135deg, rgba(10, 10, 20, 0.9) 0%, rgba(20, 20, 40, 0.9) 100%);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+.card-dark-gradient:hover {
+  background: linear-gradient(135deg, rgba(15, 15, 30, 0.95) 0%, rgba(25, 25, 50, 0.95) 100%);
+}
+
+.case-study-card {
+  background: rgba(10, 10, 20, 0.7);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+.case-study-card:hover {
+  background: rgba(15, 15, 30, 0.8);
+  border-color: rgba(255, 255, 255, 0.18);
+  box-shadow: 0px 12px 40px 0px rgba(0, 0, 0, 0.5);
+  transform: translateY(-4px);
+}
+.case-study-card {
+  /* Ensure text visibility */
+}
+.case-study-card h1, .case-study-card h2, .case-study-card h3, .case-study-card h4, .case-study-card h5, .case-study-card h6,
+.case-study-card p, .case-study-card span, .case-study-card a {
+  color: rgba(255, 255, 255, 0.95);
+}
 @media (min-width: 768px) {
   .case-study-card__img {
     width: 45%;
@@ -3519,14 +3896,56 @@ small,
 }
 
 .price-card-1 {
-  border: 1px solid rgba(var(--bs-white-rgb), 0.1);
-  background: rgba(var(--bs-white-rgb), 0.05);
-  box-shadow: 0px 0px 18px 0px rgba(var(--bs-dark-rgb), 0.1);
-  backdrop-filter: blur(13px);
+  border: 1px solid rgba(var(--bs-white-rgb), 0.12);
+  background: rgba(10, 10, 20, 0.7);
+  box-shadow: 0px 8px 32px 0px rgba(var(--bs-dark-rgb), 0.4);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  transition: all 0.3s ease;
+}
+.price-card-1:hover {
+  background: rgba(15, 15, 30, 0.8);
+  border-color: rgba(var(--bs-white-rgb), 0.18);
+  box-shadow: 0px 12px 40px 0px rgba(var(--bs-dark-rgb), 0.5);
+  transform: translateY(-4px);
+}
+.price-card-1 {
+  /* Ensure text visibility */
+}
+.price-card-1 h1, .price-card-1 h2, .price-card-1 h3, .price-card-1 h4, .price-card-1 h5, .price-card-1 h6,
+.price-card-1 p, .price-card-1 span, .price-card-1 a, .price-card-1 li {
+  color: rgba(255, 255, 255, 0.95);
+}
+.price-card-1 .text-muted {
+  color: rgba(255, 255, 255, 0.6) !important;
 }
 
+.price-card-2 {
+  background: rgba(10, 10, 20, 0.7);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+.price-card-2:hover {
+  background: rgba(15, 15, 30, 0.8);
+  border-color: rgba(255, 255, 255, 0.18);
+  box-shadow: 0px 12px 40px 0px rgba(0, 0, 0, 0.5);
+  transform: translateY(-4px);
+}
 .price-card-2__text {
-  color: var(--bs-primary-bg-subtle);
+  color: var(--bs-primary-text-emphasis);
+}
+.price-card-2 {
+  /* Ensure text visibility */
+}
+.price-card-2 h1, .price-card-2 h2, .price-card-2 h3, .price-card-2 h4, .price-card-2 h5, .price-card-2 h6,
+.price-card-2 p, .price-card-2 span, .price-card-2 a, .price-card-2 li {
+  color: rgba(255, 255, 255, 0.95);
+}
+.price-card-2 .text-muted {
+  color: rgba(255, 255, 255, 0.6) !important;
 }
 
 [data-bs-theme=dark] .price-card-2__text {
@@ -10353,7 +10772,8 @@ small,
 }
 
 [data-bs-theme=dark] {
-  --bs-body-color: #f0f0ff;
+  --bs-body-color: #f5f5ff;
+  --bs-heading-color: #ffffff;
   --bs-primary-bg-subtle: #1a3c9b;
   --bs-primary-text-emphasis: #eaefff;
   --bs-secondary-bg-subtle: #03063a;
@@ -10690,6 +11110,87 @@ small,
 }
 [data-bs-theme=dark] .table {
   --bs-table-bg: #090a0a;
+}
+
+/* Enhanced text visibility for dark mode */
+[data-bs-theme=dark] {
+  /* Improve general text contrast */
+}
+[data-bs-theme=dark] p, [data-bs-theme=dark] span, [data-bs-theme=dark] li, [data-bs-theme=dark] td, [data-bs-theme=dark] th {
+  color: rgba(255, 255, 255, 0.92);
+}
+[data-bs-theme=dark] {
+  /* Ensure headings are highly visible */
+}
+[data-bs-theme=dark] h1, [data-bs-theme=dark] h2, [data-bs-theme=dark] h3, [data-bs-theme=dark] h4, [data-bs-theme=dark] h5, [data-bs-theme=dark] h6 {
+  color: rgba(255, 255, 255, 0.98);
+  font-weight: 600;
+}
+[data-bs-theme=dark] {
+  /* Links should be clearly visible */
+}
+[data-bs-theme=dark] a:not(.btn) {
+  color: rgba(255, 255, 255, 0.9);
+}
+[data-bs-theme=dark] a:not(.btn):hover {
+  color: rgb(255, 255, 255);
+}
+[data-bs-theme=dark] {
+  /* Muted text should still be readable */
+}
+[data-bs-theme=dark] .text-muted {
+  color: rgba(255, 255, 255, 0.65) !important;
+}
+[data-bs-theme=dark] {
+  /* Card text visibility */
+}
+[data-bs-theme=dark] .card {
+  color: rgba(255, 255, 255, 0.95);
+}
+[data-bs-theme=dark] .card .card-title {
+  color: rgba(255, 255, 255, 0.98);
+}
+[data-bs-theme=dark] .card .card-text {
+  color: rgba(255, 255, 255, 0.9);
+}
+[data-bs-theme=dark] .card .card-subtitle {
+  color: rgba(255, 255, 255, 0.7);
+}
+[data-bs-theme=dark] {
+  /* Form elements visibility */
+}
+[data-bs-theme=dark] .form-control,
+[data-bs-theme=dark] .form-select {
+  color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+[data-bs-theme=dark] .form-control::placeholder,
+[data-bs-theme=dark] .form-select::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+[data-bs-theme=dark] .form-control:focus,
+[data-bs-theme=dark] .form-select:focus {
+  color: rgba(255, 255, 255, 0.98);
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+[data-bs-theme=dark] {
+  /* Table text visibility */
+}
+[data-bs-theme=dark] .table {
+  color: rgba(255, 255, 255, 0.92);
+}
+[data-bs-theme=dark] .table th {
+  color: rgba(255, 255, 255, 0.95);
+}
+[data-bs-theme=dark] {
+  /* List text visibility */
+}
+[data-bs-theme=dark] .list-group-item {
+  color: rgba(255, 255, 255, 0.92);
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
 [data-bs-theme=light] {
@@ -11393,4 +11894,44 @@ small,
   [dir=rtl] .domain-search-section-1::after {
     border-radius: 1.5rem 0 0 1.5rem;
   }
+}
+
+.bg-gradient-blue-1 {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+}
+
+.bg-gradient-blue-2 {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%) !important;
+}
+
+.bg-gradient-blue-3 {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%) !important;
+}
+
+.bg-gradient-blue-4 {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%) !important;
+}
+
+.bg-gradient-blue-5 {
+  background: linear-gradient(135deg, #30cfd0 0%, #330867 100%) !important;
+}
+
+.bg-gradient-blue-6 {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%) !important;
+}
+
+.bg-gradient-blue-7 {
+  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%) !important;
+}
+
+.bg-gradient-blue-8 {
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%) !important;
+}
+
+.bg-dark-blue-gradient {
+  background: linear-gradient(135deg, #000080 0%, #4169e1 100%) !important; /* Dark blue to Royal Blue */
+}
+
+.underglow-effect {
+  box-shadow: 0 0 15px 5px rgba(65, 105, 225, 0.7); /* Royal Blue underglow */
 }
