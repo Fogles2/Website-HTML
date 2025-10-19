@@ -1,0 +1,18 @@
+@use "../global" as *;
+.testimonial-section-4 {
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		z-index: -1;
+		background-color: var(--bs-secondary-text-emphasis);
+		@include screen(xl) {
+			-webkit-mask-image: url(../img/shapes/testimonial-mask-shape-2.png);
+			mask-image: url(../img/shapes/testimonial-mask-shape-2.png);
+			mask-size: 100% 100%;
+			mask-position: center;
+			-webkit-mask-repeat: no-repeat;
+			mask-repeat: no-repeat;
+		}
+	}
+}

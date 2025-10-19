@@ -1,0 +1,1471 @@
+{% extends "layouts/default.html" %}
+{% set dataTheme = "cloud-server-hosting" %}
+{% set bodyClass = "bg-light dark:bg-dark-subtle" %}
+{% set navbar = true %} 
+{% set navBtnColor = "fw-medium btn-secondary text-dark" %}
+{% set primaryHeader = "primary-header--transparent-light-alt primary-header--fixed top-0 primary-header-crossed:full-dark" %}
+{% set rtlLink = "cloud-server-hosting-rtl.html" %}
+{% set logoLight = "logo-light.png" %}
+{% set logoDark = "logo-light.png" %}
+<!-- Content Block -->
+{% block content %}
+
+<!-- Hero  -->
+<div class="hero-6">
+<div class="section-space-md-bottom text-center">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-10 col-lg-8">
+<h1 class="mb-8 text-light">Empower Your Growth Cloud Technology</h1>
+<a class="btn btn-secondary fw-medium" href="{{root}}cloud-hosting.html">
+						Explore cloud hosting
+					</a>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="text-center">
+<div class="d-inline-block position-relative z-1">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/cloud-server-hero-img.png"/>
+<img alt="image" class="img-fluid d-none d-md-block position-absolute top-0 end-0 translate-middle-y z-n1 pointer-none" src="{{root}}assets/img/cloud-server-hero-img-2.png"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Hero End -->
+<!-- Pricing -->
+<div class="section-space-y">
+<div class="section-space-md-bottom text-center">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-10">
+<h3>Cloud Server <span class="text-primary">Pricing Plans</span></h3>
+</div>
+<p class="mb-0 max-text-14 mx-auto">
+					Turnpage Networks www.turnpage.io exists to support our customers. More than 80K+ agencies,
+					SMBs, &amp; individuals reply passions and grow their business
+				</p>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="section-space-xsm-bottom text-center">
+<ul class="nav nav-pills tab-1 px-4 px-sm-2 py-2 bg-light-subtle rounded-1 shadow rounded-pill">
+<li class="nav-item">
+<button class="nav-link fs-12 fw-semibold rounded-pill active" data-bs-target="#virtualServer" data-bs-toggle="pill" type="button">
+								Virtual Servers
+							</button>
+</li>
+<li class="nav-item">
+<button class="nav-link fs-12 fw-semibold rounded-pill" data-bs-target="#premiumServer" data-bs-toggle="pill" type="button">
+								Premium Servers
+							</button>
+</li>
+<li class="nav-item">
+<button class="nav-link fs-12 fw-semibold rounded-pill" data-bs-target="#residentialServer" data-bs-toggle="pill" type="button">
+								Residential Servers
+							</button>
+</li>
+</ul>
+</div>
+<div class="tab-content">
+<div class="tab-pane fade show active" id="virtualServer">
+<div class="table-responsive">
+<table class="table table-borderless table-modifier">
+<thead>
+<tr>
+<th class="text-center fw-semibold">Name</th>
+<th class="text-center fw-semibold">Cores</th>
+<th class="text-center fw-semibold">Memory</th>
+<th class="text-center fw-semibold">Disk Size</th>
+<th class="text-center fw-semibold">Price</th>
+<th class="text-center fw-semibold"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="text-center">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-cloud.png"/>
+<span class="d-block mt-2 fs-18 fw-bold text-heading">
+												Cloud SG1
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												2 vCPU
+											</span>
+<span class="d-block text-body">
+												1 vCore CPU
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												2GB
+											</span>
+<span class="d-block text-body">
+												DDR4 ECC Memory
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												35GB
+											</span>
+<span class="d-block text-body">
+												SSD Cloud Storage
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+<span class="text-primary">$4.95/</span>
+<span class="fs-16 fw-normal">Month</span>
+</span>
+<span class="d-block fs-14 text-body">
+												On Sale -
+												<span class="text-primary">Save-30%</span>
+</span>
+</td>
+<td class="text-center">
+<a class="btn fs-14 fw-medium border bg-body text-heading hover:border-primary hover:bg-primary hover:text-light transition" href="{{root}}cart.html">
+												Order Now
+											</a>
+</td>
+</tr>
+<tr>
+<td class="text-center">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-cloud.png"/>
+<span class="d-block mt-2 fs-18 fw-bold text-heading">
+												Cloud SG2
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												2 vCPU
+											</span>
+<span class="d-block text-body">
+												Intel Xeon Cores
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												3GB
+											</span>
+<span class="d-block text-body">
+												DDR4 ECC Memory
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												50GB
+											</span>
+<span class="d-block text-body">
+												SSD Cloud Storage
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+<span class="text-primary">$14.95/</span>
+<span class="fs-16 fw-normal">Month</span>
+</span>
+<span class="d-block fs-14 text-body">
+												On Sale -
+												<span class="text-primary">Save-30%</span>
+</span>
+</td>
+<td class="text-center">
+<a class="btn fs-14 fw-medium border bg-body text-heading hover:border-primary hover:bg-primary hover:text-light transition" href="{{root}}cart.html">
+												Order Now
+											</a>
+</td>
+</tr>
+<tr>
+<td class="text-center">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-cloud.png"/>
+<span class="d-block mt-2 fs-18 fw-bold text-heading">
+												Cloud SG3
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												3 vCPU
+											</span>
+<span class="d-block text-body">
+												Intel Core
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												4GB
+											</span>
+<span class="d-block text-body">
+												DDR4 ECC Memory
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												75GB
+											</span>
+<span class="d-block text-body">
+												SSD Cloud Storage
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+<span class="text-primary">$16.95/</span>
+<span class="fs-16 fw-normal">Month</span>
+</span>
+<span class="d-block fs-14 text-body">
+												On Sale -
+												<span class="text-primary">Save-30%</span>
+</span>
+</td>
+<td class="text-center">
+<a class="btn fs-14 fw-medium border bg-body text-heading hover:border-primary hover:bg-primary hover:text-light transition" href="{{root}}sign-in-2.html">
+												Order Now
+											</a>
+</td>
+</tr>
+<tr>
+<td class="text-center">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-cloud.png"/>
+<span class="d-block mt-2 fs-18 fw-bold text-heading">
+												Cloud SG4
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												4 vCPU
+											</span>
+<span class="d-block text-body">
+												Intel Inside
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												5GB
+											</span>
+<span class="d-block text-body">
+												DDR4 ECC Memory
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												100GB
+											</span>
+<span class="d-block text-body">
+												SSD Cloud Storage
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+<span class="text-primary">$19.95/</span>
+<span class="fs-16 fw-normal">Month</span>
+</span>
+<span class="d-block fs-14 text-body">
+												On Sale -
+												<span class="text-primary">Save-30%</span>
+</span>
+</td>
+<td class="text-center">
+<a class="btn fs-14 fw-medium border bg-body text-heading hover:border-primary hover:bg-primary hover:text-light transition" href="{{root}}cart.html">
+												Order Now
+											</a>
+</td>
+</tr>
+<tr>
+<td class="text-center">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-cloud.png"/>
+<span class="d-block mt-2 fs-18 fw-bold text-heading">
+												Cloud SG5
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												8 vCPU
+											</span>
+<span class="d-block text-body">
+												Intel Inside
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												8GB
+											</span>
+<span class="d-block text-body">
+												DDR4 ECC Memory
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												125GB
+											</span>
+<span class="d-block text-body">
+												SSD Cloud Storage
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+<span class="text-primary">$24.99/</span>
+<span class="fs-16 fw-normal">Month</span>
+</span>
+<span class="d-block fs-14 text-body">
+												On Sale -
+												<span class="text-primary">Save-30%</span>
+</span>
+</td>
+<td class="text-center">
+<a class="btn fs-14 fw-medium border bg-body text-heading hover:border-primary hover:bg-primary hover:text-light transition" href="{{root}}cart.html">
+												Order Now
+											</a>
+</td>
+</tr>
+<tr>
+<td class="text-center">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-cloud.png"/>
+<span class="d-block mt-2 fs-18 fw-bold text-heading">
+												Cloud SG6
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												16 vCPU
+											</span>
+<span class="d-block text-body">
+												Intel Inside
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												32GB
+											</span>
+<span class="d-block text-body">
+												DDR4 ECC Memory
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												150GB
+											</span>
+<span class="d-block text-body">
+												SSD Cloud Storage
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+<span class="text-primary">$29.99/</span>
+<span class="fs-16 fw-normal">Month</span>
+</span>
+<span class="d-block fs-14 text-body">
+												On Sale -
+												<span class="text-primary">Save-30%</span>
+</span>
+</td>
+<td class="text-center">
+<a class="btn fs-14 fw-medium border bg-body text-heading hover:border-primary hover:bg-primary hover:text-light transition" href="{{root}}cart.html">
+												Order Now
+											</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="tab-pane fade" id="premiumServer">
+<div class="table-responsive">
+<table class="table table-borderless table-modifier">
+<thead>
+<tr>
+<th class="text-center fw-semibold">Name</th>
+<th class="text-center fw-semibold">Cores</th>
+<th class="text-center fw-semibold">Memory</th>
+<th class="text-center fw-semibold">Disk Size</th>
+<th class="text-center fw-semibold">Price</th>
+<th class="text-center fw-semibold"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="text-center">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-cloud.png"/>
+<span class="d-block mt-2 fs-18 fw-bold text-heading">
+												Cloud SG1
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												2 vCPU
+											</span>
+<span class="d-block text-body">
+												1 vCore CPU
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												2GB
+											</span>
+<span class="d-block text-body">
+												DDR4 ECC Memory
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												35GB
+											</span>
+<span class="d-block text-body">
+												SSD Cloud Storage
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+<span class="text-primary">$4.95/</span>
+<span class="fs-16 fw-normal">Month</span>
+</span>
+<span class="d-block fs-14 text-body">
+												On Sale -
+												<span class="text-primary">Save-30%</span>
+</span>
+</td>
+<td class="text-center">
+<a class="btn fs-14 fw-medium border bg-body text-heading hover:border-primary hover:bg-primary hover:text-light transition" href="{{root}}cart.html">
+												Order Now
+											</a>
+</td>
+</tr>
+<tr>
+<td class="text-center">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-cloud.png"/>
+<span class="d-block mt-2 fs-18 fw-bold text-heading">
+												Cloud SG2
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												2 vCPU
+											</span>
+<span class="d-block text-body">
+												Intel Xeon Cores
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												3GB
+											</span>
+<span class="d-block text-body">
+												DDR4 ECC Memory
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												50GB
+											</span>
+<span class="d-block text-body">
+												SSD Cloud Storage
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+<span class="text-primary">$14.95/</span>
+<span class="fs-16 fw-normal">Month</span>
+</span>
+<span class="d-block fs-14 text-body">
+												On Sale -
+												<span class="text-primary">Save-30%</span>
+</span>
+</td>
+<td class="text-center">
+<a class="btn fs-14 fw-medium border bg-body text-heading hover:border-primary hover:bg-primary hover:text-light transition" href="{{root}}cart.html">
+												Order Now
+											</a>
+</td>
+</tr>
+<tr>
+<td class="text-center">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-cloud.png"/>
+<span class="d-block mt-2 fs-18 fw-bold text-heading">
+												Cloud SG3
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												3 vCPU
+											</span>
+<span class="d-block text-body">
+												Intel Core
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												4GB
+											</span>
+<span class="d-block text-body">
+												DDR4 ECC Memory
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												75GB
+											</span>
+<span class="d-block text-body">
+												SSD Cloud Storage
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+<span class="text-primary">$16.95/</span>
+<span class="fs-16 fw-normal">Month</span>
+</span>
+<span class="d-block fs-14 text-body">
+												On Sale -
+												<span class="text-primary">Save-30%</span>
+</span>
+</td>
+<td class="text-center">
+<a class="btn fs-14 fw-medium border bg-body text-heading hover:border-primary hover:bg-primary hover:text-light transition" href="{{root}}cart.html">
+												Order Now
+											</a>
+</td>
+</tr>
+<tr>
+<td class="text-center">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-cloud.png"/>
+<span class="d-block mt-2 fs-18 fw-bold text-heading">
+												Cloud SG4
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												4 vCPU
+											</span>
+<span class="d-block text-body">
+												Intel Inside
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												5GB
+											</span>
+<span class="d-block text-body">
+												DDR4 ECC Memory
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												100GB
+											</span>
+<span class="d-block text-body">
+												SSD Cloud Storage
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+<span class="text-primary">$19.95/</span>
+<span class="fs-16 fw-normal">Month</span>
+</span>
+<span class="d-block fs-14 text-body">
+												On Sale -
+												<span class="text-primary">Save-30%</span>
+</span>
+</td>
+<td class="text-center">
+<a class="btn fs-14 fw-medium border bg-body text-heading hover:border-primary hover:bg-primary hover:text-light transition" href="{{root}}cart.html">
+												Order Now
+											</a>
+</td>
+</tr>
+<tr>
+<td class="text-center">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-cloud.png"/>
+<span class="d-block mt-2 fs-18 fw-bold text-heading">
+												Cloud SG5
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												8 vCPU
+											</span>
+<span class="d-block text-body">
+												Intel Inside
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												8GB
+											</span>
+<span class="d-block text-body">
+												DDR4 ECC Memory
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												125GB
+											</span>
+<span class="d-block text-body">
+												SSD Cloud Storage
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+<span class="text-primary">$24.99/</span>
+<span class="fs-16 fw-normal">Month</span>
+</span>
+<span class="d-block fs-14 text-body">
+												On Sale -
+												<span class="text-primary">Save-30%</span>
+</span>
+</td>
+<td class="text-center">
+<a class="btn fs-14 fw-medium border bg-body text-heading hover:border-primary hover:bg-primary hover:text-light transition" href="{{root}}cart.html">
+												Order Now
+											</a>
+</td>
+</tr>
+<tr>
+<td class="text-center">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-cloud.png"/>
+<span class="d-block mt-2 fs-18 fw-bold text-heading">
+												Cloud SG6
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												16 vCPU
+											</span>
+<span class="d-block text-body">
+												Intel Inside
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												32GB
+											</span>
+<span class="d-block text-body">
+												DDR4 ECC Memory
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												150GB
+											</span>
+<span class="d-block text-body">
+												SSD Cloud Storage
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+<span class="text-primary">$29.99/</span>
+<span class="fs-16 fw-normal">Month</span>
+</span>
+<span class="d-block fs-14 text-body">
+												On Sale -
+												<span class="text-primary">Save-30%</span>
+</span>
+</td>
+<td class="text-center">
+<a class="btn fs-14 fw-medium border bg-body text-heading hover:border-primary hover:bg-primary hover:text-light transition" href="{{root}}cart.html">
+												Order Now
+											</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="tab-pane fade" id="residentialServer">
+<div class="table-responsive">
+<table class="table table-borderless table-modifier">
+<thead>
+<tr>
+<th class="text-center fw-semibold">Name</th>
+<th class="text-center fw-semibold">Cores</th>
+<th class="text-center fw-semibold">Memory</th>
+<th class="text-center fw-semibold">Disk Size</th>
+<th class="text-center fw-semibold">Price</th>
+<th class="text-center fw-semibold"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="text-center">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-cloud.png"/>
+<span class="d-block mt-2 fs-18 fw-bold text-heading">
+												Cloud SG1
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												2 vCPU
+											</span>
+<span class="d-block text-body">
+												1 vCore CPU
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												2GB
+											</span>
+<span class="d-block text-body">
+												DDR4 ECC Memory
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												35GB
+											</span>
+<span class="d-block text-body">
+												SSD Cloud Storage
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+<span class="text-primary">$4.95/</span>
+<span class="fs-16 fw-normal">Month</span>
+</span>
+<span class="d-block fs-14 text-body">
+												On Sale -
+												<span class="text-primary">Save-30%</span>
+</span>
+</td>
+<td class="text-center">
+<a class="btn fs-14 fw-medium border bg-body text-heading hover:border-primary hover:bg-primary hover:text-light transition" href="{{root}}cart.html">
+												Order Now
+											</a>
+</td>
+</tr>
+<tr>
+<td class="text-center">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-cloud.png"/>
+<span class="d-block mt-2 fs-18 fw-bold text-heading">
+												Cloud SG2
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												2 vCPU
+											</span>
+<span class="d-block text-body">
+												Intel Xeon Cores
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												3GB
+											</span>
+<span class="d-block text-body">
+												DDR4 ECC Memory
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												50GB
+											</span>
+<span class="d-block text-body">
+												SSD Cloud Storage
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+<span class="text-primary">$14.95/</span>
+<span class="fs-16 fw-normal">Month</span>
+</span>
+<span class="d-block fs-14 text-body">
+												On Sale -
+												<span class="text-primary">Save-30%</span>
+</span>
+</td>
+<td class="text-center">
+<a class="btn fs-14 fw-medium border bg-body text-heading hover:border-primary hover:bg-primary hover:text-light transition" href="{{root}}cart.html">
+												Order Now
+											</a>
+</td>
+</tr>
+<tr>
+<td class="text-center">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-cloud.png"/>
+<span class="d-block mt-2 fs-18 fw-bold text-heading">
+												Cloud SG3
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												3 vCPU
+											</span>
+<span class="d-block text-body">
+												Intel Core
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												4GB
+											</span>
+<span class="d-block text-body">
+												DDR4 ECC Memory
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												75GB
+											</span>
+<span class="d-block text-body">
+												SSD Cloud Storage
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+<span class="text-primary">$16.95/</span>
+<span class="fs-16 fw-normal">Month</span>
+</span>
+<span class="d-block fs-14 text-body">
+												On Sale -
+												<span class="text-primary">Save-30%</span>
+</span>
+</td>
+<td class="text-center">
+<a class="btn fs-14 fw-medium border bg-body text-heading hover:border-primary hover:bg-primary hover:text-light transition" href="{{root}}cart.html">
+												Order Now
+											</a>
+</td>
+</tr>
+<tr>
+<td class="text-center">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-cloud.png"/>
+<span class="d-block mt-2 fs-18 fw-bold text-heading">
+												Cloud SG4
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												4 vCPU
+											</span>
+<span class="d-block text-body">
+												Intel Inside
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												5GB
+											</span>
+<span class="d-block text-body">
+												DDR4 ECC Memory
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												100GB
+											</span>
+<span class="d-block text-body">
+												SSD Cloud Storage
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+<span class="text-primary">$19.95/</span>
+<span class="fs-16 fw-normal">Month</span>
+</span>
+<span class="d-block fs-14 text-body">
+												On Sale -
+												<span class="text-primary">Save-30%</span>
+</span>
+</td>
+<td class="text-center">
+<a class="btn fs-14 fw-medium border bg-body text-heading hover:border-primary hover:bg-primary hover:text-light transition" href="{{root}}cart.html">
+												Order Now
+											</a>
+</td>
+</tr>
+<tr>
+<td class="text-center">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-cloud.png"/>
+<span class="d-block mt-2 fs-18 fw-bold text-heading">
+												Cloud SG5
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												8 vCPU
+											</span>
+<span class="d-block text-body">
+												Intel Inside
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												8GB
+											</span>
+<span class="d-block text-body">
+												DDR4 ECC Memory
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												125GB
+											</span>
+<span class="d-block text-body">
+												SSD Cloud Storage
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+<span class="text-primary">$24.99/</span>
+<span class="fs-16 fw-normal">Month</span>
+</span>
+<span class="d-block fs-14 text-body">
+												On Sale -
+												<span class="text-primary">Save-30%</span>
+</span>
+</td>
+<td class="text-center">
+<a class="btn fs-14 fw-medium border bg-body text-heading hover:border-primary hover:bg-primary hover:text-light transition" href="{{root}}cart.html">
+												Order Now
+											</a>
+</td>
+</tr>
+<tr>
+<td class="text-center">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-cloud.png"/>
+<span class="d-block mt-2 fs-18 fw-bold text-heading">
+												Cloud SG6
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												16 vCPU
+											</span>
+<span class="d-block text-body">
+												Intel Inside
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												32GB
+											</span>
+<span class="d-block text-body">
+												DDR4 ECC Memory
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												150GB
+											</span>
+<span class="d-block text-body">
+												SSD Cloud Storage
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+<span class="text-primary">$29.99/</span>
+<span class="fs-16 fw-normal">Month</span>
+</span>
+<span class="d-block fs-14 text-body">
+												On Sale -
+												<span class="text-primary">Save-30%</span>
+</span>
+</td>
+<td class="text-center">
+<a class="btn fs-14 fw-medium border bg-body text-heading hover:border-primary hover:bg-primary hover:text-light transition" href="{{root}}cart.html">
+												Order Now
+											</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Pricing End -->
+<!-- Service -->
+<div class="section-space-y bg-dark position-relative z-1">
+<div class="section-space-md-bottom">
+<div class="container">
+<div class="row g-4 justify-content-between align-items-center">
+<div class="col-md-6 col-xxl-5">
+<h3 class="mb-0 text-light">Explore Website For Hosting Service</h3>
+</div>
+<div class="col-md-6 col-xxl-5">
+<p class="mb-0 text-light">
+						Experience our high-speed web hosting, with 24/7 Turnpage Networks www.turnpage.io Support,
+						suitable for businesses of any size. Whether you're a novice or a
+						thriving e-commerce enterprise, our hosting solutions
+					</p>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row g-4">
+<div class="col-md-6 col-lg-4">
+<div class="bg-light-subtle rounded-3 p-4 p-sm-8 py-md-10 h-100">
+<div class="mb-6">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-feature-17.png"/>
+</div>
+<h6 class="fs-20">High Availability</h6>
+<p class="mb-8">
+						Started the until enjoying feels on designer what choose they
+						people around were there rant more text he attention
+					</p>
+<a class="btn btn-primary-subtle btn-sm align-items-center" href="{{root}}features.html">
+						Explore More
+						<i class="align-middle flex-shrink-0 ti ti-arrow-right-line"></i>
+</a>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="bg-light-subtle rounded-3 p-4 p-sm-8 py-md-10 h-100">
+<div class="mb-6">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-feature-18.png"/>
+</div>
+<h6 class="fs-20">Performance Storage</h6>
+<p class="mb-8">
+						Our high-performance storage network, combined with enterprise,
+						all-flash storage array, makes our cloud servers
+					</p>
+<a class="btn btn-primary-subtle btn-sm align-items-center" href="{{root}}features.html">
+						Explore More
+						<i class="align-middle flex-shrink-0 ti ti-arrow-right-line"></i>
+</a>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="bg-light-subtle rounded-3 p-4 p-sm-8 py-md-10 h-100">
+<div class="mb-6">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-feature-19.png"/>
+</div>
+<h6 class="fs-20">Solution Management</h6>
+<p class="mb-8">
+						Management tailored to your application. All our cloud server
+						hosting comes with 24x7 infrastructure support
+					</p>
+<a class="btn btn-primary-subtle btn-sm align-items-center" href="{{root}}features.html">
+						Explore More
+						<i class="align-middle flex-shrink-0 ti ti-arrow-right-line"></i>
+</a>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="bg-light-subtle rounded-3 p-4 p-sm-8 py-md-10 h-100">
+<div class="mb-6">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-feature-20.png"/>
+</div>
+<h6 class="fs-20">Next-Generation Firewall</h6>
+<p class="mb-8">
+						Started the until enjoying feels on designer what choose they
+						people around were there rant more text he attention
+					</p>
+<a class="btn btn-primary-subtle btn-sm align-items-center" href="{{root}}features.html">
+						Explore More
+						<i class="align-middle flex-shrink-0 ti ti-arrow-right-line"></i>
+</a>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="bg-light-subtle rounded-3 p-4 p-sm-8 py-md-10 h-100">
+<div class="mb-6">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-feature-21.png"/>
+</div>
+<h6 class="fs-20">Full Root &amp; Shell Access</h6>
+<p class="mb-8">
+						Our high-performance storage network, combined with enterprise,
+						all-flash storage array, makes our cloud servers
+					</p>
+<a class="btn btn-primary-subtle btn-sm align-items-center" href="{{root}}features.html">
+						Explore More
+						<i class="align-middle flex-shrink-0 ti ti-arrow-right-line"></i>
+</a>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="bg-light-subtle rounded-3 p-4 p-sm-8 py-md-10 h-100">
+<div class="mb-6">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-feature-22.png"/>
+</div>
+<h6 class="fs-20">99% Uptime Guarantee</h6>
+<p class="mb-8">
+						Our redundant infrastructure coupled with our monitoring systems
+						allow us to boast a 99.9% uptime. We regularly hit a 100% uptime
+					</p>
+<a class="btn btn-primary-subtle btn-sm align-items-center" href="{{root}}features.html">
+						Explore More
+						<i class="align-middle flex-shrink-0 ti ti-arrow-right-line"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+<img alt="image" class="w-100 h-100 position-absolute inset-0 object-fit-cover z-n1 pointer-none opacity-50" src="{{root}}assets/img/shapes/about-shape-1.png"/>
+</div>
+<!-- Service End -->
+<!-- CTA  -->
+<div class="cta-3">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="cta-3__box p-4 p-md-6 rounded-3">
+<div class="bg-dark section-space-lg-y px-4 px-md-6 rounded text-center position-relative z-1">
+<div class="row justify-content-center">
+<div class="col-md-10 col-lg-8 col-xl-7">
+<h3 class="text-light">Best Fits Your Needs?</h3>
+<p class="mb-8 text-light max-text-14 mx-auto">
+									Save time &amp; money with simple and reliable cloud
+									hosting trusted by 80,000+ agencies, developers &amp;
+									businesses that demand high
+								</p>
+<div class="d-flex align-items-center justify-content-center gap-4 flex-wrap">
+<a class="btn btn-secondary fs-14 fw-medium" href="{{root}}sign-in-1.html">
+										Start Free
+									</a>
+<a class="btn btn-outline-light fs-14 fw-medium" href="{{root}}contact.html">
+										Connect Us
+									</a>
+</div>
+</div>
+</div>
+<img alt="image" class="img-fluid d-none d-md-block position-absolute start-0 bottom-0 z-n1 pointer-none" src="{{root}}assets/img/shapes/cta-img-1.png"/>
+<img alt="image" class="img-fluid d-none d-md-block position-absolute end-0 bottom-0 z-n1 pointer-none" src="{{root}}assets/img/shapes/cta-img-2.png"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA End -->
+<!-- About Section -->
+<div class="section-space-y">
+<div class="section-space-md-bottom">
+<div class="container">
+<div class="row g-4 align-items-center">
+<div class="col-lg-7 col-xl-6">
+<h3 class="mb-6">Secured by Turnpage Networks www.turnpage.io Security Sheild</h3>
+<p class="mb-8">
+						Turnpage Networks www.turnpage.io is a security research team that provides threat
+						intelligence and security services for Fortinet's products. They
+						focus on analyzing emerging threats, malware, and vulnerabilities
+						to help organizations protect their networks and data
+					</p>
+<div class="row g-4">
+<div class="col-md-6">
+<div class="mb-6">
+<div class="d-inline-block position-relative z-1">
+<i class="fs-48 text-heading ti ti-globe"></i>
+<span class="d-inline-block position-absolute start-1 top-1 z-n1 pointer-none w-12 h-12 bg-primary bg-opacity-20 rounded-circle dark:bg-primary-subtle"></span>
+</div>
+</div>
+<h6 class="fs-20">Real-Time Threat Intelligence</h6>
+<p class="mb-0">
+								Continuous updates on emerging threats and vulnerabilities
+							</p>
+</div>
+<div class="col-md-6">
+<div class="mb-6">
+<div class="d-inline-block position-relative z-1">
+<i class="fs-48 text-heading ti ti-download-broken"></i>
+<span class="d-inline-block position-absolute start-1 top-1 z-n1 pointer-none w-12 h-12 bg-primary bg-opacity-20 rounded-circle dark:bg-primary-subtle"></span>
+</div>
+</div>
+<h6 class="fs-20">Advanced Malware Protection</h6>
+<p class="mb-0">
+								Detection and prevention of various types of malware
+							</p>
+</div>
+</div>
+<a class="btn btn-primary-emphasis mt-12" href="{{root}}domain-transfer.html">
+						Move to Turnpage Networks www.turnpage.io
+					</a>
+</div>
+<div class="col-lg-5 col-xl-6">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/about-img-17.png"/>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row g-4 align-items-center">
+<div class="col-lg-5 col-xl-6">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/about-img-18.png"/>
+</div>
+<div class="col-lg-7 col-xl-6">
+<h3 class="mb-6">100% Uptime SLA</h3>
+<p class="mb-8">
+					Our high availability cloud hosting delivers 100% network uptime:
+					perfect for running mission-critical applications and keeping your
+					website online
+				</p>
+<div class="row g-4">
+<div class="col-md-6">
+<div class="mb-6">
+<div class="d-inline-block position-relative z-1">
+<i class="fs-48 text-heading ti ti-license-maintenance"></i>
+<span class="d-inline-block position-absolute start-1 top-1 z-n1 pointer-none w-12 h-12 bg-primary bg-opacity-20 rounded-circle dark:bg-primary-subtle"></span>
+</div>
+</div>
+<h6 class="fs-20">Regular Maintenance</h6>
+<p class="mb-0">
+							Scheduled maintenance windows are planned and communicated to
+							minimize impact on users
+						</p>
+</div>
+<div class="col-md-6">
+<div class="mb-6">
+<div class="d-inline-block position-relative z-1">
+<i class="fs-48 text-heading ti ti-img-load-box-duotone-line"></i>
+<span class="d-inline-block position-absolute start-1 top-1 z-n1 pointer-none w-12 h-12 bg-primary bg-opacity-20 rounded-circle dark:bg-primary-subtle"></span>
+</div>
+</div>
+<h6 class="fs-20">Load Balancing</h6>
+<p class="mb-0">
+							Distributing traffic across multiple servers to prevent
+							overload on a single point
+						</p>
+</div>
+<div class="col-md-6">
+<div class="mb-6">
+<div class="d-inline-block position-relative z-1">
+<i class="fs-48 text-heading ti ti-production-belt-time"></i>
+<span class="d-inline-block position-absolute start-1 top-1 z-n1 pointer-none w-12 h-12 bg-primary bg-opacity-20 rounded-circle dark:bg-primary-subtle"></span>
+</div>
+</div>
+<h6 class="fs-20">Real Time Monitoring</h6>
+<p class="mb-0">
+							Continuous monitoring of server performance and availability
+							to quickly identify and resolve issues
+						</p>
+</div>
+<div class="col-md-6">
+<div class="mb-6">
+<div class="d-inline-block position-relative z-1">
+<i class="fs-48 text-heading ti ti-customer-support-7"></i>
+<span class="d-inline-block position-absolute start-1 top-1 z-n1 pointer-none w-12 h-12 bg-primary bg-opacity-20 rounded-circle dark:bg-primary-subtle"></span>
+</div>
+</div>
+<h6 class="fs-20">Support Response Time</h6>
+<p class="mb-0">
+							Rapid response from support teams to address any issues that
+							might affect uptime
+						</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- About Section End -->
+<!-- After Service Section -->
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="section-space-y px-4 px-sm-6 px-md-8 px-xl-12 px-xxl-15 rounded-4 bg-body position-relative z-1">
+<div class="section-space-md-bottom">
+<div class="row g-4 justify-content-xxl-between">
+<div class="col-md-7 col-xxl-6">
+<div class="d-flex align-items-center gap-3 mb-6">
+<i class="fs-24 text-primary flex-shrink-0 ti ti-twotone-wordpress"></i>
+<span class="d-block text-heading">
+									WordPress runs better on Turnpage Networks www.turnpage.io
+								</span>
+</div>
+<h4 class="mb-8 text-heading">
+								“We can quickly create new accounts and set up
+								application"
+							</h4>
+<div class="d-flex align-items-center gap-4">
+<div class="w-18 h-18 d-grid place-content-center bg-primary-emphasis rounded flex-shrink-0">
+<i class="fs-36 text-primary-subtle ti ti-phone-call"></i>
+</div>
+<div class="flex-grow-1">
+<div class="d-flex align-items-center gap-2">
+<div class="d-flex gap-2 align-items-center">
+<span class="d-inline-block w-2 h-2 rounded-circle bg-success"></span>
+<span class="d-block fw-bold text-body">Calls</span>
+</div>
+<span class="d-block fs-14 text-body">(Last 7 days)</span>
+</div>
+<h4 class="mb-0 text-heading">+12 125879654</h4>
+</div>
+</div>
+</div>
+<div class="col-md-5">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/cta-img-13.png"/>
+</div>
+</div>
+</div>
+<div class="section-space-sm-y px-4 px-md-8 px-xl-12 rounded-3 bg-primary bg-opacity-5 border border-primary border-opacity-30">
+<div class="row g-4 align-items-center">
+<div class="col-md-8">
+<div class="d-flex align-items-center gap-6">
+<div class="flex-shrink-0">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-support-blue.png"/>
+</div>
+<h6 class="mb-0 fw-semibold text-heading">
+									Let our experts help you get your projects up and
+									running without delay
+								</h6>
+</div>
+</div>
+<div class="col-md-4 text-md-end">
+<a class="btn fs-14 btn-primary" href="{{root}}contact.html">
+								Chat with Export
+							</a>
+</div>
+</div>
+</div>
+<img alt="image" class="img-fluid d-none d-lg-block position-absolute top-0 end-0 z-n1 pointer-none" src="{{root}}assets/img/shapes/cta-shape-1.png"/>
+</div>
+</div>
+</div>
+</div>
+<!-- After Service Section End -->
+<!-- FAQ  -->
+<div class="section-space-y">
+<div class="container">
+<div class="row g-4 justify-content-between">
+<div class="col-md-5 col-xxl-4">
+<h3>Frequently Asked Questions</h3>
+<p class="mb-8">
+					Access Turnpage Networks www.turnpage.io Kubernetes Engine through the free Turnpage Networks www.turnpage.io control
+					plane, or directly.
+				</p>
+<img alt="image" class="img-fluid" src="{{root}}assets/img/faq-img-1.png"/>
+</div>
+<div class="col-md-7 col-xxl-6">
+<div class="accordion accordion-separate accordion--primary" id="accordion-separate-rounded">
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button aria-expanded="true" class="accordion-button fw-medium shadow" data-bs-target="#accordion-s1" data-bs-toggle="collapse" type="button">
+								Do you charge for stopped instances?
+							</button>
+</h2>
+<div class="accordion-collapse shadow collapse show" data-bs-parent="#accordion-separate-rounded" id="accordion-s1">
+<div class="accordion-body border border-dark border-opacity-5 fs-14">
+								We have not charged your card. What you have observed is a
+								temporary authorization in order to validate the card
+								provided. The hold will automatically expire based on your
+								bank's policy, generally within a few days.
+							</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button aria-expanded="false" class="accordion-button collapsed fw-medium shadow" data-bs-target="#accordion-s2" data-bs-toggle="collapse" type="button">
+								What is Vultr's role with respect to GDPR?
+							</button>
+</h2>
+<div class="accordion-collapse collapse shadow" data-bs-parent="#accordion-separate-rounded" id="accordion-s2">
+<div class="accordion-body border border-dark border-opacity-5 fs-14">
+								We have not charged your card. What you have observed is a
+								temporary authorization in order to validate the card
+								provided. The hold will automatically expire based on your
+								bank's policy, generally within a few days.
+							</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button aria-expanded="false" class="accordion-button collapsed fw-medium shadow" data-bs-target="#accordion-s3" data-bs-toggle="collapse" type="button">
+								How will I know if I was admitted into the program?
+							</button>
+</h2>
+<div class="accordion-collapse collapse shadow" data-bs-parent="#accordion-separate-rounded" id="accordion-s3">
+<div class="accordion-body border border-dark border-opacity-5 fs-14">
+								We have not charged your card. What you have observed is a
+								temporary authorization in order to validate the card
+								provided. The hold will automatically expire based on your
+								bank's policy, generally within a few days.
+							</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button aria-expanded="false" class="accordion-button collapsed fw-medium shadow" data-bs-target="#accordion-s4" data-bs-toggle="collapse" type="button">
+								What operating system templates do you offer?
+							</button>
+</h2>
+<div class="accordion-collapse collapse shadow" data-bs-parent="#accordion-separate-rounded" id="accordion-s4">
+<div class="accordion-body border border-dark border-opacity-5 fs-14">
+								We have not charged your card. What you have observed is a
+								temporary authorization in order to validate the card
+								provided. The hold will automatically expire based on your
+								bank's policy, generally within a few days.
+							</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button aria-expanded="false" class="accordion-button collapsed fw-medium shadow" data-bs-target="#accordion-s5" data-bs-toggle="collapse" type="button">
+								Is pricing the same in all data center locations?
+							</button>
+</h2>
+<div class="accordion-collapse collapse shadow" data-bs-parent="#accordion-separate-rounded" id="accordion-s5">
+<div class="accordion-body border border-dark border-opacity-5 fs-14">
+								We have not charged your card. What you have observed is a
+								temporary authorization in order to validate the card
+								provided. The hold will automatically expire based on your
+								bank's policy, generally within a few days.
+							</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button aria-expanded="false" class="accordion-button collapsed fw-medium shadow" data-bs-target="#accordion-s6" data-bs-toggle="collapse" type="button">
+								What payment methods do you accept?
+							</button>
+</h2>
+<div class="accordion-collapse collapse shadow" data-bs-parent="#accordion-separate-rounded" id="accordion-s6">
+<div class="accordion-body border border-dark border-opacity-5 fs-14">
+								We have not charged your card. What you have observed is a
+								temporary authorization in order to validate the card
+								provided. The hold will automatically expire based on your
+								bank's policy, generally within a few days.
+							</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- FAQ End -->
+<!-- CTA  -->
+<div class="cta-4">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="cta-4__container p-4 p-md-6 rounded-3">
+<div class="section-space-y px-4 px-md-6 bg-gradient-2 rounded-3 text-center position-relative z-1 overflow-hidden">
+<div class="row justify-content-center">
+<div class="col-lg-10">
+<h3 class="text-light">Get a free web host migration</h3>
+<p class="mb-8 text-light max-text-14 mx-auto">
+									We'll take care of the process of moving your website
+									from your old web hosting company to our platform so
+									you can focus on what matters
+								</p>
+<div class="d-flex align-items-center justify-content-center gap-4 flex-wrap">
+<a class="btn btn-secondary fs-14 fw-medium" href="{{root}}sign-in-1.html">
+										Get Started
+									</a>
+<a class="btn btn-light fs-14 fw-medium" href="{{root}}contact.html">
+										Contact Us
+									</a>
+</div>
+</div>
+</div>
+<img alt="image" class="img-fluid position-absolute top-50 start-0 translate-middle-y z-n1 pointer-none d-none d-lg-block" src="{{root}}assets/img/cta-img-14.png"/>
+<img alt="image" class="img-fluid position-absolute top-50 end-0 translate-middle-y z-n1 pointer-none d-none d-lg-block" src="{{root}}assets/img/cta-img-15.png"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA End -->
+
+{% include "partials/footer-6.html" %} 
+{% endblock %}

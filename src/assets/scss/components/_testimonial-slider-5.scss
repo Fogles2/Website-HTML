@@ -1,0 +1,15 @@
+@use "../global" as *;
+.testimonial-slider-5 {
+	@media (min-width: 1920px) {
+		width: 140%;
+		position: relative;
+		left: 0;
+		right: -#{rem(300)};
+	}
+	@media (min-width: 2500px) {
+		width: 180%;
+		position: relative;
+		left: 0;
+		right: -#{rem(500)};
+	}
+}

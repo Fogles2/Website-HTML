@@ -1,0 +1,17 @@
+@use "../global" as *;
+.testimonial-section-2 {
+	position: relative;
+	isolation: isolate;
+	&::after {
+		@include screen(lg) {
+			content: "";
+			position: absolute;
+			top: clamp(2.5rem, 4.21vw + 1rem, 5rem);
+			bottom: clamp(2.5rem, 4.21vw + 1rem, 5rem);
+            left: 60%;
+			right: 0;
+			background-color: var(--bs-primary);
+            z-index: -1;
+		}
+	}
+}

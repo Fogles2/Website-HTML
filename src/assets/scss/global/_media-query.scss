@@ -1,0 +1,22 @@
+@use "sass:map";
+@use "./variables" as *;
+
+@mixin screen($key) {
+	$size: map.get($grid-breakpoints, $key);
+	@media (min-width: $size) {
+		@content;
+	}
+}
+//Mobile Landscape
+@mixin landscape {
+	@media all and (orientation: landscape) {
+		@content;
+	}
+}
+
+//Mobile Potrait
+@mixin potrait {
+	@media all and (orientation: potrait) {
+		@content;
+	}
+}

@@ -1,0 +1,14 @@
+.cta-6 {
+	position: relative;
+	isolation: isolate;
+	&::after {
+		content: "";
+		position: absolute;
+		top: -2px;
+		bottom: 50%;
+		left: 0;
+		right: 0;
+        background-color: var(--bs-primary-bg-subtle);
+        z-index: -1;
+	}
+}

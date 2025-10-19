@@ -1,0 +1,7 @@
+[data-bs-theme="dark"] {
+	&[data-theme="home-1"] {
+		body.bg-dark-emphasis {
+			background-color: var(--bs-dark-bg-subtle) !important;
+		}
+	}
+}

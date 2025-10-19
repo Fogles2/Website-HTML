@@ -1,0 +1,27 @@
+.cta-4 {
+	position: relative;
+	isolation: isolate;
+	&::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background-image: linear-gradient(var(--bs-light) 50%, var(--bs-dark) 50%);
+		z-index: -1;
+	}
+	&__container {
+		background-color: var(--bs-light);
+	}
+}
+[data-bs-theme="dark"] {
+	.cta-4 {
+		&::before {
+			background-image: linear-gradient(
+				var(--bs-dark-bg-subtle) 50%,
+				var(--bs-dark) 50%
+			);
+		}
+		&__container {
+			background-color: var(--bs-dark);
+		}
+	}
+}

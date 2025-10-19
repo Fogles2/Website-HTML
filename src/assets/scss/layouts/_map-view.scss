@@ -1,0 +1,28 @@
+@use "../global" as *;
+.map-view {
+	width: 100%;
+	height: rem(350);
+	@include screen(md) {
+		height: rem(600);
+	}
+	&--md {
+		@include screen(md) {
+			height: rem(450);
+		}
+	}
+	&--lg {
+		@include screen(md) {
+			height: rem(750);
+		}
+	}
+	&--xl {
+		@include screen(md) {
+			height: rem(850);
+		}
+	}
+	&__info {
+		@include screen(md) {
+			position: absolute;
+		}
+	}
+}

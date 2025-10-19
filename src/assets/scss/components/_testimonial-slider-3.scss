@@ -1,0 +1,26 @@
+@use "../global" as *;
+.testimonial-slider-3 {
+	&--nav {
+		position: relative;
+		isolation: isolate;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: rem(55);
+			width: 2px;
+			background-color: rgba(var(--bs-dark-rgb), 0.1);
+			z-index: -2;
+            @include screen(xl) {
+                left: rem(70);
+            }
+		}
+		.swiper-slide {
+			opacity: 0.6;
+			&.swiper-slide-active {
+				opacity: 1;
+			}
+		}
+	}
+}

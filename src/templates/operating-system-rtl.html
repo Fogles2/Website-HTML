@@ -1,0 +1,421 @@
+{% extends "layouts/default-rtl.html" %}
+{% set dataTheme = "domain" %}
+{% set bodyClass = "bg-light dark:bg-dark-subtle" %}
+{% set navbar = true %} 
+{% set navBtnColor = "fw-medium" %}
+{% set primaryHeader = "primary-header--light primary-header--boxed primary-header--fixed top-md-3 primary-header-crossed:top-0" %}
+{% set ltrLink = "operating-system.html" %}
+{% set breadcrumb = "Operating Systems" %}
+{% set breadcrumbLink = "text-light hover:text-secondary" %}
+{% set breadcrumbIcon = "text-light" %}
+{% set breadcrumbActive = "text-light" %}
+{% set logoLight = "logo-dark.png" %}
+{% set logoDark = "logo-light.png" %}
+<!-- Content Block -->
+{% block content %}
+
+<!-- Banner -->
+{% include "partials/banner-11.html" %}
+<!-- Banner End -->
+<!-- OS Support -->
+<div class="mt-n60 position-relative z-1">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="bg-body section-space-md-y px-4 px-sm-6 px-md-8 px-lg-12 px-xl-15 rounded-4">
+<div class="section-space-xsm-bottom text-center">
+<div class="row justify-content-center">
+<div class="col-md-8 col-lg-7">
+<h4 class="mb-0">خيارات أنظمة التشغيل المرنة والعملية</h4>
+</div>
+</div>
+</div>
+<div class="section-space-xsm-bottom text-center">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<ul class="nav nav-underline d-inline-flex justify-content-center border-bottom border-light-subtle px-sm-12">
+<li class="nav-item">
+<button class="nav-link fs-12 fw-semibold active" data-bs-target="#osTab" data-bs-toggle="pill" type="button">
+												نظام التشغيل
+											</button>
+</li>
+<li class="nav-item">
+<button class="nav-link fs-12 fw-semibold" data-bs-target="#panelsTab" data-bs-toggle="pill" type="button">
+												اللوحات والتطبيقات
+											</button>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="tab-content">
+<div class="tab-pane fade show active" id="osTab">
+<div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6 g-4">
+<div class="col">
+<div class="d-grid place-content-center ratio-1/1 border border-dark border-opacity-10 bg-body dark:bg-dark-subtle text-center rounded p-4 p-sm-6">
+<div class="mb-4">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/os-img-1.png"/>
+</div>
+<span class="d-block text-heading fw-semibold">
+											ألما لينكس
+										</span>
+</div>
+</div>
+<div class="col">
+<div class="d-grid place-content-center ratio-1/1 border border-dark border-opacity-10 bg-body dark:bg-dark-subtle text-center rounded p-4 p-sm-6">
+<div class="mb-4">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/os-img-2.png"/>
+</div>
+<span class="d-block text-heading fw-semibold">
+											ألما لينكس
+										</span>
+</div>
+</div>
+<div class="col">
+<div class="d-grid place-content-center ratio-1/1 border border-dark border-opacity-10 bg-body dark:bg-dark-subtle text-center rounded p-4 p-sm-6">
+<div class="mb-4">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/os-img-3.png"/>
+</div>
+<span class="d-block text-heading fw-semibold">
+											سينت أو إس
+										</span>
+</div>
+</div>
+<div class="col">
+<div class="d-grid place-content-center ratio-1/1 border border-dark border-opacity-10 bg-body dark:bg-dark-subtle text-center rounded p-4 p-sm-6">
+<div class="mb-4">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/os-img-4.png"/>
+</div>
+<span class="d-block text-heading fw-semibold">
+											أوبن بي إس دي
+										</span>
+</div>
+</div>
+<div class="col">
+<div class="d-grid place-content-center ratio-1/1 border border-dark border-opacity-10 bg-body dark:bg-dark-subtle text-center rounded p-4 p-sm-6">
+<div class="mb-4">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/os-img-5.png"/>
+</div>
+<span class="d-block text-heading fw-semibold">
+											خادم فيدورا
+										</span>
+</div>
+</div>
+<div class="col">
+<div class="d-grid place-content-center ratio-1/1 border border-dark border-opacity-10 bg-body dark:bg-dark-subtle text-center rounded p-4 p-sm-6">
+<div class="mb-4">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/os-img-6.png"/>
+</div>
+<span class="d-block text-heading fw-semibold">
+											أوبونتو
+										</span>
+</div>
+</div>
+<div class="col">
+<div class="d-grid place-content-center ratio-1/1 border border-dark border-opacity-10 bg-body dark:bg-dark-subtle text-center rounded p-4 p-sm-6">
+<div class="mb-4">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/os-img-7.png"/>
+</div>
+<span class="d-block text-heading fw-semibold">
+											فري بي إس دي
+										</span>
+</div>
+</div>
+<div class="col">
+<div class="d-grid place-content-center ratio-1/1 border border-dark border-opacity-10 bg-body dark:bg-dark-subtle text-center rounded p-4 p-sm-6">
+<div class="mb-4">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/os-img-8.png"/>
+</div>
+<span class="d-block text-heading fw-semibold">
+											ويندوز
+										</span>
+</div>
+</div>
+<div class="col">
+<div class="d-grid place-content-center ratio-1/1 border border-dark border-opacity-10 bg-body dark:bg-dark-subtle text-center rounded p-4 p-sm-6">
+<div class="mb-4">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/os-img-9.png"/>
+</div>
+<span class="d-block text-heading fw-semibold">
+											آرتش لينكس
+										</span>
+</div>
+</div>
+<div class="col">
+<div class="d-grid place-content-center ratio-1/1 border border-dark border-opacity-10 bg-body dark:bg-dark-subtle text-center rounded p-4 p-sm-6">
+<div class="mb-4">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/os-img-1.png"/>
+</div>
+<span class="d-block text-heading fw-semibold">
+											لينكس
+										</span>
+</div>
+</div>
+<div class="col">
+<div class="d-grid place-content-center ratio-1/1 border border-dark border-opacity-10 bg-body dark:bg-dark-subtle text-center rounded p-4 p-sm-6">
+<div class="mb-4">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/os-img-3.png"/>
+</div>
+<span class="d-block text-heading fw-semibold">
+											سينت أو إس
+										</span>
+</div>
+</div>
+<div class="col">
+<div class="d-grid place-content-center ratio-1/1 border border-dark border-opacity-10 bg-body dark:bg-dark-subtle text-center rounded p-4 p-sm-6">
+<div class="mb-4">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/os-img-2.png"/>
+</div>
+<span class="d-block text-heading fw-semibold">
+											ألما لينكس
+										</span>
+</div>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" id="panelsTab">
+<div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6 g-4">
+<div class="col">
+<div class="d-grid place-content-center ratio-1/1 border border-dark border-opacity-10 bg-body dark:bg-dark-subtle text-center rounded p-4 p-sm-6">
+<div class="mb-4">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/os-img-1.png"/>
+</div>
+<span class="d-block text-heading fw-semibold">
+											ألما لينكس
+										</span>
+</div>
+</div>
+<div class="col">
+<div class="d-grid place-content-center ratio-1/1 border border-dark border-opacity-10 bg-body dark:bg-dark-subtle text-center rounded p-4 p-sm-6">
+<div class="mb-4">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/os-img-2.png"/>
+</div>
+<span class="d-block text-heading fw-semibold">
+											ألما لينكس
+										</span>
+</div>
+</div>
+<div class="col">
+<div class="d-grid place-content-center ratio-1/1 border border-dark border-opacity-10 bg-body dark:bg-dark-subtle text-center rounded p-4 p-sm-6">
+<div class="mb-4">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/os-img-3.png"/>
+</div>
+<span class="d-block text-heading fw-semibold">
+											سينت أو إس
+										</span>
+</div>
+</div>
+<div class="col">
+<div class="d-grid place-content-center ratio-1/1 border border-dark border-opacity-10 bg-body dark:bg-dark-subtle text-center rounded p-4 p-sm-6">
+<div class="mb-4">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/os-img-4.png"/>
+</div>
+<span class="d-block text-heading fw-semibold">
+											أوبن بي إس دي
+										</span>
+</div>
+</div>
+<div class="col">
+<div class="d-grid place-content-center ratio-1/1 border border-dark border-opacity-10 bg-body dark:bg-dark-subtle text-center rounded p-4 p-sm-6">
+<div class="mb-4">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/os-img-5.png"/>
+</div>
+<span class="d-block text-heading fw-semibold">
+											خادم فيدورا
+										</span>
+</div>
+</div>
+<div class="col">
+<div class="d-grid place-content-center ratio-1/1 border border-dark border-opacity-10 bg-body dark:bg-dark-subtle text-center rounded p-4 p-sm-6">
+<div class="mb-4">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/os-img-6.png"/>
+</div>
+<span class="d-block text-heading fw-semibold">
+											أوبونتو
+										</span>
+</div>
+</div>
+<div class="col">
+<div class="d-grid place-content-center ratio-1/1 border border-dark border-opacity-10 bg-body dark:bg-dark-subtle text-center rounded p-4 p-sm-6">
+<div class="mb-4">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/os-img-7.png"/>
+</div>
+<span class="d-block text-heading fw-semibold">
+											فري بي إس دي
+										</span>
+</div>
+</div>
+<div class="col">
+<div class="d-grid place-content-center ratio-1/1 border border-dark border-opacity-10 bg-body dark:bg-dark-subtle text-center rounded p-4 p-sm-6">
+<div class="mb-4">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/os-img-8.png"/>
+</div>
+<span class="d-block text-heading fw-semibold">
+											ويندوز
+										</span>
+</div>
+</div>
+<div class="col">
+<div class="d-grid place-content-center ratio-1/1 border border-dark border-opacity-10 bg-body dark:bg-dark-subtle text-center rounded p-4 p-sm-6">
+<div class="mb-4">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/os-img-9.png"/>
+</div>
+<span class="d-block text-heading fw-semibold">
+											آرتش لينكس
+										</span>
+</div>
+</div>
+<div class="col">
+<div class="d-grid place-content-center ratio-1/1 border border-dark border-opacity-10 bg-body dark:bg-dark-subtle text-center rounded p-4 p-sm-6">
+<div class="mb-4">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/os-img-1.png"/>
+</div>
+<span class="d-block text-heading fw-semibold">
+											لينكس
+										</span>
+</div>
+</div>
+<div class="col">
+<div class="d-grid place-content-center ratio-1/1 border border-dark border-opacity-10 bg-body dark:bg-dark-subtle text-center rounded p-4 p-sm-6">
+<div class="mb-4">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/os-img-3.png"/>
+</div>
+<span class="d-block text-heading fw-semibold">
+											سينت أو إس
+										</span>
+</div>
+</div>
+<div class="col">
+<div class="d-grid place-content-center ratio-1/1 border border-dark border-opacity-10 bg-body dark:bg-dark-subtle text-center rounded p-4 p-sm-6">
+<div class="mb-4">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/os-img-2.png"/>
+</div>
+<span class="d-block text-heading fw-semibold">
+											ألما لينكس
+										</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- OS Support End -->
+<!-- About  -->
+<div class="section-space-y">
+<div class="section-space-md-bottom text-center">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+<span class="d-block mb-4 fs-14 fw-semibold text-primary">
+						لماذا تختارنا؟
+					</span>
+<h3 class="mb-0">نحن نسعى جاهدين كل يوم</h3>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row g-4">
+<div class="col-lg-4">
+<div class="bg-secondary bg-opacity-20 rounded-4 p-6 p-xxl-12 h-100">
+<div class="row g-4 align-items-center">
+<div class="col-md-6 col-lg-12">
+<img alt="image" class="img-fluid w-100" src="{{root}}assets/img/about-img-26.png"/>
+</div>
+<div class="col-md-6 col-lg-12">
+<h6>تصميم أنظمة الطاقة غير المنقطعة</h6>
+<p class="mb-0 text-heading line-clamp line-clamp--3">
+								صُممت أنظمة الطاقة لدينا بحيث تتمتع بمقاومة عالية للأخطاء
+								والمرونة في كل طبقة. لدينا العديد من وحدات UPS مع خزانات
+								بطاريات احتياطية.
+							</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-8">
+<div class="row g-4">
+<div class="col-md-6">
+<div class="bg-info bg-opacity-20 rounded-4 p-6 p-xxl-12">
+<h6>نطاق ترددي ممتاز</h6>
+<p class="mb-0 text-heading line-clamp line-clamp--4">
+								أولويتنا القصوى هي توفير أعلى جودة اتصال وأداء للإنترنت.
+								لقد تعاونّا مع مزودي خدمات النطاق الترددي من الدرجة
+								الأولى.
+							</p>
+</div>
+</div>
+<div class="col-md-6">
+<div class="bg-danger bg-opacity-20 rounded-4 p-6 p-xxl-12">
+<h6>الأداء هو المفتاح</h6>
+<p class="mb-0 text-heading line-clamp line-clamp--4">
+								أولويتنا القصوى هي توفير أعلى جودة اتصال وأداء للإنترنت.
+								لقد تعاونّا مع مزودي خدمات النطاق الترددي من الدرجة
+								الأولى.
+							</p>
+</div>
+</div>
+<div class="col-12">
+<div class="bg-success bg-opacity-20 rounded-4 p-6 p-xxl-12">
+<div class="row g-4 align-items-center">
+<div class="col-md-5">
+<img alt="image" class="img-fluid w-100" src="{{root}}assets/img/about-img-27.png"/>
+</div>
+<div class="col-md-7">
+<h6>أمنية يقظة</h6>
+<p class="mb-0 text-heading line-clamp line-clamp--4">
+										يتم التحكم في الوصول إلى مركز البيانات بواسطة
+										أنظمة أمان إلكترونية متخصصة مزودة بحماية رقمية
+										ومادية متعددة، بالإضافة إلى جدران خرسانية مصبوبة
+										مقواة. مجموعة كاملة من أنظمة الحركة
+									</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- About End -->
+<!-- CTA  -->
+<div class="cta-7">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="section-space-y px-4 px-sm-6 px-md-12 bg-body rounded-4 text-center position-relative z-1">
+<div class="row justify-content-center">
+<div class="col-md-11">
+<h3>احصل على نقل استضافة الويب مجانًا</h3>
+<p class="mb-8 max-text-15 mx-auto">
+								سنتولى عملية نقل موقعك الإلكتروني من شركة استضافة الويب
+								القديمة إلى منصتنا حتى تتمكن من التركيز على ما يهمك
+							</p>
+<div class="d-flex align-items-center justify-content-center gap-4 flex-wrap">
+<a class="btn btn-secondary text-light" href="{{root}}sign-in-2-rtl.html">
+									ابدأ الآن
+								</a>
+<a class="btn btn-dark-emphasis" href="{{root}}contact-rtl.html">
+									اتصل بنا
+								</a>
+</div>
+</div>
+</div>
+<img alt="image" class="img-fluid d-none d-xl-block position-absolute start-0 top-50 translate-middle-y z-n1 pointer-none" src="{{root}}assets/img/cta-img-16.png"/>
+<img alt="image" class="img-fluid d-none d-xl-block position-absolute end-0 top-50 translate-middle-y z-n1 pointer-none" src="{{root}}assets/img/cta-img-17.png"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA End -->
+
+{% include "partials/footer-7-rtl.html" %} 
+{% endblock %}

@@ -1,0 +1,94 @@
+/* Pagination */
+@use "../global" as *;
+
+.pagination {
+	--bs-pagination-padding-y: 0.25rem;
+	--bs-pagination-focus-box-shadow: 0;
+	margin: 0;
+
+	&-pill {
+		--bs-pagination-padding-x: 0;
+		--bs-pagination-padding-y: 0;
+		--bs-pagination-border-radius: 50%;
+		line-height: 1;
+
+		.page-link {
+			display: grid;
+			place-content: center;
+			width: #{rem(42)};
+			height: #{rem(42)};
+		}
+	}
+
+	&-circle {
+		--bs-pagination-padding-x: 0;
+		--bs-pagination-padding-y: 0;
+		--bs-pagination-border-radius: 50%;
+		gap: 0.5rem;
+		line-height: 1;
+
+		.page-link {
+			display: grid;
+			place-content: center;
+			width: #{rem(42)};
+			height: #{rem(42)};
+			border-radius: var(--bs-pagination-border-radius);
+		}
+	}
+	&-transparent {
+		--bs-pagination-color: var(--bs-body-color);
+		--bs-pagination-border-radius: 0;
+		--bs-pagination-border-color: transparent;
+		--bs-pagination-bg: transparent;
+
+		--bs-pagination-hover-color: rgba(var(--bs-primary-rgb), 1);
+		--bs-pagination-hover-bg: transparent;
+		--bs-pagination-hover-border-color: transparent;
+
+		--bs-pagination-active-color: var(--bs-body-color);
+		--bs-pagination-active-bg: var(--bs-body-bg);
+		--bs-pagination-active-border-color: var(--bs-border-color);
+		gap: 0.5rem;
+		line-height: 1;
+		.active {
+			.page-link {
+				border-radius: 0.25rem;
+			}
+		}
+	}
+}
+.dt-paging {
+	.pagination {
+		--bs-pagination-padding-y: 0.5rem;
+
+		--bs-pagination-color: var(--bs-body-color);
+		--bs-pagination-border-radius: 0;
+		--bs-pagination-border-color: transparent;
+		--bs-pagination-bg: transparent;
+
+		--bs-pagination-hover-color: rgba(var(--bs-primary-rgb), 1);
+		--bs-pagination-hover-bg: transparent;
+		--bs-pagination-hover-border-color: transparent;
+
+		--bs-pagination-active-color: var(--bs-body-color);
+		--bs-pagination-active-bg: var(--bs-body-bg);
+		--bs-pagination-active-border-color: var(--bs-border-color);
+
+		--bs-pagination-disabled-color: var(--bs-secondary-color);
+		--bs-pagination-disabled-bg: transparent;
+		--bs-pagination-disabled-border-color: transparent;
+
+		margin: 0;
+		gap: 0.5rem;
+		line-height: 1;
+		.active {
+			.page-link {
+				border-radius: 0.25rem;
+				z-index: 0;
+			}
+		}
+		.page-link {
+			font-size: 0.875rem;
+		}
+	}
+}

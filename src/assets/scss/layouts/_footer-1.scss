@@ -1,0 +1,12 @@
+.footer-1 {
+	background-image: url(../img/shapes/footer-1-grid.png);
+	background-repeat: repeat;
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background-color: var(--bs-dark);
+		z-index: -2;
+		filter: blur(150px);
+	}
+}

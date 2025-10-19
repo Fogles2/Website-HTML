@@ -1,0 +1,242 @@
+{% extends "layouts/default-rtl.html" %}
+{% set dataTheme = "domain" %}
+{% set bodyClass = "bg-light dark:bg-dark-subtle" %}
+{% set navbar = true %} 
+{% set navBtnColor = "fw-medium btn-primary" %}
+{% set primaryHeader = "primary-header--light primary-header--boxed primary-header--fixed top-md-3 primary-header-crossed:top-0" %}
+{% set ltrLink = "knowledge-base.html" %}
+{% set logoLight = "logo-dark.png" %}
+{% set logoDark = "logo-light.png" %}
+<!-- Content Block -->
+{% block content %}
+
+<!-- Banner -->
+<div class="banner-5">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-10">
+<h2 class="mb-3 text-light text-center">استضافة قاعدة المعرفة</h2>
+<p class="mb-8 text-light text-center max-text-12 mx-auto">
+					إرشادات تفصيلية لمساعدتك على تحقيق أقصى استفادة من موقعك الإلكتروني
+					وتجربة الاستضافة
+				</p>
+<div class="search-filter search-filter--light bg-white rounded-1 max-text-15 mx-auto">
+<input class="form-control search-filter__input placeholder::text-dark-subtle text-dark" placeholder="Search Now..." type="text"/>
+<button class="btn btn-primary align-items-center flex-shrink-0" type="button">
+<i class="align-middle flex-shrink-0 ti ti-search-duotone"></i>
+						يبحث
+					</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Banner End -->
+<!-- Topics -->
+<div class="position-relative mt-n60">
+<div class="container">
+<div class="row g-4">
+<div class="col-sm-6 col-md-4">
+<a class="link d-flex flex-column flex-lg-row align-items-lg-center gap-4 p-6 bg-white dark:bg-dark rounded-3" href="{{root}}knowledge-base-category-rtl.html">
+<span class="d-grid place-content-center w-15 h-15 rounded-2 bg-secondary text-light flex-shrink-0">
+<i class="fs-32 ti ti-convert-range-20-regular"></i>
+</span>
+<span class="d-block">
+<span class="d-block fs-20 fw-bold text-heading">
+							قاعدة المعرفة
+						</span>
+<span class="d-block text-body fs-14"> 3285 مقالة / 47 فئة </span>
+</span>
+</a>
+</div>
+<div class="col-sm-6 col-md-4">
+<a class="link d-flex flex-column flex-lg-row align-items-lg-center gap-4 p-6 bg-white dark:bg-dark rounded-3" href="{{root}}knowledge-base-category-rtl.html">
+<span class="d-grid place-content-center w-15 h-15 rounded-2 bg-secondary text-light flex-shrink-0">
+<i class="fs-32 ti ti-page-star"></i>
+</span>
+<span class="d-block">
+<span class="d-block fs-20 fw-bold text-heading"> مدونة </span>
+<span class="d-block text-body fs-14"> 3285 مقالة / 47 فئة </span>
+</span>
+</a>
+</div>
+<div class="col-sm-6 col-md-4">
+<a class="link d-flex flex-column flex-lg-row align-items-lg-center gap-4 p-6 bg-white dark:bg-dark rounded-3" href="{{root}}knowledge-base-category-rtl.html">
+<span class="d-grid place-content-center w-15 h-15 rounded-2 bg-secondary text-light flex-shrink-0">
+<i class="fs-32 ti ti-person-support-20-regular"></i>
+</span>
+<span class="d-block">
+<span class="d-block fs-20 fw-bold text-heading"> يدعم </span>
+<span class="d-block text-body fs-14"> 3285 مقالة / 47 فئة </span>
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Topics End -->
+<!-- Categories  -->
+<div class="section-space-y">
+<div class="section-space-sm-bottom">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<h3 class="mb-0 text-center">اكتشف الفئات الشعبية</h3>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row g-4">
+<div class="col-md-6">
+<a class="link d-block bg-white dark:bg-dark rounded-3 p-4 p-sm-6 p-md-8 transition border border-light-subtle hover:border-primary h-100" href="{{root}}knowledge-base-category-rtl.html">
+<span class="d-flex flex-wrap gap-4 align-items-center justify-content-between pb-4 border-bottom">
+<span class="d-block fs-20 fw-bold text-heading flex-shrink-0">
+							لوحة التحكم
+						</span>
+<span class="d-block flex-shrink-0">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/brand-img-61.png"/>
+</span>
+</span>
+<span class="d-block py-4 text-body">
+						ابدأ من هنا بمجموعة من المقالات المفيدة حول لوحة التحكم، مثل إنشاء
+						النسخ الاحتياطية، وتكوين SSH، والمزيد
+					</span>
+<span class="badge bg-primary-subtle text-primary-emphasis">
+						229 مقالة
+					</span>
+</a>
+</div>
+<div class="col-md-6">
+<a class="link d-block bg-white dark:bg-dark rounded-3 p-4 p-sm-6 p-md-8 transition border border-light-subtle hover:border-primary h-100" href="{{root}}knowledge-base-category-rtl.html">
+<span class="d-flex flex-wrap gap-4 align-items-center justify-content-between pb-4 border-bottom">
+<span class="d-block fs-20 fw-bold text-heading flex-shrink-0">
+							بليسك
+						</span>
+<span class="d-block flex-shrink-0">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/brand-img-62.png"/>
+</span>
+</span>
+<span class="d-block py-4 text-body">
+						ابدأ من هنا بمجموعة من المقالات المفيدة حول لوحة التحكم، مثل إنشاء
+						النسخ الاحتياطية، وتكوين SSH، والمزيد
+					</span>
+<span class="badge bg-primary-subtle text-primary-emphasis">
+						229 مقالة
+					</span>
+</a>
+</div>
+<div class="col-md-6">
+<a class="link d-block bg-white dark:bg-dark rounded-3 p-4 p-sm-6 p-md-8 transition border border-light-subtle hover:border-primary h-100" href="{{root}}knowledge-base-category-rtl.html">
+<span class="d-flex flex-wrap gap-4 align-items-center justify-content-between pb-4 border-bottom">
+<span class="d-block fs-20 fw-bold text-heading flex-shrink-0">
+							WHM
+						</span>
+<span class="d-block flex-shrink-0">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/brand-img-63.png"/>
+</span>
+</span>
+<span class="d-block py-4 text-body">
+						ابدأ من هنا بمجموعة من المقالات المفيدة حول لوحة التحكم، مثل إنشاء
+						النسخ الاحتياطية، وتكوين SSH، والمزيد
+					</span>
+<span class="badge bg-primary-subtle text-primary-emphasis">
+						229 مقالة
+					</span>
+</a>
+</div>
+<div class="col-md-6">
+<a class="link d-block bg-white dark:bg-dark rounded-3 p-4 p-sm-6 p-md-8 transition border border-light-subtle hover:border-primary h-100" href="{{root}}knowledge-base-category-rtl.html">
+<span class="d-flex flex-wrap gap-4 align-items-center justify-content-between pb-4 border-bottom">
+<span class="d-block fs-20 fw-bold text-heading flex-shrink-0">
+							ووردبريس
+						</span>
+<span class="d-block flex-shrink-0">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/brand-img-64.png"/>
+</span>
+</span>
+<span class="d-block py-4 text-body">
+						ابدأ من هنا بمجموعة من المقالات المفيدة حول لوحة التحكم، مثل إنشاء
+						النسخ الاحتياطية، وتكوين SSH، والمزيد
+					</span>
+<span class="badge bg-primary-subtle text-primary-emphasis">
+						229 مقالة
+					</span>
+</a>
+</div>
+<div class="col-md-6">
+<a class="link d-block bg-white dark:bg-dark rounded-3 p-4 p-sm-6 p-md-8 transition border border-light-subtle hover:border-primary h-100" href="{{root}}knowledge-base-category-rtl.html">
+<span class="d-flex flex-wrap gap-4 align-items-center justify-content-between pb-4 border-bottom">
+<span class="d-block fs-20 fw-bold text-heading flex-shrink-0">
+							المجالات وDNS
+						</span>
+<span class="d-block flex-shrink-0">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/brand-img-65.png"/>
+</span>
+</span>
+<span class="d-block py-4 text-body">
+						ابدأ من هنا بمجموعة من المقالات المفيدة حول لوحة التحكم، مثل إنشاء
+						النسخ الاحتياطية، وتكوين SSH، والمزيد
+					</span>
+<span class="badge bg-primary-subtle text-primary-emphasis">
+						229 مقالة
+					</span>
+</a>
+</div>
+<div class="col-md-6">
+<a class="link d-block bg-white dark:bg-dark rounded-3 p-4 p-sm-6 p-md-8 transition border border-light-subtle hover:border-primary h-100" href="{{root}}knowledge-base-category-rtl.html">
+<span class="d-flex flex-wrap gap-4 align-items-center justify-content-between pb-4 border-bottom">
+<span class="d-block fs-20 fw-bold text-heading flex-shrink-0">
+							بريد إلكتروني
+						</span>
+<span class="d-block flex-shrink-0">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/brand-img-66.png"/>
+</span>
+</span>
+<span class="d-block py-4 text-body">
+						ابدأ من هنا بمجموعة من المقالات المفيدة حول لوحة التحكم، مثل إنشاء
+						النسخ الاحتياطية، وتكوين SSH، والمزيد
+					</span>
+<span class="badge bg-primary-subtle text-primary-emphasis">
+						229 مقالة
+					</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Categories End -->
+<!-- CTA  -->
+<div class="cta-7">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="section-space-y px-4 px-sm-6 px-md-12 bg-body rounded-4 text-center position-relative z-1">
+<div class="row justify-content-center">
+<div class="col-md-11">
+<h3>احصل على نقل استضافة الويب مجانًا</h3>
+<p class="mb-8 max-text-15 mx-auto">
+								سنتولى عملية نقل موقعك الإلكتروني من شركة استضافة الويب
+								القديمة إلى منصتنا حتى تتمكن من التركيز على ما يهمك
+							</p>
+<div class="d-flex align-items-center justify-content-center gap-4 flex-wrap">
+<a class="btn btn-secondary text-light" href="{{root}}sign-in-2-rtl.html">
+									ابدأ الآن
+								</a>
+<a class="btn btn-dark-emphasis" href="{{root}}contact-rtl.html">
+									اتصل بنا
+								</a>
+</div>
+</div>
+</div>
+<img alt="image" class="img-fluid d-none d-xl-block position-absolute start-0 top-50 translate-middle-y z-n1 pointer-none" src="{{root}}assets/img/cta-img-16.png"/>
+<img alt="image" class="img-fluid d-none d-xl-block position-absolute end-0 top-50 translate-middle-y z-n1 pointer-none" src="{{root}}assets/img/cta-img-17.png"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA End -->
+
+{% include "partials/footer-7-rtl.html" %} 
+{% endblock %}

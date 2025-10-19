@@ -1,0 +1,24 @@
+@use "../global" as *;
+.cta-5 {
+	position: relative;
+	isolation: isolate;
+	margin-top: -#{rem(100)};
+
+	@include screen(lg) {
+		margin-top: -#{rem(120)};
+	}
+	@include screen(xxl) {
+		margin-top: -#{rem(150)};
+	}
+	&::after {
+		@include screen(md) {
+			content: "";
+            width: 1px;
+			position: absolute;
+			top: clamp(2rem, 3.25vw + 1rem, 3.75rem);
+			bottom: clamp(2rem, 3.25vw + 1rem, 3.75rem);
+            left: calc(50% - 1px);
+            background-color: var(--bs-secondary);
+		}
+	}
+}

@@ -1,0 +1,10 @@
+@use "../global" as *;
+.data-center-location-section {
+	background-image: url(../img/shapes/hero-2-grid-box.png);
+	background-repeat: repeat;
+}
+[data-bs-theme="dark"] {
+	.data-center-location-section {
+		background-image: url(../img/shapes/hero-2-grid-box-dark.png);
+	}
+}

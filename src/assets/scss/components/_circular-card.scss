@@ -1,0 +1,81 @@
+@use "../global" as *;
+.circular-card {
+	&-container {
+		@include screen(xl) {
+			height: rem(288);
+		}
+	}
+	&-list {
+		&__item {
+			width: rem(184);
+			height: rem(224);
+			margin-left: -#{rem(30)};
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+
+			&:first-child {
+				margin-left: 0;
+				transform: rotate(-11deg) translateY(63px);
+				background-image: url(../img/circular-card-bg-1.png);
+				&:hover {
+					transform: rotate(-15deg) translateY(48px) scale(1.05)
+						translateX(-10px);
+				}
+			}
+			&:nth-child(2) {
+				transform: rotate(-8deg) translateY(37px);
+				background-image: url(../img/circular-card-bg-2.png);
+				&:hover {
+					transform: rotate(-12deg) translateY(26px) scale(1.05)
+						translateX(-10px);
+				}
+			}
+			&:nth-child(3) {
+				transform: rotate(-4deg) translateY(21px);
+				background-image: url(../img/circular-card-bg-3.png);
+				&:hover {
+					transform: rotate(-8deg) translateY(12px) scale(1.05)
+						translateX(-10px);
+				}
+			}
+			&:nth-child(4) {
+				transform: translateY(15px);
+				background-image: url(../img/circular-card-bg-4.png);
+				&:hover {
+					transform: rotate(-4deg) translateY(8px) scale(1.05) translateX(-10px);
+				}
+			}
+			&:nth-child(5) {
+				transform: rotate(4deg) translateY(21px);
+				background-image: url(../img/circular-card-bg-5.png);
+				&:hover {
+					transform: rotate(0deg) translateY(12px) scale(1.05) translateX(-10px);
+				}
+			}
+			&:nth-child(6) {
+				transform: rotate(8deg) translateY(37px);
+				background-image: url(../img/circular-card-bg-6.png);
+				&:hover {
+					transform: rotate(4deg) translateY(26px) scale(1.05) translateX(-10px);
+				}
+			}
+			&:last-child {
+				transform: rotate(11deg) translateY(63px);
+				background-image: url(../img/circular-card-bg-7.png);
+				&:hover {
+					transform: rotate(7deg) translateY(48px) scale(1.05) translateX(-10px);
+				}
+			}
+		}
+	}
+	&__icon {
+		background-image: linear-gradient(
+			181deg,
+			var(--bs-secondary-bg) 1.07%,
+			rgba(var(--bs-body-bg-rgb), 1) 62.09%
+		);
+		filter: drop-shadow(0px 7.162px 14.324px rgba(145, 158, 171, 0.16))
+			drop-shadow(0px 24px 24px rgba(70, 216, 255, 0.31));
+	}
+}

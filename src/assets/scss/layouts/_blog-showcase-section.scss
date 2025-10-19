@@ -1,0 +1,58 @@
+@use "../global" as *;
+.blog-showcase-section {
+	&__container {
+		max-width: 1920px;
+	}
+	&__lead-text {
+		display: inline-block;
+		filter: drop-shadow(-40px 40px 80px rgba(145, 158, 171, 0.24));
+		line-height: 1;
+	}
+	&__list {
+		li {
+			&:last-child {
+				@include screen(md) {
+					position: absolute;
+					transform-origin: right center;
+					right: 0;
+					transform: scale(0.5) translateX(50%);
+				}
+				@include screen(xl) {
+					transform: scale(1) translate(50%, 25%);
+					transform-origin: center center;
+				}
+			}
+		}
+	}
+	&__img {
+		&-1 {
+			@include screen(md) {
+				margin-top: 2rem;
+			}
+		}
+	}
+	&__cube {
+		&-1 {
+			left: 20%;
+			bottom: 10%;
+			z-index: -2;
+			@include screen(lg) {
+				left: 23%;
+			}
+			@include screen(xl) {
+				left: 25%;
+			}
+		}
+		&-2 {
+			left: calc(32% + 1rem);
+			bottom: 8%;
+			z-index: -2;
+		}
+		&-3 {
+			left: 35%;
+			bottom: 0;
+			transform: translateY(70%);
+			z-index: -2;
+		}
+	}
+}

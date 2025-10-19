@@ -1,0 +1,94 @@
+{% extends "layouts/default.html" %}
+<!-- Content Block -->
+{% block content %}
+
+<div class="section-space-y bg-body-tertiary min-vh-100 d-flex flex-column justify-content-center align-items-center authentication-page-2">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-10 col-lg-7 col-xl-6 col-xxl-5">
+<div class="bg-body rounded-3 section-space-sm-y px-4 px-md-12">
+<div class="text-center mb-6">
+<a class="link d-inline-block" href="{{root}}index.html">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/pixellyo-icon.png"/>
+</a>
+</div>
+<p class="mb-2 text-heading fw-semibold fs-18 text-center">
+						Welcome !
+					</p>
+<h4 class="text-center">Sign In Now</h4>
+<p class="mb-0 text-center">Get Started with 10,000 Free Words</p>
+<ul class="list list-row justify-content-center flex-wrap gap-4 my-10">
+<li>
+<button class="btn btn-light shadow align-items-center" type="button">
+<i class="align-middle fs-20 flex-shrink-0 ti ti-facebook"></i>
+<span class="d-inline-block fs-14 fw-medium flex-grow-1">
+									Facebook
+								</span>
+</button>
+</li>
+<li>
+<button class="btn btn-light shadow align-items-center" type="button">
+<i class="align-middle fs-20 flex-shrink-0 ti ti-google-icon"></i>
+<span class="d-inline-block fs-14 fw-medium flex-grow-1">
+									Google
+								</span>
+</button>
+</li>
+<li>
+<button class="btn btn-light shadow align-items-center" type="button">
+<i class="align-middle fs-20 flex-shrink-0 ti ti-apple"></i>
+<span class="d-inline-block fs-14 fw-medium flex-grow-1">
+									Apple
+								</span>
+</button>
+</li>
+</ul>
+<form action="#" class="row g-4 align-items-center">
+<div class="col-12">
+<label class="form-label fw-medium text-heading">Email</label>
+<input class="form-control" placeholder="Email" type="email"/>
+</div>
+<div class="col-12">
+<label class="form-label fw-medium text-heading">Password</label>
+<input class="form-control" placeholder="Pasword" type="password"/>
+</div>
+<div class="col-sm-6">
+<div class="form-check form-check--primary form-check-modifier">
+<input class="form-check-input" id="remember-me" type="checkbox" value=""/>
+<label class="form-check-label" for="remember-me">
+									Rememebr Me
+								</label>
+</div>
+</div>
+<div class="col-sm-6 text-sm-end">
+<a class="link d-inline-block text-body hover:text-primary" href="#">Forgot Password ?</a>
+</div>
+<div class="col-12">
+<button class="btn btn-primary w-100 justify-content-center" type="button">
+								Sign In Now
+							</button>
+</div>
+</form>
+<p class="mt-6 mb-0 text-center">
+						Don't have an Account ?
+						<a class="link d-inline-block fw-medium text-primary hover:text-primary-emphasis" href="{{root}}sign-up-2.html">Register</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<svg class="banner-1__froster-svg" fill="none" height="401" viewbox="0 0 1124 401" width="1124" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f_8077_2641)">
+<path class="banner-1__froster-svg-path" d="M773.993 103.763C800.457 67.556 838.118 -16 889.598 -16C932.68 -16 925.405 109.955 850.192 214.4C676.015 417.658 548.024 427 432.419 427C316.814 427 267 368.356 267 332.149C267 295.942 301.82 244.415 489.854 244.415C677.886 244.415 747.529 139.97 773.993 103.763Z" fill="#6328FF" fill-opacity="0.5"></path>
+</g>
+<defs>
+<filter color-interpolation-filters="sRGB" filterunits="userSpaceOnUse" height="976.333" id="filter0_f_8077_2641" width="1182.33" x="0.333405" y="-282.667">
+<feflood flood-opacity="0" result="BackgroundImageFix"></feflood>
+<feblend in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape"></feblend>
+<fegaussianblur result="effect1_foregroundBlur_8077_2641" stddeviation="133.333"></fegaussianblur>
+</filter>
+</defs>
+</svg>
+</div>
+
+{% endblock %}

@@ -1,0 +1,89 @@
+@keyframes pulse {
+	100% {
+		transform: scale(2);
+		opacity: 0;
+	}
+}
+@keyframes imageBeat {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(0.7);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+@keyframes scroll-ltr {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(calc(-50% - 0.5rem));
+	}
+}
+@keyframes scroll-rtl {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(calc(50% + 0.5rem));
+	}
+}
+@keyframes scrollY-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+@keyframes scrollY-down {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(50%);
+  }
+}
+@keyframes animateFill {
+	0% {
+		fill: var(--bs-primary);
+		fill-opacity: 0.35;
+	}
+	25% {
+		fill: var(--bs-danger);
+		fill-opacity: 0.5;
+	}
+	50% {
+		fill: var(--bs-success);
+		fill-opacity: 0.7;
+	}
+	100% {
+		fill: var(--bs-warning);
+		fill-opacity: 0.5;
+	}
+}
+@keyframes upDown {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(5%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+@keyframes hidePreloader {
+	0%,
+	100% {
+		opacity: 0.8;
+	}
+	50% {
+		opacity: 1;
+	}
+}

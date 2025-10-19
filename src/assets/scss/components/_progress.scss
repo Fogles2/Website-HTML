@@ -1,0 +1,25 @@
+/* Progress */
+.progress {
+	--bs-progress-border-radius: var(--bs-border-radius-xl);
+	&-xsm {
+		--bs-progress-height: 0.25rem;
+	}
+	&-sm {
+		--bs-progress-height: 0.5rem;
+	}
+	&-md {
+		--bs-progress-height: 0.75rem;
+	}
+	&-stacked {
+		--bs-progress-border-radius: var(--bs-border-radius-xl);
+		.progress-xsm {
+			--bs-progress-height: 0.25rem;
+		}
+		.progress-sm {
+			--bs-progress-height: 0.5rem;
+		}
+		.progress-md {
+			--bs-progress-height: 0.75rem;
+		}
+	}
+}

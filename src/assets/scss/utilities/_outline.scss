@@ -1,0 +1,253 @@
+.outline {
+	--outline-width: 1px;
+	--outline-style: solid;
+	--outline-color: var(--bs-border-color);
+	outline: var(--outline-width) var(--outline-style) var(--outline-color);
+	&--primary {
+		--outline-opacity: 1;
+		--outline-color: rgba(var(--bs-primary-rgb), var(--outline-opacity));
+	}
+	&--primary-subtle {
+		--outline-color: var(--bs-primary-bg-subtle);
+	}
+	&--primary-emphasis {
+		--outline-color: var(--bs-primary-text-emphasis);
+	}
+	&--secondary {
+		--outline-opacity: 1;
+		--outline-color: rgba(var(--bs-secondary-rgb), var(--outline-opacity));
+	}
+	&--secondary-subtle {
+		--outline-color: var(--bs-secondary-bg-subtle);
+	}
+	&--secondary-emphasis {
+		--outline-color: var(--bs-secondary-text-emphasis);
+	}
+	&--success {
+		--outline-opacity: 1;
+		--outline-color: rgba(var(--bs-success-rgb), var(--outline-opacity));
+	}
+	&--success-subtle {
+		--outline-color: var(--bs-success-bg-subtle);
+	}
+	&--success-emphasis {
+		--outline-color: var(--bs-success-text-emphasis);
+	}
+	&--danger {
+		--outline-opacity: 1;
+		--outline-color: rgba(var(--bs-danger-rgb), var(--outline-opacity));
+	}
+	&--danger-subtle {
+		--outline-color: var(--bs-danger-bg-subtle);
+	}
+	&--danger-emphasis {
+		--outline-color: var(--bs-danger-text-emphasis);
+	}
+	&--warning {
+		--outline-opacity: 1;
+		--outline-color: rgba(var(--bs-warning-rgb), var(--outline-opacity));
+	}
+	&--warning-subtle {
+		--outline-color: var(--bs-warning-bg-subtle);
+	}
+	&--warning-emphasis {
+		--outline-color: var(--bs-warning-text-emphasis);
+	}
+	&--info {
+		--outline-opacity: 1;
+		--outline-color: rgba(var(--bs-info-rgb), var(--outline-opacity));
+	}
+	&--info-subtle {
+		--outline-color: var(--bs-info-bg-subtle);
+	}
+	&--info-emphasis {
+		--outline-color: var(--bs-info-text-emphasis);
+	}
+	&--light {
+		--outline-opacity: 1;
+		--outline-color: rgba(var(--bs-light-rgb), var(--outline-opacity));
+	}
+	&--light-subtle {
+		--outline-color: var(--bs-light-bg-subtle);
+	}
+	&--light-emphasis {
+		--outline-color: var(--bs-light-text-emphasis);
+	}
+	&--dark {
+		--outline-opacity: 1;
+		--outline-color: rgba(var(--bs-dark-rgb), var(--outline-opacity));
+	}
+	&--dark-subtle {
+		--outline-color: var(--bs-dark-bg-subtle);
+	}
+	&--dark-emphasis {
+		--outline-color: var(--bs-dark-text-emphasis);
+	}
+	&--2x {
+		--outline-width: 2px;
+	}
+	&--3x {
+		--outline-width: 3px;
+	}
+	&--4x {
+		--outline-width: 4px;
+	}
+	&--5x {
+		--outline-width: 5px;
+	}
+	&--6x {
+		--outline-width: 6px;
+	}
+	&--dotted {
+		--outline-style: dotted;
+	}
+	&--dashed {
+		--outline-style: dashed;
+	}
+	&-opacity-5 {
+		--outline-opacity: 0.05;
+	}
+	&-opacity-10 {
+		--outline-opacity: 0.1;
+	}
+	&-opacity-20 {
+		--outline-opacity: 0.2;
+	}
+	&-opacity-30 {
+		--outline-opacity: 0.3;
+	}
+	&-opacity-40 {
+		--outline-opacity: 0.4;
+	}
+	&-opacity-50 {
+		--outline-opacity: 0.5;
+	}
+	&-opacity-60 {
+		--outline-opacity: 0.6;
+	}
+	&-opacity-70 {
+		--outline-opacity: 0.7;
+	}
+	&-opacity-80 {
+		--outline-opacity: 0.8;
+	}
+	&-opacity-90 {
+		--outline-opacity: 0.9;
+	}
+	&-opacity-100 {
+		--outline-opacity: 1;
+	}
+}
+.hover\:outline-primary:hover {
+	--outline-opacity: 1;
+	--outline-color: rgba(var(--bs-primary-rgb) / var(--outline-opacity));
+}
+.hover\:outline-primary-subtle:hover {
+	--outline-color: var(--bs-primary-bg-subtle);
+}
+.hover\:outline-primary-emphasis:hover {
+	--outline-color: var(--bs-primary-text-emphasis);
+}
+.hover\:outline-secondary:hover {
+	--outline-opacity: 1;
+	--outline-color: rgba(var(--bs-secondary-rgb), var(--outline-opacity));
+}
+.hover\:outline-secondary-subtle:hover {
+	--outline-color: var(--bs-secondary-bg-subtle);
+}
+.hover\:outline-secondary-emphasis:hover {
+	--outline-color: var(--bs-secondary-text-emphasis);
+}
+.hover\:outline-success:hover {
+	--outline-opacity: 1;
+	--outline-color: rgba(var(--bs-success-rgb), var(--outline-opacity));
+}
+.hover\:outline-success-subtle:hover {
+	--outline-color: var(--bs-success-bg-subtle);
+}
+.hover\:outline-success-emphasis:hover {
+	--outline-color: var(--bs-success-text-emphasis);
+}
+.hover\:outline-danger:hover {
+	--outline-opacity: 1;
+	--outline-color: rgba(var(--bs-danger-rgb), var(--outline-opacity));
+}
+.hover\:outline-danger-subtle:hover {
+	--outline-color: var(--bs-danger-bg-subtle);
+}
+.hover\:outline-danger-emphasis:hover {
+	--outline-color: var(--bs-danger-text-emphasis);
+}
+.hover\:outline-warning:hover {
+	--outline-opacity: 1;
+	--outline-color: rgba(var(--bs-warning-rgb), var(--outline-opacity));
+}
+.hover\:outline-warning-subtle:hover {
+	--outline-color: var(--bs-warning-bg-subtle);
+}
+.hover\:outline-warning-emphasis:hover {
+	--outline-color: var(--bs-warning-text-emphasis);
+}
+.hover\:outline-info:hover {
+	--outline-opacity: 1;
+	--outline-color: rgba(var(--bs-info-rgb), var(--outline-opacity));
+}
+.hover\:outline-info-subtle:hover {
+	--outline-color: var(--bs-info-bg-subtle);
+}
+.hover\:outline-info-emphasis:hover {
+	--outline-color: var(--bs-info-text-emphasis);
+}
+.hover\:outline-light:hover {
+	--outline-opacity: 1;
+	--outline-color: rgba(var(--bs-light-rgb), var(--outline-opacity));
+}
+.hover\:outline-light-subtle:hover {
+	--outline-color: var(--bs-light-bg-subtle);
+}
+.hover\:outline-light-emphasis:hover {
+	--outline-color: var(--bs-light-text-emphasis);
+}
+.hover\:outline-dark:hover {
+	--outline-opacity: 1;
+	--outline-color: rgba(var(--bs-dark-rgb), var(--outline-opacity));
+}
+.hover\:outline-dark-subtle:hover {
+	--outline-color: var(--bs-dark-bg-subtle);
+}
+.hover\:outline-dark-emphasis:hover {
+	--outline-color: var(--bs-dark-text-emphasis);
+}
+.hover\:outline-opacity-5:hover {
+	--outline-opacity: 0.05;
+}
+.hover\:outline-opacity-10:hover {
+	--outline-opacity: 0.1;
+}
+.hover\:outline-opacity-20:hover {
+	--outline-opacity: 0.2;
+}
+.hover\:outline-opacity-30:hover {
+	--outline-opacity: 0.3;
+}
+.hover\:outline-opacity-40:hover {
+	--outline-opacity: 0.4;
+}
+.hover\:outline-opacity-50:hover {
+	--outline-opacity: 0.5;
+}
+.hover\:outline-opacity-60:hover {
+	--outline-opacity: 0.6;
+}
+.hover\:outline-opacity-70:hover {
+	--outline-opacity: 0.7;
+}
+.hover\:outline-opacity-80:hover {
+	--outline-opacity: 0.8;
+}
+.hover\:outline-opacity-90:hover {
+	--outline-opacity: 0.9;
+}
+.hover\:outline-opacity-100:hover {
+	--outline-opacity: 1;
+}

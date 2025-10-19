@@ -1,0 +1,249 @@
+{% extends "layouts/default.html" %}
+{% set dataTheme = "domain" %}
+{% set bodyClass = "bg-light dark:bg-dark-subtle" %}
+{% set navbar = true %} 
+{% set navBtnColor = "fw-medium btn-primary" %}
+{% set primaryHeader = "primary-header--light primary-header--boxed primary-header--fixed top-md-3 primary-header-crossed:top-0" %}
+{% set rtlLink = "knowledge-base-rtl.html" %}
+{% set logoLight = "logo-dark.png" %}
+{% set logoDark = "logo-light.png" %}
+<!-- Content Block -->
+{% block content %}
+
+<!-- Banner -->
+<div class="banner-5">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-10">
+<h2 class="mb-3 text-light text-center">Hosting Knowledge Base</h2>
+<p class="mb-8 text-light text-center max-text-12 mx-auto">
+					In depth walkthroughs to help you get the most out of your website and
+					hosting experience
+				</p>
+<div class="search-filter search-filter--light bg-white rounded-1 max-text-15 mx-auto">
+<input class="form-control search-filter__input placeholder::text-dark-subtle text-dark" placeholder="Search Now..." type="text"/>
+<button class="btn btn-primary align-items-center flex-shrink-0" type="button">
+<i class="align-middle flex-shrink-0 ti ti-search-duotone"></i>
+						Search
+					</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Banner End -->
+<!-- Topics -->
+<div class="position-relative mt-n60">
+<div class="container">
+<div class="row g-4">
+<div class="col-sm-6 col-md-4">
+<a class="link d-flex flex-column flex-lg-row align-items-lg-center gap-4 p-6 bg-white dark:bg-dark rounded-3" href="{{root}}knowledge-base-category.html">
+<span class="d-grid place-content-center w-15 h-15 rounded-2 bg-secondary text-light flex-shrink-0">
+<i class="fs-32 ti ti-convert-range-20-regular"></i>
+</span>
+<span class="d-block">
+<span class="d-block fs-20 fw-bold text-heading">
+							Knowledge Base
+						</span>
+<span class="d-block text-body fs-14">
+							3285 Articles / 47 Categories
+						</span>
+</span>
+</a>
+</div>
+<div class="col-sm-6 col-md-4">
+<a class="link d-flex flex-column flex-lg-row align-items-lg-center gap-4 p-6 bg-white dark:bg-dark rounded-3" href="{{root}}knowledge-base-category.html">
+<span class="d-grid place-content-center w-15 h-15 rounded-2 bg-secondary text-light flex-shrink-0">
+<i class="fs-32 ti ti-page-star"></i>
+</span>
+<span class="d-block">
+<span class="d-block fs-20 fw-bold text-heading"> Blog </span>
+<span class="d-block text-body fs-14">
+							3285 Articles / 47 Categories
+						</span>
+</span>
+</a>
+</div>
+<div class="col-sm-6 col-md-4">
+<a class="link d-flex flex-column flex-lg-row align-items-lg-center gap-4 p-6 bg-white dark:bg-dark rounded-3" href="{{root}}knowledge-base-category.html">
+<span class="d-grid place-content-center w-15 h-15 rounded-2 bg-secondary text-light flex-shrink-0">
+<i class="fs-32 ti ti-person-support-20-regular"></i>
+</span>
+<span class="d-block">
+<span class="d-block fs-20 fw-bold text-heading"> Support </span>
+<span class="d-block text-body fs-14">
+							3285 Articles / 47 Categories
+						</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Topics End -->
+<!-- Categories  -->
+<div class="section-space-y">
+<div class="section-space-sm-bottom">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<h3 class="mb-0 text-center">Discover Popular Categories</h3>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row g-4">
+<div class="col-md-6">
+<a class="link d-block bg-white dark:bg-dark rounded-3 p-4 p-sm-6 p-md-8 transition border border-light-subtle hover:border-primary h-100" href="{{root}}knowledge-base-category.html">
+<span class="d-flex flex-wrap gap-4 align-items-center justify-content-between pb-4 border-bottom">
+<span class="d-block fs-20 fw-bold text-heading flex-shrink-0">
+							cPanel
+						</span>
+<span class="d-block flex-shrink-0">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/brand-img-61.png"/>
+</span>
+</span>
+<span class="d-block py-4 text-body">
+						Start here with the collection of insightful cPanel articles such
+						as, creating backups, configuring SSH and much more
+					</span>
+<span class="badge bg-primary-subtle text-primary-emphasis">
+						229 Articles
+					</span>
+</a>
+</div>
+<div class="col-md-6">
+<a class="link d-block bg-white dark:bg-dark rounded-3 p-4 p-sm-6 p-md-8 transition border border-light-subtle hover:border-primary h-100" href="{{root}}knowledge-base-category.html">
+<span class="d-flex flex-wrap gap-4 align-items-center justify-content-between pb-4 border-bottom">
+<span class="d-block fs-20 fw-bold text-heading flex-shrink-0">
+							Plesk
+						</span>
+<span class="d-block flex-shrink-0">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/brand-img-62.png"/>
+</span>
+</span>
+<span class="d-block py-4 text-body">
+						Start here with the collection of insightful cPanel articles such
+						as, creating backups, configuring SSH and much more
+					</span>
+<span class="badge bg-primary-subtle text-primary-emphasis">
+						229 Articles
+					</span>
+</a>
+</div>
+<div class="col-md-6">
+<a class="link d-block bg-white dark:bg-dark rounded-3 p-4 p-sm-6 p-md-8 transition border border-light-subtle hover:border-primary h-100" href="{{root}}knowledge-base-category.html">
+<span class="d-flex flex-wrap gap-4 align-items-center justify-content-between pb-4 border-bottom">
+<span class="d-block fs-20 fw-bold text-heading flex-shrink-0">
+							WHM
+						</span>
+<span class="d-block flex-shrink-0">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/brand-img-63.png"/>
+</span>
+</span>
+<span class="d-block py-4 text-body">
+						Start here with the collection of insightful cPanel articles such
+						as, creating backups, configuring SSH and much more
+					</span>
+<span class="badge bg-primary-subtle text-primary-emphasis">
+						229 Articles
+					</span>
+</a>
+</div>
+<div class="col-md-6">
+<a class="link d-block bg-white dark:bg-dark rounded-3 p-4 p-sm-6 p-md-8 transition border border-light-subtle hover:border-primary h-100" href="{{root}}knowledge-base-category.html">
+<span class="d-flex flex-wrap gap-4 align-items-center justify-content-between pb-4 border-bottom">
+<span class="d-block fs-20 fw-bold text-heading flex-shrink-0">
+							WordPress
+						</span>
+<span class="d-block flex-shrink-0">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/brand-img-64.png"/>
+</span>
+</span>
+<span class="d-block py-4 text-body">
+						Start here with the collection of insightful cPanel articles such
+						as, creating backups, configuring SSH and much more
+					</span>
+<span class="badge bg-primary-subtle text-primary-emphasis">
+						229 Articles
+					</span>
+</a>
+</div>
+<div class="col-md-6">
+<a class="link d-block bg-white dark:bg-dark rounded-3 p-4 p-sm-6 p-md-8 transition border border-light-subtle hover:border-primary h-100" href="{{root}}knowledge-base-category.html">
+<span class="d-flex flex-wrap gap-4 align-items-center justify-content-between pb-4 border-bottom">
+<span class="d-block fs-20 fw-bold text-heading flex-shrink-0">
+							Domains &amp; DNS
+						</span>
+<span class="d-block flex-shrink-0">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/brand-img-65.png"/>
+</span>
+</span>
+<span class="d-block py-4 text-body">
+						Start here with the collection of insightful cPanel articles such
+						as, creating backups, configuring SSH and much more
+					</span>
+<span class="badge bg-primary-subtle text-primary-emphasis">
+						229 Articles
+					</span>
+</a>
+</div>
+<div class="col-md-6">
+<a class="link d-block bg-white dark:bg-dark rounded-3 p-4 p-sm-6 p-md-8 transition border border-light-subtle hover:border-primary h-100" href="{{root}}knowledge-base-category.html">
+<span class="d-flex flex-wrap gap-4 align-items-center justify-content-between pb-4 border-bottom">
+<span class="d-block fs-20 fw-bold text-heading flex-shrink-0">
+							Email
+						</span>
+<span class="d-block flex-shrink-0">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/brand-img-66.png"/>
+</span>
+</span>
+<span class="d-block py-4 text-body">
+						Start here with the collection of insightful cPanel articles such
+						as, creating backups, configuring SSH and much more
+					</span>
+<span class="badge bg-primary-subtle text-primary-emphasis">
+						229 Articles
+					</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Categories End -->
+<!-- CTA  -->
+<div class="cta-7">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="section-space-y px-4 px-sm-6 px-md-12 bg-body rounded-4 text-center position-relative z-1">
+<div class="row justify-content-center">
+<div class="col-md-11">
+<h3>Get a free web host migration</h3>
+<p class="mb-8 max-text-15 mx-auto">
+								We'll take care of the process of moving your website from
+								your old web hosting company to our platform so you can
+								focus on what matters
+							</p>
+<div class="d-flex align-items-center justify-content-center gap-4 flex-wrap">
+<a class="btn btn-secondary text-light" href="{{root}}sign-in-2.html">
+									Get Started now
+								</a>
+<a class="btn btn-dark-emphasis" href="{{root}}contact.html">
+									Contact Us
+								</a>
+</div>
+</div>
+</div>
+<img alt="image" class="img-fluid d-none d-xl-block position-absolute start-0 top-50 translate-middle-y z-n1 pointer-none" src="{{root}}assets/img/cta-img-16.png"/>
+<img alt="image" class="img-fluid d-none d-xl-block position-absolute end-0 top-50 translate-middle-y z-n1 pointer-none" src="{{root}}assets/img/cta-img-17.png"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA End -->
+
+{% include "partials/footer-7.html" %} 
+{% endblock %}

@@ -1,0 +1,19 @@
+.hero-10 {
+	position: relative;
+	isolation: isolate;
+	padding-top: clamp(7rem, 11.57vw + 1rem, 13.75rem);
+	padding-bottom: clamp(10rem, 16.8vw + 1rem, 20rem);
+	overflow: hidden;
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 200%;
+		height: 200%;
+		background-color: var(--bs-primary-bg-subtle);
+		border-radius: 50%;
+		z-index: -2;
+	}
+}

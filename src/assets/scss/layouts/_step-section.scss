@@ -1,0 +1,16 @@
+.step-section {
+	position: relative;
+	isolation: isolate;
+	background-image: linear-gradient(180deg, #1433d6 -62.95%, #0e2496 86.49%);
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background-image: url(../img/shapes/step-section-shape-bg.png);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		opacity: 0.5;
+		z-index: -1;
+	}
+}

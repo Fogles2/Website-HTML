@@ -1,0 +1,11 @@
+.pricing-section-2 {
+	position: relative;
+	isolation: isolate;
+	background-image: url(../img/shapes/hero-2-grid-box.png);
+	background-repeat: repeat;
+}
+[data-bs-theme="dark"] {
+	.pricing-section-2 {
+		background-image: url(../img/shapes/hero-2-grid-box-dark.png);
+	}
+}

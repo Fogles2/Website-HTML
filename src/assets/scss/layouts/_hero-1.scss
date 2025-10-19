@@ -1,0 +1,202 @@
+@use "../global" as *;
+.hero-1 {
+	position: relative;
+	isolation: isolate;
+	background-color: var(--bs-dark);
+	background-image: url(../img/shapes/hero-1-grid.png);
+	background-repeat: repeat;
+	overflow: hidden;
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background: #0d0e10;
+		filter: blur(200px);
+		z-index: -3;
+	}
+	&__content {
+		padding-block-start: clamp(6.8rem, 11.5vw + 1rem, 13.75rem);
+		padding-block-end: clamp(13.75rem, 23vw + 1rem, 27.5rem);
+	}
+	&__shape-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform: translateX(-50%);
+		z-index: -1;
+		opacity: 0.5;
+	}
+	&__shape-2 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -3;
+		overflow: visible;
+	}
+	&__shape-3 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: -3;
+		overflow: visible;
+	}
+	&__demo-img {
+		display: none;
+		@include screen(md) {
+			display: block;
+			position: absolute;
+		}
+		&-1 {
+			@include screen(md) {
+				top: 40%;
+				left: 0;
+				transform: scale(0.5) translateX(-40px);
+				transform-origin: top left;
+				z-index: -1;
+			}
+			@include screen(lg) {
+				transform: scale(0.75) translateX(-40px);
+			}
+			@media (min-width: 1920px) {
+				transform: scale(1) translateX(-40px);
+			}
+			@media (min-width: 2100px) {
+				transform: scale(1.25) translateX(-40px);
+			}
+		}
+		&-2 {
+			@include screen(md) {
+				top: 60%;
+				left: 10%;
+				transform: scale(0.5);
+				transform-origin: top left;
+				z-index: -1;
+			}
+			@include screen(lg) {
+				transform: scale(0.75);
+			}
+			@media (min-width: 1920px) {
+				transform: scale(1);
+			}
+			@media (min-width: 2100px) {
+				transform: scale(1.25);
+			}
+		}
+		&-3 {
+			@include screen(md) {
+				bottom: 0;
+				left: 0;
+				transform: scale(0.5) translate(0, 25%);
+				transform-origin: bottom left;
+				z-index: -2;
+			}
+			@include screen(lg) {
+				transform: scale(0.75) translate(0, 40%);
+			}
+			@media (min-width: 1920px) {
+				transform: scale(1) translate(0, 25%);
+			}
+			@media (min-width: 2100px) {
+				transform: scale(1.1) translate(0, 35%);
+			}
+		}
+		&-4 {
+			@include screen(md) {
+				bottom: 5%;
+				left: 28%;
+				transform: scale(0.5) translateY(30%);
+				transform-origin: bottom left;
+				z-index: -2;
+			}
+			@include screen(lg) {
+				transform: scale(0.75) translateY(35%);
+			}
+			@media (min-width: 1920px) {
+				transform: scale(1) translateY(30%);
+			}
+			@media (min-width: 2100px) {
+				transform: scale(1.25) translateY(30%);
+			}
+		}
+		&-5 {
+			@include screen(md) {
+				bottom: 5%;
+				left: 45%;
+				transform: scale(0.5);
+				transform-origin: bottom left;
+				z-index: -1;
+			}
+			@include screen(lg) {
+				transform: scale(0.75);
+			}
+			@media (min-width: 1920px) {
+				transform: scale(1);
+			}
+			@media (min-width: 2100px) {
+				transform: scale(1.25);
+			}
+		}
+		&-6 {
+			@include screen(md) {
+				bottom: 0;
+				left: 52%;
+				transform: scale(0.5) translateY(45%);
+				transform-origin: bottom left;
+				z-index: -1;
+			}
+			@include screen(lg) {
+				transform: scale(0.75) translateY(45%);
+			}
+			@media (min-width: 1920px) {
+				transform: scale(1) translateY(45%);
+			}
+			@media (min-width: 2100px) {
+				transform: scale(1.25) translateY(45%);
+			}
+		}
+		&-7 {
+			@include screen(md) {
+				bottom: 0;
+				right: 0;
+				transform-origin: bottom right;
+				z-index: -2;
+			}
+		}
+		&-8 {
+			@include screen(md) {
+				bottom: 20%;
+				left: 60%;
+				transform: scale(0.5) translateX(25%);
+				transform-origin: bottom left;
+				z-index: -1;
+			}
+			@include screen(lg) {
+				transform: scale(0.75) translateX(25%);
+			}
+			@media (min-width: 1920px) {
+				transform: scale(1) translateX(25%);
+			}
+			@media (min-width: 2100px) {
+				transform: scale(1.2) translateX(25%);
+			}
+		}
+		&-9 {
+			@include screen(md) {
+				bottom: 55%;
+				right: 0;
+				transform: scale(0.5) translateX(40px);
+				transform-origin: bottom right;
+				z-index: -1;
+			}
+			@include screen(lg) {
+				transform: scale(0.75) translateX(40px);
+			}
+			@media (min-width: 1920px) {
+				transform: scale(1) translateX(40px);
+			}
+			@media (min-width: 2100px) {
+				transform: scale(1.25) translateX(40px);
+			}
+		}
+	}
+}

@@ -1,0 +1,111 @@
+{% extends "layouts/default-rtl.html" %}
+{% set dataTheme = "domain" %}
+{% set bodyClass = "bg-light dark:bg-dark-subtle" %}
+{% set navbar = true %} 
+{% set navBtnColor = "fw-medium" %}
+{% set primaryHeader = "primary-header--light primary-header--boxed primary-header--fixed top-md-3 primary-header-crossed:top-0" %}
+{% set ltrLink = "career-application.html" %}
+{% set logoLight = "logo-dark.png" %}
+{% set logoDark = "logo-light.png" %}
+<!-- Content Block -->
+{% block content %}
+
+<!-- Banner -->
+{% include "partials/banner-5.html" %}
+<!-- Banner End -->
+<!-- Application Form -->
+<div class="section-space-y">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-8">
+<div class="bg-body rounded-3 p-4 p-md-6 p-xl-12">
+<h6 class="mb-6">معلومات شخصية</h6>
+<form class="row g-4">
+<div class="col-12">
+<label class="form-label fw-medium fs-14" for="full-name">
+								الاسم الكامل
+								<span class="text-danger">*</span>
+</label>
+<input class="form-control" id="full-name" placeholder="الاسم الكامل" type="text"/>
+</div>
+<div class="col-12">
+<label class="form-label fw-medium fs-14" for="email-address">
+								البريد الإلكتروني
+								<span class="text-danger">*</span>
+</label>
+<input class="form-control" id="email-address" placeholder="البريد الإلكتروني" type="text"/>
+</div>
+<div class="col-12">
+<label class="form-label fw-medium fs-14" for="phone-number">
+								رقم الهاتف
+								<span class="text-danger">*</span>
+</label>
+<input class="form-control" id="phone-number" placeholder="+8801 794 840 884" type="text"/>
+</div>
+<div class="col-12">
+<label class="form-label fw-medium fs-14" for="position">
+								المسمى الوظيفي
+								<span class="text-danger">*</span>
+</label>
+<input class="form-control" id="position" placeholder="مطور" type="text"/>
+</div>
+<div class="col-12">
+<label class="form-label fw-medium fs-14">
+								السيرة الذاتية
+								<span class="text-danger">*</span>
+</label>
+<input class="form-control" type="file"/>
+</div>
+<div class="col-12">
+<label class="form-label fw-medium fs-14" for="salary">
+								الراتب المتوقع
+							</label>
+<input class="form-control" id="salary" placeholder="Type Here.." type="text"/>
+</div>
+<div class="col-12">
+<button class="btn btn-dark-emphasis align-items-center w-100 justify-content-center" type="button">
+<span class="d-inline-block"> تقديم الطلب </span>
+<i class="align-middle fs-20 flex-shrink-0 ti ti-paper-plane"></i>
+</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Application Form End -->
+<!-- CTA  -->
+<div class="cta-7">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="section-space-y px-4 px-sm-6 px-md-12 bg-body rounded-4 text-center position-relative z-1">
+<div class="row justify-content-center">
+<div class="col-md-11">
+<h3>احصل على ترحيل مجاني لاستضافة الويب</h3>
+<p class="mb-8 max-text-15 mx-auto">
+								سنتولى عملية نقل موقعك من شركة الاستضافة القديمة إلى
+								منصتنا حتى تتمكن من التركيز على ما يهمك
+							</p>
+<div class="d-flex align-items-center justify-content-center gap-4 flex-wrap">
+<a class="btn btn-secondary text-light" href="{{root}}sign-in-2-rtl.html">
+									ابدأ الآن
+								</a>
+<a class="btn btn-dark-emphasis" href="{{root}}contact-rtl.html">
+									اتصل بنا
+								</a>
+</div>
+</div>
+</div>
+<img alt="image" class="img-fluid d-none d-xl-block position-absolute start-0 top-50 translate-middle-y z-n1 pointer-none" src="{{root}}assets/img/cta-img-16.png"/>
+<img alt="image" class="img-fluid d-none d-xl-block position-absolute end-0 top-50 translate-middle-y z-n1 pointer-none" src="{{root}}assets/img/cta-img-17.png"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA End -->
+
+{% include "partials/footer-7-rtl.html" %} 
+{% endblock %}

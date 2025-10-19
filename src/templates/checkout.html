@@ -1,0 +1,373 @@
+{% extends "layouts/default.html" %}
+{% set dataTheme = "domain" %}
+{% set bodyClass = "bg-light dark:bg-dark-subtle" %}
+{% set navbar = true %} 
+{% set navBtnColor = "fw-medium" %}
+{% set primaryHeader = "primary-header--light primary-header--boxed primary-header--fixed top-md-3 primary-header-crossed:top-0" %}
+{% set rtlLink = "checkout-rtl.html" %}
+{% set logoLight = "logo-dark.png" %}
+{% set logoDark = "logo-light.png" %}
+<!-- Content Block -->
+{% block content %}
+
+<!-- Hero -->
+<div class="hero-7">
+<div class="section-space-sm-bottom">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-12">
+<div class="text-center">
+<h1 class="h2 text-light fw-bold">
+							Discover Your Ideal Domain Name
+						</h1>
+<p class="mb-12 text-light">
+							Search for new domains and register your name before someone
+							else does
+						</p>
+<div class="search-filter search-filter--light bg-light rounded-1 max-text-18 mx-auto">
+<input class="form-control search-filter__input placeholder::text-dark-subtle text-dark" placeholder="Search Now..." type="text"/>
+<select aria-label="Default select example" class="form-select search-filter__select">
+<option selected="" value="1">.com</option>
+<option value="2">.net</option>
+<option value="3">.org</option>
+<option value="4">.ai</option>
+<option value="5">.info</option>
+<option value="6">.shop</option>
+<option value="7">.xyz</option>
+<option value="8">.blog</option>
+</select>
+<button class="btn btn-primary align-items-center flex-shrink-0" type="button">
+<i class="align-middle flex-shrink-0 ti ti-search-duotone"></i>
+								Search
+							</button>
+</div>
+<ul class="list list-row flex-wrap gap-4 justify-content-center align-items-center max-text-18 mx-auto mt-6">
+<li>
+<button class="btn btn-sm bg-light bg-opacity-10 text-light hover:bg-opacity-100 hover:text-dark" type="button">
+<span class="d-inline-block fs-18 fw-bold">
+										.com
+										<span class="d-inline-block fs-12 fw-normal">
+											$4/Year
+										</span>
+</span>
+</button>
+</li>
+<li>
+<button class="btn btn-sm bg-light bg-opacity-10 text-light hover:bg-opacity-100 hover:text-dark" type="button">
+<span class="d-inline-block fs-18 fw-bold">
+										.net
+										<span class="d-inline-block fs-12 fw-normal">
+											$5/Year
+										</span>
+</span>
+</button>
+</li>
+<li>
+<button class="btn btn-sm bg-light bg-opacity-10 text-light hover:bg-opacity-100 hover:text-dark" type="button">
+<span class="d-inline-block fs-18 fw-bold">
+										.org
+										<span class="d-inline-block fs-12 fw-normal">
+											$8/Year
+										</span>
+</span>
+</button>
+</li>
+<li>
+<button class="btn btn-sm bg-light bg-opacity-10 text-light hover:bg-opacity-100 hover:text-dark" type="button">
+<span class="d-inline-block fs-18 fw-bold">
+										.ai
+										<span class="d-inline-block fs-12 fw-normal">
+											$4.56/Year
+										</span>
+</span>
+</button>
+</li>
+<li>
+<button class="btn btn-sm bg-light bg-opacity-10 text-light hover:bg-opacity-100 hover:text-dark" type="button">
+<span class="d-inline-block fs-18 fw-bold">
+										.info
+										<span class="d-inline-block fs-12 fw-normal">
+											$4.56/Year
+										</span>
+</span>
+</button>
+</li>
+<li>
+<button class="btn btn-sm bg-light bg-opacity-10 text-light hover:bg-opacity-100 hover:text-dark" type="button">
+<span class="d-inline-block fs-18 fw-bold">
+										.shop
+										<span class="d-inline-block fs-12 fw-normal">
+											$4.56/Year
+										</span>
+</span>
+</button>
+</li>
+<li>
+<button class="btn btn-sm bg-light bg-opacity-10 text-light hover:bg-opacity-100 hover:text-dark" type="button">
+<span class="d-inline-block fs-18 fw-bold">
+										.xyz
+										<span class="d-inline-block fs-12 fw-normal">
+											$3/Year
+										</span>
+</span>
+</button>
+</li>
+</ul>
+<p class="mt-8 mb-0 fs-14 text-light">
+							Free WHOIS privacy protection is included with every eligible
+							domain registration.
+						</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<img alt="image" class="img-fluid hero-7__shape-1" src="{{root}}assets/img/shapes/hero-7-shape-1.png"/>
+</div>
+<!-- Hero End -->
+<!-- Checkout -->
+<div class="position-relative z-1 mt-n100 section-space-bottom">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="section-space-md-y bg-light dark:bg-dark px-4 px-sm-6 px-md-10 px-lg-12 shadow-lg rounded-4">
+<div class="section-space-xsm-bottom">
+<a class="link d-inline-flex align-items-center gap-1 text-heading hover:text-secondary" href="#">
+<i class="flex-shrink-0 ti ti-arrow-left-outline"></i>
+<span class="d-block fw-semibold"> Back </span>
+</a>
+</div>
+<div class="row g-4">
+<div class="col-lg-7 col-xl-8">
+<div class="bg-white dark:bg-dark-subtle p-6 rounded-3">
+<div class="d-flex align-items-center gap-2 mb-4">
+<i class="fs-20 d-inline-block flex-shrink-0 ti ti-check-o"></i>
+<h6 class="mb-0">Billing address</h6>
+</div>
+<div class="d-flex align-items-center gap-4 justify-content-between flex-wrap">
+<div class="flex-grow-1">
+<span class="d-block"> Peter Parker </span>
+<span class="d-block">
+											Dhaka Uttara, Bangladesh
+										</span>
+</div>
+<a class="link badge text-bg-secondary text-light flex-shrink-0 px-4" href="#">
+										Edit
+									</a>
+</div>
+</div>
+<div class="bg-white dark:bg-dark-subtle p-6 rounded-3 mt-4">
+<div class="d-flex align-items-center gap-2 mb-4">
+<i class="fs-20 d-inline-block flex-shrink-0 ti ti-check-o"></i>
+<h6 class="mb-0">Payment</h6>
+</div>
+<span class="d-block mb-4"> Instant pay: </span>
+<div class="accordion accordion-separate-body" id="accordion-separate-rounded">
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button aria-expanded="true" class="accordion-button collapsed fw-medium shadow" data-bs-target="#accordion-s1" data-bs-toggle="collapse" type="button">
+<span class="d-flex align-items-center gap-4 justify-content-between w-100">
+<span class="d-block text-heading flex-grow-1">
+														Card
+													</span>
+<span class="d-none d-md-flex align-items-center justify-content-end gap-2 pe-3 flex-shrink-0">
+<span class="d-block">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/pm-img-5.png"/>
+</span>
+<span class="d-block">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/pm-img-6.png"/>
+</span>
+<span class="d-block">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/pm-img-7.png"/>
+</span>
+<span class="d-block">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/pm-img-8.png"/>
+</span>
+</span>
+</span>
+</button>
+</h2>
+<div class="accordion-collapse shadow collapse" data-bs-parent="#accordion-separate-rounded" id="accordion-s1">
+<div class="accordion-body border border-dark border-opacity-5 fs-14">
+<div class="row g-3">
+<div class="col-12">
+<label class="form-label" for="cardName">
+<span class="d-inline text-danger">
+																*
+															</span>
+															Card Number
+														</label>
+<input class="form-control" id="cardName" placeholder="1234 5678 9012 3456" type="text"/>
+</div>
+<div class="col-12">
+<label class="form-label" for="userName">
+<span class="d-inline text-danger">
+																*
+															</span>
+															Name
+														</label>
+<input class="form-control" id="userName" placeholder="Peter Parker" type="text"/>
+</div>
+<div class="col-sm-6">
+<label class="form-label" for="card-expiry">
+<span class="d-inline text-danger">
+																*
+															</span>
+															Expiry Date
+														</label>
+<input class="form-control" id="card-expiry" maxlength="5" name="card-expiry" pattern="\d{2}/\d{2}" placeholder="MM/YY" required="" type="text"/>
+</div>
+<div class="col-sm-6">
+<label class="form-label" for="cvv">
+<span class="d-inline text-danger">
+																*
+															</span>
+															CVV
+														</label>
+<input class="form-control" id="cvv" placeholder="CVV" type="text"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button aria-expanded="false" class="accordion-button collapsed fw-medium shadow" data-bs-target="#accordion-s2" data-bs-toggle="collapse" type="button">
+<span class="d-flex align-items-center gap-4 justify-content-between w-100">
+<span class="d-block text-heading flex-grow-1">
+														Paypal
+													</span>
+<span class="d-none d-md-flex align-items-center justify-content-end gap-2 pe-3 flex-shrink-0">
+<span class="d-block">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/pm-img-9.png"/>
+</span>
+</span>
+</span>
+</button>
+</h2>
+<div class="accordion-collapse collapse shadow" data-bs-parent="#accordion-separate-rounded" id="accordion-s2">
+<div class="accordion-body border border-dark border-opacity-5 fs-14 text-center">
+<a class="btn btn-warning rounded-pill justify-content-center px-12" href="#">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/pm-img-9.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button aria-expanded="false" class="accordion-button collapsed fw-medium shadow" data-bs-target="#accordion-s3" data-bs-toggle="collapse" type="button">
+<span class="d-flex align-items-center gap-4 justify-content-between w-100">
+<span class="d-block text-heading flex-grow-1">
+														Google Pay
+													</span>
+<span class="d-none d-md-flex align-items-center justify-content-end gap-2 pe-3 flex-shrink-0">
+<span class="d-block">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/pm-img-10.png"/>
+</span>
+</span>
+</span>
+</button>
+</h2>
+<div class="accordion-collapse collapse shadow" data-bs-parent="#accordion-separate-rounded" id="accordion-s3">
+<div class="accordion-body border border-dark border-opacity-5 fs-14 text-center">
+<a class="btn btn-dark-emphasis rounded-pill justify-content-center px-12" href="#">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/pm-img-10.png"/>
+</a>
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button aria-expanded="false" class="accordion-button collapsed fw-medium shadow" data-bs-target="#accordion-s4" data-bs-toggle="collapse" type="button">
+<span class="d-flex align-items-center gap-4 justify-content-between w-100">
+<span class="d-block text-heading flex-grow-1">
+														Apple Pay
+													</span>
+<span class="d-none d-md-flex align-items-center justify-content-end gap-2 pe-3 flex-shrink-0">
+<span class="d-block">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/pm-img-11.png"/>
+</span>
+</span>
+</span>
+</button>
+</h2>
+<div class="accordion-collapse collapse shadow" data-bs-parent="#accordion-separate-rounded" id="accordion-s4">
+<div class="accordion-body border border-dark border-opacity-5 fs-14 text-center">
+<a class="btn btn-primary-subtle rounded-pill justify-content-center px-12" href="#">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/pm-img-11.png"/>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-5 col-xl-4">
+<div class="bg-white dark:bg-dark-subtle p-6 rounded-3">
+<h6>Order summary</h6>
+<h6 class="fs-20 fw-semibold">domain.com</h6>
+<div class="d-flex flex-wrap align-items-center justify-content-between mt-4">
+<span class="d-block fs-14">
+										Domain registration - 2 yrs
+									</span>
+<span class="d-block fs-14 text-heading fw-semibold">
+										US$ 21.00
+									</span>
+</div>
+<div class="d-flex flex-wrap align-items-center justify-content-between mt-2">
+<span class="d-block fs-14"> ICANN fee </span>
+<span class="d-block fs-14 text-heading fw-semibold">
+										US$ 0.36
+									</span>
+</div>
+<div class="d-flex flex-wrap align-items-center justify-content-between mt-2">
+<span class="d-block fs-14">
+										Domain privacy protection
+									</span>
+<span class="d-block fs-14 text-heading fw-semibold">
+										US$ 0.00
+									</span>
+</div>
+<hr class="my-6"/>
+<div class="d-flex gap-4 flex-wrap justify-content-between align-items-center">
+<h6 class="mb-0">Subtotal</h6>
+<div class="d-flex align-items-center gap-2">
+<span class="d-block text-body text-decoration-line-through fs-14">
+											US$ 15.00
+										</span>
+<span class="d-block fw-bold text-heading fs-14">
+											US$ 7.99
+										</span>
+</div>
+</div>
+<div class="d-flex flex-wrap align-items-center justify-content-between mt-4">
+<span class="d-block fs-14"> Discount -42% </span>
+<span class="d-block fs-14 text-success fw-semibold">
+										-US$ 21.00
+									</span>
+</div>
+<div class="d-flex flex-wrap align-items-center justify-content-between mt-2">
+<span class="d-block fs-14"> Taxes </span>
+<span class="d-block fs-14 text-success fw-semibold">
+										US$ 0.00
+									</span>
+</div>
+<hr class="my-6"/>
+<div class="d-flex gap-4 flex-wrap justify-content-between align-items-center">
+<h6 class="mb-0">Total</h6>
+<span class="d-block fw-bold text-heading">
+										US$ 29.34
+									</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Checkout End -->
+
+{% include "partials/footer-7.html" %} 
+{% endblock %}

@@ -1,0 +1,36 @@
+.price-card-2 {
+	background: rgba(10, 10, 20, 0.7);
+	backdrop-filter: blur(25px);
+	-webkit-backdrop-filter: blur(25px);
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.4);
+	transition: all 0.3s ease;
+	
+	&:hover {
+		background: rgba(15, 15, 30, 0.8);
+		border-color: rgba(255, 255, 255, 0.18);
+		box-shadow: 0px 12px 40px 0px rgba(0, 0, 0, 0.5);
+		transform: translateY(-4px);
+	}
+	
+	&__text {
+		color: var(--bs-primary-text-emphasis);
+	}
+	
+	/* Ensure text visibility */
+	h1, h2, h3, h4, h5, h6,
+	p, span, a, li {
+		color: rgba(255, 255, 255, 0.95);
+	}
+	
+	.text-muted {
+		color: rgba(255, 255, 255, 0.6) !important;
+	}
+}
+
+[data-bs-theme="dark"] {
+	.price-card-2__text {
+		color: var(--bs-primary-text-emphasis);
+	}
+}
+

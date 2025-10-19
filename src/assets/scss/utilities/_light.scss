@@ -1,0 +1,118 @@
+[data-bs-theme="light"] {
+	--bs-body-color: #616a72;
+
+	--bs-primary-bg-subtle: #eaefff;
+	--bs-primary-text-emphasis: #1a3c9b;
+
+	--bs-secondary-bg-subtle: #f6f7fd;
+	--bs-secondary-text-emphasis: #03063a;
+
+	--bs-success-bg-subtle: #e8f9ee;
+	--bs-success-text-emphasis: #044d1d;
+
+	--bs-info-bg-subtle: #e6f9ff;
+	--bs-info-text-emphasis: #024153;
+
+	--bs-warning-bg-subtle: #fef7e6;
+	--bs-warning-text-emphasis: #966c00;
+
+	--bs-danger-bg-subtle: #feeaef;
+	--bs-danger-text-emphasis: #971837;
+
+	--bs-light-bg-subtle: #f8f9fa;
+	--bs-light-text-emphasis: #495058;
+
+	--bs-dark-bg-subtle: #ced4da;
+	--bs-dark-text-emphasis: #0d0e10;
+
+	// Shadow Color
+	--bs-box-shadow: 0px 10px 20px -4px rgba(145, 158, 171, 0.16);
+	--bs-box-shadow-sm: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+	--bs-box-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+	&[data-theme="home-2"] {
+		--bs-light: #f2f5ff;
+		--bs-light-rgb: 242, 245, 255;
+	}
+	&[data-theme="home-3"] {
+		--bs-light: #f2f5ff;
+		--bs-light-rgb: 242, 245, 255;
+	}
+	&[data-theme="wp-hosting"] {
+		--bs-light: #f2f5ff;
+		--bs-light-rgb: 242, 245, 255;
+		--bs-primary: #f67a3c;
+		--bs-primary-rgb: 246, 122, 60;
+		--bs-primary-bg-subtle: #fbc8af;
+		--bs-primary-text-emphasis: #964a25;
+		--bs-secondary: #7734f9;
+		--bs-secondary-rgb: 119, 52, 249;
+		--bs-secondary-bg-subtle: #ebebfe;
+		--bs-secondary-text-emphasis: #2e1a6d;
+	}
+	&[data-theme="cloud-server-hosting"] {
+		--bs-light: #f2f5ff;
+		--bs-light-rgb: 242, 245, 255;
+
+		--bs-secondary: #1dffff;
+		--bs-secondary-rgb: 29, 255, 255;
+		--bs-secondary-bg-subtle: #c0ffff;
+		--bs-secondary-text-emphasis: #035a67;
+	}
+	&[data-theme="dedicated-server-hosting"] {
+		--bs-light: #f2f5ff;
+		--bs-light-rgb: 242, 245, 255;
+	}
+	&[data-theme="vps-hosting"] {
+		--bs-light: #f2f5ff;
+		--bs-light-rgb: 242, 245, 255;
+	}
+	&[data-theme="cloud-hosting"] {
+		--bs-light: #f2f5ff;
+		--bs-light-rgb: 242, 245, 255;
+	}
+	&[data-theme="web-hosting"] {
+		--bs-light: #f2f5ff;
+		--bs-light-rgb: 242, 245, 255;
+	}
+	&[data-theme="reseller-hosting"] {
+		--bs-light: #f2f5ff;
+		--bs-light-rgb: 242, 245, 255;
+		--bs-primary-rgb: 119, 52, 249;
+		--bs-primary: #7734f9;
+		--bs-primary-bg-subtle: #f1ebfe;
+		--bs-primary-text-emphasis: #492098;
+	}
+	&[data-theme="email-hosting"] {
+		--bs-light: #f2f5ff;
+		--bs-light-rgb: 242, 245, 255;
+	}
+	&[data-theme="cpanel-hosting"] {
+		--bs-light: #f2f5ff;
+		--bs-light-rgb: 242, 245, 255;
+		--bs-primary: #f67a3c;
+		--bs-primary-rgb: 246, 122, 60;
+		--bs-primary-bg-subtle: #fbc8af;
+		--bs-primary-text-emphasis: #964a25;
+		--bs-secondary: #7734f9;
+		--bs-secondary-rgb: 119, 52, 249;
+		--bs-secondary-bg-subtle: #ebebfe;
+		--bs-secondary-text-emphasis: #2e1a6d;
+	}
+	&[data-theme="domain"] {
+		--bs-light: #f2f5ff;
+		--bs-light-rgb: 242, 245, 255;
+
+		--bs-primary: #2a62fe;
+		--bs-primary-rgb: 42, 98, 254;
+		--bs-primary-bg-subtle: #eaefff;
+		--bs-primary-text-emphasis: #1a3c9b;
+
+		--bs-secondary: #5c65ff;
+		--bs-secondary-rgb: 92, 101, 255;
+		--bs-secondary-bg-subtle: #f6f7fd;
+		--bs-secondary-text-emphasis: #03063a;
+	}
+	.light\:d-none {
+		display: none !important;
+	}
+}

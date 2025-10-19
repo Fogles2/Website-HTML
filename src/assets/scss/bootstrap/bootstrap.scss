@@ -1,0 +1,416 @@
+// 1. Functions
+@import "scss/functions";
+
+$border-radius: 0.5rem;
+$border-radius-sm: 0.25rem;
+$border-radius-lg: 0.75rem;
+$border-radius-xl: 1rem;
+$border-radius-xxl: 1.25rem;
+
+$primary: #2A62FE;
+$secondary: #5C65FF;
+$success: #17C653;
+$danger: #F8285A;
+$warning: #F6B100;
+$info: #00C4FD;
+
+$dark: #212529;
+$light: #fcfcfd;
+
+$body-color: #616a72;
+$headings-color: #03063a;
+
+@import "scss/variables";
+@import "scss/variables-dark";
+
+$spacer: 1rem;
+$spacers: (
+	0: 0,
+	1: $spacer * 0.25,
+	2: $spacer * 0.5,
+	3: $spacer * 0.75,
+	4: $spacer,
+	5: $spacer * 1.25,
+	6: $spacer * 1.5,
+	7: $spacer * 1.75,
+	8: $spacer * 2,
+	9: $spacer * 2.25,
+	10: $spacer * 2.5,
+	11: $spacer * 2.75,
+	12: $spacer * 3,
+	13: $spacer * 3.25,
+	14: $spacer * 3.5,
+	15: $spacer * 3.75,
+	16: $spacer * 4,
+	17: $spacer * 4.25,
+	18: $spacer * 4.5,
+	19: $spacer * 4.75,
+	20: $spacer * 5,
+	21: $spacer * 5.25,
+	22: $spacer * 5.5,
+	23: $spacer * 5.75,
+	24: $spacer * 6,
+	25: $spacer * 6.25,
+	26: $spacer * 6.5,
+	27: $spacer * 6.75,
+	28: $spacer * 7,
+	29: $spacer * 7.25,
+	30: $spacer * 7.5,
+	50: 50%,
+	100: 100%,
+);
+$grid-gutter-width: 1.5rem;
+$gutters: (
+	0: 0,
+	1: $spacer * 0.25,
+	2: $spacer * 0.5,
+	3: $spacer,
+	4: $spacer * 1.5,
+	5: $spacer * 3,
+);
+@each $size, $value in $spacers {
+	.w-#{$size} {
+		width: $value !important;
+	}
+	@each $screen, $screenSize in $grid-breakpoints {
+		.w-#{$screen}-#{$size} {
+			@media (min-width: $screenSize) {
+				width: $value !important;
+			}
+		}
+	}
+	.h-#{$size} {
+		height: $value !important;
+	}
+
+	@each $screen, $screenSize in $grid-breakpoints {
+		.h-#{$screen}-#{$size} {
+			@media (min-width: $screenSize) {
+				height: $value !important;
+			}
+		}
+	}
+}
+
+@import "scss/maps";
+@import "scss/mixins";
+@import "scss/root";
+
+@import "scss/utilities";
+
+@import "scss/reboot";
+@import "scss/type";
+@import "scss/images";
+@import "scss/containers";
+@import "scss/grid";
+@import "scss/helpers";
+@import "scss/accordion";
+@import "scss/alert";
+@import "scss/badge";
+@import "scss/breadcrumb";
+@import "scss/button-group";
+@import "scss/buttons";
+@import "scss/card";
+@import "scss/carousel";
+@import "scss/close";
+@import "scss/dropdown";
+@import "scss/forms";
+@import "scss/list-group";
+@import "scss/modal";
+@import "scss/nav";
+@import "scss/navbar";
+@import "scss/offcanvas";
+@import "scss/pagination";
+@import "scss/placeholders";
+@import "scss/popover";
+@import "scss/progress";
+@import "scss/spinners";
+@import "scss/tables";
+@import "scss/toasts";
+@import "scss/tooltip";
+@import "scss/transitions";
+
+$utilities: map-merge(
+	$utilities,
+	(
+		"border":
+			map-merge(
+				map-get($utilities, "border"),
+				(
+					responsive: true,
+				)
+			),
+		"border-top":
+			map-merge(
+				map-get($utilities, "border-top"),
+				(
+					property: border-block-start,
+					class: border-top,
+				)
+			),
+		"border-end":
+			map-merge(
+				map-get($utilities, "border-end"),
+				(
+					property: border-inline-end,
+					class: border-end,
+				)
+			),
+		"border-bottom":
+			map-merge(
+				map-get($utilities, "border-bottom"),
+				(
+					property: border-block-end,
+					class: border-bottom,
+				)
+			),
+		"border-start":
+			map-merge(
+				map-get($utilities, "border-start"),
+				(
+					property: border-inline-start,
+					class: border-start,
+				)
+			),
+		"rounded-top":
+			map-merge(
+				map-get($utilities, "rounded-top"),
+				(
+					property: border-start-start-radius border-start-end-radius,
+					class: rounded-top,
+				)
+			),
+		"rounded-end":
+			map-merge(
+				map-get($utilities, "rounded-end"),
+				(
+					property: border-start-end-radius border-end-end-radius,
+					class: rounded-end,
+				)
+			),
+		"rounded-bottom":
+			map-merge(
+				map-get($utilities, "rounded-bottom"),
+				(
+					property: border-end-end-radius border-end-start-radius,
+					class: rounded-bottom,
+				)
+			),
+		"rounded-start":
+			map-merge(
+				map-get($utilities, "rounded-start"),
+				(
+					property: border-end-start-radius border-start-start-radius,
+					class: rounded-start,
+				)
+			),
+		"rounded-top-start": (
+			property: border-start-start-radius,
+			class: rounded-top-start,
+			values: (
+				null: var(--#{$prefix}border-radius),
+				0: 0,
+				1: var(--#{$prefix}border-radius-sm),
+				2: var(--#{$prefix}border-radius),
+				3: var(--#{$prefix}border-radius-lg),
+				4: var(--#{$prefix}border-radius-xl),
+				5: var(--#{$prefix}border-radius-2xl),
+				circle: 50%,
+				pill: var(--#{$prefix}border-radius-pill),
+			),
+		),
+		"rounded-top-end": (
+			property: border-start-end-radius,
+			class: rounded-top-end,
+			values: (
+				null: var(--#{$prefix}border-radius),
+				0: 0,
+				1: var(--#{$prefix}border-radius-sm),
+				2: var(--#{$prefix}border-radius),
+				3: var(--#{$prefix}border-radius-lg),
+				4: var(--#{$prefix}border-radius-xl),
+				5: var(--#{$prefix}border-radius-2xl),
+				circle: 50%,
+				pill: var(--#{$prefix}border-radius-pill),
+			),
+		),
+		"rounded-bottom-start": (
+			property: border-end-start-radius,
+			class: rounded-bottom-start,
+			values: (
+				null: var(--#{$prefix}border-radius),
+				0: 0,
+				1: var(--#{$prefix}border-radius-sm),
+				2: var(--#{$prefix}border-radius),
+				3: var(--#{$prefix}border-radius-lg),
+				4: var(--#{$prefix}border-radius-xl),
+				5: var(--#{$prefix}border-radius-2xl),
+				circle: 50%,
+				pill: var(--#{$prefix}border-radius-pill),
+			),
+		),
+		"rounded-bottom-end": (
+			property: border-end-end-radius,
+			class: rounded-bottom-end,
+			values: (
+				null: var(--#{$prefix}border-radius),
+				0: 0,
+				1: var(--#{$prefix}border-radius-sm),
+				2: var(--#{$prefix}border-radius),
+				3: var(--#{$prefix}border-radius-lg),
+				4: var(--#{$prefix}border-radius-xl),
+				5: var(--#{$prefix}border-radius-2xl),
+				circle: 50%,
+				pill: var(--#{$prefix}border-radius-pill),
+			),
+		),
+		"margin-x":
+			map-merge(
+				map-get($utilities, "margin-x"),
+				(
+					class: mx,
+					property: margin-inline,
+				)
+			),
+		"margin-y":
+			map-merge(
+				map-get($utilities, "margin-y"),
+				(
+					class: my,
+					property: margin-block,
+				)
+			),
+		"margin-start":
+			map-merge(
+				map-get($utilities, "margin-start"),
+				(
+					class: ms,
+					property: margin-inline-start,
+				)
+			),
+		"margin-top":
+			map-merge(
+				map-get($utilities, "margin-top"),
+				(
+					class: mt,
+					property: margin-block-start,
+				)
+			),
+		"margin-end":
+			map-merge(
+				map-get($utilities, "margin-end"),
+				(
+					class: me,
+					property: margin-inline-end,
+				)
+			),
+		"margin-bottom":
+			map-merge(
+				map-get($utilities, "margin-bottom"),
+				(
+					class: mb,
+					property: margin-block-end,
+				)
+			),
+		"padding-x":
+			map-merge(
+				map-get($utilities, "padding-x"),
+				(
+					class: px,
+					property: padding-inline,
+				)
+			),
+		"padding-y":
+			map-merge(
+				map-get($utilities, "padding-y"),
+				(
+					class: py,
+					property: padding-block,
+				)
+			),
+		"padding-start":
+			map-merge(
+				map-get($utilities, "padding-start"),
+				(
+					class: ps,
+					property: padding-inline-start,
+				)
+			),
+		"padding-top":
+			map-merge(
+				map-get($utilities, "padding-top"),
+				(
+					class: pt,
+					property: padding-block-start,
+				)
+			),
+		"padding-end":
+			map-merge(
+				map-get($utilities, "padding-end"),
+				(
+					class: pe,
+					property: padding-inline-end,
+				)
+			),
+		"padding-bottom":
+			map-merge(
+				map-get($utilities, "padding-bottom"),
+				(
+					class: pb,
+					property: padding-block-end,
+				)
+			),
+		"text-align":
+			map-merge(
+				map-get($utilities, "text-align"),
+				(
+					values: (
+						start: start,
+						end: end,
+						center: center,
+					),
+				)
+			),
+		"position": (
+			property: position,
+			values: static relative absolute fixed sticky,
+			responsive: true,
+		),
+		"top": (
+			property: inset-block-start,
+			class: top,
+			values: $spacers,
+			responsive: true,
+		),
+		"bottom": (
+			property: inset-block-end,
+			class: bottom,
+			values: $spacers,
+			responsive: true,
+		),
+		"start": (
+			property: inset-inline-start,
+			class: start,
+			values: $spacers,
+			responsive: true,
+		),
+		"end": (
+			property: inset-inline-end,
+			class: end,
+			values: $spacers,
+			responsive: true,
+		),
+		"translate-middle": (
+			property: transform,
+			class: translate-middle,
+			values: (
+				null: translate(-50%, -50%),
+				x: translateX(-50%),
+				y: translateY(-50%),
+			),
+			responsive: true,
+		),
+	)
+);
+
+@import "scss/utilities/api";

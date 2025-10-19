@@ -1,0 +1,11 @@
+@use "../global" as *;
+.testimonial-section-3 {
+	@include screen(lg) {
+		-webkit-mask-image: url(../img/shapes/testimonial-shape-bg.png);
+		mask-image: url(../img/shapes/testimonial-shape-bg.png);
+		mask-size: 100% 100%;
+		mask-position: center top;
+		-webkit-mask-repeat: no-repeat;
+		mask-repeat: no-repeat;
+	}
+}

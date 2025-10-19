@@ -1,0 +1,23 @@
+@use "../global" as *;
+.video-player {
+	width: 100%;
+	height: rem(350);
+	@include screen(xl) {
+		height: rem(600);
+	}
+	&--half {
+		@include screen(xl) {
+			height: rem(400);
+		}
+	}
+	&:hover {
+		.video-player__active {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+	&__active {
+		visibility: hidden;
+		opacity: 0;
+	}
+}

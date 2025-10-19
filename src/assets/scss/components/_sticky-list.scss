@@ -1,0 +1,15 @@
+@use "../global" as *;
+.sticky-list {
+	li {
+		position: sticky;
+		&:nth-child(1) {
+			top: rem(120);
+		}
+		&:nth-child(2) {
+			top: calc(#{rem(120)} + 2.5rem);
+		}
+		&:nth-child(3) {
+			top: calc(#{rem(120)} + 4.5rem);
+		}
+	}
+}

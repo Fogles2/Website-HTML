@@ -1,0 +1,114 @@
+@use "../global" as *;
+.navigation-3 {
+	@include screen(lg) {
+		position: relative;
+		isolation: isolate;
+	}
+	&.has-sub-level-1 {
+		@include screen(lg) {
+			&:hover {
+				.navigation-3__menu {
+					visibility: visible;
+					opacity: 1;
+					pointer-events: unset;
+					top: 100%;
+				}
+			}
+		}
+	}
+	&__menu {
+		display: none;
+		list-style: none;
+		padding: 0.25rem 0;
+		margin: 0;
+		border-radius: 0.35rem;
+		@include screen(lg) {
+			display: flex;
+			gap: 0.25rem;
+			padding: 0.25rem;
+			position: absolute;
+			top: calc(100% + 1rem);
+			left: 50%;
+			transform: translateX(-50%);
+			width: rem(600);
+			filter: drop-shadow(0 0.25rem 0.75rem rgba(var(--bs-black-rgb), 0.1));
+			visibility: hidden;
+			opacity: 0;
+			pointer-events: none;
+			z-index: 99;
+			transition: all 0.3s ease;
+		}
+		@include screen(xl) {
+			width: rem(750);
+			padding: 1rem;
+		}
+        &-short {
+            @include screen(lg) {
+                width: rem(350);
+            }
+        }
+		&-link {
+			display: block;
+			padding: 0.25rem 0.75rem;
+			font-size: rem(14);
+		}
+		&-list {
+			@include screen(lg) {
+				width: 50%;
+			}
+			@include screen(xl) {
+				width: 55%;
+			}
+			&:last-child {
+				@include screen(lg) {
+					width: 50%;
+				}
+				@include screen(xl) {
+					width: 45%;
+				}
+			}
+			&.has-sub-level-2 {
+				@include screen(lg) {
+					position: relative;
+					&:hover {
+						.navigation-3__sub-menu {
+							visibility: visible;
+							opacity: 1;
+							pointer-events: unset;
+							left: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+	&__sub-menu {
+		display: none;
+		list-style: none;
+		padding: 0.25rem 0 0.25rem 1rem;
+		margin: 0;
+		border-radius: 0.25rem;
+		@include screen(lg) {
+			display: block;
+			padding: 0.25rem;
+			position: absolute;
+			top: 0;
+			left: 90%;
+			width: rem(180);
+			border-radius: 0.25rem;
+			visibility: hidden;
+			opacity: 0;
+			pointer-events: none;
+			z-index: 99;
+			transition: all 0.3s ease;
+		}
+		&-link {
+			display: block;
+			padding: 0.25rem 0.75rem;
+			font-size: rem(14);
+			@include screen(lg) {
+				border-radius: 0.25rem;
+			}
+		}
+	}
+}

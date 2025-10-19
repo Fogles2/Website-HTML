@@ -1,0 +1,22 @@
+{
+  "name": "vite-nunjucks-project",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "chokidar": "^3.6.0",
+    "fs-extra": "^11.1.1",
+    "glob": "^10.3.3",
+    "nunjucks": "^3.2.4",
+    "postcss": "^8.5.6",
+    "sass": "^1.73.1",
+    "vite": "^7.1.5"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}

@@ -1,0 +1,15 @@
+.feature-section-2 {
+	position: relative;
+	isolation: isolate;
+	background-image: url(../img/shapes/feature-section-2-grid.png);
+	background-repeat: repeat;
+	overflow: hidden;
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		z-index: -2;
+		background: linear-gradient(90deg, var(--bs-tertiary-bg) 0%, var(--bs-tertiary-bg) 100%);
+		filter: blur(100px);
+	}
+}

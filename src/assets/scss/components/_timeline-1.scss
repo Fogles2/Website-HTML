@@ -1,0 +1,61 @@
+@use "../global" as *;
+.timeline-1 {
+	&__item {
+		.timeline-1__left {
+			padding-bottom: 1.25rem;
+		}
+		.timeline-1__right {
+			padding-bottom: 1.25rem;
+		}
+		@include screen(md) {
+			display: flex;
+			align-items: center;
+		}
+		& + .timeline-1__item {
+			.timeline-1__left {
+				padding-top: 1.25rem;
+			}
+			.timeline-1__right {
+				padding-top: 1.25rem;
+			}
+		}
+	}
+	&__left {
+		@include screen(md) {
+			flex-shrink: 0;
+			padding-right: 1.5rem;
+		}
+	}
+	&__right {
+		@include screen(md) {
+			flex-grow: 1;
+			position: relative;
+			z-index: 1;
+			padding-left: 1.5rem;
+		}
+		&::before {
+			@include screen(md) {
+				content: "";
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				width: 1px;
+				background-color: var(--bs-border-color);
+			}
+		}
+		&::after {
+			@include screen(md) {
+				content: "";
+				position: absolute;
+				top: 50%;
+				left: 0;
+				transform: translate(-50%, -50%);
+				width: 0.75rem;
+				height: 0.75rem;
+				background-color: var(--bs-light-text-emphasis);
+				border-radius: 50%;
+			}
+		}
+	}
+}

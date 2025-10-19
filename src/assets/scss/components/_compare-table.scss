@@ -1,0 +1,28 @@
+@use "../global" as *;
+.compare-table {
+	.table > :not(caption) > * > * {
+		padding: 0.75rem 1.5rem;
+	}
+	.table {
+		--bs-table-bg: transparent;
+		--bs-table-color: var(--bs-body-color);
+		--bs-table-striped-bg: var(--bs-primary-bg-subtle);
+		margin-bottom: 0;
+		vertical-align: middle;
+		thead {
+			tr {
+				th {
+					padding: 0.5rem;
+					&:first-child {
+						min-width: rem(315);
+					}
+				}
+				th {
+					min-width: rem(200);
+					vertical-align: middle;
+					font-weight: normal;
+				}
+			}
+		}
+	}
+}

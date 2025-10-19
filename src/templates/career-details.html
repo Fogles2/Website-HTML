@@ -1,0 +1,238 @@
+{% extends "layouts/default.html" %}
+{% set dataTheme = "domain" %}
+{% set bodyClass = "bg-light dark:bg-dark-subtle" %}
+{% set navbar = true %} 
+{% set navBtnColor = "fw-medium" %}
+{% set primaryHeader = "primary-header--light primary-header--boxed primary-header--fixed top-md-3 primary-header-crossed:top-0" %}
+{% set rtlLink = "career-details-rtl.html" %}
+{% set breadcrumb = "Career" %}
+{% set breadcrumbLink = "text-light hover:text-secondary" %}
+{% set breadcrumbIcon = "text-light" %}
+{% set breadcrumbActive = "text-light" %}
+{% set logoLight = "logo-dark.png" %}
+{% set logoDark = "logo-light.png" %}
+<!-- Content Block -->
+{% block content %}
+
+<!-- Banner -->
+{% include "partials/banner-5.html" %}
+<!-- Banner End -->
+<!-- Job Details -->
+<div class="section-space-y">
+<div class="container">
+<div class="row g-4">
+<div class="col-lg-8">
+<p class="mb-8">
+					We are seeking skilled PHP Developers to join our team. Your role will
+					involve building and enhancing our web applications using PHP and
+					MySQL. You'll work collaboratively to develop robust back-end
+					solutions. If you're passionate about creating efficient, scalable web
+					applications, we're looking for you.
+				</p>
+<h6 class="mb-6">Key Responsibilities:</h6>
+<ul class="list list-disc gap-3 mb-8">
+<li>
+						Develop high-quality web applications by integrating PHP and
+						MySQL.
+					</li>
+<li>
+						Participate in the entire application development lifecycle, from
+						concept to deployment, with a focus on coding and debugging.
+					</li>
+<li>
+						Contribute to the optimization of applications for maximum speed
+						and scalability.
+					</li>
+<li>
+						Assist in database design, development, and management in MySQL,
+						ensuring data integrity and performance.
+					</li>
+<li>
+						Engage with the development team in code reviews, sharing
+						knowledge and practices to improve code quality and team skills.
+					</li>
+<li>
+						Stay updated with emerging web technologies and apply them to
+						operations and activities.
+					</li>
+<li>
+						Collaborate across departments to understand user needs and
+						translate them into technical solutions.
+					</li>
+</ul>
+<h6 class="mb-6">Qualifications:</h6>
+<ul class="list list-disc gap-3 mb-8">
+<li>Experience as a PHP Developer with a focus on PHP and MySQL.</li>
+<li>
+						Knowledge of database design, query optimization, and database
+						management
+					</li>
+<li>Experience with version control systems, preferably Git</li>
+<li>
+						Strong problem-solving skills and the ability to work effectively
+						in a team environment
+					</li>
+<li>
+						Good understanding of software development methodologies,
+						particularly Agile.
+					</li>
+</ul>
+<h6 class="mb-6">Why Join Us?</h6>
+<ul class="list list-disc gap-3">
+<li>
+						Be part of a large, innovative development team that's at the
+						forefront of digital transformation.
+					</li>
+<li>
+						Opportunity to work on diverse projects that challenge and grow
+						your skill set.
+					</li>
+<li>
+						Competitive salary, comprehensive benefits package, and a
+						supportive work environment.
+					</li>
+<li>
+						Strong problem-solving skills and the ability to work effectively
+						in a team environment
+					</li>
+<li>
+						Engage in continuous learning and development opportunities within
+						a company that values creativity and innovation.
+					</li>
+</ul>
+</div>
+<div class="col-lg-4">
+<ul class="list gap-6">
+<li>
+<div class="rounded-4 bg-body p-4 p-sm-6 p-md-10 p-lg-6 p-xxl-10 text-center">
+<div class="d-grid place-content-center w-24 h-24 rounded-circle border border-primary-subtle mx-auto bg-light-subtle mb-8">
+<i class="text-primary-emphasis fs-44 ti ti-thumbs-up-fill"></i>
+</div>
+<p class="fw-semibold text-heading">
+								Ready to apply? We can't wait to meet you!
+							</p>
+<a class="btn btn-sm btn-primary fw-medium" href="{{root}}career-application.html">
+								Apply Now
+							</a>
+<p class="fs-14 my-6 text-heading">
+								Next, you'll face an assessment to proceed. Apply for one
+								job at a time and prepare well
+							</p>
+<p class="mb-2 fs-12 text-heading">
+								* By applying for this job listing, you agree to our Data
+							</p>
+<div class="d-flex justify-content-center align-items-center flex-wrap gap-2">
+<a class="link d-inline-flex align-items-center gap-1 text-heading hover:text-primary fs-12" href="#">
+<span class="d-inline-block"> Privacy Policy </span>
+<i class="ti ti-arrow-right-linear"></i>
+</a>
+<span class="d-inline-block fs-12">
+									for recruitment and job applications.
+								</span>
+</div>
+</div>
+</li>
+<li>
+<div class="rounded-4 bg-body p-4 p-sm-6 p-md-10 p-lg-6 p-xxl-10">
+<h6 class="mb-6">Basics &amp; Benefits</h6>
+<ul class="list gap-3">
+<li class="d-flex align-items-center gap-3">
+<span class="btn btn-icon bg-body border text-primary rounded-circle cursor-default flex-shrink-0">
+<i class="ti ti-thumbs-up"></i>
+</span>
+<span class="d-block text-heading fs-14 fw-medium flex-grow-1">
+										Exceptional work culture
+									</span>
+</li>
+<li class="d-flex align-items-center gap-3">
+<span class="btn btn-icon bg-body border text-danger rounded-circle cursor-default flex-shrink-0">
+<i class="ti ti-tea-cup-line-duotone"></i>
+</span>
+<span class="d-block text-heading fs-14 fw-medium flex-grow-1">
+										Free meals, coffee, and snacks
+									</span>
+</li>
+<li class="d-flex align-items-center gap-3">
+<span class="btn btn-icon bg-body border text-success rounded-circle cursor-default flex-shrink-0">
+<i class="ti ti-fitness-centre"></i>
+</span>
+<span class="d-block text-heading fs-14 fw-medium flex-grow-1">
+										Gym to support wellness and fitness
+									</span>
+</li>
+<li class="d-flex align-items-center gap-3">
+<span class="btn btn-icon bg-body border text-warning rounded-circle cursor-default flex-shrink-0">
+<i class="ti ti-sport-20-regular"></i>
+</span>
+<span class="d-block text-heading fs-14 fw-medium flex-grow-1">
+										Facilities for indoor &amp; outdoor sports
+									</span>
+</li>
+<li class="d-flex align-items-center gap-3">
+<span class="btn btn-icon bg-body border text-primary rounded-circle cursor-default flex-shrink-0">
+<i class="ti ti-bus-line-duotone"></i>
+</span>
+<span class="d-block text-heading fs-14 fw-medium flex-grow-1">
+										Free shuttle service
+									</span>
+</li>
+<li class="d-flex align-items-center gap-3">
+<span class="btn btn-icon bg-body border text-info rounded-circle cursor-default flex-shrink-0">
+<i class="ti ti-vehicle-car-parking-16-regular"></i>
+</span>
+<span class="d-block text-heading fs-14 fw-medium flex-grow-1">
+										Parking facility
+									</span>
+</li>
+<li class="d-flex align-items-center gap-3">
+<span class="btn btn-icon bg-body border text-success rounded-circle cursor-default flex-shrink-0">
+<i class="ti ti-gift-bold-duotone"></i>
+</span>
+<span class="d-block text-heading fs-14 fw-medium flex-grow-1">
+										Two festival bonuses
+									</span>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Job Details End -->
+<!-- CTA  -->
+<div class="cta-7">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="section-space-y px-4 px-sm-6 px-md-12 bg-body rounded-4 text-center position-relative z-1">
+<div class="row justify-content-center">
+<div class="col-md-11">
+<h3>Get a free web host migration</h3>
+<p class="mb-8 max-text-15 mx-auto">
+								We'll take care of the process of moving your website from
+								your old web hosting company to our platform so you can
+								focus on what matters
+							</p>
+<div class="d-flex align-items-center justify-content-center gap-4 flex-wrap">
+<a class="btn btn-secondary text-light" href="{{root}}sign-in-2.html">
+									Get Started now
+								</a>
+<a class="btn btn-dark-emphasis" href="{{root}}contact.html">
+									Contact Us
+								</a>
+</div>
+</div>
+</div>
+<img alt="image" class="img-fluid d-none d-xl-block position-absolute start-0 top-50 translate-middle-y z-n1 pointer-none" src="{{root}}assets/img/cta-img-16.png"/>
+<img alt="image" class="img-fluid d-none d-xl-block position-absolute end-0 top-50 translate-middle-y z-n1 pointer-none" src="{{root}}assets/img/cta-img-17.png"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA End -->
+
+{% include "partials/footer-7.html" %} 
+{% endblock %}

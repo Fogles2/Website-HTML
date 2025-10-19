@@ -1,0 +1,20 @@
+@use "../global" as *;
+.testimonial-slider-8 {
+	position: relative;
+	isolation: isolate;
+	overflow: unset;
+	&::after {
+		@include screen(md) {
+			content: "";
+			position: absolute;
+			top: rem(40);
+			bottom: rem(40);
+			left: -#{rem(36)};
+			right: -#{rem(36)};
+			background-color: var(--bs-white);
+			border-top: 0.25rem solid var(--bs-secondary);
+			border-radius: 0.5rem;
+			z-index: -1;
+		}
+	}
+}

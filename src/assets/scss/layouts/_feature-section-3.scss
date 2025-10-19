@@ -1,0 +1,18 @@
+.feature-section-3 {
+	position: relative;
+	isolation: isolate;
+	padding-block-end: clamp(9rem, 11.5vw + 1rem, 13.75rem);
+    overflow: hidden;
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 200%;
+        height: 200%;
+        border-radius: 50%;
+		background-color: var(--bs-primary-bg-subtle);
+		z-index: -1;
+	}
+}

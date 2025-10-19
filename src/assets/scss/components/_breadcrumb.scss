@@ -1,0 +1,11 @@
+.breadcrumb-modifier {
+	--bs-breadcrumb-padding-x: 0;
+	--bs-breadcrumb-padding-y: 0;
+	--bs-breadcrumb-margin-bottom: 0;
+	--bs-breadcrumb-divider-color: #{var(--bs-light-text-emphasis)};
+	--bs-breadcrumb-item-padding-x: 0.5rem;
+	--bs-breadcrumb-item-active-color: #{var(--bs-light-text-emphasis)};
+	.breadcrumb-item + .breadcrumb-item::before {
+		display: none;
+	}
+}

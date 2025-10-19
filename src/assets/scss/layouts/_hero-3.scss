@@ -1,0 +1,11 @@
+@use "../global" as *;
+.hero-3 {
+	padding-top: clamp(7.5rem, 9.26vw + 1rem, 11rem);
+	background-image: url(../img/shapes/hero-2-grid-box.png);
+	background-repeat: repeat;
+}
+[data-bs-theme="dark"] {
+	.hero-3 {
+		background-image: url(../img/shapes/hero-2-grid-box-dark.png);
+	}
+}

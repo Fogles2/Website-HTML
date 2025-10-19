@@ -1,0 +1,9 @@
+@use "../global" as *;
+.post-img-size {
+	width: rem(100);
+	height: rem(140);
+	@include screen(sm) {
+		width: rem(175);
+		height: rem(175);
+	}
+}

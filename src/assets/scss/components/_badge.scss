@@ -1,0 +1,13 @@
+/* Badge Style */
+.badge {
+	--bs-badge-border-radius: 0.15rem;
+	--bs-badge-font-weight: 500;
+	--bs-badge-padding-x: 0.5rem;
+	--bs-badge-padding-y: 0.25rem;
+
+	display: inline-flex;
+	align-items: center;
+	gap: 0.25rem;
+	text-decoration: none;
+	line-height: 1.334;
+}

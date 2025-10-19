@@ -1,0 +1,109 @@
+@use "../global" as *;
+.authentication-page {
+	&--container {
+		@media (min-width: 1920px) {
+			max-width: 1800px;
+		}
+	}
+	&__left {
+		padding-block: clamp(3.75rem, 6.5vw + 1rem, 7.5rem);
+		position: relative;
+		isolation: isolate;
+		overflow: hidden;
+		border-radius: 1rem;
+		@include screen(xl) {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			min-height: calc(100vh - 64px);
+		}
+		&-content {
+			@include screen(md) {
+				padding-inline: clamp(1.25rem, 2.1vw + 1rem, 2.5rem);
+			}
+			@include screen(lg) {
+				padding-inline: clamp(2.5rem, 4.21vw + 1rem, 5rem);
+			}
+			@include screen(xl) {
+				padding-inline: clamp(1rem, 1.68vw + 1rem, 2rem);
+				margin-top: auto;
+			}
+			@include screen(xxl) {
+				padding-inline: clamp(1.25rem, 2.1vw + 1rem, 2.5rem);
+			}
+		}
+	}
+	&__right {
+		padding-block: clamp(3.75rem, 6.5vw + 1rem, 7.5rem);
+		@include screen(xl) {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+		}
+		&-content {
+			@include screen(md) {
+				padding-inline: clamp(1.25rem, 2.1vw + 1rem, 2.5rem);
+			}
+			@include screen(lg) {
+				padding-inline: clamp(2.5rem, 4.21vw + 1rem, 5rem);
+			}
+			@include screen(xl) {
+				padding-inline: clamp(1rem, 1.68vw + 1rem, 2rem);
+				margin-block: auto;
+			}
+			@include screen(xxl) {
+				padding-inline: clamp(1.25rem, 2.1vw + 1rem, 2.5rem);
+			}
+			@media (min-width: 1920px) {
+				padding-inline: clamp(2.5rem, 4.21vw + 1rem, 5rem);
+			}
+		}
+	}
+	&__glass {
+		width: 50%;
+		height: 100%;
+		border-bottom: 1.163px solid rgba(255, 255, 255, 0.2);
+		background: linear-gradient(
+			270deg,
+			rgba(255, 255, 255, 0.2) 0.01%,
+			rgb(127 158 225 / 20%) 31.13%,
+			rgba(255, 255, 255, 0.2) 110.67%
+		);
+		background-blend-mode: overlay;
+		backdrop-filter: blur(25px);
+		&-container {
+			background: rgba(0, 89, 223, 0.05);
+			box-shadow: -1.163px -1.163px 0.581px 0px rgba(255, 255, 255, 0.3) inset;
+		}
+	}
+	&-2 {
+		position: relative;
+		isolation: isolate;
+		overflow: hidden;
+		&::before {
+			content: "";
+			width: rem(300);
+			height: rem(300);
+			position: absolute;
+			top: 0;
+			right: 10%;
+			transform: translateY(-25%);
+			background: rgba(var(--bs-white-rgb), 0.1);
+			border: 1px solid rgba(var(--bs-white-rgb), 0.1);
+			border-radius: 50%;
+			backdrop-filter: blur(10px);
+			z-index: -1;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			top: 5%;
+			right: 20%;
+			width: rem(90);
+			height: rem(90);
+			border-radius: 50%;
+			background-color: rgba(var(--bs-primary-rgb), 0.1);
+			z-index: -2;
+		}
+	}
+}

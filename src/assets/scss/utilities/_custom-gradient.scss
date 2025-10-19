@@ -1,0 +1,42 @@
+// Custom Gradient Blue Backgrounds
+.bg-gradient-blue-1 {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+}
+
+.bg-gradient-blue-2 {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%) !important;
+}
+
+.bg-gradient-blue-3 {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%) !important;
+}
+
+.bg-gradient-blue-4 {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%) !important;
+}
+
+.bg-gradient-blue-5 {
+  background: linear-gradient(135deg, #30cfd0 0%, #330867 100%) !important;
+}
+
+.bg-gradient-blue-6 {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%) !important;
+}
+
+.bg-gradient-blue-7 {
+  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%) !important;
+}
+
+.bg-gradient-blue-8 {
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%) !important;
+}
+
+
+.bg-dark-blue-gradient {
+  background: linear-gradient(135deg, #000080 0%, #4169e1 100%) !important; /* Dark blue to Royal Blue */
+}
+
+.underglow-effect {
+  box-shadow: 0 0 15px 5px rgba(65, 105, 225, 0.7); /* Royal Blue underglow */
+}
+

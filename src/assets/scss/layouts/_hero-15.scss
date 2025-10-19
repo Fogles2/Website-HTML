@@ -1,0 +1,28 @@
+.hero-15 {
+	position: relative;
+	isolation: isolate;
+	padding-block: clamp(9.5rem, 11.5vw + 1rem, 13.75rem);
+	background-image: linear-gradient(180deg, #1433d6 -29.02%, #0e2496 79.78%);
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background-image: url(../img/shapes/hero-7-shape.png);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		z-index: -1;
+	}
+	&__shape-1 {
+		display: none;
+		@media (min-width: 1920px) {
+			display: block;
+			opacity: 0.75;
+			position: absolute;
+			bottom: 10%;
+			left: 7%;
+			pointer-events: none;
+			z-index: -1;
+		}
+	}
+}

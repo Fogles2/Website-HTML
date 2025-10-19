@@ -1,0 +1,1470 @@
+{% extends "layouts/default-rtl.html" %}
+{% set dataTheme = "cloud-server-hosting" %}
+{% set bodyClass = "bg-light dark:bg-dark-subtle" %}
+{% set navbar = true %} 
+{% set navBtnColor = "fw-medium btn-secondary text-dark" %}
+{% set primaryHeader = "primary-header--transparent-light-alt primary-header--fixed top-0 primary-header-crossed:full-dark" %}
+{% set ltrLink = "cloud-server-hosting.html" %}
+{% set logoLight = "logo-light.png" %}
+{% set logoDark = "logo-light.png" %}
+<!-- Content Block -->
+{% block content %}
+
+<!-- Hero  -->
+<div class="hero-6">
+<div class="section-space-md-bottom text-center">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-10 col-lg-8">
+<h1 class="mb-8 text-light">تمكين نموك باستخدام تقنية السحابة</h1>
+<a class="btn btn-secondary fw-medium" href="{{root}}cloud-hosting-rtl.html">
+						استكشاف استضافة السحابة
+					</a>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="text-center">
+<div class="d-inline-block position-relative z-1">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/cloud-server-hero-img.png"/>
+<img alt="image" class="img-fluid d-none d-md-block position-absolute top-0 end-0 translate-middle-y z-n1 pointer-none" src="{{root}}assets/img/cloud-server-hero-img-2.png"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Hero End -->
+<!-- Pricing -->
+<div class="section-space-y">
+<div class="section-space-md-bottom text-center">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-10">
+<h3>الخادم السحابي <span class="text-primary">خطط التسعير</span></h3>
+</div>
+<p class="mb-0 max-text-14 mx-auto">
+					لوكال هوست موجودة لدعم عملائنا. أكثر من 80 ألف وكالة، شركة صغيرة
+					ومتوسطة، وأفراد يستجيبون لشغفهم ويطورون أعمالهم.
+				</p>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="section-space-xsm-bottom text-center">
+<ul class="nav nav-pills tab-1 px-4 px-sm-2 py-2 bg-light-subtle rounded-1 shadow rounded-pill">
+<li class="nav-item">
+<button class="nav-link fs-12 fw-semibold rounded-pill active" data-bs-target="#virtualServer" data-bs-toggle="pill" type="button">
+								الخوادم الافتراضية
+							</button>
+</li>
+<li class="nav-item">
+<button class="nav-link fs-12 fw-semibold rounded-pill" data-bs-target="#premiumServer" data-bs-toggle="pill" type="button">
+								خوادم متميزة
+							</button>
+</li>
+<li class="nav-item">
+<button class="nav-link fs-12 fw-semibold rounded-pill" data-bs-target="#residentialServer" data-bs-toggle="pill" type="button">
+								خوادم سكنية
+							</button>
+</li>
+</ul>
+</div>
+<div class="tab-content">
+<div class="tab-pane fade show active" id="virtualServer">
+<div class="table-responsive">
+<table class="table table-borderless table-modifier">
+<thead>
+<tr>
+<th class="text-center fw-semibold">اسم</th>
+<th class="text-center fw-semibold">النوى</th>
+<th class="text-center fw-semibold">الذاكرة</th>
+<th class="text-center fw-semibold">حجم القرص</th>
+<th class="text-center fw-semibold">السعر</th>
+<th class="text-center fw-semibold"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="text-center">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-cloud.png"/>
+<span class="d-block mt-2 fs-18 fw-bold text-heading">
+												سحابة SG1
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												2 وحدة معالجة مركزية افتراضية
+											</span>
+<span class="d-block text-body">
+												وحدة معالجة مركزية vCore واحدة
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												2 جيجابايت
+											</span>
+<span class="d-block text-body">
+												ذاكرة DDR4 ECC
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												35 جيجابايت
+											</span>
+<span class="d-block text-body">
+												التخزين السحابي SSD
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+<span class="text-primary">$4.95/</span>
+<span class="fs-16 fw-normal">شهر</span>
+</span>
+<span class="d-block fs-14 text-body">
+												للبيع -<span class="text-primary">احفظ 30%</span>
+</span>
+</td>
+<td class="text-center">
+<a class="btn fs-14 fw-medium border bg-body text-heading hover:border-primary hover:bg-primary hover:text-light transition" href="{{root}}cart-rtl.html">
+												طلب الآن
+											</a>
+</td>
+</tr>
+<tr>
+<td class="text-center">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-cloud.png"/>
+<span class="d-block mt-2 fs-18 fw-bold text-heading">
+												سحابة SG2
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												2 وحدة معالجة مركزية افتراضية
+											</span>
+<span class="d-block text-body">
+												نوى Intel Xeon
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												3 جيجابايت
+											</span>
+<span class="d-block text-body">
+												ذاكرة DDR4 ECC
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												50 جيجابايت
+											</span>
+<span class="d-block text-body">
+												التخزين السحابي SSD
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+<span class="text-primary">$14.95/</span>
+<span class="fs-16 fw-normal">شهر</span>
+</span>
+<span class="d-block fs-14 text-body">
+												للبيع -
+												<span class="text-primary">احفظ 30%</span>
+</span>
+</td>
+<td class="text-center">
+<a class="btn fs-14 fw-medium border bg-body text-heading hover:border-primary hover:bg-primary hover:text-light transition" href="{{root}}cart-rtl.html">
+												طلب الآن
+											</a>
+</td>
+</tr>
+<tr>
+<td class="text-center">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-cloud.png"/>
+<span class="d-block mt-2 fs-18 fw-bold text-heading">
+												سحابة SG3
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												3 وحدة معالجة مركزية افتراضية
+											</span>
+<span class="d-block text-body">
+												إنتل كور
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												4 جيجابايت
+											</span>
+<span class="d-block text-body">
+												ذاكرة DDR4 ECC
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												75 جيجابايت
+											</span>
+<span class="d-block text-body">
+												التخزين السحابي SSD
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+<span class="text-primary">$16.95/</span>
+<span class="fs-16 fw-normal">شهر</span>
+</span>
+<span class="d-block fs-14 text-body">
+												للبيع -
+												<span class="text-primary">احفظ 30%</span>
+</span>
+</td>
+<td class="text-center">
+<a class="btn fs-14 fw-medium border bg-body text-heading hover:border-primary hover:bg-primary hover:text-light transition" href="{{root}}sign-in-2-rtl.html">
+												طلب الآن
+											</a>
+</td>
+</tr>
+<tr>
+<td class="text-center">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-cloud.png"/>
+<span class="d-block mt-2 fs-18 fw-bold text-heading">
+												سحابة SG4
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												4 وحدة معالجة مركزية افتراضية
+											</span>
+<span class="d-block text-body">
+												إنتل كور
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												5 جيجابايت
+											</span>
+<span class="d-block text-body">
+												ذاكرة DDR4 ECC
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												100 جيجابايت
+											</span>
+<span class="d-block text-body">
+												التخزين السحابي SSD
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+<span class="text-primary">$19.95/</span>
+<span class="fs-16 fw-normal">شهر</span>
+</span>
+<span class="d-block fs-14 text-body">
+												للبيع -
+												<span class="text-primary">احفظ 30%</span>
+</span>
+</td>
+<td class="text-center">
+<a class="btn fs-14 fw-medium border bg-body text-heading hover:border-primary hover:bg-primary hover:text-light transition" href="{{root}}cart-rtl.html">
+												طلب الآن
+											</a>
+</td>
+</tr>
+<tr>
+<td class="text-center">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-cloud.png"/>
+<span class="d-block mt-2 fs-18 fw-bold text-heading">
+												سحابة SG5
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												8 وحدة معالجة مركزية افتراضية
+											</span>
+<span class="d-block text-body">
+												إنتل كور
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												8 جيجابايت
+											</span>
+<span class="d-block text-body">
+												ذاكرة DDR4 ECC
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												125 جيجابايت
+											</span>
+<span class="d-block text-body">
+												التخزين السحابي SSD
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+<span class="text-primary">$24.99/</span>
+<span class="fs-16 fw-normal">شهر</span>
+</span>
+<span class="d-block fs-14 text-body">
+												للبيع -
+												<span class="text-primary">احفظ 30%</span>
+</span>
+</td>
+<td class="text-center">
+<a class="btn fs-14 fw-medium border bg-body text-heading hover:border-primary hover:bg-primary hover:text-light transition" href="{{root}}cart-rtl.html">
+												طلب الآن
+											</a>
+</td>
+</tr>
+<tr>
+<td class="text-center">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-cloud.png"/>
+<span class="d-block mt-2 fs-18 fw-bold text-heading">
+												سحابة SG6
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												16 وحدة معالجة مركزية افتراضية
+											</span>
+<span class="d-block text-body">
+												إنتل كور
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												32 جيجابايت
+											</span>
+<span class="d-block text-body">
+												ذاكرة DDR4 ECC
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												150 جيجابايت
+											</span>
+<span class="d-block text-body">
+												التخزين السحابي SSD
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+<span class="text-primary">$29.99/</span>
+<span class="fs-16 fw-normal">شهر</span>
+</span>
+<span class="d-block fs-14 text-body">
+												للبيع -
+												<span class="text-primary">احفظ 30%</span>
+</span>
+</td>
+<td class="text-center">
+<a class="btn fs-14 fw-medium border bg-body text-heading hover:border-primary hover:bg-primary hover:text-light transition" href="{{root}}cart-rtl.html">
+												طلب الآن
+											</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="tab-pane fade" id="premiumServer">
+<div class="table-responsive">
+<table class="table table-borderless table-modifier">
+<thead>
+<tr>
+<th class="text-center fw-semibold">الاسم</th>
+<th class="text-center fw-semibold">
+											وحدات المعالجة المركزية
+										</th>
+<th class="text-center fw-semibold">الذاكرة</th>
+<th class="text-center fw-semibold">حجم القرص</th>
+<th class="text-center fw-semibold">السعر</th>
+<th class="text-center fw-semibold"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="text-center">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-cloud.png"/>
+<span class="d-block mt-2 fs-18 fw-bold text-heading">
+												سحابة SG1
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												2 وحدة معالجة مركزية افتراضية
+											</span>
+<span class="d-block text-body">
+												وحدة معالجة مركزية vCore واحدة
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												2 جيجابايت
+											</span>
+<span class="d-block text-body">
+												ذاكرة DDR4 ECC
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												35 جيجابايت
+											</span>
+<span class="d-block text-body">
+												التخزين السحابي SSD
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+<span class="text-primary">$4.95/</span>
+<span class="fs-16 fw-normal">شهر</span>
+</span>
+<span class="d-block fs-14 text-body">
+												للبيع -
+												<span class="text-primary">احفظ 30%</span>
+</span>
+</td>
+<td class="text-center">
+<a class="btn fs-14 fw-medium border bg-body text-heading hover:border-primary hover:bg-primary hover:text-light transition" href="{{root}}cart-rtl.html">
+												طلب الآن
+											</a>
+</td>
+</tr>
+<tr>
+<td class="text-center">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-cloud.png"/>
+<span class="d-block mt-2 fs-18 fw-bold text-heading">
+												سحابة SG2
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												2 وحدة معالجة مركزية افتراضية
+											</span>
+<span class="d-block text-body">
+												نوى Intel Xeon
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												3 جيجابايت
+											</span>
+<span class="d-block text-body">
+												ذاكرة DDR4 ECC
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												50 جيجابايت
+											</span>
+<span class="d-block text-body">
+												التخزين السحابي SSD
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+<span class="text-primary">$14.95/</span>
+<span class="fs-16 fw-normal">شهر</span>
+</span>
+<span class="d-block fs-14 text-body">
+												للبيع -
+												<span class="text-primary">احفظ 30%</span>
+</span>
+</td>
+<td class="text-center">
+<a class="btn fs-14 fw-medium border bg-body text-heading hover:border-primary hover:bg-primary hover:text-light transition" href="{{root}}cart-rtl.html">
+												طلب الآن
+											</a>
+</td>
+</tr>
+<tr>
+<td class="text-center">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-cloud.png"/>
+<span class="d-block mt-2 fs-18 fw-bold text-heading">
+												سحابة SG3
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												3 وحدة معالجة مركزية افتراضية
+											</span>
+<span class="d-block text-body">
+												إنتل كور
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												4 جيجابايت
+											</span>
+<span class="d-block text-body">
+												ذاكرة DDR4 ECC
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												75 جيجابايت
+											</span>
+<span class="d-block text-body">
+												التخزين السحابي SSD
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+<span class="text-primary">$16.95/</span>
+<span class="fs-16 fw-normal">شهر</span>
+</span>
+<span class="d-block fs-14 text-body">
+												للبيع -
+												<span class="text-primary">احفظ 30%</span>
+</span>
+</td>
+<td class="text-center">
+<a class="btn fs-14 fw-medium border bg-body text-heading hover:border-primary hover:bg-primary hover:text-light transition" href="{{root}}cart-rtl.html">
+												طلب الآن
+											</a>
+</td>
+</tr>
+<tr>
+<td class="text-center">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-cloud.png"/>
+<span class="d-block mt-2 fs-18 fw-bold text-heading">
+												سحابة SG4
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												4 وحدة معالجة مركزية افتراضية
+											</span>
+<span class="d-block text-body">
+												إنتل كور
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												5 جيجابايت
+											</span>
+<span class="d-block text-body">
+												ذاكرة DDR4 ECC
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												100 جيجابايت
+											</span>
+<span class="d-block text-body">
+												التخزين السحابي SSD
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+<span class="text-primary">$19.95/</span>
+<span class="fs-16 fw-normal">شهر</span>
+</span>
+<span class="d-block fs-14 text-body">
+												للبيع -
+												<span class="text-primary">احفظ 30%</span>
+</span>
+</td>
+<td class="text-center">
+<a class="btn fs-14 fw-medium border bg-body text-heading hover:border-primary hover:bg-primary hover:text-light transition" href="{{root}}cart-rtl.html">
+												طلب الآن
+											</a>
+</td>
+</tr>
+<tr>
+<td class="text-center">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-cloud.png"/>
+<span class="d-block mt-2 fs-18 fw-bold text-heading">
+												سحابة SG5
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												8 وحدة معالجة مركزية افتراضية
+											</span>
+<span class="d-block text-body">
+												إنتل كور
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												8 جيجابايت
+											</span>
+<span class="d-block text-body">
+												ذاكرة DDR4 ECC
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												125 جيجابايت
+											</span>
+<span class="d-block text-body">
+												التخزين السحابي SSD
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+<span class="text-primary">$24.99/</span>
+<span class="fs-16 fw-normal">شهر</span>
+</span>
+<span class="d-block fs-14 text-body">
+												للبيع -
+												<span class="text-primary">احفظ 30%</span>
+</span>
+</td>
+<td class="text-center">
+<a class="btn fs-14 fw-medium border bg-body text-heading hover:border-primary hover:bg-primary hover:text-light transition" href="{{root}}cart-rtl.html">
+												طلب الآن
+											</a>
+</td>
+</tr>
+<tr>
+<td class="text-center">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-cloud.png"/>
+<span class="d-block mt-2 fs-18 fw-bold text-heading">
+												سحابة SG6
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												16 وحدة معالجة مركزية افتراضية
+											</span>
+<span class="d-block text-body">
+												إنتل كور
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												32 جيجابايت
+											</span>
+<span class="d-block text-body">
+												ذاكرة DDR4 ECC
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												150 جيجابايت
+											</span>
+<span class="d-block text-body">
+												التخزين السحابي SSD
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+<span class="text-primary">$29.99/</span>
+<span class="fs-16 fw-normal">شهر</span>
+</span>
+<span class="d-block fs-14 text-body">
+												للبيع -
+												<span class="text-primary">احفظ 30%</span>
+</span>
+</td>
+<td class="text-center">
+<a class="btn fs-14 fw-medium border bg-body text-heading hover:border-primary hover:bg-primary hover:text-light transition" href="{{root}}cart-rtl.html">
+												اطلب الآن
+											</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="tab-pane fade" id="residentialServer">
+<div class="table-responsive">
+<table class="table table-borderless table-modifier">
+<thead>
+<tr>
+<th class="text-center fw-semibold">الاسم</th>
+<th class="text-center fw-semibold">
+											وحدات المعالجة المركزية
+										</th>
+<th class="text-center fw-semibold">الذاكرة</th>
+<th class="text-center fw-semibold">حجم القرص</th>
+<th class="text-center fw-semibold">السعر</th>
+<th class="text-center fw-semibold"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="text-center">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-cloud.png"/>
+<span class="d-block mt-2 fs-18 fw-bold text-heading">
+												سحابة SG1
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												2 وحدة معالجة مركزية افتراضية
+											</span>
+<span class="d-block text-body">
+												وحدة معالجة مركزية vCore واحدة
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												2 جيجابايت
+											</span>
+<span class="d-block text-body">
+												ذاكرة DDR4 ECC
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												35 جيجابايت
+											</span>
+<span class="d-block text-body">
+												التخزين السحابي SSD
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+<span class="text-primary">$4.95/</span>
+<span class="fs-16 fw-normal">شهر</span>
+</span>
+<span class="d-block fs-14 text-body">
+												للبيع -
+												<span class="text-primary">احفظ 30%</span>
+</span>
+</td>
+<td class="text-center">
+<a class="btn fs-14 fw-medium border bg-body text-heading hover:border-primary hover:bg-primary hover:text-light transition" href="{{root}}cart-rtl.html">
+												اطلب الآن
+											</a>
+</td>
+</tr>
+<tr>
+<td class="text-center">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-cloud.png"/>
+<span class="d-block mt-2 fs-18 fw-bold text-heading">
+												سحابة SG2
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												2 وحدة معالجة مركزية افتراضية
+											</span>
+<span class="d-block text-body">
+												نوى Intel Xeon
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												3 جيجابايت
+											</span>
+<span class="d-block text-body">
+												ذاكرة DDR4 ECC
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												50 جيجابايت
+											</span>
+<span class="d-block text-body">
+												التخزين السحابي SSD
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+<span class="text-primary">$14.95/</span>
+<span class="fs-16 fw-normal">شهر</span>
+</span>
+<span class="d-block fs-14 text-body">
+												للبيع -
+												<span class="text-primary">احفظ 30%</span>
+</span>
+</td>
+<td class="text-center">
+<a class="btn fs-14 fw-medium border bg-body text-heading hover:border-primary hover:bg-primary hover:text-light transition" href="{{root}}cart-rtl.html">
+												اطلب الآن
+											</a>
+</td>
+</tr>
+<tr>
+<td class="text-center">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-cloud.png"/>
+<span class="d-block mt-2 fs-18 fw-bold text-heading">
+												سحابة SG3
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												3 وحدة معالجة مركزية افتراضية
+											</span>
+<span class="d-block text-body">
+												إنتل كور
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												4 غيغابايت
+											</span>
+<span class="d-block text-body">
+												ذاكرة DDR4 ECC
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												75 جيجابايت
+											</span>
+<span class="d-block text-body">
+												التخزين السحابي SSD
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+<span class="text-primary">$16.95/</span>
+<span class="fs-16 fw-normal">شهر</span>
+</span>
+<span class="d-block fs-14 text-body">
+												للبيع -
+												<span class="text-primary">احفظ 30%</span>
+</span>
+</td>
+<td class="text-center">
+<a class="btn fs-14 fw-medium border bg-body text-heading hover:border-primary hover:bg-primary hover:text-light transition" href="{{root}}cart-rtl.html">
+												اطلب الآن
+											</a>
+</td>
+</tr>
+<tr>
+<td class="text-center">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-cloud.png"/>
+<span class="d-block mt-2 fs-18 fw-bold text-heading">
+												سحابة SG4
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												4 وحدة معالجة مركزية افتراضية
+											</span>
+<span class="d-block text-body">
+												إنتل كور
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												5 غيغابايت
+											</span>
+<span class="d-block text-body">
+												ذاكرة DDR4 ECC
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												100 غيغابايت
+											</span>
+<span class="d-block text-body">
+												التخزين السحابي SSD
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+<span class="text-primary">$19.95/</span>
+<span class="fs-16 fw-normal">شهر</span>
+</span>
+<span class="d-block fs-14 text-body">
+												للبيع -
+												<span class="text-primary">احفظ 30%</span>
+</span>
+</td>
+<td class="text-center">
+<a class="btn fs-14 fw-medium border bg-body text-heading hover:border-primary hover:bg-primary hover:text-light transition" href="{{root}}cart-rtl.html">
+												اطلب الآن
+											</a>
+</td>
+</tr>
+<tr>
+<td class="text-center">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-cloud.png"/>
+<span class="d-block mt-2 fs-18 fw-bold text-heading">
+												سحابة SG5
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												8 وحدة معالجة مركزية افتراضية
+											</span>
+<span class="d-block text-body">
+												إنتل كور
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												8 غيغابايت
+											</span>
+<span class="d-block text-body">
+												ذاكرة DDR4 ECC
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												125 غيغابايت
+											</span>
+<span class="d-block text-body">
+												التخزين السحابي SSD
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+<span class="text-primary">$24.99/</span>
+<span class="fs-16 fw-normal">شهر</span>
+</span>
+<span class="d-block fs-14 text-body">
+												للبيع -
+												<span class="text-primary">احفظ 30%</span>
+</span>
+</td>
+<td class="text-center">
+<a class="btn fs-14 fw-medium border bg-body text-heading hover:border-primary hover:bg-primary hover:text-light transition" href="{{root}}cart-rtl.html">
+												اطلب الآن
+											</a>
+</td>
+</tr>
+<tr>
+<td class="text-center">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-cloud.png"/>
+<span class="d-block mt-2 fs-18 fw-bold text-heading">
+												سحابة SG6
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												16 وحدة معالجة مركزية افتراضية
+											</span>
+<span class="d-block text-body">
+												إنتل كور
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												32 غيغابايت
+											</span>
+<span class="d-block text-body">
+												ذاكرة DDR4 ECC
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+												150 جيجابايت
+											</span>
+<span class="d-block text-body">
+												التخزين السحابي SSD
+											</span>
+</td>
+<td class="text-center">
+<span class="d-block mb-1 fs-18 fw-bold text-heading">
+<span class="text-primary">$29.99/</span>
+<span class="fs-16 fw-normal">شهر</span>
+</span>
+<span class="d-block fs-14 text-body">
+												للبيع -
+												<span class="text-primary">احفظ 30%</span>
+</span>
+</td>
+<td class="text-center">
+<a class="btn fs-14 fw-medium border bg-body text-heading hover:border-primary hover:bg-primary hover:text-light transition" href="{{root}}cart-rtl.html">
+												اطلب الآن
+											</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Pricing End -->
+<!-- Service -->
+<div class="section-space-y bg-dark position-relative z-1">
+<div class="section-space-md-bottom">
+<div class="container">
+<div class="row g-4 justify-content-between align-items-center">
+<div class="col-md-6 col-xxl-5">
+<h3 class="mb-0 text-light">استكشاف موقع الويب لخدمة الاستضافة</h3>
+</div>
+<div class="col-md-6 col-xxl-5">
+<p class="mb-0 text-light">
+						تجربة استضافة الويب عالية السرعة لدينا، مع دعم محلي على مدار
+						الساعة، مناسبة للشركات من جميع الأحجام. سواء كنت مبتدئًا أو مؤسسة
+						تجارة إلكترونية مزدهرة، فإن حلول الاستضافة لدينا مصممة لتلبية
+						احتياجاتك.
+					</p>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row g-4">
+<div class="col-md-6 col-lg-4">
+<div class="bg-light-subtle rounded-3 p-4 p-sm-8 py-md-10 h-100">
+<div class="mb-6">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-feature-17.png"/>
+</div>
+<h6 class="fs-20">توافر عالية</h6>
+<p class="mb-8">
+						تضمن حلول الاستضافة لدينا وقت تشغيل بنسبة 99.9٪، مما يعني أن موقعك
+						سيبقى متاحًا دائمًا.
+					</p>
+<a class="btn btn-primary-subtle btn-sm align-items-center" href="{{root}}features-rtl.html">
+						استكشاف المزيد
+						<i class="align-middle flex-shrink-0 ti ti-arrow-right-line"></i>
+</a>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="bg-light-subtle rounded-3 p-4 p-sm-8 py-md-10 h-100">
+<div class="mb-6">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-feature-18.png"/>
+</div>
+<h6 class="fs-20">تخزين عالي الأداء</h6>
+<p class="mb-8">
+						شبكتنا للتخزين عالي الأداء، جنبًا إلى جنب مع مجموعة التخزين
+						الكلية، تجعل خوادم السحابة لدينا
+					</p>
+<a class="btn btn-primary-subtle btn-sm align-items-center" href="{{root}}features-rtl.html">
+						استكشاف المزيد
+						<i class="align-middle flex-shrink-0 ti ti-arrow-right-line"></i>
+</a>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="bg-light-subtle rounded-3 p-4 p-sm-8 py-md-10 h-100">
+<div class="mb-6">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-feature-19.png"/>
+</div>
+<h6 class="fs-20">إدارة الحلول</h6>
+<p class="mb-8">
+						إدارة مصممة لتناسب تطبيقك. تأتي جميع خدمات استضافة خوادم السحابة
+						لدينا مع دعم البنية التحتية على مدار الساعة
+					</p>
+<a class="btn btn-primary-subtle btn-sm align-items-center" href="{{root}}features-rtl.html">
+						استكشاف المزيد
+						<i class="align-middle flex-shrink-0 ti ti-arrow-right-line"></i>
+</a>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="bg-light-subtle rounded-3 p-4 p-sm-8 py-md-10 h-100">
+<div class="mb-6">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-feature-20.png"/>
+</div>
+<h6 class="fs-20">جدار حماية من الجيل التالي</h6>
+<p class="mb-8">
+						بدأ الأمر حتى استمتع الناس بما اختاروه، وكانوا هناك يتحدثون عن
+						المزيد من النصوص التي تلفت الانتباه.
+					</p>
+<a class="btn btn-primary-subtle btn-sm align-items-center" href="{{root}}features-rtl.html">
+						استكشاف المزيد
+						<i class="align-middle flex-shrink-0 ti ti-arrow-right-line"></i>
+</a>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="bg-light-subtle rounded-3 p-4 p-sm-8 py-md-10 h-100">
+<div class="mb-6">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-feature-21.png"/>
+</div>
+<h6 class="fs-20">الوصول الكامل إلى الجذر والصدفة</h6>
+<p class="mb-8">
+						شبكتنا للتخزين عالي الأداء، جنبًا إلى جنب مع مجموعة التخزين
+						الكلية، تجعل خوادم السحابة لدينا
+					</p>
+<a class="btn btn-primary-subtle btn-sm align-items-center" href="{{root}}features-rtl.html">
+						استكشاف المزيد
+						<i class="align-middle flex-shrink-0 ti ti-arrow-right-line"></i>
+</a>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="bg-light-subtle rounded-3 p-4 p-sm-8 py-md-10 h-100">
+<div class="mb-6">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-feature-22.png"/>
+</div>
+<h6 class="fs-20">ضمان التشغيل بنسبة 99%</h6>
+<p class="mb-8">
+						تسمح لنا بنيتنا التحتية المكررة، جنبًا إلى جنب مع أنظمة المراقبة
+						لدينا، بالتفاخر بتشغيل بنسبة 99.9%. نحن نحقق بانتظام تشغيلًا بنسبة
+						100%
+					</p>
+<a class="btn btn-primary-subtle btn-sm align-items-center" href="{{root}}features-rtl.html">
+						استكشاف المزيد
+						<i class="align-middle flex-shrink-0 ti ti-arrow-right-line"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+<img alt="image" class="w-100 h-100 position-absolute inset-0 object-fit-cover z-n1 pointer-none opacity-50" src="{{root}}assets/img/shapes/about-shape-1.png"/>
+</div>
+<!-- Service End -->
+<!-- CTA  -->
+<div class="cta-3">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="cta-3__box p-4 p-md-6 rounded-3">
+<div class="bg-dark section-space-lg-y px-4 px-md-6 rounded text-center position-relative z-1">
+<div class="row justify-content-center">
+<div class="col-md-10 col-lg-8 col-xl-7">
+<h3 class="text-light">هل يناسب احتياجاتك؟</h3>
+<p class="mb-8 text-light max-text-14 mx-auto">
+									وفر الوقت والمال مع استضافة سحابية بسيطة وموثوقة موثوق
+									بها من قبل 80,000+ وكالة ومطورين وشركات تتطلب أداءً
+									عاليًا
+								</p>
+<div class="d-flex align-items-center justify-content-center gap-4 flex-wrap">
+<a class="btn btn-secondary fs-14 fw-medium" href="{{root}}sign-in-1-rtl.html">
+										ابدأ مجانًا
+									</a>
+<a class="btn btn-outline-light fs-14 fw-medium" href="{{root}}contact-rtl.html">
+										تواصل معنا
+									</a>
+</div>
+</div>
+</div>
+<img alt="image" class="img-fluid d-none d-md-block position-absolute start-0 bottom-0 z-n1 pointer-none" src="{{root}}assets/img/shapes/cta-img-1.png"/>
+<img alt="image" class="img-fluid d-none d-md-block position-absolute end-0 bottom-0 z-n1 pointer-none" src="{{root}}assets/img/shapes/cta-img-2.png"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA End -->
+<!-- About Section -->
+<div class="section-space-y">
+<div class="section-space-md-bottom">
+<div class="container">
+<div class="row g-4 align-items-center">
+<div class="col-lg-7 col-xl-6">
+<h3 class="mb-6">محمي بواسطة درع أمان لوكالهوست</h3>
+<p class="mb-8">
+						Turnpage Networks www.turnpage.io هو فريق بحث أمني يقدم معلومات حول التهديدات وخدمات
+						الأمان لمنتجات Fortinet. يركزون على تحليل التهديدات الناشئة
+						والبرامج الضارة والثغرات لمساعدة المؤسسات في حماية شبكاتها
+						وبياناتها
+					</p>
+<div class="row g-4">
+<div class="col-md-6">
+<div class="mb-6">
+<div class="d-inline-block position-relative z-1">
+<i class="fs-48 text-heading ti ti-globe"></i>
+<span class="d-inline-block position-absolute start-1 top-1 z-n1 pointer-none w-12 h-12 bg-primary bg-opacity-20 rounded-circle dark:bg-primary-subtle"></span>
+</div>
+</div>
+<h6 class="fs-20">معلومات التهديدات في الوقت الحقيقي</h6>
+<p class="mb-0">
+								تحديثات مستمرة حول التهديدات الناشئة والثغرات
+							</p>
+</div>
+<div class="col-md-6">
+<div class="mb-6">
+<div class="d-inline-block position-relative z-1">
+<i class="fs-48 text-heading ti ti-download-broken"></i>
+<span class="d-inline-block position-absolute start-1 top-1 z-n1 pointer-none w-12 h-12 bg-primary bg-opacity-20 rounded-circle dark:bg-primary-subtle"></span>
+</div>
+</div>
+<h6 class="fs-20">حماية متقدمة من البرامج الضارة</h6>
+<p class="mb-0">كشف ومنع أنواع مختلفة من البرامج الضارة</p>
+</div>
+</div>
+<a class="btn btn-primary-emphasis mt-12" href="{{root}}domain-transfer-rtl.html">
+						انتقل إلى المضيف المحلي
+					</a>
+</div>
+<div class="col-lg-5 col-xl-6">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/about-img-17.png"/>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row g-4 align-items-center">
+<div class="col-lg-5 col-xl-6">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/about-img-18.png"/>
+</div>
+<div class="col-lg-7 col-xl-6">
+<h3 class="mb-6">
+					اتفاقية مستوى الخدمة (SLA) لضمان وقت التشغيل بنسبة 100%
+				</h3>
+<p class="mb-8">
+					تقدم خدمات الاستضافة السحابية عالية التوفر لدينا ضمان وقت تشغيل بنسبة
+					100% للشبكة: مثالي لتشغيل التطبيقات الحيوية والحفاظ على موقعك على
+					الإنترنت
+				</p>
+<div class="row g-4">
+<div class="col-md-6">
+<div class="mb-6">
+<div class="d-inline-block position-relative z-1">
+<i class="fs-48 text-heading ti ti-license-maintenance"></i>
+<span class="d-inline-block position-absolute start-1 top-1 z-n1 pointer-none w-12 h-12 bg-primary bg-opacity-20 rounded-circle dark:bg-primary-subtle"></span>
+</div>
+</div>
+<h6 class="fs-20">الصيانة الدورية</h6>
+<p class="mb-0">
+							تم التخطيط لجدول زمني للصيانة وإبلاغه لتقليل التأثير على
+							المستخدمين
+						</p>
+</div>
+<div class="col-md-6">
+<div class="mb-6">
+<div class="d-inline-block position-relative z-1">
+<i class="fs-48 text-heading ti ti-img-load-box-duotone-line"></i>
+<span class="d-inline-block position-absolute start-1 top-1 z-n1 pointer-none w-12 h-12 bg-primary bg-opacity-20 rounded-circle dark:bg-primary-subtle"></span>
+</div>
+</div>
+<h6 class="fs-20">توازن التحميل</h6>
+<p class="mb-0">
+							توزيع حركة المرور عبر خوادم متعددة لمنع التحميل الزائد على
+							نقطة واحدة
+						</p>
+</div>
+<div class="col-md-6">
+<div class="mb-6">
+<div class="d-inline-block position-relative z-1">
+<i class="fs-48 text-heading ti ti-production-belt-time"></i>
+<span class="d-inline-block position-absolute start-1 top-1 z-n1 pointer-none w-12 h-12 bg-primary bg-opacity-20 rounded-circle dark:bg-primary-subtle"></span>
+</div>
+</div>
+<h6 class="fs-20">المراقبة في الوقت الحقيقي</h6>
+<p class="mb-0">
+							المراقبة المستمرة لأداء الخادم وتوافره لتحديد المشكلات وحلها
+							بسرعة
+						</p>
+</div>
+<div class="col-md-6">
+<div class="mb-6">
+<div class="d-inline-block position-relative z-1">
+<i class="fs-48 text-heading ti ti-customer-support-7"></i>
+<span class="d-inline-block position-absolute start-1 top-1 z-n1 pointer-none w-12 h-12 bg-primary bg-opacity-20 rounded-circle dark:bg-primary-subtle"></span>
+</div>
+</div>
+<h6 class="fs-20">وقت استجابة الدعم</h6>
+<p class="mb-0">
+							استجابة سريعة من فرق الدعم لمعالجة أي مشكلات قد تؤثر على وقت
+							التشغيل.
+						</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- About Section End -->
+<!-- After Service Section -->
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="section-space-y px-4 px-sm-6 px-md-8 px-xl-12 px-xxl-15 rounded-4 bg-body position-relative z-1">
+<div class="section-space-md-bottom">
+<div class="row g-4 justify-content-xxl-between">
+<div class="col-md-7 col-xxl-6">
+<div class="d-flex align-items-center gap-3 mb-6">
+<i class="fs-24 text-primary flex-shrink-0 ti ti-twotone-wordpress"></i>
+<span class="d-block text-heading">
+									يعمل ووردبريس بشكل أفضل على المضيف المحلي
+								</span>
+</div>
+<h4 class="mb-8 text-heading">
+								“يمكننا بسرعة إنشاء حسابات جديدة وإعداد التطبيق"
+							</h4>
+<div class="d-flex align-items-center gap-4">
+<div class="w-18 h-18 d-grid place-content-center bg-primary-emphasis rounded flex-shrink-0">
+<i class="fs-36 text-primary-subtle ti ti-phone-call"></i>
+</div>
+<div class="flex-grow-1">
+<div class="d-flex align-items-center gap-2">
+<div class="d-flex gap-2 align-items-center">
+<span class="d-inline-block w-2 h-2 rounded-circle bg-success"></span>
+<span class="d-block fw-bold text-body">Calls</span>
+</div>
+<span class="d-block fs-14 text-body">(Last 7 days)</span>
+</div>
+<h4 class="mb-0 text-heading">+12 125879654</h4>
+</div>
+</div>
+</div>
+<div class="col-md-5">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/cta-img-13.png"/>
+</div>
+</div>
+</div>
+<div class="section-space-sm-y px-4 px-md-8 px-xl-12 rounded-3 bg-primary bg-opacity-5 border border-primary border-opacity-30">
+<div class="row g-4 align-items-center">
+<div class="col-md-8">
+<div class="d-flex align-items-center gap-6">
+<div class="flex-shrink-0">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-support-blue.png"/>
+</div>
+<h6 class="mb-0 fw-semibold text-heading">
+									دع خبرائنا يساعدونك في تشغيل مشاريعك دون تأخير.
+								</h6>
+</div>
+</div>
+<div class="col-md-4 text-md-end">
+<a class="btn fs-14 btn-primary" href="{{root}}contact-rtl.html">
+								الدردشة مع الخبراء
+							</a>
+</div>
+</div>
+</div>
+<img alt="image" class="img-fluid d-none d-lg-block position-absolute top-0 end-0 z-n1 pointer-none" src="{{root}}assets/img/shapes/cta-shape-1.png"/>
+</div>
+</div>
+</div>
+</div>
+<!-- After Service Section End -->
+<!-- FAQ  -->
+<div class="section-space-y">
+<div class="container">
+<div class="row g-4 justify-content-between">
+<div class="col-md-5 col-xxl-4">
+<h3>الأسئلة الشائعة</h3>
+<p class="mb-8">
+					الوصول إلى محرك كوبيرنيتيس المحلي من خلال وحدة التحكم المحلية المجانية
+					أو مباشرة.
+				</p>
+<img alt="image" class="img-fluid" src="{{root}}assets/img/faq-img-1.png"/>
+</div>
+<div class="col-md-7 col-xxl-6">
+<div class="accordion accordion-separate accordion--primary" id="accordion-separate-rounded">
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button aria-expanded="true" class="accordion-button fw-medium shadow" data-bs-target="#accordion-s1" data-bs-toggle="collapse" type="button">
+								هل تقوم بتحصيل رسوم مقابل الحالات المتوقفة؟
+							</button>
+</h2>
+<div class="accordion-collapse shadow collapse show" data-bs-parent="#accordion-separate-rounded" id="accordion-s1">
+<div class="accordion-body border border-dark border-opacity-5 fs-14">
+								لم نُخصم أي مبلغ من بطاقتك. ما لاحظته هو تفويض مؤقت للتحقق
+								من صحة البطاقة المُقدمة. سينتهي هذا التفويض تلقائيًا وفقًا
+								لسياسة مصرفك، وعادةً ما يكون ذلك خلال بضعة أيام.
+							</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button aria-expanded="false" class="accordion-button collapsed fw-medium shadow" data-bs-target="#accordion-s2" data-bs-toggle="collapse" type="button">
+								ما هو دور فولتر فيما يتعلق باللائحة العامة لحماية البيانات
+								(GDPR)؟
+							</button>
+</h2>
+<div class="accordion-collapse collapse shadow" data-bs-parent="#accordion-separate-rounded" id="accordion-s2">
+<div class="accordion-body border border-dark border-opacity-5 fs-14">
+								لم نُخصم أي مبلغ من بطاقتك. ما لاحظته هو تفويض مؤقت للتحقق
+								من صحة البطاقة المُقدمة. سينتهي هذا التفويض تلقائيًا وفقًا
+								لسياسة مصرفك، وعادةً ما يكون ذلك خلال بضعة أيام.
+							</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button aria-expanded="false" class="accordion-button collapsed fw-medium shadow" data-bs-target="#accordion-s3" data-bs-toggle="collapse" type="button">
+								كيف سأعرف إذا تم قبولي في البرنامج؟
+							</button>
+</h2>
+<div class="accordion-collapse collapse shadow" data-bs-parent="#accordion-separate-rounded" id="accordion-s3">
+<div class="accordion-body border border-dark border-opacity-5 fs-14">
+								لم نُخصم أي مبلغ من بطاقتك. ما لاحظته هو تفويض مؤقت للتحقق
+								من صحة البطاقة المُقدمة. سينتهي هذا التفويض تلقائيًا وفقًا
+								لسياسة مصرفك، وعادةً ما يكون ذلك خلال بضعة أيام.
+							</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button aria-expanded="false" class="accordion-button collapsed fw-medium shadow" data-bs-target="#accordion-s4" data-bs-toggle="collapse" type="button">
+								ما هي قوالب نظام التشغيل التي تقدمها؟
+							</button>
+</h2>
+<div class="accordion-collapse collapse shadow" data-bs-parent="#accordion-separate-rounded" id="accordion-s4">
+<div class="accordion-body border border-dark border-opacity-5 fs-14">
+								لم نُخصم أي مبلغ من بطاقتك. ما لاحظته هو تفويض مؤقت للتحقق
+								من صحة البطاقة المُقدمة. سينتهي هذا التفويض تلقائيًا وفقًا
+								لسياسة مصرفك، وعادةً ما يكون ذلك خلال بضعة أيام.
+							</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button aria-expanded="false" class="accordion-button collapsed fw-medium shadow" data-bs-target="#accordion-s5" data-bs-toggle="collapse" type="button">
+								هل الأسعار هي نفسها في جميع مواقع مراكز البيانات؟
+							</button>
+</h2>
+<div class="accordion-collapse collapse shadow" data-bs-parent="#accordion-separate-rounded" id="accordion-s5">
+<div class="accordion-body border border-dark border-opacity-5 fs-14">
+								لم نُخصم أي مبلغ من بطاقتك. ما لاحظته هو تفويض مؤقت للتحقق
+								من صحة البطاقة المُقدمة. سينتهي هذا التفويض تلقائيًا وفقًا
+								لسياسة مصرفك، وعادةً ما يكون ذلك خلال بضعة أيام.
+							</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button aria-expanded="false" class="accordion-button collapsed fw-medium shadow" data-bs-target="#accordion-s6" data-bs-toggle="collapse" type="button">
+								ما هي طرق الدفع التي تقبلها؟
+							</button>
+</h2>
+<div class="accordion-collapse collapse shadow" data-bs-parent="#accordion-separate-rounded" id="accordion-s6">
+<div class="accordion-body border border-dark border-opacity-5 fs-14">
+								لم نُخصم أي مبلغ من بطاقتك. ما لاحظته هو تفويض مؤقت للتحقق
+								من صحة البطاقة المُقدمة. سينتهي هذا التفويض تلقائيًا وفقًا
+								لسياسة مصرفك، وعادةً ما يكون ذلك خلال بضعة أيام.
+							</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- FAQ End -->
+<!-- CTA  -->
+<div class="cta-4">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="cta-4__container p-4 p-md-6 rounded-3">
+<div class="section-space-y px-4 px-md-6 bg-gradient-2 rounded-3 text-center position-relative z-1 overflow-hidden">
+<div class="row justify-content-center">
+<div class="col-lg-10">
+<h3 class="text-light">
+									احصل على ترحيل مجاني لاستضافة الويب
+								</h3>
+<p class="mb-8 text-light max-text-14 mx-auto">
+									سنتولى عملية نقل موقعك الإلكتروني من شركة الاستضافة
+									القديمة إلى منصتنا حتى تتمكن من التركيز على ما يهم
+								</p>
+<div class="d-flex align-items-center justify-content-center gap-4 flex-wrap">
+<a class="btn btn-secondary fs-14 fw-medium" href="{{root}}sign-in-1-rtl.html">
+										ابدأ الآن
+									</a>
+<a class="btn btn-light fs-14 fw-medium" href="{{root}}contact-rtl.html">
+										تواصل معنا
+									</a>
+</div>
+</div>
+</div>
+<img alt="image" class="img-fluid position-absolute top-50 start-0 translate-middle-y z-n1 pointer-none d-none d-lg-block" src="{{root}}assets/img/cta-img-14.png"/>
+<img alt="image" class="img-fluid position-absolute top-50 end-0 translate-middle-y z-n1 pointer-none d-none d-lg-block" src="{{root}}assets/img/cta-img-15.png"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA End -->
+
+{% include "partials/footer-6-rtl.html" %} 
+{% endblock %}

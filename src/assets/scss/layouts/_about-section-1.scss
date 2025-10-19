@@ -1,0 +1,11 @@
+.about-section-1 {
+	background-image: linear-gradient(180deg, #2a62fe 0%, #f6b100 44%, #f8285a 100%);
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 1px;
+		background-color: rgba(var(--bs-body-bg-rgb), 1);
+        border-radius: inherit;
+        z-index: -1;
+	}
+}

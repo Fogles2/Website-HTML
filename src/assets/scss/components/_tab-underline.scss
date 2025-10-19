@@ -1,0 +1,37 @@
+/* Tab Underline Style */
+.tab-underline {
+	--bs-btn-active-border-color: var(--bs-border-color);
+	--bs-nav-link-color: var(--bs-body-color);
+	--bs-nav-link-hover-color: var(--bs-link-hover-color);
+	--bs-btn-active-color: rgba(var(--bs-primary-rgb), 1);
+	--bs-btn-active-border-color: rgba(var(--bs-primary-rgb), 1);
+	overflow-x: auto;
+	scrollbar-color: transparent transparent;
+	scrollbar-width: none;
+	&::-webkit-scrollbar {
+		width: 0;
+		height: 0;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: transparent;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: transparent;
+	}
+	.btn {
+		--bs-btn-border-radius: 0;
+		border-left: 0;
+		border-right: 0;
+		border-top: 0;
+		white-space: nowrap;
+		color: var(--bs-nav-link-color);
+		&:hover {
+			color: var(--bs-nav-link-hover-color);
+		}
+		&.active {
+			color: var(--bs-btn-active-color);
+		}
+	}
+}

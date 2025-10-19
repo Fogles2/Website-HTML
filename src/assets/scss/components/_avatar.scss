@@ -1,0 +1,122 @@
+/* Avatar Style */
+.avatar {
+	--avatar-size: 2rem;
+	width: var(--avatar-size);
+	height: var(--avatar-size);
+	display: grid;
+	place-content: center;
+	position: relative;
+	border: 2px solid var(--bs-body-bg);
+	border-radius: 50%;
+	flex-shrink: 0;
+	box-shadow: 0.25rem 0.25rem 0.5rem rgba(var(--bs-dark-rgb), 0.05);
+	cursor: pointer;
+	transition: all 0.3s ease;
+	&-sm {
+		--avatar-size: 1.5rem;
+	}
+	&-md {
+		--avatar-size: 2.5rem;
+	}
+	&-lg {
+		--avatar-size: 3rem;
+		.avatar__notification {
+			--notification-size: 0.75rem;
+		}
+	}
+	&-xl {
+		--avatar-size: 3.75rem;
+		.avatar__notification {
+			--notification-size: 0.75rem;
+		}
+	}
+	&-xxl {
+		--avatar-size: 4.5rem;
+		.avatar__notification {
+			--notification-size: 0.75rem;
+		}
+	}
+	&-xxxl {
+		--avatar-size: 5rem;
+		.avatar__notification {
+			--notification-size: 1rem;
+		}
+	}
+	&__img {
+		width: 100%;
+		aspect-ratio: 1;
+		object-fit: cover;
+		border-radius: inherit;
+	}
+	&-group {
+		--avatar-size: 2rem;
+		--avatar-column-size: calc(var(--avatar-size) / 2);
+		--avatar-end-spacing: 1rem;
+		display: grid;
+		grid-template-columns: repeat(5, var(--avatar-column-size));
+		width: 100%;
+		padding-inline-end: var(--avatar-end-spacing);
+		.avatar {
+			--avatar-size: 2rem;
+			&:hover {
+				z-index: 1;
+			}
+		}
+		&-sm {
+			--avatar-size: 1.5rem;
+			--avatar-end-spacing: 0.75rem;
+			.avatar {
+				--avatar-size: 1.5rem;
+			}
+		}
+		&-md {
+			--avatar-size: 2.5rem;
+			--avatar-end-spacing: 1.25rem;
+			.avatar {
+				--avatar-size: 2.5rem;
+			}
+		}
+		&-lg {
+			--avatar-size: 3rem;
+			--avatar-end-spacing: 1.5rem;
+			.avatar {
+				--avatar-size: 3rem;
+			}
+		}
+		&-xl {
+			--avatar-size: 3.75rem;
+			--avatar-end-spacing: 1.75rem;
+			.avatar {
+				--avatar-size: 3.75rem;
+			}
+		}
+		&-xxl {
+			--avatar-size: 4.5rem;
+			--avatar-end-spacing: 2.25rem;
+			.avatar {
+				--avatar-size: 4.5rem;
+			}
+		}
+		&-xxxl {
+			--avatar-size: 5rem;
+			--avatar-end-spacing: 2.5rem;
+			.avatar {
+				--avatar-size: 5rem;
+			}
+		}
+	}
+	&__notification {
+		--notification-size: 0.5rem;
+		--notification-position-x: 0;
+		--notification-position-y: 0;
+		display: grid;
+		place-content: center;
+		width: var(--notification-size);
+		height: var(--notification-size);
+		position: absolute;
+		bottom: var(--notification-position-y);
+		right: var(--notification-position-x);
+		border: 1px solid var(--bs-light);
+		border-radius: 50%;
+	}
+}

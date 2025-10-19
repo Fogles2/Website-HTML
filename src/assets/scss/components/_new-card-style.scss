@@ -1,0 +1,122 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+/* Body Styles */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #1d061a;
+}
+
+/* Container for Cards */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+
+/* Individual Card Box */
+.container .box {
+  position: relative;
+  width: 320px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 30px;
+  transition: 0.5s;
+}
+
+/* Card Span (for glowing effect) */
+.container .box span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #000;
+  clip-path: polygon(100% 0, 75% 50%, 100% 100%, 25% 100%, 0 50%, 25% 0);
+  transition: 0.5s;
+}
+
+/* Hover effect for Span */
+.container .box:hover span {
+  background: #0f0;
+}
+
+/* Content within Card */
+.container .box .content {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  background: rgba(10, 10, 20, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  z-index: 1;
+  transform: scale(1) rotateY(0deg);
+  transition: 0.5s;
+}
+
+/* Hover effect for Content */
+.container .box:hover .content {
+  transform: scale(1.1) rotateY(15deg);
+}
+
+/* Card Heading */
+.container .box .content h2 {
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+/* Card Paragraph */
+.container .box .content p {
+  font-size: 1em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Card Read More Link */
+.container .box .content a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+/* Hover effect for Read More Link */
+.container .box .content a:hover {
+  background: #0f0;
+  color: #fff;
+}
+
+/* Specific gradient colors for each card */
+.container .box:nth-child(1) span {
+  background: linear-gradient(#ff0057, #e64a19);
+}
+
+.container .box:nth-child(2) span {
+  background: linear-gradient(#8a24ff, #e040fb);
+}
+
+.container .box:nth-child(3) span {
+  background: linear-gradient(#2196f3, #1de9b6);
+}
+

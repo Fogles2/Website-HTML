@@ -1,0 +1,42 @@
+.cta-3 {
+	position: relative;
+	isolation: isolate;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 50%;
+		background-color: var(--bs-dark);
+		z-index: -1;
+		pointer-events: none;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: var(--bs-light);
+		z-index: -1;
+		pointer-events: none;
+	}
+	&__box {
+		background-image: linear-gradient(var(--bs-light) 50%, var(--bs-light) 50%);
+	}
+}
+[data-bs-theme="dark"] {
+	.cta-3 {
+		&::after {
+			background-color: var(--bs-dark-bg-subtle);
+		}
+		&__box {
+			background-image: linear-gradient(
+				var(--bs-dark-bg-subtle) 50%,
+				var(--bs-dark-bg-subtle) 50%
+			);
+		}
+	}
+}

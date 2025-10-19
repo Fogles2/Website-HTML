@@ -1,0 +1,11 @@
+.cta-1 {
+	background-image: url(../img/cta-img-10.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	&__alert {
+		border: 1px solid rgba(255, 255, 255, 0.22);
+		background: rgba(255, 255, 255, 0.05);
+		backdrop-filter: blur(16px);
+	}
+}

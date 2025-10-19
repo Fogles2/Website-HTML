@@ -1,0 +1,473 @@
+/* Group Selector */
+.group {
+	&:hover {
+		.group-hover\:transition {
+			transition: all 0.3s ease;
+		}
+
+		.group-hover\:text-heading {
+			color: var(--bs-heading-color) !important;
+		}
+		.group-hover\:text-body {
+			--bs-text-opacity: 1;
+			color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
+		}
+		.group-hover\:text-body-emphasis {
+			--bs-text-opacity: 1;
+			color: var(--bs-emphasis-color) !important;
+		}
+		.group-hover\:text-body-secondary {
+			--bs-text-opacity: 1;
+			color: var(--bs-secondary-color) !important;
+		}
+		.group-hover\:text-body-tertiary {
+			--bs-text-opacity: 1;
+			color: var(--bs-tertiary-color) !important;
+		}
+		.group-hover\:text-black {
+			--bs-text-opacity: 1;
+			color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
+		}
+		.group-hover\:text-white {
+			--bs-text-opacity: 1;
+			color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+		}
+
+		.group-hover\:text-primary {
+			--bs-text-opacity: 1;
+			color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+		}
+		.group-hover\:text-primary-emphasis {
+			color: var(--bs-primary-text-emphasis) !important;
+		}
+		.group-hover\:text-primary-subtle {
+			color: var(--bs-primary-bg-subtle) !important;
+		}
+
+		.group-hover\:text-secondary {
+			--bs-text-opacity: 1;
+			color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+		}
+		.group-hover\:text-secondary-emphasis {
+			color: var(--bs-secondary-text-emphasis) !important;
+		}
+		.group-hover\:text-secondary-subtle {
+			color: var(--bs-secondary-bg-subtle) !important;
+		}
+
+		.group-hover\:text-success {
+			--bs-text-opacity: 1;
+			color: rgba(var(--bs-success-rgb), var(--bs-text-opacity)) !important;
+		}
+		.group-hover\:text-success-emphasis {
+			color: var(--bs-success-text-emphasis) !important;
+		}
+		.group-hover\:text-success-subtle {
+			color: var(--bs-success-bg-subtle) !important;
+		}
+
+		.group-hover\:text-danger {
+			--bs-text-opacity: 1;
+			color: rgba(var(--bs-danger-rgb), var(--bs-text-opacity)) !important;
+		}
+		.group-hover\:text-danger-emphasis {
+			color: var(--bs-danger-text-emphasis) !important;
+		}
+		.group-hover\:text-danger-subtle {
+			color: var(--bs-danger-bg-subtle) !important;
+		}
+
+		.group-hover\:text-warning {
+			--bs-text-opacity: 1;
+			color: rgba(var(--bs-warning-rgb), var(--bs-text-opacity)) !important;
+		}
+		.group-hover\:text-warning-emphasis {
+			color: var(--bs-warning-text-emphasis) !important;
+		}
+		.group-hover\:text-warning-subtle {
+			color: var(--bs-warning-bg-subtle) !important;
+		}
+
+		.group-hover\:text-info {
+			--bs-text-opacity: 1;
+			color: rgba(var(--bs-info-rgb), var(--bs-text-opacity)) !important;
+		}
+		.group-hover\:text-info-emphasis {
+			color: var(--bs-info-text-emphasis) !important;
+		}
+		.group-hover\:text-info-subtle {
+			color: var(--bs-info-bg-subtle) !important;
+		}
+
+		.group-hover\:text-light {
+			--bs-text-opacity: 1;
+			color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
+		}
+		.group-hover\:text-light-emphasis {
+			color: var(--bs-light-text-emphasis) !important;
+		}
+		.group-hover\:text-light-subtle {
+			color: var(--bs-light-bg-subtle) !important;
+		}
+
+		.group-hover\:text-dark {
+			--bs-text-opacity: 1;
+			color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
+		}
+		.group-hover\:text-dark-emphasis {
+			color: var(--bs-dark-text-emphasis) !important;
+		}
+		.group-hover\:text-dark-subtle {
+			color: var(--bs-dark-bg-subtle) !important;
+		}
+
+		.group-hover\:text-opacity-5 {
+			--bs-text-opacity: 0.05;
+		}
+
+		.group-hover\:text-opacity-10 {
+			--bs-text-opacity: 0.1;
+		}
+
+		.group-hover\:text-opacity-20 {
+			--bs-text-opacity: 0.2;
+		}
+
+		.group-hover\:text-opacity-30 {
+			--bs-text-opacity: 0.3;
+		}
+
+		.group-hover\:text-opacity-40 {
+			--bs-text-opacity: 0.4;
+		}
+
+		.group-hover\:text-opacity-50 {
+			--bs-text-opacity: 0.5;
+		}
+
+		.group-hover\:text-opacity-60 {
+			--bs-text-opacity: 0.6;
+		}
+
+		.group-hover\:text-opacity-70 {
+			--bs-text-opacity: 0.7;
+		}
+
+		.group-hover\:text-opacity-80 {
+			--bs-text-opacity: 0.8;
+		}
+
+		.group-hover\:text-opacity-90 {
+			--bs-text-opacity: 0.9;
+		}
+		.group-hover\:text-opacity-100 {
+			--bs-text-opacity: 1;
+		}
+		.group-hover\:bg-body {
+			--bs-bg-opacity: 1;
+			background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
+		}
+		.group-hover\:bg-body-secondary {
+			--bs-bg-opacity: 1;
+			background-color: rgba(var(--bs-secondary-bg-rgb), var(--bs-bg-opacity)) !important;
+		}
+		.group-hover\:bg-body-tertiary {
+			--bs-bg-opacity: 1;
+			background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity)) !important;
+		}
+		.group-hover\:bg-black {
+			--bs-bg-opacity: 1;
+			background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
+		}
+		.group-hover\:bg-white {
+			--bs-bg-opacity: 1;
+			background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
+		}
+		.group-hover\:bg-transparent {
+			--bs-bg-opacity: 1;
+			background-color: transparent !important;
+		}
+
+		.group-hover\:bg-primary {
+			--bs-bg-opacity: 1;
+			background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+		}
+		.group-hover\:bg-primary-subtle {
+			background-color: var(--bs-primary-bg-subtle) !important;
+		}
+		.group-hover\:bg-primary-emphasis {
+			background-color: var(--bs-primary-text-emphasis) !important;
+		}
+
+		.group-hover\:bg-secondary {
+			--bs-bg-opacity: 1;
+			background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
+		}
+		.group-hover\:bg-secondary-subtle {
+			background-color: var(--bs-secondary-bg-subtle) !important;
+		}
+		.group-hover\:bg-secondary-emphasis {
+			background-color: var(--bs-secondary-text-emphasis) !important;
+		}
+
+		.group-hover\:bg-success {
+			--bs-bg-opacity: 1;
+			background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
+		}
+		.group-hover\:bg-success-subtle {
+			background-color: var(--bs-success-bg-subtle) !important;
+		}
+		.group-hover\:bg-success-emphasis {
+			background-color: var(--bs-success-text-emphasis) !important;
+		}
+
+		.group-hover\:bg-danger {
+			--bs-bg-opacity: 1;
+			background-color: rgba(var(--bs-danger-rgb), var(--bs-bg-opacity)) !important;
+		}
+		.group-hover\:bg-danger-subtle {
+			background-color: var(--bs-danger-bg-subtle) !important;
+		}
+		.group-hover\:bg-danger-emphasis {
+			background-color: var(--bs-danger-text-emphasis) !important;
+		}
+
+		.group-hover\:bg-warning {
+			--bs-bg-opacity: 1;
+			background-color: rgba(var(--bs-warning-rgb), var(--bs-bg-opacity)) !important;
+		}
+		.group-hover\:bg-warning-subtle {
+			background-color: var(--bs-warning-bg-subtle) !important;
+		}
+		.group-hover\:bg-warning-emphasis {
+			background-color: var(--bs-warning-text-emphasis) !important;
+		}
+
+		.group-hover\:bg-info {
+			--bs-bg-opacity: 1;
+			background-color: rgba(var(--bs-info-rgb), var(--bs-bg-opacity)) !important;
+		}
+		.group-hover\:bg-info-subtle {
+			background-color: var(--bs-info-bg-subtle) !important;
+		}
+		.group-hover\:bg-info-emphasis {
+			background-color: var(--bs-info-text-emphasis) !important;
+		}
+
+		.group-hover\:bg-light {
+			--bs-bg-opacity: 1;
+			background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+		}
+		.group-hover\:bg-light-subtle {
+			background-color: var(--bs-light-bg-subtle) !important;
+		}
+		.group-hover\:bg-light-emphasis {
+			background-color: var(--bs-light-text-emphasis) !important;
+		}
+
+		.group-hover\:bg-dark {
+			--bs-bg-opacity: 1;
+			background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+		}
+		.group-hover\:bg-dark-subtle {
+			background-color: var(--bs-dark-bg-subtle) !important;
+		}
+		.group-hover\:bg-dark-emphasis {
+			background-color: var(--bs-dark-text-emphasis) !important;
+		}
+
+		.group-hover\:bg-opacity-5 {
+			--bs-bg-opacity: 0.05;
+		}
+
+		.group-hover\:bg-opacity-10 {
+			--bs-bg-opacity: 0.1;
+		}
+
+		.group-hover\:bg-opacity-20 {
+			--bs-bg-opacity: 0.2;
+		}
+
+		.group-hover\:bg-opacity-30 {
+			--bs-bg-opacity: 0.3;
+		}
+
+		.group-hover\:bg-opacity-40 {
+			--bs-bg-opacity: 0.4;
+		}
+
+		.group-hover\:bg-opacity-50 {
+			--bs-bg-opacity: 0.5;
+		}
+
+		.group-hover\:bg-opacity-60 {
+			--bs-bg-opacity: 0.6;
+		}
+
+		.group-hover\:bg-opacity-70 {
+			--bs-bg-opacity: 0.7;
+		}
+
+		.group-hover\:bg-opacity-80 {
+			--bs-bg-opacity: 0.8;
+		}
+
+		.group-hover\:bg-opacity-90 {
+			--bs-bg-opacity: 0.9;
+		}
+		.group-hover\:bg-opacity-100 {
+			--bs-bg-opacity: 1;
+		}
+
+		.group-hover\:border-primary {
+			--bs-border-opacity: 1;
+			border-color: rgba(var(--bs-primary-rgb), var(--bs-border-opacity)) !important;
+		}
+		.group-hover\:border-primary-subtle {
+			border-color: var(--bs-primary-border-subtle) !important;
+		}
+		.group-hover\:border-primary-emphasis {
+			border-color: var(--bs-primary-text-emphasis) !important;
+		}
+
+		.group-hover\:border-secondary {
+			--bs-border-opacity: 1;
+			border-color: rgba(var(--bs-secondary-rgb), var(--bs-border-opacity)) !important;
+		}
+		.group-hover\:border-secondary-subtle {
+			border-color: var(--bs-secondary-border-subtle) !important;
+		}
+		.group-hover\:border-secondary-emphasis {
+			border-color: var(--bs-secondary-text-emphasis) !important;
+		}
+
+		.group-hover\:border-success {
+			--bs-border-opacity: 1;
+			border-color: rgba(var(--bs-success-rgb), var(--bs-border-opacity)) !important;
+		}
+		.group-hover\:border-success-subtle {
+			border-color: var(--bs-success-border-subtle) !important;
+		}
+		.group-hover\:border-success-emphasis {
+			border-color: var(--bs-success-text-emphasis) !important;
+		}
+
+		.group-hover\:border-danger {
+			--bs-border-opacity: 1;
+			border-color: rgba(var(--bs-danger-rgb), var(--bs-border-opacity)) !important;
+		}
+		.group-hover\:border-danger-subtle {
+			border-color: var(--bs-danger-border-subtle) !important;
+		}
+		.group-hover\:border-danger-emphasis {
+			border-color: var(--bs-danger-text-emphasis) !important;
+		}
+
+		.group-hover\:border-warning {
+			--bs-border-opacity: 1;
+			border-color: rgba(var(--bs-warning-rgb), var(--bs-border-opacity)) !important;
+		}
+		.group-hover\:border-warning-subtle {
+			border-color: var(--bs-warning-border-subtle) !important;
+		}
+		.group-hover\:border-warning-emphasis {
+			border-color: var(--bs-warning-text-emphasis) !important;
+		}
+
+		.group-hover\:border-info {
+			--bs-border-opacity: 1;
+			border-color: rgba(var(--bs-info-rgb), var(--bs-border-opacity)) !important;
+		}
+		.group-hover\:border-info-subtle {
+			border-color: var(--bs-info-border-subtle) !important;
+		}
+		.group-hover\:border-info-emphasis {
+			border-color: var(--bs-info-text-emphasis) !important;
+		}
+
+		.group-hover\:border-light {
+			--bs-border-opacity: 1;
+			border-color: rgba(var(--bs-light-rgb), var(--bs-border-opacity)) !important;
+		}
+		.group-hover\:border-light-subtle {
+			border-color: var(--bs-light-border-subtle) !important;
+		}
+		.group-hover\:border-light-emphasis {
+			border-color: var(--bs-light-text-emphasis) !important;
+		}
+
+		.group-hover\:border-dark {
+			--bs-border-opacity: 1;
+			border-color: rgba(var(--bs-dark-rgb), var(--bs-border-opacity)) !important;
+		}
+		.group-hover\:border-dark-subtle {
+			border-color: var(--bs-dark-border-subtle) !important;
+		}
+		.group-hover\:border-dark-emphasis {
+			border-color: var(--bs-dark-text-emphasis) !important;
+		}
+
+		.group-hover\:border-black {
+			--bs-border-opacity: 1;
+			border-color: rgba(var(--bs-black-rgb), var(--bs-border-opacity)) !important;
+		}
+		.group-hover\:border-white {
+			--bs-border-opacity: 1;
+			border-color: rgba(var(--bs-white-rgb), var(--bs-border-opacity)) !important;
+		}
+		.group-hover\:border-opacity-5 {
+			--bs-border-opacity: 0.05;
+		}
+
+		.group-hover\:border-opacity-10 {
+			--bs-border-opacity: 0.1;
+		}
+
+		.group-hover\:border-opacity-20 {
+			--bs-border-opacity: 0.2;
+		}
+
+		.group-hover\:border-opacity-30 {
+			--bs-border-opacity: 0.3;
+		}
+
+		.group-hover\:border-opacity-40 {
+			--bs-border-opacity: 0.4;
+		}
+
+		.group-hover\:border-opacity-50 {
+			--bs-border-opacity: 0.5;
+		}
+
+		.group-hover\:border-opacity-60 {
+			--bs-border-opacity: 0.6;
+		}
+
+		.group-hover\:border-opacity-70 {
+			--bs-border-opacity: 0.7;
+		}
+
+		.group-hover\:border-opacity-80 {
+			--bs-border-opacity: 0.8;
+		}
+
+		.group-hover\:border-opacity-90 {
+			--bs-border-opacity: 0.9;
+		}
+		.group-hover\:border-opacity-100 {
+			--bs-border-opacity: 1;
+		}
+		.group-hover\:shadow-none {
+			box-shadow: none !important;
+		}
+		.group-hover\:shadow-sm {
+			box-shadow: var(--bs-box-shadow-sm) !important;
+		}
+		.group-hover\:shadow {
+			box-shadow: var(--bs-box-shadow) !important;
+		}
+		.group-hover\:shadow-lg {
+			box-shadow: var(--bs-box-shadow-lg) !important;
+		}
+	}
+}

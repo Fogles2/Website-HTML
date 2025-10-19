@@ -1,0 +1,46 @@
+.triangle-shape-bottom {
+	position: relative;
+	isolation: isolate;
+
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background-color: var(--bs-secondary-text-emphasis);
+		background-image: linear-gradient(
+			180deg,
+			var(--bs-secondary-text-emphasis) 0%,
+			var(--bs-secondary) 100%
+		);
+		-webkit-mask-image: url(../img/shapes/hero-5-shape-2.png);
+		mask-image: url(../img/shapes/hero-5-shape-2.png);
+		mask-size: 100% 100%;
+		mask-position: center bottom;
+		-webkit-mask-repeat: no-repeat;
+		mask-repeat: no-repeat;
+		z-index: -2;
+	}
+}
+.triangle-shape-top {
+	position: relative;
+	isolation: isolate;
+
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background-color: var(--bs-secondary-text-emphasis);
+		background-image: linear-gradient(
+			180deg,
+			var(--bs-secondary) 0%,
+			var(--bs-secondary-text-emphasis) 100%
+		);
+		-webkit-mask-image: url(../img/shapes/triangle-shape-top.png);
+		mask-image: url(../img/shapes/triangle-shape-top.png);
+		mask-size: 100% 100%;
+		mask-position: center top;
+		-webkit-mask-repeat: no-repeat;
+		mask-repeat: no-repeat;
+		z-index: -2;
+	}
+}

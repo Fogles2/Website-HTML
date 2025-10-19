@@ -1,0 +1,31 @@
+@use "../global" as *;
+.cta-2-section {
+	position: relative;
+	z-index: 1;
+	&__item {
+		width: rem(36);
+		height: rem(36);
+		@include screen(md) {
+			width: rem(48);
+			height: rem(48);
+		}
+		@include screen(lg) {
+			width: rem(60);
+			height: rem(60);
+		}
+		@include screen(xl) {
+			width: rem(72);
+			height: rem(72);
+		}
+		@include screen(xxl) {
+			width: rem(90);
+			height: rem(84);
+		}
+	}
+	&__content {
+		position: absolute;
+		inset: 0;
+		display: flex;
+		align-items: center;
+	}
+}

@@ -1,0 +1,513 @@
+{% extends "layouts/default-rtl.html" %}
+{% set dataTheme = "domain" %}
+{% set bodyClass = "bg-light dark:bg-dark-subtle" %}
+{% set navbar = true %} 
+{% set navBtnColor = "fw-medium" %}
+{% set primaryHeader = "primary-header--light primary-header--boxed primary-header--fixed top-md-3 primary-header-crossed:top-0" %}
+{% set ltrLink = "career.html" %}
+{% set breadcrumb = "Career" %}
+{% set breadcrumbLink = "text-light hover:text-secondary" %}
+{% set breadcrumbIcon = "text-light" %}
+{% set breadcrumbActive = "text-light" %}
+{% set logoLight = "logo-dark.png" %}
+{% set logoDark = "logo-light.png" %}
+<!-- Content Block -->
+{% block content %}
+
+<!-- Banner -->
+{% include "partials/banner-11.html" %}
+<!-- Banner End -->
+<!-- Gallery -->
+<div class="section-space-top section-space-md-bottom">
+<div class="container-fluid">
+<div class="row">
+<div class="col-12">
+<div class="scroller-x">
+<ul class="list list-row scroller-x__list gap-4 career-slider">
+<li>
+<img alt="image" class="img-fluid rounded-4" src="{{root}}assets/img/career-img-1.png"/>
+</li>
+<li>
+<img alt="image" class="img-fluid rounded-4" src="{{root}}assets/img/career-img-2.png"/>
+</li>
+<li>
+<img alt="image" class="img-fluid rounded-4" src="{{root}}assets/img/career-img-3.png"/>
+</li>
+<li>
+<img alt="image" class="img-fluid rounded-4" src="{{root}}assets/img/career-img-4.png"/>
+</li>
+<li>
+<img alt="image" class="img-fluid rounded-4" src="{{root}}assets/img/career-img-5.png"/>
+</li>
+<li>
+<img alt="image" class="img-fluid rounded-4" src="{{root}}assets/img/career-img-6.png"/>
+</li>
+<li>
+<img alt="image" class="img-fluid rounded-4" src="{{root}}assets/img/career-img-1.png"/>
+</li>
+<li>
+<img alt="image" class="img-fluid rounded-4" src="{{root}}assets/img/career-img-2.png"/>
+</li>
+<li>
+<img alt="image" class="img-fluid rounded-4" src="{{root}}assets/img/career-img-3.png"/>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Gallery End -->
+<!-- Award Section  -->
+<div class="section-space-md-y">
+<div class="container">
+<div class="row g-4">
+<div class="col-12">
+<h6 class="mb-0 text-center">وكالة توليد عملاء B2B حائزة على جوائز</h6>
+</div>
+<div class="col-12">
+<ul class="list list-row flex-wrap justify-content-center justify-content-xl-between gap-4">
+<li>
+<div class="d-inline-block">
+<img alt="image" class="img-fluid dark:d-none" src="{{root}}assets/img/award-img-1.png"/>
+<img alt="image" class="img-fluid d-none dark:d-inline-block" src="{{root}}assets/img/award-img-1-dark.png"/>
+</div>
+</li>
+<li>
+<div class="d-inline-block">
+<img alt="image" class="img-fluid dark:d-none" src="{{root}}assets/img/award-img-6.png"/>
+<img alt="image" class="img-fluid d-none dark:d-inline-block" src="{{root}}assets/img/award-img-6-dark.png"/>
+</div>
+</li>
+<li>
+<div class="d-inline-block">
+<img alt="image" class="img-fluid dark:d-none" src="{{root}}assets/img/award-img-3.png"/>
+<img alt="image" class="img-fluid d-none dark:d-inline-block" src="{{root}}assets/img/award-img-3-dark.png"/>
+</div>
+</li>
+<li>
+<div class="d-inline-block">
+<img alt="image" class="img-fluid dark:d-none" src="{{root}}assets/img/award-img-4.png"/>
+<img alt="image" class="img-fluid d-none dark:d-inline-block" src="{{root}}assets/img/award-img-4-dark.png"/>
+</div>
+</li>
+<li>
+<div class="d-inline-block">
+<img alt="image" class="img-fluid dark:d-none" src="{{root}}assets/img/award-img-5.png"/>
+<img alt="image" class="img-fluid d-none dark:d-inline-block" src="{{root}}assets/img/award-img-5-dark.png"/>
+</div>
+</li>
+<li>
+<div class="d-inline-block">
+<img alt="image" class="img-fluid dark:d-none" src="{{root}}assets/img/award-img-2.png"/>
+<img alt="image" class="img-fluid d-none dark:d-inline-block" src="{{root}}assets/img/award-img-2-dark.png"/>
+</div>
+</li>
+<li>
+<div class="d-inline-block">
+<img alt="image" class="img-fluid dark:d-none" src="{{root}}assets/img/award-img-7.png"/>
+<img alt="image" class="img-fluid d-none dark:d-inline-block" src="{{root}}assets/img/award-img-7-dark.png"/>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Award Section End -->
+<!-- Values and Mission -->
+<div class="section-space-md-y">
+<div class="container">
+<div class="row g-4 justify-content-between align-items-center">
+<div class="col-lg-5">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/values-img.png"/>
+</div>
+<div class="col-lg-7 col-xxl-6">
+<span class="btn btn-sm align-items-center bg-primary-emphasis hover:bg-primary-emphasis text-primary-subtle hover:text-primary-subtle cursor-default mb-4">
+<i class="align-middle fs-20 flex-shrink-0 ti ti-check-circle"></i>
+<span class="d-inline-block flex-grow-1 fw-medium"> قيمنا </span>
+</span>
+<h3>نحن نقدر كل من هو جزء من شركتنا</h3>
+<p class="mb-6">
+					نحن نبني شركة رقمية أولاً تعترف بكيفية ومتى وأين تعمل فرقنا بأفضل شكل،
+					ونحب أن نستمتع قليلاً على طول الطريق.
+				</p>
+<div class="row g-4">
+<div class="col-md-6">
+<ul class="list gap-5">
+<li class="d-flex align-items-center gap-4">
+<span class="btn btn-icon btn-xsm btn-primary-subtle rounded-circle cursor-default flex-shrink-0">
+<i class="ti ti-check-line"></i>
+</span>
+<h6 class="mb-0">
+									95%
+									<span class="fs-16 text-body fw-normal">
+										إدارة استجابة
+									</span>
+</h6>
+</li>
+<li class="d-flex align-items-center gap-4">
+<span class="btn btn-icon btn-xsm btn-primary-subtle rounded-circle cursor-default flex-shrink-0">
+<i class="ti ti-check-line"></i>
+</span>
+<h6 class="mb-0">
+									99%
+									<span class="fs-16 text-body fw-normal">
+										ولاء العلامة التجارية
+									</span>
+</h6>
+</li>
+</ul>
+</div>
+<div class="col-md-6">
+<ul class="list gap-5">
+<li class="d-flex align-items-center gap-4">
+<span class="btn btn-icon btn-xsm btn-primary-subtle rounded-circle cursor-default flex-shrink-0">
+<i class="ti ti-check-line"></i>
+</span>
+<h6 class="mb-0">
+									65%
+									<span class="fs-16 text-body fw-normal">
+										التطوير الوظيفي
+									</span>
+</h6>
+</li>
+<li class="d-flex align-items-center gap-4">
+<span class="btn btn-icon btn-xsm btn-primary-subtle rounded-circle cursor-default flex-shrink-0">
+<i class="ti ti-check-line"></i>
+</span>
+<h6 class="mb-0">
+									92%
+									<span class="fs-16 text-body fw-normal">
+										روح الفريق والتمويل
+									</span>
+</h6>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section-space-md-y">
+<div class="container">
+<div class="row g-4 align-items-center justify-content-between">
+<div class="col-lg-6 col-xxl-5">
+<span class="btn btn-sm align-items-center bg-primary-emphasis hover:bg-primary-emphasis text-primary-subtle hover:text-primary-subtle cursor-default mb-4">
+<i class="align-middle fs-20 flex-shrink-0 ti ti-check-circle"></i>
+<span class="d-inline-block flex-grow-1 fw-medium"> المهمة </span>
+</span>
+<h3>مهمتنا</h3>
+<p class="mb-6">
+					نحن نبني شركة رقمية أولاً تعترف بكيفية ومتى وأين تعمل فرقنا بأفضل شكل،
+					ونحب أن نستمتع قليلاً على طول الطريق.
+				</p>
+<h6>رقمي أولاً</h6>
+<p class="mb-0">
+					نحن نبني شركة رقمية أولاً تعترف بكيفية ومتى وأين تعمل فرقنا بأفضل شكل،
+					ونحب أن نستمتع قليلاً على طول الطريق.
+				</p>
+</div>
+<div class="col-lg-6">
+<div class="row g-4">
+<div class="col-sm-7">
+<img alt="image" class="img-fluid rounded-3 w-100" src="{{root}}assets/img/mission-img-1.png"/>
+</div>
+<div class="col-sm-5">
+<img alt="image" class="img-fluid rounded-3 w-100" src="{{root}}assets/img/mission-img-2.png"/>
+</div>
+<div class="col-sm-5">
+<img alt="image" class="img-fluid rounded-3 w-100" src="{{root}}assets/img/mission-img-3.png"/>
+</div>
+<div class="col-sm-7">
+<img alt="image" class="img-fluid rounded-3 w-100" src="{{root}}assets/img/mission-img-4.png"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section-space-md-y">
+<div class="container">
+<div class="row g-4 justify-content-center">
+<div class="col-md-6 col-lg-4">
+<div class="d-flex align-items-center gap-4 gap-xl-6 rounded-4 p-4 py-sm-4 py-xl-6 py-xxl-8 px-sm-8 px-lg-4 px-xl-8 px-xxl-10 bg-light-subtle shadow-sm">
+<div class="flex-grow-1">
+<h4 class="mb-2">5,000+</h4>
+<p class="mb-0">المنظمات تثق في</p>
+</div>
+<div class="flex-shrink-0">
+<i class="h3 mb-0 ti ti-handshake"></i>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="d-flex align-items-center gap-4 gap-xl-6 rounded-4 p-4 py-sm-4 py-xl-6 py-xxl-8 px-sm-8 px-lg-4 px-xl-8 px-xxl-10 bg-light-subtle shadow-sm">
+<div class="flex-grow-1">
+<h4 class="mb-2">10k+</h4>
+<p class="mb-0">حملة شهرية</p>
+</div>
+<div class="flex-shrink-0">
+<i class="h3 mb-0 ti ti-trophy"></i>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="d-flex align-items-center gap-4 gap-xl-6 rounded-4 p-4 py-sm-4 py-xl-6 py-xxl-8 px-sm-8 px-lg-4 px-xl-8 px-xxl-10 bg-light-subtle shadow-sm">
+<div class="flex-grow-1">
+<h4 class="mb-2">20M+</h4>
+<p class="mb-0">زائر شهري للصفحة</p>
+</div>
+<div class="flex-shrink-0">
+<i class="h3 mb-0 ti ti-smiling-face-with-halo"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Values and Mission End -->
+<!-- Career Opportunity -->
+<div class="section-space-md-top section-space-bottom">
+<div class="section-space-md-bottom">
+<div class="container">
+<div class="row g-4 justify-content-center">
+<div class="col-md-10 col-lg-8">
+<div class="text-center">
+<span class="btn btn-sm align-items-center bg-primary-emphasis hover:bg-primary-emphasis text-primary-subtle hover:text-primary-subtle cursor-default mb-4">
+<i class="align-middle fs-20 flex-shrink-0 ti ti-check-circle"></i>
+<span class="d-inline-block flex-grow-1 fw-medium">
+								فرصة عمل
+							</span>
+</span>
+<h3 class="mb-0 mx-auto">الوظائف الشاغرة</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row g-4">
+<div class="col-md-6">
+<div class="bg-body rounded-3 p-4 p-md-8">
+<h6 class="mb-8">مدير حسابات</h6>
+<ul class="list gap-3 mb-8">
+<li class="d-flex align-items-center gap-3">
+<span class="btn btn-icon btn-xsm btn-primary-subtle rounded-circle cursor-default flex-shrink-0">
+<i class="fs-18 ti ti-user-rounded-bold-duotone"></i>
+</span>
+<p class="mb-0 text-heading fs-14 fw-medium">
+								دوام كامل / عن بُعد
+							</p>
+</li>
+<li class="d-flex align-items-center gap-3">
+<span class="btn btn-icon btn-xsm btn-primary-subtle rounded-circle cursor-default flex-shrink-0">
+<i class="fs-18 ti ti-location-pin-duotone"></i>
+</span>
+<p class="mb-0 text-heading fs-14 fw-medium">
+								4517 شارع واشنطن، كنتاكي 39495
+							</p>
+</li>
+</ul>
+<ul class="list list-row gap-3 flex-wrap align-items-center">
+<li>
+<span class="badge bg-primary-subtle text-primary-emphasis">
+<span class="d-inline-block w-1 h-1 rounded-circle bg-primary-emphasis flex-shrink-0"></span>
+<span class="flex-grow-1 d-inline-block">
+									$100,000- $150,000 BDT/mo
+								</span>
+</span>
+</li>
+<li>
+<span class="badge bg-body-tertiary text-body">
+<span class="d-inline-block w-1 h-1 rounded-circle bg-primary-emphasis flex-shrink-0"></span>
+<span class="flex-grow-1 d-inline-block">
+									14 Sep, 2024
+								</span>
+</span>
+</li>
+<li class="ms-md-auto">
+<a class="btn btn-sm btn-icon btn-primary rounded-circle" href="{{root}}career-details-rtl.html">
+<i class="ti ti-arrow-right"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-md-6">
+<div class="bg-body rounded-3 p-4 p-md-8">
+<h6 class="mb-8">فني مكتب الخدمة</h6>
+<ul class="list gap-3 mb-8">
+<li class="d-flex align-items-center gap-3">
+<span class="btn btn-icon btn-xsm btn-primary-subtle rounded-circle cursor-default flex-shrink-0">
+<i class="fs-18 ti ti-user-rounded-bold-duotone"></i>
+</span>
+<p class="mb-0 text-heading fs-14 fw-medium">
+								دوام كامل / عن بُعد
+							</p>
+</li>
+<li class="d-flex align-items-center gap-3">
+<span class="btn btn-icon btn-xsm btn-primary-subtle rounded-circle cursor-default flex-shrink-0">
+<i class="fs-18 ti ti-location-pin-duotone"></i>
+</span>
+<p class="mb-0 text-heading fs-14 fw-medium">
+								فني مكتب الخدمة
+							</p>
+</li>
+</ul>
+<ul class="list list-row gap-3 flex-wrap align-items-center">
+<li>
+<span class="badge bg-primary-subtle text-primary-emphasis">
+<span class="d-inline-block w-1 h-1 rounded-circle bg-primary-emphasis flex-shrink-0"></span>
+<span class="flex-grow-1 d-inline-block">
+									$100,000- $150,000 BDT/mo
+								</span>
+</span>
+</li>
+<li>
+<span class="badge bg-body-tertiary text-body">
+<span class="d-inline-block w-1 h-1 rounded-circle bg-primary-emphasis flex-shrink-0"></span>
+<span class="flex-grow-1 d-inline-block">
+									14 Sep, 2024
+								</span>
+</span>
+</li>
+<li class="ms-md-auto">
+<a class="btn btn-sm btn-icon btn-primary rounded-circle" href="{{root}}career-details-rtl.html">
+<i class="ti ti-arrow-right"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-md-6">
+<div class="bg-body rounded-3 p-4 p-md-8">
+<h6 class="mb-8">مهندس مشروع هيكلي</h6>
+<ul class="list gap-3 mb-8">
+<li class="d-flex align-items-center gap-3">
+<span class="btn btn-icon btn-xsm btn-primary-subtle rounded-circle cursor-default flex-shrink-0">
+<i class="fs-18 ti ti-user-rounded-bold-duotone"></i>
+</span>
+<p class="mb-0 text-heading fs-14 fw-medium">
+								دوام كامل / عن بُعد
+							</p>
+</li>
+<li class="d-flex align-items-center gap-3">
+<span class="btn btn-icon btn-xsm btn-primary-subtle rounded-circle cursor-default flex-shrink-0">
+<i class="fs-18 ti ti-location-pin-duotone"></i>
+</span>
+<p class="mb-0 text-heading fs-14 fw-medium">
+								6391 Elgin St. Celina
+							</p>
+</li>
+</ul>
+<ul class="list list-row gap-3 flex-wrap align-items-center">
+<li>
+<span class="badge bg-primary-subtle text-primary-emphasis">
+<span class="d-inline-block w-1 h-1 rounded-circle bg-primary-emphasis flex-shrink-0"></span>
+<span class="flex-grow-1 d-inline-block">
+									$100,000- $150,000 BDT/mo
+								</span>
+</span>
+</li>
+<li>
+<span class="badge bg-body-tertiary text-body">
+<span class="d-inline-block w-1 h-1 rounded-circle bg-primary-emphasis flex-shrink-0"></span>
+<span class="flex-grow-1 d-inline-block">
+									14 Sep, 2024
+								</span>
+</span>
+</li>
+<li class="ms-md-auto">
+<a class="btn btn-sm btn-icon btn-primary rounded-circle" href="{{root}}career-details-rtl.html">
+<i class="ti ti-arrow-right"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-md-6">
+<div class="bg-body rounded-3 p-4 p-md-8">
+<h6 class="mb-8">مهندس البرمجيات</h6>
+<ul class="list gap-3 mb-8">
+<li class="d-flex align-items-center gap-3">
+<span class="btn btn-icon btn-xsm btn-primary-subtle rounded-circle cursor-default flex-shrink-0">
+<i class="fs-18 ti ti-user-rounded-bold-duotone"></i>
+</span>
+<p class="mb-0 text-heading fs-14 fw-medium">
+								دوام كامل / عن بُعد
+							</p>
+</li>
+<li class="d-flex align-items-center gap-3">
+<span class="btn btn-icon btn-xsm btn-primary-subtle rounded-circle cursor-default flex-shrink-0">
+<i class="fs-18 ti ti-location-pin-duotone"></i>
+</span>
+<p class="mb-0 text-heading fs-14 fw-medium">
+								4517 شارع واشنطن، مانشستر
+							</p>
+</li>
+</ul>
+<ul class="list list-row gap-3 flex-wrap align-items-center">
+<li>
+<span class="badge bg-primary-subtle text-primary-emphasis">
+<span class="d-inline-block w-1 h-1 rounded-circle bg-primary-emphasis flex-shrink-0"></span>
+<span class="flex-grow-1 d-inline-block">
+									$100,000- $150,000 BDT/mo
+								</span>
+</span>
+</li>
+<li>
+<span class="badge bg-body-tertiary text-body">
+<span class="d-inline-block w-1 h-1 rounded-circle bg-primary-emphasis flex-shrink-0"></span>
+<span class="flex-grow-1 d-inline-block">
+									14 Sep, 2024
+								</span>
+</span>
+</li>
+<li class="ms-md-auto">
+<a class="btn btn-sm btn-icon btn-primary rounded-circle" href="{{root}}career-details-rtl.html">
+<i class="ti ti-arrow-right"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Career Opportunity End -->
+<!-- CTA  -->
+<div class="cta-7">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="section-space-y px-4 px-sm-6 px-md-12 bg-body rounded-4 text-center position-relative z-1">
+<div class="row justify-content-center">
+<div class="col-md-11">
+<h3>احصل على ترحيل مجاني لاستضافة الويب</h3>
+<p class="mb-8 max-text-15 mx-auto">
+								سنتولى عملية نقل موقعك من شركة الاستضافة القديمة إلى
+								منصتنا حتى تتمكن من التركيز على ما يهم
+							</p>
+<div class="d-flex align-items-center justify-content-center gap-4 flex-wrap">
+<a class="btn btn-secondary text-light" href="{{root}}sign-in-2-rtl.html">
+									ابدأ الآن
+								</a>
+<a class="btn btn-dark-emphasis" href="{{root}}contact-rtl.html">
+									اتصل بنا
+								</a>
+</div>
+</div>
+</div>
+<img alt="image" class="img-fluid d-none d-xl-block position-absolute start-0 top-50 translate-middle-y z-n1 pointer-none" src="{{root}}assets/img/cta-img-16.png"/>
+<img alt="image" class="img-fluid d-none d-xl-block position-absolute end-0 top-50 translate-middle-y z-n1 pointer-none" src="{{root}}assets/img/cta-img-17.png"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA End -->
+
+{% include "partials/footer-7-rtl.html" %} 
+{% endblock %}

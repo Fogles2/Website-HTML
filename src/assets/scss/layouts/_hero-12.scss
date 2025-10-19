@@ -1,0 +1,27 @@
+@use "../global" as *;
+.hero-12 {
+	position: relative;
+	isolation: isolate;
+	padding-top: clamp(7rem, 11.57vw + 1rem, 13.75rem);
+	padding-bottom: clamp(10rem, 16.8vw + 1rem, 20rem);
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		z-index: -2;
+		background-image: linear-gradient(
+			109deg,
+			var(--bs-primary) 13.06%,
+			#090f91 46.34%,
+			var(--bs-secondary-text-emphasis) 83.11%
+		);
+		@include screen(md) {
+			-webkit-mask-image: url(../img/shapes/hero-12-shape-1.png);
+			mask-image: url(../img/shapes/hero-12-shape-1.png);
+			mask-size: 100% 100%;
+			mask-position: center;
+			-webkit-mask-repeat: no-repeat;
+			mask-repeat: no-repeat;
+		}
+	}
+}

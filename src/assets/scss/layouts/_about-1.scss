@@ -1,0 +1,14 @@
+.about-1 {
+	position: relative;
+	isolation: isolate;
+	&__shape {
+		position: absolute;
+		top: 5%;
+		right: 5%;
+		overflow: unset;
+		z-index: -1;
+	}
+	&__path {
+		animation: animateFill 25s infinite linear alternate;
+	}
+}

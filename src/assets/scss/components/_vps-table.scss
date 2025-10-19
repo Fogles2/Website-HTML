@@ -1,0 +1,61 @@
+@use "../global" as *;
+.vps-table {
+	background-color: rgba(var(--bs-light-rgb), 0.05);
+	border: 1px solid rgba(var(--bs-light-rgb), 0.15);
+	border-radius: 0.5rem;
+	&:hover {
+		.simplebar-scrollbar:before {
+			opacity: 1;
+		}
+	}
+	.table {
+		--bs-table-color: var(--bs-light);
+		--bs-table-bg: transparent;
+		--bs-table-border-color: rgba(var(--bs-light-rgb), 0.15);
+		margin-bottom: 0;
+		table-layout: fixed;
+		thead {
+			th {
+				width: rem(250);
+			}
+			th:first-child {
+				width: rem(350);
+			}
+			th + th {
+				border-left: 1px solid var(--bs-table-border-color);
+			}
+		}
+		tbody {
+			th {
+				width: rem(250);
+			}
+			td {
+				width: rem(250);
+			}
+			th:first-child {
+				width: rem(350);
+			}
+			td:first-child {
+				width: rem(350);
+			}
+			td + td {
+				border-left: 1px solid var(--bs-table-border-color);
+			}
+			tr:last-child {
+				th {
+					border-bottom: 0;
+				}
+				td {
+					border-bottom: 0;
+				}
+			}
+		}
+		& > :not(caption) > * > * {
+			padding: 1rem 2rem;
+		}
+	}
+	.simplebar-scrollbar:before {
+		opacity: 0.25;
+		transition: all 0.3s ease;
+	}
+}

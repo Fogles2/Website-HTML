@@ -1,0 +1,26 @@
+.price-card-1 {
+	border: 1px solid rgba(var(--bs-white-rgb), 0.12);
+	background: rgba(10, 10, 20, 0.7);
+	box-shadow: 0px 8px 32px 0px rgba(var(--bs-dark-rgb), 0.4);
+	backdrop-filter: blur(25px);
+	-webkit-backdrop-filter: blur(25px);
+	transition: all 0.3s ease;
+	
+	&:hover {
+		background: rgba(15, 15, 30, 0.8);
+		border-color: rgba(var(--bs-white-rgb), 0.18);
+		box-shadow: 0px 12px 40px 0px rgba(var(--bs-dark-rgb), 0.5);
+		transform: translateY(-4px);
+	}
+	
+	/* Ensure text visibility */
+	h1, h2, h3, h4, h5, h6,
+	p, span, a, li {
+		color: rgba(255, 255, 255, 0.95);
+	}
+	
+	.text-muted {
+		color: rgba(255, 255, 255, 0.6) !important;
+	}
+}
+

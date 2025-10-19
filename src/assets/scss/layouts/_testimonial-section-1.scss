@@ -1,0 +1,60 @@
+@use "../global" as *;
+.testimonial-section-1 {
+	position: relative;
+	background: linear-gradient(
+		var(--bs-tertiary-bg) 0%,
+		transparent 21%,
+		transparent 78%,
+		var(--bs-light-bg-subtle) 100%
+	);
+	overflow: hidden;
+	&::after {
+		@include screen(xxl) {
+			content: "";
+			position: absolute;
+			inset: 0;
+			pointer-events: none;
+			background: linear-gradient(
+				270deg,
+				var(--bs-tertiary-bg) 0%,
+				transparent 21%,
+				transparent 78%,
+				var(--bs-tertiary-bg) 100%
+			);
+			z-index: 1;
+		}
+	}
+
+	&__inner {
+		position: relative;
+		z-index: 1;
+		&::after {
+			content: "";
+			position: absolute;
+			inset: 0;
+			pointer-events: none;
+			background: linear-gradient(
+				270deg,
+				var(--bs-tertiary-bg) 0%,
+				transparent 21%,
+				transparent 78%,
+				var(--bs-tertiary-bg) 100%
+			);
+			z-index: 1;
+			@include screen(xxl) {
+				display: none;
+			}
+		}
+	}
+	&__shape {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		z-index: -1;
+		overflow: unset;
+	}
+	&__path {
+		animation: animateFill 25s infinite linear alternate;
+	}
+}

@@ -1,0 +1,98 @@
+/* Card Style */
+@use "../global" as *;
+
+.card {
+	--bs-card-spacer-y: 1.5rem;
+	--bs-card-spacer-x: 1.5rem;
+	--bs-border-radius: 0.5rem;
+	
+	/* Darker blur gradient for cards */
+	background: rgba(15, 15, 25, 0.7);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+	transition: all 0.3s ease;
+	
+	&:hover {
+		background: rgba(20, 20, 35, 0.8);
+		border-color: rgba(255, 255, 255, 0.15);
+		box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.5);
+		transform: translateY(-4px);
+	}
+	
+	/* Ensure text visibility in dark mode */
+	.card-title,
+	.card-text,
+	h1, h2, h3, h4, h5, h6,
+	p, span, a {
+		color: rgba(255, 255, 255, 0.95);
+	}
+	
+	.card-subtitle {
+		color: rgba(255, 255, 255, 0.7);
+	}
+	
+	/* Light mode override */
+	[data-bs-theme="light"] & {
+		background: rgba(255, 255, 255, 0.7);
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+		
+		&:hover {
+			background: rgba(255, 255, 255, 0.85);
+			border-color: rgba(0, 0, 0, 0.15);
+		}
+		
+		.card-title,
+		.card-text,
+		h1, h2, h3, h4, h5, h6,
+		p, span, a {
+			color: rgba(0, 0, 0, 0.87);
+		}
+		
+		.card-subtitle {
+			color: rgba(0, 0, 0, 0.6);
+		}
+	}
+}
+
+/* Card with gradient overlay */
+.card-gradient {
+	position: relative;
+	overflow: hidden;
+	
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: linear-gradient(135deg, rgba(42, 98, 254, 0.15) 0%, rgba(92, 101, 255, 0.15) 100%);
+		z-index: 0;
+		transition: opacity 0.3s ease;
+	}
+	
+	&:hover::before {
+		opacity: 0.8;
+	}
+	
+	> * {
+		position: relative;
+		z-index: 1;
+	}
+}
+
+/* Card with darker gradient for emphasis */
+.card-dark-gradient {
+	background: linear-gradient(135deg, rgba(10, 10, 20, 0.9) 0%, rgba(20, 20, 40, 0.9) 100%);
+	backdrop-filter: blur(25px);
+	-webkit-backdrop-filter: blur(25px);
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	
+	&:hover {
+		background: linear-gradient(135deg, rgba(15, 15, 30, 0.95) 0%, rgba(25, 25, 50, 0.95) 100%);
+	}
+}
+

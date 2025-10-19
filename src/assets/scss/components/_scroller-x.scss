@@ -1,0 +1,33 @@
+.scroller-x {
+	--_scroll-animation: scroll-ltr;
+	overflow: hidden;
+	&[data-direction="right"] {
+		--_animation-direction: reverse;
+	}
+	&[data-direction="left"] {
+		--_animation-direction: forwards;
+	}
+	&[data-speed="fast"] {
+		--_animation-duration: 30s;
+	}
+	&[data-speed="slow"] {
+		--_animation-duration: 120s;
+	}
+	&__list {
+		width: max-content;
+		flex-wrap: nowrap;
+		animation: var(--_scroll-animation, scroll-ltr) var(--_animation-duration, 60s)
+			var(--_animation-direction, forwards) linear infinite;
+		&:hover {
+			animation-play-state: paused;
+		}
+		& > li {
+			flex-shrink: 0;
+		}
+	}
+}
+[dir="rtl"] {
+	.scroller-x {
+		--_scroll-animation: scroll-rtl;
+	}
+}

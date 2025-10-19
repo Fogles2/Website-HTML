@@ -1,0 +1,22 @@
+/* Logo Style */
+@use "../global" as *;
+.logo {
+	--logo-height: #{rem(32)};
+	height: var(--logo-height);
+	&__img {
+		max-width: 100%;
+		max-height: 100%;
+		object-fit: contain;
+		&--dark {
+			display: none;
+		}
+	}
+}
+[data-bs-theme="dark"] {
+	.logo__img--dark {
+		display: inline-block;
+	}
+	.logo__img--light {
+		display: none;
+	}
+}

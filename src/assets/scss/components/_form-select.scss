@@ -1,0 +1,13 @@
+/* Form Select */
+.form-select {
+	--bs-border-radius: 0.25rem;
+	padding-block: 0.5rem;
+	padding-inline-start: 1rem;
+	&-sm {
+		padding-block: 0.25rem;
+		line-height: 1.715;
+	}
+	&-lg {
+		border-radius: var(--bs-border-radius-sm);
+	}
+}

@@ -1,0 +1,57 @@
+@use "../global" as *;
+.data-center-location {
+	display: none;
+	@include screen(md) {
+		display: inline-block;
+		position: absolute;
+		text-align: center;
+	}
+	&--1 {
+		@include screen(md) {
+			top: 0;
+			left: 38%;
+		}
+	}
+	&--2 {
+		@include screen(md) {
+			top: 5%;
+			left: 22%;
+		}
+	}
+	&--3 {
+		@include screen(md) {
+			top: 20%;
+			right: 15%;
+		}
+	}
+	&--4 {
+		@include screen(md) {
+			top: 43%;
+			right: 7%;
+		}
+	}
+	&--5 {
+		@include screen(md) {
+			top: 55%;
+			right: 10%;
+		}
+	}
+	&--6 {
+		@include screen(md) {
+			top: 25%;
+			left: 3%;
+		}
+	}
+	&--7 {
+		@include screen(md) {
+			top: 85%;
+			left: 40%;
+		}
+	}
+	&--8 {
+		@include screen(md) {
+			top: 55%;
+			left: 48%;
+		}
+	}
+}

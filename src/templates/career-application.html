@@ -1,0 +1,112 @@
+{% extends "layouts/default.html" %}
+{% set dataTheme = "domain" %}
+{% set bodyClass = "bg-light dark:bg-dark-subtle" %}
+{% set navbar = true %} 
+{% set navBtnColor = "fw-medium" %}
+{% set primaryHeader = "primary-header--light primary-header--boxed primary-header--fixed top-md-3 primary-header-crossed:top-0" %}
+{% set rtlLink = "career-application-rtl.html" %}
+{% set logoLight = "logo-dark.png" %}
+{% set logoDark = "logo-light.png" %}
+<!-- Content Block -->
+{% block content %}
+
+<!-- Banner -->
+{% include "partials/banner-5.html" %}
+<!-- Banner End -->
+<!-- Application Form -->
+<div class="section-space-y">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-8">
+<div class="bg-body rounded-3 p-4 p-md-6 p-xl-12">
+<h6 class="mb-6">Personal Information</h6>
+<form class="row g-4">
+<div class="col-12">
+<label class="form-label fw-medium fs-14" for="full-name">
+								Full Name
+								<span class="text-danger">*</span>
+</label>
+<input class="form-control" id="full-name" placeholder="First Name" type="text"/>
+</div>
+<div class="col-12">
+<label class="form-label fw-medium fs-14" for="email-address">
+								Email
+								<span class="text-danger">*</span>
+</label>
+<input class="form-control" id="email-address" placeholder="Email Address" type="text"/>
+</div>
+<div class="col-12">
+<label class="form-label fw-medium fs-14" for="phone-number">
+								Mobile No.
+								<span class="text-danger">*</span>
+</label>
+<input class="form-control" id="phone-number" placeholder="+8801 794 840 884" type="text"/>
+</div>
+<div class="col-12">
+<label class="form-label fw-medium fs-14" for="position">
+								Position
+								<span class="text-danger">*</span>
+</label>
+<input class="form-control" id="position" placeholder="Developer" type="text"/>
+</div>
+<div class="col-12">
+<label class="form-label fw-medium fs-14">
+								CV
+								<span class="text-danger">*</span>
+</label>
+<input class="form-control" type="file"/>
+</div>
+<div class="col-12">
+<label class="form-label fw-medium fs-14" for="salary">
+								Expected Salary
+							</label>
+<input class="form-control" id="salary" placeholder="Type Here.." type="text"/>
+</div>
+<div class="col-12">
+<button class="btn btn-dark-emphasis align-items-center w-100 justify-content-center" type="button">
+<span class="d-inline-block"> Submit Application </span>
+<i class="align-middle fs-20 flex-shrink-0 ti ti-paper-plane"></i>
+</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Application Form End -->
+<!-- CTA  -->
+<div class="cta-7">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="section-space-y px-4 px-sm-6 px-md-12 bg-body rounded-4 text-center position-relative z-1">
+<div class="row justify-content-center">
+<div class="col-md-11">
+<h3>Get a free web host migration</h3>
+<p class="mb-8 max-text-15 mx-auto">
+								We'll take care of the process of moving your website from
+								your old web hosting company to our platform so you can
+								focus on what matters
+							</p>
+<div class="d-flex align-items-center justify-content-center gap-4 flex-wrap">
+<a class="btn btn-secondary text-light" href="{{root}}sign-in-2.html">
+									Get Started now
+								</a>
+<a class="btn btn-dark-emphasis" href="{{root}}contact.html">
+									Contact Us
+								</a>
+</div>
+</div>
+</div>
+<img alt="image" class="img-fluid d-none d-xl-block position-absolute start-0 top-50 translate-middle-y z-n1 pointer-none" src="{{root}}assets/img/cta-img-16.png"/>
+<img alt="image" class="img-fluid d-none d-xl-block position-absolute end-0 top-50 translate-middle-y z-n1 pointer-none" src="{{root}}assets/img/cta-img-17.png"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA End -->
+
+{% include "partials/footer-7.html" %} 
+{% endblock %}

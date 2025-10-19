@@ -1,0 +1,1606 @@
+{% extends "layouts/default-rtl.html" %}
+{% set dataTheme = "web-hosting" %}
+{% set bodyClass = "bg-light dark:bg-dark-subtle" %}
+{% set navbar = true %} 
+{% set navBtnColor = "fw-medium" %}
+{% set primaryHeader = "primary-header--light primary-header--boxed primary-header--fixed top-md-3 primary-header-crossed:top-md-0" %}
+{% set ltrLink = "web-hosting.html" %}
+{% set logoLight = "logo-dark.png" %}
+{% set logoDark = "logo-light.png" %}
+<!-- Content Block -->
+{% block content %}
+
+<!-- Hero  -->
+<div class="hero-11">
+<div class="container">
+<div class="row g-4 align-items-center">
+<div class="col-md-7 col-lg-6 col-xxl-5">
+<div class="d-flex gap-2 align-items-center text-heading mb-4">
+<i class="fs-24 flex-shrink-0 ti ti-slashes"></i>
+<span class="d-block flex-grow-1 fs-18 fw-semibold">
+						خوادم استضافة الويب
+					</span>
+</div>
+<h1 class="h2 fw-bold mb-6">
+					سهلة وبأسعار معقولة
+					<span class="text-secondary">استضافة المواقع</span>
+</h1>
+<ul class="list gap-3">
+<li class="d-flex gap-2 text-heading">
+<i class="fs-24 flex-shrink-0 ti ti-lighting-circle"></i>
+<span class="d-block"> أسرع سرعات VPS المتاحة </span>
+</li>
+<li class="d-flex gap-2 text-heading">
+<i class="fs-24 flex-shrink-0 ti ti-user-4-line"></i>
+<span class="d-block"> خيارات VPS المُدارة بالكامل </span>
+</li>
+<li class="d-flex gap-2 text-heading">
+<i class="fs-24 flex-shrink-0 ti ti-customer-support-3"></i>
+<span class="d-block">
+							دعم مباشر على مدار الساعة طوال أيام الأسبوع
+						</span>
+</li>
+</ul>
+<h5 class="mt-6 mb-10 text-secondary">ابتداءً من 5 دولارات شهريًا</h5>
+<a class="btn btn-secondary text-light outline outline--3x outline--secondary-subtle" href="{{root}}sign-in-1-rtl.html">
+					ابدأ الآن
+				</a>
+</div>
+<div class="col-md-5 col-lg-6 col-xxl-7 d-none d-md-block text-xl-end">
+<img alt="image" class="img-fluid hero-11__img" src="{{root}}assets/img/hero-11-img-1.png"/>
+</div>
+</div>
+</div>
+<img alt="image" class="img-fluid position-absolute top-0 start-0 z-n1 pointer-none opacity-50 img-flip" src="{{root}}assets/img/shapes/hero-11-shape-2.png"/>
+</div>
+<!-- Hero End -->
+<!-- Pricing  -->
+<div class="position-relative z-1 mt-n100">
+<div class="container">
+<div class="row g-3">
+<div class="col-sm-6 col-lg-4 col-xl-3">
+<div class="bg-white dark:bg-secondary-subtle rounded shadow-lg px-4 px-md-8 py-6 py-md-10 position-relative z-1">
+<h6 class="mb-2 text-center">بداية الفسفور الأبيض</h6>
+<p class="mb-6 fs-14 text-center">
+						مثالي للمبتدئين في بناء موقع ويب واحد
+					</p>
+<h3 class="mb-0 text-center">$2.95</h3>
+<span class="d-block mb-6 text-center fs-14"> كل شهر </span>
+<span class="d-block text-center">
+<span class="badge bg-secondary-subtle dark:bg-dark text-heading mb-2">
+<span class="d-inline-block flex-shrink-0 w-2 h-2 rounded-circle bg-dark-emphasis"></span>
+							يصل إلى <span class="text-secondary">3 أشهر مجانًا</span>
+</span>
+<span class="d-block text-heading fw-bold mb-4"> وفر 88% </span>
+<span class="d-block fs-12">
+							يتم تجديد مدة قطع الخدمة لمدة عام واحد في
+						</span>
+<span class="d-block fs-14 fw-bold text-heading">
+							المعدل العادي
+						</span>
+</span>
+<a class="btn btn-outline-secondary hover:bg-secondary hover:text-light fw-medium w-100 justify-content-center my-9 fs-14" href="{{root}}cart-rtl.html">
+						اكتشف الآن
+					</a>
+<h6 class="fs-18">أهم الميزات</h6>
+<ul class="list gap-2">
+<li class="d-flex gap-2 align-items-center">
+<i class="fs-18 flex-shrink-0 lh-1 text-light-emphasis ti ti-check-one"></i>
+<span class="d-block text-heading fs-14">
+<strong>1</strong> موقع ووردبريس
+							</span>
+</li>
+<li class="d-flex gap-2 align-items-center">
+<i class="fs-18 flex-shrink-0 lh-1 text-light-emphasis ti ti-check-one"></i>
+<span class="d-block text-heading fs-14">
+<strong>10 بريد إلكتروني</strong> العناوين
+							</span>
+</li>
+<li class="d-flex gap-2 align-items-center">
+<i class="fs-18 flex-shrink-0 lh-1 text-light-emphasis ti ti-check-one"></i>
+<span class="d-block text-heading fs-14">
+<strong>100 جيجابايت</strong> تخزين NVMe
+							</span>
+</li>
+<li class="d-flex gap-2 align-items-center">
+<i class="fs-18 flex-shrink-0 lh-1 text-light-emphasis ti ti-check-one"></i>
+<span class="d-block text-heading fs-14">
+<strong>حر</strong> تسجيل النطاق
+							</span>
+</li>
+</ul>
+<h6 class="mt-8 fs-18">ميزات إضافية</h6>
+<ul class="list gap-2">
+<li class="d-flex gap-2 align-items-center">
+<i class="fs-18 flex-shrink-0 lh-1 text-light-emphasis ti ti-check-one"></i>
+<span class="d-block text-heading fs-14">
+<strong>معيار</strong> شهادة SSL
+							</span>
+</li>
+<li class="d-flex gap-2 align-items-center">
+<i class="fs-18 flex-shrink-0 lh-1 text-danger ti ti-cross-circle"></i>
+<span class="d-block text-heading fs-14">
+<strong>ووردبريس</strong> التدريج
+							</span>
+</li>
+</ul>
+<h6 class="mt-8 fs-18">جناح النمو</h6>
+<ul class="list gap-2">
+<li class="d-flex gap-2">
+<i class="fs-18 flex-shrink-0 lh-1 text-danger mt-1 ti ti-cross-circle"></i>
+<span class="d-block text-heading fs-14">
+<strong>حماية</strong> الطاقة برو
+								<span class="d-block fs-12"> (حر للمدة الكاملة) </span>
+</span>
+</li>
+<li class="d-flex gap-2">
+<i class="fs-18 flex-shrink-0 lh-1 text-danger mt-1 ti ti-cross-circle"></i>
+<span class="d-block text-heading fs-14">
+<strong>حر</strong> شبكة تسليم المحتوى
+								<span class="d-block fs-12"> (حر للمدة الكاملة) </span>
+</span>
+</li>
+<li class="d-flex gap-2">
+<i class="fs-18 flex-shrink-0 lh-1 text-danger mt-1 ti ti-cross-circle"></i>
+<span class="d-block text-heading fs-14">
+<strong>02GB</strong> النسخ الاحتياطي التلقائي
+								<span class="d-block fs-12"> (حر للمدة الكاملة) </span>
+</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-3">
+<div class="bg-white dark:bg-secondary-subtle rounded shadow-lg px-4 px-md-8 py-6 py-md-10 position-relative z-1 border border-secondary position-relative z-1">
+<h6 class="mb-2 text-center">غالي</h6>
+<p class="mb-6 fs-14 text-center">
+						خطة استضافة ويب متعددة الاستخدامات تلبي احتياجات الأغلبية
+					</p>
+<h3 class="mb-0 text-center">$5.99</h3>
+<span class="d-block mb-6 text-center fs-14"> كل شهر </span>
+<span class="d-block text-center">
+<span class="badge bg-secondary-subtle dark:bg-dark text-heading mb-2">
+<span class="d-inline-block flex-shrink-0 w-2 h-2 rounded-circle bg-dark-emphasis"></span>
+							يصل إلى <span class="text-secondary">3 أشهر مجانًا</span>
+</span>
+<span class="d-block text-heading fw-bold mb-4"> وفر 88% </span>
+<span class="d-block fs-12">
+							يتم تجديد مدة قطع الخدمة لمدة عام واحد في
+						</span>
+<span class="d-block fs-14 fw-bold text-heading">
+							المعدل العادي
+						</span>
+</span>
+<a class="btn btn-secondary text-light fw-medium w-100 justify-content-center my-9 fs-14" href="{{root}}cart-rtl.html">
+						اكتشف الآن
+					</a>
+<h6 class="fs-18 text-secondary">أهم الميزات</h6>
+<ul class="list gap-2">
+<li class="d-flex gap-2 align-items-center">
+<i class="fs-18 flex-shrink-0 lh-1 text-light-emphasis ti ti-check-one"></i>
+<span class="d-block text-heading fs-14">
+<strong>غير محدود</strong> موقع إلكتروني
+							</span>
+</li>
+<li class="d-flex gap-2 align-items-center">
+<i class="fs-18 flex-shrink-0 lh-1 text-light-emphasis ti ti-check-one"></i>
+<span class="d-block text-heading fs-14">
+<strong>200GB</strong> تخزين NVMe
+							</span>
+</li>
+<li class="d-flex gap-2 align-items-center">
+<i class="fs-18 flex-shrink-0 lh-1 text-light-emphasis ti ti-check-one"></i>
+<span class="d-block text-heading fs-14">
+<strong>غير محدود</strong> بريد إلكتروني عنوان
+							</span>
+</li>
+<li class="d-flex gap-2 align-items-center">
+<i class="fs-18 flex-shrink-0 lh-1 text-light-emphasis ti ti-check-one"></i>
+<span class="d-block text-heading fs-14">
+<strong>حر</strong> تسجيل النطاق
+							</span>
+</li>
+</ul>
+<h6 class="mt-8 fs-18 text-secondary">ميزات إضافية</h6>
+<ul class="list gap-2">
+<li class="d-flex gap-2 align-items-center">
+<i class="fs-18 flex-shrink-0 lh-1 text-light-emphasis ti ti-check-one"></i>
+<span class="d-block text-heading fs-14">
+<strong>التدريج</strong> موقع إلكتروني
+							</span>
+</li>
+<li class="d-flex gap-2 align-items-center">
+<i class="fs-18 flex-shrink-0 lh-1 text-light-emphasis ti ti-check-one"></i>
+<span class="d-block text-heading fs-14">
+<strong>جيتباك</strong> حر مثبتة مسبقا
+							</span>
+</li>
+</ul>
+<h6 class="mt-8 fs-18 text-secondary">غالي جناح</h6>
+<ul class="list gap-2">
+<li class="d-flex gap-2">
+<i class="fs-18 flex-shrink-0 lh-1 text-light-emphasis mt-1 ti ti-check-one"></i>
+<span class="d-block text-heading fs-14">
+<strong>حماية</strong> الطاقة برو
+								<span class="d-block fs-12"> (حر للمدة الكاملة) </span>
+</span>
+</li>
+<li class="d-flex gap-2">
+<i class="fs-18 flex-shrink-0 lh-1 text-light-emphasis mt-1 ti ti-check-one"></i>
+<span class="d-block text-heading fs-14">
+<strong>حر</strong> شبكة تسليم المحتوى
+								<span class="d-block fs-12"> (حر للمدة الكاملة) </span>
+</span>
+</li>
+<li class="d-flex gap-2">
+<i class="fs-18 flex-shrink-0 lh-1 text-light-emphasis mt-1 ti ti-check-one"></i>
+<span class="d-block text-heading fs-14">
+<strong>05GB</strong> النسخ الاحتياطي التلقائي
+								<span class="d-block fs-12"> (حر للمدة الكاملة) </span>
+</span>
+</li>
+</ul>
+<span class="badge bg-secondary text-light px-4 position-absolute top-2 end-2">
+						شائع
+					</span>
+</div>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-3">
+<div class="bg-white dark:bg-secondary-subtle rounded shadow-lg px-4 px-md-8 py-6 py-md-10 position-relative z-1">
+<h6 class="mb-2 text-center">نمو</h6>
+<p class="mb-6 fs-14 text-center">
+						مثالي للمبتدئين في بناء موقع ويب واحد
+					</p>
+<h3 class="mb-0 text-center">$19.99</h3>
+<span class="d-block mb-6 text-center fs-14"> كل شهر </span>
+<span class="d-block text-center">
+<span class="badge bg-secondary-subtle dark:bg-dark text-heading mb-2">
+<span class="d-inline-block flex-shrink-0 w-2 h-2 rounded-circle bg-dark-emphasis"></span>
+							يصل إلى <span class="text-secondary">3 أشهر مجانًا</span>
+</span>
+<span class="d-block text-heading fw-bold mb-4"> وفر 88% </span>
+<span class="d-block fs-12">
+							يتم تجديد مدة قطع الخدمة لمدة عام واحد في
+						</span>
+<span class="d-block fs-14 fw-bold text-heading">
+							المعدل العادي
+						</span>
+</span>
+<a class="btn btn-outline-secondary hover:bg-secondary hover:text-light fw-medium w-100 justify-content-center my-9 fs-14" href="{{root}}cart-rtl.html">
+						اكتشف الآن
+					</a>
+<h6 class="fs-18">أهم الميزات</h6>
+<ul class="list gap-2">
+<li class="d-flex gap-2 align-items-center">
+<i class="fs-18 flex-shrink-0 lh-1 text-light-emphasis ti ti-check-one"></i>
+<span class="d-block text-heading fs-14">
+<strong>1</strong> موقع ووردبريس
+							</span>
+</li>
+<li class="d-flex gap-2 align-items-center">
+<i class="fs-18 flex-shrink-0 lh-1 text-light-emphasis ti ti-check-one"></i>
+<span class="d-block text-heading fs-14">
+<strong>10 بريد إلكتروني</strong> العناوين
+							</span>
+</li>
+<li class="d-flex gap-2 align-items-center">
+<i class="fs-18 flex-shrink-0 lh-1 text-light-emphasis ti ti-check-one"></i>
+<span class="d-block text-heading fs-14">
+<strong>100 جيجابايت</strong> تخزين NVMe
+							</span>
+</li>
+<li class="d-flex gap-2 align-items-center">
+<i class="fs-18 flex-shrink-0 lh-1 text-light-emphasis ti ti-check-one"></i>
+<span class="d-block text-heading fs-14">
+<strong>حر</strong> تسجيل النطاق
+							</span>
+</li>
+</ul>
+<h6 class="mt-8 fs-18">ميزات إضافية</h6>
+<ul class="list gap-2">
+<li class="d-flex gap-2 align-items-center">
+<i class="fs-18 flex-shrink-0 lh-1 text-light-emphasis ti ti-check-one"></i>
+<span class="d-block text-heading fs-14">
+<strong>معيار</strong> شهادة SSL
+							</span>
+</li>
+<li class="d-flex gap-2 align-items-center">
+<i class="fs-18 flex-shrink-0 lh-1 text-light-emphasis ti ti-check-one"></i>
+<span class="d-block text-heading fs-14">
+<strong>ووردبريس</strong> التدريج
+							</span>
+</li>
+</ul>
+<h6 class="mt-8 fs-18">جناح النمو</h6>
+<ul class="list gap-2">
+<li class="d-flex gap-2">
+<i class="fs-18 flex-shrink-0 lh-1 text-light-emphasis mt-1 ti ti-check-one"></i>
+<span class="d-block text-heading fs-14">
+<strong>حماية</strong> الطاقة برو
+								<span class="d-block fs-12"> (حر للمدة الكاملة) </span>
+</span>
+</li>
+<li class="d-flex gap-2">
+<i class="fs-18 flex-shrink-0 lh-1 text-light-emphasis mt-1 ti ti-check-one"></i>
+<span class="d-block text-heading fs-14">
+<strong>حر</strong> شبكة تسليم المحتوى
+								<span class="d-block fs-12"> (حر للمدة الكاملة) </span>
+</span>
+</li>
+<li class="d-flex gap-2">
+<i class="fs-18 flex-shrink-0 lh-1 text-light-emphasis mt-1 ti ti-check-one"></i>
+<span class="d-block text-heading fs-14">
+<strong>02GB</strong> النسخ الاحتياطي التلقائي
+								<span class="d-block fs-12"> (حر للمدة الكاملة) </span>
+</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-3">
+<div class="bg-white dark:bg-secondary-subtle rounded shadow-lg px-4 px-md-8 py-6 py-md-10 position-relative z-1">
+<h6 class="mb-2 text-center">بداية الفسفور الأبيض</h6>
+<p class="mb-6 fs-14 text-center">
+						مثالي للمبتدئين في بناء موقع ويب واحد
+					</p>
+<h3 class="mb-0 text-center">$24.99</h3>
+<span class="d-block mb-6 text-center fs-14"> كل شهر </span>
+<span class="d-block text-center">
+<span class="badge bg-secondary-subtle dark:bg-dark text-heading mb-2">
+<span class="d-inline-block flex-shrink-0 w-2 h-2 rounded-circle bg-dark-emphasis"></span>
+							يصل إلى <span class="text-secondary">3 أشهر مجانًا</span>
+</span>
+<span class="d-block text-heading fw-bold mb-4"> وفر 88% </span>
+<span class="d-block fs-12">
+							يتم تجديد مدة قطع الخدمة لمدة عام واحد في
+						</span>
+<span class="d-block fs-14 fw-bold text-heading">
+							المعدل العادي
+						</span>
+</span>
+<a class="btn btn-outline-secondary hover:bg-secondary hover:text-light fw-medium w-100 justify-content-center my-9 fs-14" href="{{root}}cart-rtl.html">
+						اكتشف الآن
+					</a>
+<h6 class="fs-18">أهم الميزات</h6>
+<ul class="list gap-2">
+<li class="d-flex gap-2 align-items-center">
+<i class="fs-18 flex-shrink-0 lh-1 text-light-emphasis ti ti-check-one"></i>
+<span class="d-block text-heading fs-14">
+<strong>1</strong> موقع ووردبريس
+							</span>
+</li>
+<li class="d-flex gap-2 align-items-center">
+<i class="fs-18 flex-shrink-0 lh-1 text-light-emphasis ti ti-check-one"></i>
+<span class="d-block text-heading fs-14">
+<strong>10 بريد إلكتروني</strong> العناوين
+							</span>
+</li>
+<li class="d-flex gap-2 align-items-center">
+<i class="fs-18 flex-shrink-0 lh-1 text-light-emphasis ti ti-check-one"></i>
+<span class="d-block text-heading fs-14">
+<strong>100 جيجابايت</strong> تخزين NVMe
+							</span>
+</li>
+<li class="d-flex gap-2 align-items-center">
+<i class="fs-18 flex-shrink-0 lh-1 text-light-emphasis ti ti-check-one"></i>
+<span class="d-block text-heading fs-14">
+<strong>حر</strong> تسجيل النطاق
+							</span>
+</li>
+</ul>
+<h6 class="mt-8 fs-18">ميزات إضافية</h6>
+<ul class="list gap-2">
+<li class="d-flex gap-2 align-items-center">
+<i class="fs-18 flex-shrink-0 lh-1 text-light-emphasis ti ti-check-one"></i>
+<span class="d-block text-heading fs-14">
+<strong>معيار</strong> شهادة SSL
+							</span>
+</li>
+<li class="d-flex gap-2 align-items-center">
+<i class="fs-18 flex-shrink-0 lh-1 text-light-emphasis ti ti-check-one"></i>
+<span class="d-block text-heading fs-14">
+<strong>ووردبريس</strong> التدريج
+							</span>
+</li>
+</ul>
+<h6 class="mt-8 fs-18">جناح النمو</h6>
+<ul class="list gap-2">
+<li class="d-flex gap-2">
+<i class="fs-18 flex-shrink-0 lh-1 text-light-emphasis mt-1 ti ti-check-one"></i>
+<span class="d-block text-heading fs-14">
+<strong>حماية</strong> الطاقة برو
+								<span class="d-block fs-12"> (حر للمدة الكاملة) </span>
+</span>
+</li>
+<li class="d-flex gap-2">
+<i class="fs-18 flex-shrink-0 lh-1 text-light-emphasis mt-1 ti ti-check-one"></i>
+<span class="d-block text-heading fs-14">
+<strong>حر</strong> شبكة تسليم المحتوى
+								<span class="d-block fs-12"> (حر للمدة الكاملة) </span>
+</span>
+</li>
+<li class="d-flex gap-2">
+<i class="fs-18 flex-shrink-0 lh-1 text-light-emphasis mt-1 ti ti-check-one"></i>
+<span class="d-block text-heading fs-14">
+<strong>02GB</strong> النسخ الاحتياطي التلقائي
+								<span class="d-block fs-12"> (حر للمدة الكاملة) </span>
+</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="section-space-xsm-top">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="d-block text-center">
+						يقول عملائنا
+						<span class="d-inline fs-20 fw-bold text-heading"> ممتاز </span>
+<ul class="list list-row gap-1 d-inline-flex mx-3">
+<li>
+<div class="d-flex align-items-center justify-content-center w-6 h-6 bg-success text-light">
+<i class="ti ti-star"></i>
+</div>
+</li>
+<li>
+<div class="d-flex align-items-center justify-content-center w-6 h-6 bg-success text-light">
+<i class="ti ti-star"></i>
+</div>
+</li>
+<li>
+<div class="d-flex align-items-center justify-content-center w-6 h-6 bg-success text-light">
+<i class="ti ti-star"></i>
+</div>
+</li>
+<li>
+<div class="d-flex align-items-center justify-content-center w-6 h-6 bg-success text-light">
+<i class="ti ti-star"></i>
+</div>
+</li>
+<li>
+<div class="d-flex align-items-center justify-content-center w-6 h-6 bg-success text-light">
+<i class="ti ti-star"></i>
+</div>
+</li>
+</ul>
+						4.4 من 5 بناءً على 9,840 تقييمًا
+						<img alt="image" class="img-fluid" src="{{root}}assets/img/brand-logo-1.png"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Pricing End -->
+<!-- Service -->
+<div class="section-space-top section-space-md-bottom">
+<div class="section-space-md-bottom">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-8">
+<h3 class="text-center">جميع خططنا تشمل</h3>
+<p class="mb-0 text-center">
+						شاهد جميع المزايا التي يتمتع بها آلاف عملاء المضيف المحلي يوميًا
+					</p>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row g-4">
+<div class="col-md-6">
+<div class="bg-body p-4 p-sm-8 p-md-10 rounded-4 h-100 position-relative z-1 overflow-hidden">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-feature-47.png"/>
+<h6 class="mt-6">استضافة ووردبريس فائقة الشحن</h6>
+<p class="mb-8">
+						منصة استضافة ووردبريس لدينا مصممة خصيصًا للسرعة والموثوقية
+						والأمان. مدعومة بأحدث أجهزة HP للمؤسسات، وتتميز بترددات عالية
+					</p>
+<a class="btn btn-secondary text-light fw-medium" href="{{root}}features-rtl.html">
+						اكتشف المزيد
+					</a>
+<img alt="image" class="img-fluid position-absolute top-0 end-0 opacity-50 z-n1 pointer-none" src="{{root}}assets/img/shapes/feature-shape-1.png"/>
+</div>
+</div>
+<div class="col-md-6">
+<div class="bg-body p-4 p-sm-8 p-md-10 rounded-4 h-100">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-feature-48.png"/>
+<h6 class="mt-6">أمان ووردبريس المتقدم</h6>
+<p class="mb-8">
+						منصة استضافة ووردبريس لدينا مصممة خصيصًا للسرعة والموثوقية
+						والأمان. مدعومة بأحدث أجهزة HP للمؤسسات، وتتميز بترددات عالية
+					</p>
+<a class="btn btn-secondary text-light fw-medium" href="{{root}}features-rtl.html">
+						اكتشف المزيد
+					</a>
+</div>
+</div>
+<div class="col-md-6 col-xl-4">
+<div class="d-flex align-items-center gap-3 bg-body p-4 p-sm-6 p-xxl-8 rounded-4 h-100">
+<img alt="image" class="img-fluid flex-shrink-0" src="{{root}}assets/img/icon-feature-49.png"/>
+<div class="flex-grow-1">
+<h6 class="mb-2 fs-20">التخصيص الكامل</h6>
+<p class="mb-0">
+							استضافة ويب سحابية فائقة السرعة، قابلة للتطوير بسهولة وبأسعار
+							معقولة
+						</p>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-xl-4">
+<div class="d-flex align-items-center gap-3 bg-body p-4 p-sm-6 p-xxl-8 rounded-4 h-100">
+<img alt="image" class="img-fluid flex-shrink-0" src="{{root}}assets/img/icon-feature-50.png"/>
+<div class="flex-grow-1">
+<h6 class="mb-2 fs-20">السيطرة الكاملة</h6>
+<p class="mb-0">
+							يضمن موثوقية عالية وبنية تحتية قوية لاستضافة الويب الخاصة بك
+						</p>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-xl-4">
+<div class="d-flex align-items-center gap-3 bg-body p-4 p-sm-6 p-xxl-8 rounded-4 h-100">
+<img alt="image" class="img-fluid flex-shrink-0" src="{{root}}assets/img/icon-feature-51.png"/>
+<div class="flex-grow-1">
+<h6 class="mb-2 fs-20">أمان لا مثيل له</h6>
+<p class="mb-0">
+							تثبيت التطبيقات الشائعة بسهولة بنقرة واحدة، مما يُبسط عملية
+							الإعداد
+						</p>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-xl-4">
+<div class="d-flex align-items-center gap-3 bg-body p-4 p-sm-6 p-xxl-8 rounded-4 h-100">
+<img alt="image" class="img-fluid flex-shrink-0" src="{{root}}assets/img/icon-feature-52.png"/>
+<div class="flex-grow-1">
+<h6 class="mb-2 fs-20">النسخ الاحتياطية المُدارة الاختيارية</h6>
+<p class="mb-0">
+							تحكم بشكل كامل في بياناتك واحمِها باستخدام حل النسخ الاحتياطي
+							المُدار لدينا
+						</p>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-xl-4">
+<div class="d-flex align-items-center gap-3 bg-body p-4 p-sm-6 p-xxl-8 rounded-4 h-100">
+<img alt="image" class="img-fluid flex-shrink-0" src="{{root}}assets/img/icon-feature-53.png"/>
+<div class="flex-grow-1">
+<h6 class="mb-2 fs-20">ضمان استعادة الاموال</h6>
+<p class="mb-0">
+							استضافة مواقع سحابية فائقة السرعة، قابلة للتطوير بسهولة
+							وبأسعار معقولة
+						</p>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-xl-4">
+<div class="d-flex align-items-center gap-3 bg-body p-4 p-sm-6 p-xxl-8 rounded-4 h-100">
+<img alt="image" class="img-fluid flex-shrink-0" src="{{root}}assets/img/icon-feature-54.png"/>
+<div class="flex-grow-1">
+<h6 class="mb-2 fs-20">قوة بأسعار معقولة</h6>
+<p class="mb-0">
+							استضافة مواقع سحابية فائقة السرعة، قابلة للتطوير بسهولة
+							وبأسعار معقولة
+						</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Service End -->
+<!-- About -->
+<div class="section-space-y">
+<div class="container">
+<div class="row g-4 align-items-center">
+<div class="col-lg-5 col-xxl-6">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/about-img-29.png"/>
+</div>
+<div class="col-lg-7 col-xxl-6">
+<div class="ps-xl-12">
+<h3 class="mb-6">نقوم بترحيل موقع إلكتروني ومجالك بشكل حر</h3>
+<p class="mb-8">
+						جرّب خدمات استضافة المواقع لدينا لمدة 30 يومًا. إذا لم تعجبك
+						خدماتنا، فسنتيح لك العودة إلى مستضيف موقعك الحالي.
+					</p>
+<ul class="list gap-8">
+<li class="d-flex gap-6">
+<div class="d-inline-block position-relative z-1 flex-shrink-0">
+<i class="fs-48 text-heading ti ti-globe"></i>
+<span class="d-inline-block position-absolute start-1 top-1 z-n1 pointer-none w-12 h-12 bg-primary bg-opacity-20 rounded-circle dark:bg-primary-subtle"></span>
+</div>
+<div class="flex-grow-1">
+<h6 class="mb-3 fs-20">حر نقل المجال</h6>
+<p class="mb-0">
+									هل لديك اسم نطاق بالفعل؟ يمكنك نقله إلى موقع حر وإعداد
+									موقعك الإلكتروني على خوادمنا القوية، والتي تضمن لك
+									نسبة تشغيل 99.9%.
+								</p>
+</div>
+</li>
+<li class="d-flex gap-6">
+<div class="d-inline-block position-relative z-1 flex-shrink-0">
+<i class="fs-48 text-heading ti ti-download-broken"></i>
+<span class="d-inline-block position-absolute start-1 top-1 z-n1 pointer-none w-12 h-12 bg-primary bg-opacity-20 rounded-circle dark:bg-primary-subtle"></span>
+</div>
+<div class="flex-grow-1">
+<h6 class="mb-3 fs-20">حر نقل المجال</h6>
+<p class="mb-0">
+									هل لديك اسم نطاق بالفعل؟ يمكنك نقله إلى موقع حر وإعداد
+									موقعك الإلكتروني على خوادمنا القوية، والتي تضمن لك
+									نسبة تشغيل 99.9%.
+								</p>
+</div>
+</li>
+</ul>
+<a class="btn btn-secondary text-light fw-medium mt-12" href="{{root}}domain-transfer-rtl.html">
+						انتقل الى المضيف المحلي
+					</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- About End -->
+<!-- Testimonial  -->
+<div class="testimonial-section-3 section-space-y position-relative z-1 bg-primary-subtle dark:bg-dark">
+<div class="section-space-bottom">
+<div class="section-space-md-bottom">
+<div class="container">
+<div class="row g-4 justify-content-between align-items-center">
+<div class="col-md-8 col-xl-7 col-xxl-6">
+<h3 class="mb-0">هل تتساءل عما يقوله عملاؤنا؟</h3>
+</div>
+<div class="col-md-4">
+<div class="d-flex align-items-center justify-content-md-end gap-4">
+<div class="testimonial-slider-7__nav-prev d-grid place-content-center w-12 h-12 bg-white text-secondary rounded cursor-pointer">
+<i class="fs-24 ti ti-arrow-left"></i>
+</div>
+<div class="testimonial-slider-7__nav-next d-grid place-content-center w-12 h-12 bg-secondary text-white rounded cursor-pointer">
+<i class="fs-24 ti ti-arrow-right"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section-space-md-bottom">
+<div class="container">
+<div class="row g-4 align-items-center">
+<div class="col-sm-6 col-lg-3 text-center">
+<h4 class="mb-2">4.8 <span class="fs-14 fw-normal">/5</span></h4>
+<ul class="list list-row justify-content-center gap-1">
+<li>
+<div class="w-6 h-6 d-grid place-content-center bg-success">
+<i class="text-light fs-16 ti ti-star-rounded"></i>
+</div>
+</li>
+<li>
+<div class="w-6 h-6 d-grid place-content-center bg-success">
+<i class="text-light fs-16 ti ti-star-rounded"></i>
+</div>
+</li>
+<li>
+<div class="w-6 h-6 d-grid place-content-center bg-success">
+<i class="text-light fs-16 ti ti-star-rounded"></i>
+</div>
+</li>
+<li>
+<div class="w-6 h-6 d-grid place-content-center bg-success">
+<i class="text-light fs-16 ti ti-star-rounded"></i>
+</div>
+</li>
+<li>
+<div class="w-6 h-6 d-grid place-content-center bg-success">
+<i class="text-light fs-16 ti ti-star-rounded"></i>
+</div>
+</li>
+</ul>
+<p class="mt-5">مراجعة النموذج 1000+</p>
+<img alt="image" class="img-fluid" src="{{root}}assets/img/brand-img-45.png"/>
+</div>
+<div class="col-sm-6 col-lg-3 text-center">
+<h4 class="mb-2">4.5 <span class="fs-14 fw-normal">/5</span></h4>
+<ul class="list list-row justify-content-center gap-1">
+<li class="lh-1">
+<i class="text-warning fs-24 ti ti-star-rounded"></i>
+</li>
+<li class="lh-1">
+<i class="text-warning fs-24 ti ti-star-rounded"></i>
+</li>
+<li class="lh-1">
+<i class="text-warning fs-24 ti ti-star-rounded"></i>
+</li>
+<li class="lh-1">
+<i class="text-warning fs-24 ti ti-star-rounded"></i>
+</li>
+<li class="lh-1">
+<i class="text-warning fs-24 ti ti-star-rounded"></i>
+</li>
+</ul>
+<p class="mt-5">مراجعة النموذج 1000+</p>
+<img alt="image" class="img-fluid" src="{{root}}assets/img/brand-img-46.png"/>
+</div>
+<div class="col-sm-6 col-lg-3 text-center">
+<h4 class="mb-2">96%</h4>
+<ul class="list list-row justify-content-center gap-1">
+<li class="lh-1">
+<i class="text-warning fs-24 ti ti-star-rounded"></i>
+</li>
+<li class="lh-1">
+<i class="text-warning fs-24 ti ti-star-rounded"></i>
+</li>
+<li class="lh-1">
+<i class="text-warning fs-24 ti ti-star-rounded"></i>
+</li>
+<li class="lh-1">
+<i class="text-warning fs-24 ti ti-star-rounded"></i>
+</li>
+<li class="lh-1">
+<i class="text-warning fs-24 ti ti-star-rounded"></i>
+</li>
+</ul>
+<p class="mt-5">“أفضل شركة استضافة”</p>
+<img alt="image" class="img-fluid" src="{{root}}assets/img/brand-img-47.png"/>
+</div>
+<div class="col-sm-6 col-lg-3 text-center">
+<h4 class="mb-2">4.7 <span class="fs-14 fw-normal">/5</span></h4>
+<ul class="list list-row justify-content-center gap-1">
+<li class="lh-1">
+<i class="text-warning fs-24 ti ti-star-rounded"></i>
+</li>
+<li class="lh-1">
+<i class="text-warning fs-24 ti ti-star-rounded"></i>
+</li>
+<li class="lh-1">
+<i class="text-warning fs-24 ti ti-star-rounded"></i>
+</li>
+<li class="lh-1">
+<i class="text-warning fs-24 ti ti-star-rounded"></i>
+</li>
+<li class="lh-1">
+<i class="text-warning fs-24 ti ti-star-rounded"></i>
+</li>
+</ul>
+<p class="mt-5">مراجعة النموذج 1000+</p>
+<img alt="image" class="img-fluid" src="{{root}}assets/img/brand-img-48.png"/>
+</div>
+</div>
+</div>
+</div>
+<div class="blend blend-x">
+<div class="container-fluid">
+<div class="row">
+<div class="col-12">
+<div class="swiper testimonial-slider-7">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<div class="bg-body dark:bg-dark-subtle rounded-3 p-4 p-sm-6 p-md-8">
+<div class="d-flex align-items-center gap-2 mb-6">
+<div class="avatar avatar-md">
+<img alt="image" class="avatar__img" src="{{root}}assets/img/user-60-1.png"/>
+</div>
+<a class="link d-block group" href="#">
+<span class="d-block fs-14 fw-medium text-heading group-hover:text-primary">
+													بيتر باركر
+												</span>
+<ul class="list list-row justify-content-center gap-1">
+<li>
+<div class="w-3 h-3 d-grid place-content-center bg-success">
+<i class="text-light fs-10 ti ti-star-rounded"></i>
+</div>
+</li>
+<li>
+<div class="w-3 h-3 d-grid place-content-center bg-success">
+<i class="text-light fs-10 ti ti-star-rounded"></i>
+</div>
+</li>
+<li>
+<div class="w-3 h-3 d-grid place-content-center bg-success">
+<i class="text-light fs-10 ti ti-star-rounded"></i>
+</div>
+</li>
+<li>
+<div class="w-3 h-3 d-grid place-content-center bg-success">
+<i class="text-light fs-10 ti ti-star-rounded"></i>
+</div>
+</li>
+<li>
+<div class="w-3 h-3 d-grid place-content-center bg-success">
+<i class="text-light fs-10 ti ti-star-rounded"></i>
+</div>
+</li>
+</ul>
+</a>
+</div>
+<p class="mb-6 line-clamp line-clamp--4">
+											لقد فكر الفريق جيدًا في المنتج بأكمله، حتى مع
+											الأخطاء البسيطة التي تعتبر طبيعية في أي مشروع
+											معقد، فهم سريعون
+										</p>
+<img alt="image" class="img-fluid" src="{{root}}assets/img/brand-img-34.png"/>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="bg-body dark:bg-dark-subtle rounded-3 p-4 p-sm-6 p-md-8">
+<div class="d-flex align-items-center gap-2 mb-6">
+<div class="avatar avatar-md">
+<img alt="image" class="avatar__img" src="{{root}}assets/img/user-60-2.png"/>
+</div>
+<a class="link d-block group" href="#">
+<span class="d-block fs-14 fw-medium text-heading group-hover:text-primary">
+													ديفون لين
+												</span>
+<ul class="list list-row justify-content-center gap-1">
+<li>
+<div class="w-3 h-3 d-grid place-content-center bg-success">
+<i class="text-light fs-10 ti ti-star-rounded"></i>
+</div>
+</li>
+<li>
+<div class="w-3 h-3 d-grid place-content-center bg-success">
+<i class="text-light fs-10 ti ti-star-rounded"></i>
+</div>
+</li>
+<li>
+<div class="w-3 h-3 d-grid place-content-center bg-success">
+<i class="text-light fs-10 ti ti-star-rounded"></i>
+</div>
+</li>
+<li>
+<div class="w-3 h-3 d-grid place-content-center bg-success">
+<i class="text-light fs-10 ti ti-star-rounded"></i>
+</div>
+</li>
+<li>
+<div class="w-3 h-3 d-grid place-content-center bg-success">
+<i class="text-light fs-10 ti ti-star-rounded"></i>
+</div>
+</li>
+</ul>
+</a>
+</div>
+<p class="mb-6 line-clamp line-clamp--4">
+											لقد فكر الفريق جيدًا في المنتج بأكمله، حتى مع
+											الأخطاء البسيطة التي تعتبر طبيعية في أي مشروع
+											معقد، فهم سريعون
+										</p>
+<img alt="image" class="img-fluid" src="{{root}}assets/img/brand-img-34.png"/>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="bg-body dark:bg-dark-subtle rounded-3 p-4 p-sm-6 p-md-8">
+<div class="d-flex align-items-center gap-2 mb-6">
+<div class="avatar avatar-md">
+<img alt="image" class="avatar__img" src="{{root}}assets/img/user-60-3.png"/>
+</div>
+<a class="link d-block group" href="#">
+<span class="d-block fs-14 fw-medium text-heading group-hover:text-primary">
+													ليزلي الكسندر
+												</span>
+<ul class="list list-row justify-content-center gap-1">
+<li>
+<div class="w-3 h-3 d-grid place-content-center bg-success">
+<i class="text-light fs-10 ti ti-star-rounded"></i>
+</div>
+</li>
+<li>
+<div class="w-3 h-3 d-grid place-content-center bg-success">
+<i class="text-light fs-10 ti ti-star-rounded"></i>
+</div>
+</li>
+<li>
+<div class="w-3 h-3 d-grid place-content-center bg-success">
+<i class="text-light fs-10 ti ti-star-rounded"></i>
+</div>
+</li>
+<li>
+<div class="w-3 h-3 d-grid place-content-center bg-success">
+<i class="text-light fs-10 ti ti-star-rounded"></i>
+</div>
+</li>
+<li>
+<div class="w-3 h-3 d-grid place-content-center bg-success">
+<i class="text-light fs-10 ti ti-star-rounded"></i>
+</div>
+</li>
+</ul>
+</a>
+</div>
+<p class="mb-6 line-clamp line-clamp--4">
+											لقد فكر الفريق جيدًا في المنتج بأكمله، حتى مع
+											الأخطاء البسيطة التي تعتبر طبيعية في أي مشروع
+											معقد، فهم سريعون
+										</p>
+<img alt="image" class="img-fluid" src="{{root}}assets/img/brand-img-34.png"/>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="bg-body dark:bg-dark-subtle rounded-3 p-4 p-sm-6 p-md-8">
+<div class="d-flex align-items-center gap-2 mb-6">
+<div class="avatar avatar-md">
+<img alt="image" class="avatar__img" src="{{root}}assets/img/user-60-4.png"/>
+</div>
+<a class="link d-block group" href="#">
+<span class="d-block fs-14 fw-medium text-heading group-hover:text-primary">
+													داريل ستيوارد
+												</span>
+<ul class="list list-row justify-content-center gap-1">
+<li>
+<div class="w-3 h-3 d-grid place-content-center bg-success">
+<i class="text-light fs-10 ti ti-star-rounded"></i>
+</div>
+</li>
+<li>
+<div class="w-3 h-3 d-grid place-content-center bg-success">
+<i class="text-light fs-10 ti ti-star-rounded"></i>
+</div>
+</li>
+<li>
+<div class="w-3 h-3 d-grid place-content-center bg-success">
+<i class="text-light fs-10 ti ti-star-rounded"></i>
+</div>
+</li>
+<li>
+<div class="w-3 h-3 d-grid place-content-center bg-success">
+<i class="text-light fs-10 ti ti-star-rounded"></i>
+</div>
+</li>
+<li>
+<div class="w-3 h-3 d-grid place-content-center bg-success">
+<i class="text-light fs-10 ti ti-star-rounded"></i>
+</div>
+</li>
+</ul>
+</a>
+</div>
+<p class="mb-6 line-clamp line-clamp--4">
+											لقد فكر الفريق جيدًا في المنتج بأكمله، حتى مع
+											الأخطاء البسيطة التي تعتبر طبيعية في أي مشروع
+											معقد، فهم سريعون
+										</p>
+<img alt="image" class="img-fluid" src="{{root}}assets/img/brand-img-34.png"/>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="bg-body dark:bg-dark-subtle rounded-3 p-4 p-sm-6 p-md-8">
+<div class="d-flex align-items-center gap-2 mb-6">
+<div class="avatar avatar-md">
+<img alt="image" class="avatar__img" src="{{root}}assets/img/user-60-5.png"/>
+</div>
+<a class="link d-block group" href="#">
+<span class="d-block fs-14 fw-medium text-heading group-hover:text-primary">
+													جيمي فوكس
+												</span>
+<ul class="list list-row justify-content-center gap-1">
+<li>
+<div class="w-3 h-3 d-grid place-content-center bg-success">
+<i class="text-light fs-10 ti ti-star-rounded"></i>
+</div>
+</li>
+<li>
+<div class="w-3 h-3 d-grid place-content-center bg-success">
+<i class="text-light fs-10 ti ti-star-rounded"></i>
+</div>
+</li>
+<li>
+<div class="w-3 h-3 d-grid place-content-center bg-success">
+<i class="text-light fs-10 ti ti-star-rounded"></i>
+</div>
+</li>
+<li>
+<div class="w-3 h-3 d-grid place-content-center bg-success">
+<i class="text-light fs-10 ti ti-star-rounded"></i>
+</div>
+</li>
+<li>
+<div class="w-3 h-3 d-grid place-content-center bg-success">
+<i class="text-light fs-10 ti ti-star-rounded"></i>
+</div>
+</li>
+</ul>
+</a>
+</div>
+<p class="mb-6 line-clamp line-clamp--4">
+											لقد فكر الفريق جيدًا في المنتج بأكمله، حتى مع
+											الأخطاء البسيطة التي تعتبر طبيعية في أي مشروع
+											معقد، فهم سريعون
+										</p>
+<img alt="image" class="img-fluid" src="{{root}}assets/img/brand-img-34.png"/>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="bg-body dark:bg-dark-subtle rounded-3 p-4 p-sm-6 p-md-8">
+<div class="d-flex align-items-center gap-2 mb-6">
+<div class="avatar avatar-md">
+<img alt="image" class="avatar__img" src="{{root}}assets/img/user-60-6.png"/>
+</div>
+<a class="link d-block group" href="#">
+<span class="d-block fs-14 fw-medium text-heading group-hover:text-primary">
+													إليانور بينا
+												</span>
+<ul class="list list-row justify-content-center gap-1">
+<li>
+<div class="w-3 h-3 d-grid place-content-center bg-success">
+<i class="text-light fs-10 ti ti-star-rounded"></i>
+</div>
+</li>
+<li>
+<div class="w-3 h-3 d-grid place-content-center bg-success">
+<i class="text-light fs-10 ti ti-star-rounded"></i>
+</div>
+</li>
+<li>
+<div class="w-3 h-3 d-grid place-content-center bg-success">
+<i class="text-light fs-10 ti ti-star-rounded"></i>
+</div>
+</li>
+<li>
+<div class="w-3 h-3 d-grid place-content-center bg-success">
+<i class="text-light fs-10 ti ti-star-rounded"></i>
+</div>
+</li>
+<li>
+<div class="w-3 h-3 d-grid place-content-center bg-success">
+<i class="text-light fs-10 ti ti-star-rounded"></i>
+</div>
+</li>
+</ul>
+</a>
+</div>
+<p class="mb-6 line-clamp line-clamp--4">
+											لقد فكر الفريق جيدًا في المنتج بأكمله، حتى مع
+											الأخطاء البسيطة التي تعتبر طبيعية في أي مشروع
+											معقد، فهم سريعون
+										</p>
+<img alt="image" class="img-fluid" src="{{root}}assets/img/brand-img-34.png"/>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="bg-body dark:bg-dark-subtle rounded-3 p-4 p-sm-6 p-md-8">
+<div class="d-flex align-items-center gap-2 mb-6">
+<div class="avatar avatar-md">
+<img alt="image" class="avatar__img" src="{{root}}assets/img/user-60-1.png"/>
+</div>
+<a class="link d-block group" href="#">
+<span class="d-block fs-14 fw-medium text-heading group-hover:text-primary">
+													بيتر باركر
+												</span>
+<ul class="list list-row justify-content-center gap-1">
+<li>
+<div class="w-3 h-3 d-grid place-content-center bg-success">
+<i class="text-light fs-10 ti ti-star-rounded"></i>
+</div>
+</li>
+<li>
+<div class="w-3 h-3 d-grid place-content-center bg-success">
+<i class="text-light fs-10 ti ti-star-rounded"></i>
+</div>
+</li>
+<li>
+<div class="w-3 h-3 d-grid place-content-center bg-success">
+<i class="text-light fs-10 ti ti-star-rounded"></i>
+</div>
+</li>
+<li>
+<div class="w-3 h-3 d-grid place-content-center bg-success">
+<i class="text-light fs-10 ti ti-star-rounded"></i>
+</div>
+</li>
+<li>
+<div class="w-3 h-3 d-grid place-content-center bg-success">
+<i class="text-light fs-10 ti ti-star-rounded"></i>
+</div>
+</li>
+</ul>
+</a>
+</div>
+<p class="mb-6 line-clamp line-clamp--4">
+											لقد فكر الفريق جيدًا في المنتج بأكمله، حتى مع
+											الأخطاء البسيطة التي تعتبر طبيعية في أي مشروع
+											معقد، فهم سريعون
+										</p>
+<img alt="image" class="img-fluid" src="{{root}}assets/img/brand-img-34.png"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<img alt="image" class="img-fluid position-absolute start-50 top-20 d-none d-xl-block z-n1 pointer-none opacity-50" src="{{root}}assets/img/icon-star.png"/>
+<img alt="image" class="img-fluid position-absolute start-30 top-50 translate-middle-y d-none d-xl-block z-n1 pointer-none" src="{{root}}assets/img/icon-quote.png"/>
+</div>
+<!-- Testimonial End -->
+<!-- CTA  -->
+<div class="position-relative z-1 mt-n100">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="bg-gradient-4 rounded-4 section-space-md-y px-10 px-xxl-20">
+<div class="row g-4 align-items-center">
+<div class="col-md-5 col-xxl-6 d-none d-md-block">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/why-choose-img-6.png"/>
+</div>
+<div class="col-md-7 col-xxl-6">
+<h3 class="text-light">ضمان الرضا بنسبة 100%</h3>
+<p class="mb-10 text-light">
+								قم بتكوين ذاكرة الوصول العشوائي (RAM) ووحدة التخزين ووحدات
+								المعالجة المركزية الافتراضية (vCPU) على خادم Flex VPS بحيث
+								تلبي احتياجات تطبيقك بدقة.
+							</p>
+<a class="btn btn-secondary outline outline--2x outline--light outline-opacity-50 text-light" href="{{root}}sign-in-1-rtl.html">
+								ابدأ الآن
+							</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA End -->
+<!-- VPS Plan -->
+<div class="section-space-y">
+<div class="section-space-md-bottom text-center">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-12">
+<h3>قارن خطط استضافة الويب لدينا</h3>
+<p class="mb-0 max-text-14 mx-auto">
+						هل ترغب في التعمق في الأرقام؟ في، نفخر بخوادم استضافة الويب القوية
+						والآمنة والموثوقة لدينا.
+					</p>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="compare-table table-responsive" data-simplebar="">
+<table class="table table-borderless table-striped">
+<thead>
+<tr>
+<th>
+<span class="mb-4 h6 fw-bold d-block">ضمان الرضا بنسبة 100%</span>
+<ul class="list gap-2">
+<li class="d-flex gap-2">
+<i class="fs-18 flex-shrink-0 lh-1 text-light-emphasis mt-1 ti ti-check-one"></i>
+<span class="d-block fs-14 text-body fw-normal">
+<span class="text-heading fw-bold">
+													ضمان استرداد الأموال لمدة 30 يومًا:
+												</span>
+												إذا لم تكن راضيًا، فسوف نقوم برد المبلغ
+												على الفور.
+											</span>
+</li>
+<li class="d-flex gap-2">
+<i class="fs-18 flex-shrink-0 lh-1 text-light-emphasis mt-1 ti ti-check-one"></i>
+<span class="d-block fs-14 text-body fw-normal">
+<span class="text-heading fw-bold">
+													دعم عملاء حائز على جوائز على مدار
+													الساعة طوال أيام الأسبوع
+												</span>
+												لذلك أنت دائما مغطى.
+											</span>
+</li>
+</ul>
+</th>
+<th>
+<div class="p-6 rounded bg-white dark:bg-dark text-center">
+<p class="fw-bold text-heading">أساسيات</p>
+<span class="mb-1 h4 fw-bold d-block">$1.5</span>
+<p class="fs-14 text-heading">كل شهر</p>
+<p class="mb-2 fw-bold text-heading">وفر 44%</p>
+<span class="d-block fs-12 mb-5">
+											يتم تجديد مدة الخصم لمدة عام واحد في
+											<strong>المعدل العادي</strong>
+</span>
+<a class="btn btn-sm btn-outline-secondary fw-medium fs-14 hover:bg-secondary hover:text-light" href="{{root}}cart-rtl.html">
+											اشتري الآن
+										</a>
+</div>
+</th>
+<th>
+<div class="p-6 rounded bg-white dark:bg-dark text-center">
+<p class="fw-bold text-heading">أساسيات</p>
+<span class="mb-1 h4 fw-bold d-block">$2.5</span>
+<p class="fs-14 text-heading">كل شهر</p>
+<p class="mb-2 fw-bold text-heading">وفر 44%</p>
+<span class="d-block fs-12 mb-5">
+											يتم تجديد مدة الخصم لمدة عام واحد في
+											<strong>المعدل العادي</strong>
+</span>
+<a class="btn btn-sm btn-outline-secondary fw-medium fs-14 hover:bg-secondary hover:text-light" href="{{root}}cart-rtl.html">
+											اشتري الآن
+										</a>
+</div>
+</th>
+<th>
+<div class="p-6 rounded bg-white dark:bg-dark text-center">
+<p class="fw-bold text-heading">أساسيات</p>
+<span class="mb-1 h4 fw-bold d-block">$3.5</span>
+<p class="fs-14 text-heading">كل شهر</p>
+<p class="mb-2 fw-bold text-heading">وفر 44%</p>
+<span class="d-block fs-12 mb-5">
+											يتم تجديد مدة الخصم لمدة عام واحد في
+											<strong>المعدل العادي</strong>
+</span>
+<a class="btn btn-sm btn-outline-secondary fw-medium fs-14 hover:bg-secondary hover:text-light" href="{{root}}cart-rtl.html">
+											اشتري الآن
+										</a>
+</div>
+</th>
+<th>
+<div class="p-6 rounded bg-white dark:bg-dark text-center">
+<p class="fw-bold text-heading">أساسيات</p>
+<span class="mb-1 h4 fw-bold d-block">$4.5</span>
+<p class="fs-14 text-heading">كل شهر</p>
+<p class="mb-2 fw-bold text-heading">وفر 44%</p>
+<span class="d-block fs-12 mb-5">
+											يتم تجديد مدة الخصم لمدة عام واحد في
+											<strong>المعدل العادي</strong>
+</span>
+<a class="btn btn-sm btn-outline-secondary fw-medium fs-14 hover:bg-secondary hover:text-light" href="{{root}}cart-rtl.html">
+											اشتري الآن
+										</a>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="text-heading fw-medium">
+									عدد مواقع الدعم الإلكترونية
+								</td>
+<td class="text-heading text-center fs-14">
+									2 موقع إلكترونيs
+								</td>
+<td class="text-heading text-center fs-14">
+									10 موقع إلكترونيs
+								</td>
+<td class="text-heading text-center fs-14">غير محدود</td>
+<td class="text-heading text-center fs-14">غير محدود</td>
+</tr>
+<tr>
+<td class="text-heading fw-medium">مساحة التخزين</td>
+<td class="text-heading text-center fs-14">
+									50GB تخزين NVMe
+								</td>
+<td class="text-heading text-center fs-14">
+									100 جيجابايت تخزين NVMe
+								</td>
+<td class="text-heading text-center fs-14">
+									100 جيجابايت تخزين NVMe
+								</td>
+<td class="text-heading text-center fs-14">تخزين NVMe</td>
+</tr>
+<tr>
+<td class="text-heading fw-medium">
+									بريد إلكتروني العناوين
+								</td>
+<td class="text-heading text-center fs-14">10</td>
+<td class="text-heading text-center fs-14">100</td>
+<td class="text-heading text-center fs-14">غير محدود</td>
+<td class="text-heading text-center fs-14">غير محدود</td>
+</tr>
+<tr>
+<td class="text-heading fw-medium">
+									تخزين البريد الوارد
+								</td>
+<td class="text-heading text-center fs-14">1GB</td>
+<td class="text-heading text-center fs-14">2GB</td>
+<td class="text-heading text-center fs-14">3GB</td>
+<td class="text-heading text-center fs-14">4GB</td>
+</tr>
+<tr>
+<td class="text-heading fw-medium">
+									موقع إلكتروني التدريج
+								</td>
+<td class="text-heading text-center fs-14">
+<i class="fs-18 lh-1 text-danger ti ti-cross-circle"></i>
+</td>
+<td class="text-heading text-center fs-14">
+<i class="fs-18 lh-1 text-success ti ti-check-one"></i>
+</td>
+<td class="text-heading text-center fs-14">
+<i class="fs-18 lh-1 text-success ti ti-check-one"></i>
+</td>
+<td class="text-heading text-center fs-14">
+<i class="fs-18 lh-1 text-success ti ti-check-one"></i>
+</td>
+</tr>
+<tr>
+<td class="text-heading fw-medium">
+									تخزين البريد الوارد
+								</td>
+<td class="text-heading text-center fs-14">
+<i class="fs-18 lh-1 text-success ti ti-check-one"></i>
+</td>
+<td class="text-heading text-center fs-14">
+<i class="fs-18 lh-1 text-success ti ti-check-one"></i>
+</td>
+<td class="text-heading text-center fs-14">
+<i class="fs-18 lh-1 text-success ti ti-check-one"></i>
+</td>
+<td class="text-heading text-center fs-14">
+<i class="fs-18 lh-1 text-success ti ti-check-one"></i>
+</td>
+</tr>
+<tr>
+<td class="text-heading fw-medium">
+									الإعداد بنقرة واحدة (ووردبريس، جملة!، دروبال)
+								</td>
+<td class="text-heading text-center fs-14">
+<i class="fs-18 lh-1 text-success ti ti-check-one"></i>
+</td>
+<td class="text-heading text-center fs-14">
+<i class="fs-18 lh-1 text-success ti ti-check-one"></i>
+</td>
+<td class="text-heading text-center fs-14">
+<i class="fs-18 lh-1 text-success ti ti-check-one"></i>
+</td>
+<td class="text-heading text-center fs-14">
+<i class="fs-18 lh-1 text-success ti ti-check-one"></i>
+</td>
+</tr>
+<tr>
+<td class="text-heading fw-medium">
+									موقع إلكتروني التدريج
+								</td>
+<td class="text-heading text-center fs-14">
+<i class="fs-18 lh-1 text-danger ti ti-cross-circle"></i>
+</td>
+<td class="text-heading text-center fs-14">2</td>
+<td class="text-heading text-center fs-14">3</td>
+<td class="text-heading text-center fs-14">4</td>
+</tr>
+<tr>
+<td class="text-heading fw-medium">لا يوجد رمز مطلوب</td>
+<td class="text-heading text-center fs-14">
+<i class="fs-18 lh-1 text-danger ti ti-cross-circle"></i>
+</td>
+<td class="text-heading text-center fs-14">
+<i class="fs-18 lh-1 text-success ti ti-check-one"></i>
+</td>
+<td class="text-heading text-center fs-14">
+<i class="fs-18 lh-1 text-success ti ti-check-one"></i>
+</td>
+<td class="text-heading text-center fs-14">
+<i class="fs-18 lh-1 text-success ti ti-check-one"></i>
+</td>
+</tr>
+<tr>
+<td class="text-heading fw-medium">
+									النسخ الاحتياطية للموقع
+								</td>
+<td class="text-heading text-center fs-14">
+<i class="fs-18 lh-1 text-danger ti ti-cross-circle"></i>
+</td>
+<td class="text-heading text-center fs-14">
+<i class="fs-18 lh-1 text-success ti ti-check-one"></i>
+</td>
+<td class="text-heading text-center fs-14">
+<i class="fs-18 lh-1 text-success ti ti-check-one"></i>
+</td>
+<td class="text-heading text-center fs-14">
+<i class="fs-18 lh-1 text-success ti ti-check-one"></i>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- VPS Plan End -->
+<!-- Support -->
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="section-space-y px-4 px-sm-6 px-md-8 px-xl-12 px-xxl-15 rounded-4 bg-body position-relative z-1">
+<div class="section-space-md-bottom">
+<div class="row g-4 justify-content-xxl-between">
+<div class="col-md-7 col-xxl-6">
+<div class="d-flex align-items-center gap-3 mb-6">
+<i class="fs-24 text-primary flex-shrink-0 ti ti-twotone-wordpress"></i>
+<span class="d-block text-heading">
+									يعمل ووردبريس بشكل أفضل على المحلي
+								</span>
+</div>
+<h4 class="mb-8 text-heading">
+								"يمكننا إنشاء حسابات جديدة وإعداد التطبيقات بسرعة"
+							</h4>
+<div class="d-flex align-items-center gap-4">
+<div class="w-18 h-18 d-grid place-content-center bg-primary-emphasis rounded flex-shrink-0">
+<i class="fs-36 text-primary-subtle ti ti-phone-call"></i>
+</div>
+<div class="flex-grow-1">
+<div class="d-flex align-items-center gap-2">
+<div class="d-flex gap-2 align-items-center">
+<span class="d-inline-block w-2 h-2 rounded-circle bg-success"></span>
+<span class="d-block fw-bold text-body">المكالمات</span>
+</div>
+<span class="d-block fs-14 text-body">(آخر 7 أيام)</span>
+</div>
+<h4 class="mb-0 text-heading">+12 125879654</h4>
+</div>
+</div>
+</div>
+<div class="col-md-5">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/cta-img-13.png"/>
+</div>
+</div>
+</div>
+<div class="section-space-sm-y px-4 px-md-8 px-xl-12 rounded-3 bg-primary bg-opacity-5 border border-primary border-opacity-30">
+<div class="row g-4 align-items-center">
+<div class="col-md-8">
+<div class="d-flex align-items-center gap-6">
+<div class="flex-shrink-0">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/icon-support-blue.png"/>
+</div>
+<h6 class="mb-0 fw-semibold text-heading">
+									دع خبراءنا يساعدونك في إنجاز مشاريعك وتشغيلها دون
+									تأخير
+								</h6>
+</div>
+</div>
+<div class="col-md-4 text-md-end">
+<a class="btn fs-14 btn-primary" href="{{root}}contact-rtl.html">
+								الدردشة مع التصدير
+							</a>
+</div>
+</div>
+</div>
+<img alt="image" class="img-fluid d-none d-lg-block position-absolute top-0 end-0 z-n1 pointer-none" src="{{root}}assets/img/shapes/cta-shape-1.png"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Support End -->
+<!-- FAQ  -->
+<div class="section-space-y">
+<div class="container">
+<div class="row g-4 justify-content-between">
+<div class="col-md-5 col-xxl-4">
+<h3>الأسئلة الشائعة</h3>
+<p class="mb-8">
+					قم بالوصول إلى المحرك المحلي من خلال مفتاح التحكم المحلي الطائرة أو
+					مباشرة.
+				</p>
+<img alt="image" class="img-fluid" src="{{root}}assets/img/faq-img-1.png"/>
+</div>
+<div class="col-md-7 col-xxl-6">
+<div class="accordion accordion-separate accordion--primary" id="accordion-separate-rounded">
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button aria-expanded="true" class="accordion-button fw-medium shadow" data-bs-target="#accordion-s1" data-bs-toggle="collapse" type="button">
+								هل تقوم بتحصيل رسوم مقابل الحالات المتوقفة؟
+							</button>
+</h2>
+<div class="accordion-collapse shadow collapse show" data-bs-parent="#accordion-separate-rounded" id="accordion-s1">
+<div class="accordion-body border border-dark border-opacity-5 fs-14">
+								لم نخصم أي مبلغ من بطاقتك. ما لاحظته هو تفويض مؤقت للتحقق
+								من صحة البطاقة المُقدمة. سينتهي هذا التفويض تلقائيًا وفقًا
+								لسياسة مصرفك، وعادةً ما يكون ذلك خلال بضعة أيام.
+							</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button aria-expanded="false" class="accordion-button collapsed fw-medium shadow" data-bs-target="#accordion-s2" data-bs-toggle="collapse" type="button">
+								ما هو دور فولتر فيما يتعلق باللائحة العامة لحماية
+								البيانات؟
+							</button>
+</h2>
+<div class="accordion-collapse collapse shadow" data-bs-parent="#accordion-separate-rounded" id="accordion-s2">
+<div class="accordion-body border border-dark border-opacity-5 fs-14">
+								لم نخصم أي مبلغ من بطاقتك. ما لاحظته هو تفويض مؤقت للتحقق
+								من صحة البطاقة المُقدمة. سينتهي هذا التفويض تلقائيًا وفقًا
+								لسياسة مصرفك، وعادةً ما يكون ذلك خلال بضعة أيام.
+							</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button aria-expanded="false" class="accordion-button collapsed fw-medium shadow" data-bs-target="#accordion-s3" data-bs-toggle="collapse" type="button">
+								كيف سأعرف إذا تم قبولي في البرنامج؟
+							</button>
+</h2>
+<div class="accordion-collapse collapse shadow" data-bs-parent="#accordion-separate-rounded" id="accordion-s3">
+<div class="accordion-body border border-dark border-opacity-5 fs-14">
+								لم نخصم أي مبلغ من بطاقتك. ما لاحظته هو تفويض مؤقت للتحقق
+								من صحة البطاقة المُقدمة. سينتهي هذا التفويض تلقائيًا وفقًا
+								لسياسة مصرفك، وعادةً ما يكون ذلك خلال بضعة أيام.
+							</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button aria-expanded="false" class="accordion-button collapsed fw-medium shadow" data-bs-target="#accordion-s4" data-bs-toggle="collapse" type="button">
+								ما هي قوالب نظام التشغيل التي تقدمها؟
+							</button>
+</h2>
+<div class="accordion-collapse collapse shadow" data-bs-parent="#accordion-separate-rounded" id="accordion-s4">
+<div class="accordion-body border border-dark border-opacity-5 fs-14">
+								لم نخصم أي مبلغ من بطاقتك. ما لاحظته هو تفويض مؤقت للتحقق
+								من صحة البطاقة المُقدمة. سينتهي هذا التفويض تلقائيًا وفقًا
+								لسياسة مصرفك، وعادةً ما يكون ذلك خلال بضعة أيام.
+							</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button aria-expanded="false" class="accordion-button collapsed fw-medium shadow" data-bs-target="#accordion-s5" data-bs-toggle="collapse" type="button">
+								هل الأسعار هي نفسها في جميع مواقع مراكز البيانات؟
+							</button>
+</h2>
+<div class="accordion-collapse collapse shadow" data-bs-parent="#accordion-separate-rounded" id="accordion-s5">
+<div class="accordion-body border border-dark border-opacity-5 fs-14">
+								لم نخصم أي مبلغ من بطاقتك. ما لاحظته هو تفويض مؤقت للتحقق
+								من صحة البطاقة المُقدمة. سينتهي هذا التفويض تلقائيًا وفقًا
+								لسياسة مصرفك، وعادةً ما يكون ذلك خلال بضعة أيام.
+							</div>
+</div>
+</div>
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button aria-expanded="false" class="accordion-button collapsed fw-medium shadow" data-bs-target="#accordion-s6" data-bs-toggle="collapse" type="button">
+								ما هي طرق الدفع التي تقبلونها؟
+							</button>
+</h2>
+<div class="accordion-collapse collapse shadow" data-bs-parent="#accordion-separate-rounded" id="accordion-s6">
+<div class="accordion-body border border-dark border-opacity-5 fs-14">
+								لم نخصم أي مبلغ من بطاقتك. ما لاحظته هو تفويض مؤقت للتحقق
+								من صحة البطاقة المُقدمة. سينتهي هذا التفويض تلقائيًا وفقًا
+								لسياسة مصرفك، وعادةً ما يكون ذلك خلال بضعة أيام.
+							</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- FAQ End -->
+<!-- CTA  -->
+<div class="cta-8">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="section-space-y px-4 px-sm-6 px-md-12 bg-body rounded-4 text-center position-relative z-1 dark:bg-secondary-subtle">
+<div class="row justify-content-center">
+<div class="col-md-11">
+<h3>احصل على استضافة ويب مجانية</h3>
+<p class="mb-8 max-text-15 mx-auto">
+								سنتولى عملية نقل موقعك الإلكتروني من شركة استضافة الويب
+								القديمة إلى منصتنا حتى تتمكن من التركيز على ما يهمك
+							</p>
+<div class="d-flex align-items-center justify-content-center gap-4 flex-wrap">
+<a class="btn btn-secondary text-light" href="{{root}}sign-in-1-rtl.html">
+									ابدأ الآن
+								</a>
+<a class="btn btn-dark dark:bg-light dark:text-dark" href="{{root}}contact-rtl.html">
+									اتصل بنا
+								</a>
+</div>
+</div>
+</div>
+<img alt="image" class="img-fluid d-none d-xl-block position-absolute start-0 top-50 translate-middle-y z-n1 pointer-none" src="{{root}}assets/img/cta-img-16.png"/>
+<img alt="image" class="img-fluid d-none d-xl-block position-absolute end-0 top-50 translate-middle-y z-n1 pointer-none" src="{{root}}assets/img/cta-img-17.png"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA End -->
+
+{% include "partials/footer-6-rtl.html" %} 
+{% endblock %}

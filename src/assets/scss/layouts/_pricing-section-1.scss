@@ -1,0 +1,20 @@
+@use "../global" as *;
+.pricing-section-1 {
+	background: linear-gradient(184deg, var(--bs-tertiary-bg) 0%, var(--bs-light-bg-subtle) 25.55%);
+	@include screen(xl) {
+		position: relative;
+		z-index: 1;
+	}
+	&::after {
+		@include screen(xl) {
+			content: "";
+			position: absolute;
+			inset: 0;
+			background-image: url(../img/shapes/about-2-shape.png);
+			background-size: cover;
+			background-position: center bottom;
+			background-repeat: no-repeat;
+			z-index: -1;
+		}
+	}
+}

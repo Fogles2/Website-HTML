@@ -1,0 +1,32 @@
+.scroller-y {
+	--_scroll-animation: scrollY-up;
+	overflow: hidden;
+	&[data-direction="bottom"] {
+		--_animation-direction: forwards;
+		--_scroll-animation: scrollY-down;
+	}
+	&[data-direction="top"] {
+		--_animation-direction: forwards;
+		--_scroll-animation: scrollY-up;
+	}
+	&[data-speed="fast"] {
+		--_animation-duration: 30s;
+	}
+	&[data-speed="slow"] {
+		--_animation-duration: 120s;
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+		height: max-content;
+		flex-wrap: nowrap;
+		animation: var(--_scroll-animation, scrollY-up) var(--_animation-duration, 60s)
+			var(--_animation-direction, forwards) linear infinite;
+		&:hover {
+			animation-play-state: paused;
+		}
+		& > li {
+			flex-shrink: 0;
+		}
+	}
+}

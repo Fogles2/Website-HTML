@@ -1,0 +1,203 @@
+// Typography
+p {
+	margin: 0 0 1rem;
+	line-height: 1.5;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0 0 1rem;
+	font-family: var(--ff-1);
+	font-weight: 700;
+	line-height: 1.2;
+}
+h1,
+.h1 {
+	font-size: var(--h1);
+}
+h2,
+.h2 {
+	font-size: var(--h2);
+}
+h3,
+.h3 {
+	font-size: var(--h3);
+}
+h4,
+.h4 {
+	font-size: var(--h4);
+}
+h5,
+.h5 {
+	font-size: var(--h5);
+}
+h6,
+.h6 {
+	font-size: var(--h6);
+}
+.fs-10 {
+	font-size: 0.625rem;
+}
+.fs-12 {
+	font-size: 0.75rem;
+	line-height: 1.334;
+}
+small,
+.fs-14 {
+	font-size: 0.875rem;
+	line-height: 1.715;
+}
+.fs-16 {
+	font-size: 1rem;
+}
+.fs-18 {
+	font-size: 1.125rem;
+	line-height: 1.334;
+}
+.fs-20 {
+	font-size: 1.25rem;
+}
+.fs-24 {
+	font-size: 1.5rem;
+}
+.fs-28 {
+	font-size: 1.75rem;
+}
+.fs-32 {
+	font-size: 2rem;
+}
+.fs-36 {
+	font-size: 2.25rem;
+}
+.fs-40 {
+	font-size: 2.5rem;
+}
+.fs-44 {
+	font-size: 2.75rem;
+}
+.fs-48 {
+	font-size: 3rem;
+}
+.fs-52 {
+	font-size: 3.25rem;
+}
+.fs-56 {
+	font-size: 3.5rem;
+}
+.fs-60 {
+	font-size: 3.75rem;
+}
+.fs-10vw {
+	font-size: clamp(4rem, 10vw + 1rem, 12rem);
+}
+.fs-20vw {
+	font-size: clamp(8rem, 20vw + 1rem, 23.75rem);
+}
+.fs-30vw {
+	font-size: clamp(14rem, 30vw + 1rem, 35.625rem);
+}
+.max-text-3 {
+	max-width: 12ch;
+}
+.max-text-4 {
+	max-width: 16ch;
+}
+.max-text-5 {
+	max-width: 20ch;
+}
+.max-text-6 {
+	max-width: 24ch;
+}
+.max-text-7 {
+	max-width: 28ch;
+}
+.max-text-8 {
+	max-width: 32ch;
+}
+.max-text-9 {
+	max-width: 36ch;
+}
+.max-text-10 {
+	max-width: 40ch;
+}
+.max-text-11 {
+	max-width: 44ch;
+}
+.max-text-12 {
+	max-width: 48ch;
+}
+.max-text-13 {
+	max-width: 52ch;
+}
+.max-text-14 {
+	max-width: 56ch;
+}
+.max-text-15 {
+	max-width: 60ch;
+}
+.max-text-16 {
+	max-width: 64ch;
+}
+.max-text-17 {
+	max-width: 68ch;
+}
+.max-text-18 {
+	max-width: 72ch;
+}
+.max-text-19 {
+	max-width: 76ch;
+}
+.max-text-20 {
+	max-width: 80ch;
+}
+.max-text-21 {
+	max-width: 84ch;
+}
+.max-text-22 {
+	max-width: 88ch;
+}
+.max-text-23 {
+	max-width: 92ch;
+}
+.max-text-24 {
+	max-width: 96ch;
+}
+.max-text-25 {
+	max-width: 100ch;
+}
+.max-text-26 {
+	max-width: 104ch;
+}
+.max-text-27 {
+	max-width: 108ch;
+}
+.max-text-28 {
+	max-width: 112ch;
+}
+.max-text-29 {
+	max-width: 116ch;
+}
+.max-text-30 {
+	max-width: 120ch;
+}
+.fw-800 {
+	font-weight: 800;
+}
+.fw-900 {
+	font-weight: 900;
+}
+.lh-1\/2 {
+	line-height: 1.2;
+}
+.lh-1\/3 {
+	line-height: 1.334;
+}
+.lh-1\/5 {
+	line-height: 1.5;
+}
+.lh-1\/7 {
+	line-height: 1.715;
+}

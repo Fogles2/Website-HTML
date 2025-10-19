@@ -1,0 +1,109 @@
+@use "../global" as *;
+.domain-search-section-1 {
+	position: relative;
+	isolation: isolate;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		inset-inline-start: 0;
+		inset-inline-end: 0;
+		height: 50%;
+		background-color: var(--bs-primary-bg-subtle);
+		border-radius: 1.5rem 1.5rem 0 0;
+		z-index: -1;
+		@include screen(xl) {
+			inset-inline-end: 50%;
+			bottom: 0;
+			height: 100%;
+			border-radius: 1.5rem 0 0 1.5rem;
+		}
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		inset-inline-start: 0;
+		inset-inline-end: 0;
+		height: 50%;
+		background-color: var(--bs-light-bg-subtle);
+		border-radius: 0 0 1.5rem 1.5rem;
+		z-index: -1;
+		@include screen(xl) {
+			inset-inline-start: 50%;
+			top: 0;
+			height: 100%;
+			border-radius: 0 1.5rem 1.5rem 0;
+		}
+	}
+	&__map {
+		height: rem(180);
+		position: relative;
+		isolation: isolate;
+	}
+	&__map-floating {
+		@include screen(md) {
+			position: absolute;
+			inset-inline-end: 0;
+			bottom: 0;
+			width: 100%;
+			height: rem(260);
+		}
+		@include screen(lg) {
+			height: rem(240);
+		}
+		@include screen(xl) {
+			width: 50%;
+			height: rem(280);
+		}
+		@include screen(xxl) {
+			height: rem(300);
+		}
+	}
+	&__flag {
+		position: absolute;
+		&-1 {
+			top: 30%;
+			right: 12%;
+		}
+		&-2 {
+			top: 34%;
+			left: 6%;
+		}
+		&-3 {
+			top: 10%;
+			left: 15%;
+		}
+		&-4 {
+			top: 65%;
+			left: 15%;
+		}
+		&-5 {
+			top: 65%;
+			left: 52%;
+		}
+		&-6 {
+			top: 30%;
+			left: 59%;
+		}
+		&-7 {
+			top: 15%;
+			left: 75%;
+		}
+		&-8 {
+			bottom: 20%;
+			right: 2%;
+		}
+	}
+	&__img-1 {
+		display: none;
+		@media (min-width: 1920px) {
+			display: block;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			z-index: -1;
+			pointer-events: none;
+		}
+	}
+}

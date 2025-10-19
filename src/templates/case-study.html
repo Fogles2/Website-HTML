@@ -1,0 +1,241 @@
+{% extends "layouts/default.html" %} {% set dataTheme = "domain" %} {% set bodyClass =
+"bg-light dark:bg-dark-subtle" %} {% set navbar = true %} {% set navBtnColor = "fw-medium"
+%} {% set primaryHeader = "primary-header--dark-alt primary-header--boxed
+primary-header--fixed top-md-3 primary-header-crossed:top-0" %} {% set rtlLink =
+"case-study-rtl.html" %} {% set logoLight = "logo-light.png" %} {% set logoDark =
+"logo-light.png" %}
+<!-- Content Block -->
+{% block content %}
+
+<!-- Banner  -->
+{% include "partials/banner-6.html" %}
+<!-- Banner End -->
+<!-- Brand  -->
+<div class="section-space-y">
+<div class="container">
+<div class="row justify-content-center g-4">
+<div class="col-md-8 col-xl-6">
+<h6 class="mb-0 fs-20 text-center {% if brandTitleClass %} {{brandTitleClass}} {% endif %}">
+					Trusted by the best companies in the world
+				</h6>
+</div>
+<div class="col-12">
+<div class="scroller-x blend-x">
+<ul class="list list-row scroller-x__list flex-wrap gap-8 justify-content-center align-items-center">
+<li>
+<img alt="image" class="img-fluid" src="{{root}}assets/img/brand-img-1.png"/>
+</li>
+<li>
+<img alt="image" class="img-fluid" src="{{root}}assets/img/brand-img-2.png"/>
+</li>
+<li>
+<img alt="image" class="img-fluid" src="{{root}}assets/img/brand-img-3.png"/>
+</li>
+<li>
+<img alt="image" class="img-fluid" src="{{root}}assets/img/brand-img-4.png"/>
+</li>
+<li>
+<img alt="image" class="img-fluid" src="{{root}}assets/img/brand-img-5.png"/>
+</li>
+<li>
+<img alt="image" class="img-fluid" src="{{root}}assets/img/brand-img-6.png"/>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Brand End -->
+<!-- Featured Case Study -->
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="case-study-card d-flex flex-column flex-md-row align-items-md-center gap-8 bg-body rounded p-4 p-md-6">
+<div class="flex-shrink-0">
+<img alt="image" class="img-fluid" src="{{root}}assets/img/case-study-img-1.png"/>
+</div>
+<div class="case-study-card__content flex-grow-1">
+<img alt="image" class="img-fluid mb-6" src="{{root}}assets/img/brand-img-1.png"/>
+<h4 class="mb-6">
+						Unlock your product's full potential with our comprehensive
+						end-to-end services.
+					</h4>
+<ul class="list list-row align-items-center flex-wrap list-separate list-separate--xl list-separate--secondary">
+<li>
+<h6 class="mb-1">$50,000</h6>
+<p class="fs-14 mb-0">Bigest Dell in USA</p>
+</li>
+<li>
+<h6 class="mb-1">25 Days</h6>
+<p class="fs-14 mb-0">Book last 3 months</p>
+</li>
+</ul>
+<a class="btn btn-primary mt-6" href="{{root}}case-study-details.html">
+						Read Case Study
+					</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Featured Case Study End -->
+<!-- Latest Case Study -->
+<div class="section-space-y">
+<div class="section-space-md-bottom">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-10 col-xl-12">
+<h4 class="mb-0">Latest Case Study</h4>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row g-4 justify-content-center">
+<div class="col-lg-10 col-xl-6">
+<div class="case-study-card d-flex flex-column flex-md-row gap-6 bg-body rounded p-4">
+<div class="case-study-card__img flex-shrink-0">
+<img alt="image" class="img-fluid h-100 object-fit-cover" src="{{root}}assets/img/case-study-img-2.png"/>
+</div>
+<div class="case-study-card__content d-flex flex-column align-items-start justify-content-center">
+<img alt="image" class="img-fluid mb-4" src="{{root}}assets/img/brand-img-1.png"/>
+<h6 class="mb-6 fs-20">
+							Unlock your product's full potential with our comprehensive
+							end-to-end services.
+						</h6>
+<ul class="list list-row align-items-center flex-wrap list-separate list-separate--xl list-separate--secondary">
+<li>
+<h6 class="mb-1">$50,000</h6>
+<p class="fs-12 mb-0">Bigest Dell in USA</p>
+</li>
+<li>
+<h6 class="mb-1">25 Days</h6>
+<p class="fs-12 mb-0">Book last 3 months</p>
+</li>
+</ul>
+<a class="btn btn-primary-subtle fs-14 mt-6" href="{{root}}case-study-details.html">
+							Read Case Study
+						</a>
+</div>
+</div>
+</div>
+<div class="col-lg-10 col-xl-6">
+<div class="case-study-card d-flex flex-column flex-md-row gap-6 bg-body rounded p-4">
+<div class="case-study-card__img flex-shrink-0">
+<img alt="image" class="img-fluid h-100 object-fit-cover" src="{{root}}assets/img/case-study-img-3.png"/>
+</div>
+<div class="case-study-card__content d-flex flex-column align-items-start justify-content-center">
+<img alt="image" class="img-fluid mb-4" src="{{root}}assets/img/brand-img-1.png"/>
+<h6 class="mb-6 fs-20">
+							Unlock your product's full potential with our comprehensive
+							end-to-end services.
+						</h6>
+<ul class="list list-row align-items-center flex-wrap list-separate list-separate--xl list-separate--secondary">
+<li>
+<h6 class="mb-1">$50,000</h6>
+<p class="fs-12 mb-0">Bigest Dell in USA</p>
+</li>
+<li>
+<h6 class="mb-1">25 Days</h6>
+<p class="fs-12 mb-0">Book last 3 months</p>
+</li>
+</ul>
+<a class="btn btn-primary-subtle fs-14 mt-6" href="{{root}}case-study-details.html">
+							Read Case Study
+						</a>
+</div>
+</div>
+</div>
+<div class="col-lg-10 col-xl-6">
+<div class="case-study-card d-flex flex-column flex-md-row gap-6 bg-body rounded p-4">
+<div class="case-study-card__img flex-shrink-0">
+<img alt="image" class="img-fluid h-100 object-fit-cover" src="{{root}}assets/img/case-study-img-4.png"/>
+</div>
+<div class="case-study-card__content d-flex flex-column align-items-start justify-content-center">
+<img alt="image" class="img-fluid mb-4" src="{{root}}assets/img/brand-img-1.png"/>
+<h6 class="mb-6 fs-20">
+							Unlock your product's full potential with our comprehensive
+							end-to-end services.
+						</h6>
+<ul class="list list-row align-items-center flex-wrap list-separate list-separate--xl list-separate--secondary">
+<li>
+<h6 class="mb-1">$50,000</h6>
+<p class="fs-12 mb-0">Bigest Dell in USA</p>
+</li>
+<li>
+<h6 class="mb-1">25 Days</h6>
+<p class="fs-12 mb-0">Book last 3 months</p>
+</li>
+</ul>
+<a class="btn btn-primary-subtle fs-14 mt-6" href="{{root}}case-study-details.html">
+							Read Case Study
+						</a>
+</div>
+</div>
+</div>
+<div class="col-lg-10 col-xl-6">
+<div class="case-study-card d-flex flex-column flex-md-row gap-6 bg-body rounded p-4">
+<div class="case-study-card__img flex-shrink-0">
+<img alt="image" class="img-fluid h-100 object-fit-cover" src="{{root}}assets/img/case-study-img-5.png"/>
+</div>
+<div class="case-study-card__content d-flex flex-column align-items-start justify-content-center">
+<img alt="image" class="img-fluid mb-4" src="{{root}}assets/img/brand-img-1.png"/>
+<h6 class="mb-6 fs-20">
+							Unlock your product's full potential with our comprehensive
+							end-to-end services.
+						</h6>
+<ul class="list list-row align-items-center flex-wrap list-separate list-separate--xl list-separate--secondary">
+<li>
+<h6 class="mb-1">$50,000</h6>
+<p class="fs-12 mb-0">Bigest Dell in USA</p>
+</li>
+<li>
+<h6 class="mb-1">25 Days</h6>
+<p class="fs-12 mb-0">Book last 3 months</p>
+</li>
+</ul>
+<a class="btn btn-primary-subtle fs-14 mt-6" href="{{root}}case-study-details.html">
+							Read Case Study
+						</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Latest Case Study End -->
+<!-- CTA  -->
+<div class="cta-7">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="section-space-y px-4 px-sm-6 px-md-12 bg-body rounded-4 text-center position-relative z-1">
+<div class="row justify-content-center">
+<div class="col-md-11">
+<h3>Get a free web host migration</h3>
+<p class="mb-8 max-text-15 mx-auto">
+								We'll take care of the process of moving your website from
+								your old web hosting company to our platform so you can
+								focus on what matters
+							</p>
+<div class="d-flex align-items-center justify-content-center gap-4 flex-wrap">
+<a class="btn btn-secondary text-light" href="{{root}}sign-in-2.html">
+									Get Started now
+								</a>
+<a class="btn btn-dark-emphasis" href="{{root}}contact.html">
+									Contact Us
+								</a>
+</div>
+</div>
+</div>
+<img alt="image" class="img-fluid d-none d-xl-block position-absolute start-0 top-50 translate-middle-y z-n1 pointer-none" src="{{root}}assets/img/cta-img-16.png"/>
+<img alt="image" class="img-fluid d-none d-xl-block position-absolute end-0 top-50 translate-middle-y z-n1 pointer-none" src="{{root}}assets/img/cta-img-17.png"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA End -->
+
+{% include "partials/footer-7.html" %} {% endblock %}

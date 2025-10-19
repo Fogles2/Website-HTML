@@ -1,0 +1,11 @@
+@use "../global" as *;
+.team-member-1 {
+	&:hover {
+		.team-member-1__img {
+			transform: scale(1.1) rotate(3deg);
+		}
+	}
+	&__content {
+		margin-top: -#{rem(40)};
+	}
+}

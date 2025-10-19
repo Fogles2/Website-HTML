@@ -1,0 +1,23 @@
+.text-stroke {
+	-webkit-text-stroke-width: 1px;
+	&--light {
+		color: var(--bs-light);
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke-color: var(--bs-light);
+	}
+	&--dark {
+		color: var(--bs-dark);
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke-color: var(--bs-dark);
+	}
+	&--dark-emphasis {
+		color: var(--bs-dark-text-emphasis);
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke-color: var(--bs-dark-text-emphasis);
+	}
+	&--secondary {
+		color: var(--bs-primary-text-emphasis);
+		-webkit-text-fill-color: var(--bs-secondary);
+		-webkit-text-stroke-color: var(--bs-light);
+	}
+}

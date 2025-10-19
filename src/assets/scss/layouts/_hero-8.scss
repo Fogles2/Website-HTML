@@ -1,0 +1,31 @@
+@use "../global" as *;
+.hero-8 {
+	position: relative;
+	isolation: isolate;
+	padding-top: clamp(8.75rem, 10.52vw + 1rem, 12.5rem);
+	padding-bottom: clamp(14.875rem, 17.89vw + 1rem, 21.25rem);
+	
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background-color: var(--bs-light-bg-subtle);
+		background-image: url(../img/hero-4-bg.png);
+		background-size: cover;
+		background-position: center bottom;
+		background-repeat: no-repeat;
+		-webkit-mask-image: url(../img/shapes/hero-4-mask-shape.png);
+		mask-image: url(../img/shapes/hero-4-mask-shape.png);
+		mask-size: 100% 100%;
+		mask-position: center bottom;
+		-webkit-mask-repeat: no-repeat;
+		mask-repeat: no-repeat;
+		z-index: -1;
+	}
+	&__img {
+		@media (min-width: 1920px) {
+			position: relative;
+			transform: scale(1.25) translateX(10%);
+		}
+	}
+}

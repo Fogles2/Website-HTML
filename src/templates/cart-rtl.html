@@ -1,0 +1,308 @@
+{% extends "layouts/default-rtl.html" %}
+{% set dataTheme = "domain" %}
+{% set bodyClass = "bg-light dark:bg-dark-subtle" %}
+{% set navbar = true %} 
+{% set navBtnColor = "fw-medium" %}
+{% set primaryHeader = "primary-header--light primary-header--boxed primary-header--fixed top-md-3 primary-header-crossed:top-0" %}
+{% set ltrLink = "cart.html" %}
+{% set logoLight = "logo-dark.png" %}
+{% set logoDark = "logo-light.png" %}
+<!-- Content Block -->
+{% block content %}
+
+<!-- Hero -->
+<div class="hero-7">
+<div class="section-space-sm-bottom">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-12">
+<div class="text-center">
+<h1 class="h2 text-light fw-bold">
+							اكتشف اسم النطاق المثالي الخاص بك
+						</h1>
+<p class="mb-12 text-light">
+							ابحث عن نطاقات جديدة وسجل اسمك قبل أن يفعل ذلك شخص آخر
+						</p>
+<div class="search-filter search-filter--light bg-light rounded-1 max-text-18 mx-auto">
+<input class="form-control search-filter__input placeholder::text-dark-subtle text-dark" placeholder="ابحث الآن" type="text"/>
+<select aria-label="Default select example" class="form-select search-filter__select">
+<option selected="" value="1">.com</option>
+<option value="2">.net</option>
+<option value="3">.org</option>
+<option value="4">.ai</option>
+<option value="5">.info</option>
+<option value="6">.shop</option>
+<option value="7">.xyz</option>
+<option value="8">.blog</option>
+</select>
+<button class="btn btn-primary align-items-center flex-shrink-0" type="button">
+<i class="align-middle flex-shrink-0 ti ti-search-duotone"></i>
+								ابحث
+							</button>
+</div>
+<ul class="list list-row flex-wrap gap-4 justify-content-center align-items-center max-text-18 mx-auto mt-6">
+<li>
+<button class="btn btn-sm bg-light bg-opacity-10 text-light hover:bg-opacity-100 hover:text-dark" type="button">
+<span class="d-inline-block fs-18 fw-bold">
+										.com
+										<span class="d-inline-block fs-12 fw-normal">
+											$4/Year
+										</span>
+</span>
+</button>
+</li>
+<li>
+<button class="btn btn-sm bg-light bg-opacity-10 text-light hover:bg-opacity-100 hover:text-dark" type="button">
+<span class="d-inline-block fs-18 fw-bold">
+										.net
+										<span class="d-inline-block fs-12 fw-normal">
+											$5/Year
+										</span>
+</span>
+</button>
+</li>
+<li>
+<button class="btn btn-sm bg-light bg-opacity-10 text-light hover:bg-opacity-100 hover:text-dark" type="button">
+<span class="d-inline-block fs-18 fw-bold">
+										.org
+										<span class="d-inline-block fs-12 fw-normal">
+											$8/Year
+										</span>
+</span>
+</button>
+</li>
+<li>
+<button class="btn btn-sm bg-light bg-opacity-10 text-light hover:bg-opacity-100 hover:text-dark" type="button">
+<span class="d-inline-block fs-18 fw-bold">
+										.ai
+										<span class="d-inline-block fs-12 fw-normal">
+											$4.56/Year
+										</span>
+</span>
+</button>
+</li>
+<li>
+<button class="btn btn-sm bg-light bg-opacity-10 text-light hover:bg-opacity-100 hover:text-dark" type="button">
+<span class="d-inline-block fs-18 fw-bold">
+										.info
+										<span class="d-inline-block fs-12 fw-normal">
+											$4.56/Year
+										</span>
+</span>
+</button>
+</li>
+<li>
+<button class="btn btn-sm bg-light bg-opacity-10 text-light hover:bg-opacity-100 hover:text-dark" type="button">
+<span class="d-inline-block fs-18 fw-bold">
+										.shop
+										<span class="d-inline-block fs-12 fw-normal">
+											$4.56/Year
+										</span>
+</span>
+</button>
+</li>
+<li>
+<button class="btn btn-sm bg-light bg-opacity-10 text-light hover:bg-opacity-100 hover:text-dark" type="button">
+<span class="d-inline-block fs-18 fw-bold">
+										.xyz
+										<span class="d-inline-block fs-12 fw-normal">
+											$3/Year
+										</span>
+</span>
+</button>
+</li>
+</ul>
+<p class="mt-8 mb-0 fs-14 text-light">
+							يتم تضمين حماية خصوصية WHOIS المجانية مع كل تسجيل نطاق مؤهل.
+						</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<img alt="image" class="img-fluid hero-7__shape-1" src="{{root}}assets/img/shapes/hero-7-shape-1.png"/>
+</div>
+<!-- Hero End -->
+<!-- Cart Section -->
+<div class="position-relative z-1 mt-n100 section-space-bottom">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="section-space-md-y bg-light dark:bg-dark px-4 px-sm-6 px-md-10 px-lg-12 shadow-lg rounded-4">
+<div class="section-space-xsm-bottom">
+<div class="d-flex align-items-center gap-1">
+<i class="fs-24 flex-shrink-0 text-heading ti ti-cart-large-linear"></i>
+<h6 class="mb-0">عربة التسوق الخاصة بك</h6>
+</div>
+</div>
+<div class="row g-4">
+<div class="col-lg-7 col-xl-8">
+<div class="bg-white dark:bg-dark-subtle p-6 rounded-3">
+<div class="d-flex align-items-center gap-2 mb-1">
+<span class="d-block w-2 h-2 rounded-circle bg-secondary flex-shrink-0"></span>
+<h6 class="mb-0 text-secondary">domain.com</h6>
+</div>
+<span class="d-block text-heading fw-medium">
+									تسجيل نطاق .com
+								</span>
+<hr class="my-4"/>
+<div class="table-responsive">
+<table class="table table-modifier table-borderless table-light">
+<tbody>
+<tr>
+<td>
+<select class="form-select text-heading fs-14 fw-semibold dark:text-light">
+<option selected="">1 Year</option>
+<option value="1">2 Years</option>
+<option value="2">3 Years</option>
+<option value="3">5 Years</option>
+</select>
+</td>
+<td>
+<span class="badge text-light bg-secondary">
+														37% off
+													</span>
+</td>
+<td>
+<span class="d-block text-body fs-12 text-decoration-line-through mb-1">
+														US$ 15.00
+													</span>
+<h6 class="mb-0 text-heading dark:text-light">
+														US$ 7.99
+														<span class="d-inline-block fs-14 fw-normal text-body">
+															/ 1st yr
+														</span>
+</h6>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<span class="d-block mt-1 fs-12">
+									تجديد التسجيل بسعر US$ 15.99/سنة في 10/12/2026
+								</span>
+<div class="alert alert-success d-flex align-items-center gap-3 mt-6">
+<i class="fs-24 flex-shrink-0 ti ti-3p-sharp"></i>
+<span class="d-block">
+<strong>مجاني</strong> حماية خصوصية WHOIS
+										مضمونة
+									</span>
+</div>
+</div>
+<div class="section-space-sm-top">
+<div class="section-space-xsm-bottom">
+<h6 class="mb-2">حماية علامتك التجارية</h6>
+<p class="mb-0">
+										قم بتأمين هذه الامتدادات الشائعة للنطاقات لإبعاد
+										المنافسين عن اسمك
+									</p>
+</div>
+<div class="row g-4">
+<div class="col-sm-6 col-xxl-3">
+<div class="p-6 bg-white dark:bg-dark-subtle rounded-3">
+<h6 class="text-secondary">.com</h6>
+<span class="d-block fs-14 text-decoration-line-through mb-1">
+												US$ 7.99
+											</span>
+<h6 class="fs-20">
+												US$ 4.56
+												<span class="d-inline fw-normal text-body fs-14">
+													/year
+												</span>
+</h6>
+<a class="btn btn-sm btn-secondary-subtle fw-medium text-secondary hover:text-light" href="{{root}}cart-rtl.html">
+												Add to Cart
+											</a>
+</div>
+</div>
+<div class="col-sm-6 col-xxl-3">
+<div class="p-6 bg-white dark:bg-dark-subtle rounded-3">
+<h6 class="text-secondary">.net</h6>
+<span class="d-block fs-14 text-decoration-line-through mb-1">
+												US$ 7.99
+											</span>
+<h6 class="fs-20">
+												US$ 4.56
+												<span class="d-inline fw-normal text-body fs-14">
+													/year
+												</span>
+</h6>
+<a class="btn btn-sm btn-secondary-subtle fw-medium text-secondary hover:text-light" href="{{root}}cart-rtl.html">
+												أضف إلى السلة
+											</a>
+</div>
+</div>
+<div class="col-sm-6 col-xxl-3">
+<div class="p-6 bg-white dark:bg-dark-subtle rounded-3">
+<h6 class="text-secondary">.org</h6>
+<span class="d-block fs-14 text-decoration-line-through mb-1">
+												US$ 7.99
+											</span>
+<h6 class="fs-20">
+												US$ 4.56
+												<span class="d-inline fw-normal text-body fs-14">
+													/year
+												</span>
+</h6>
+<a class="btn btn-sm btn-secondary-subtle fw-medium text-secondary hover:text-light" href="{{root}}cart-rtl.html">
+												أضف إلى السلة
+											</a>
+</div>
+</div>
+<div class="col-sm-6 col-xxl-3">
+<div class="p-6 bg-white dark:bg-dark-subtle rounded-3">
+<h6 class="text-secondary">.io</h6>
+<span class="d-block fs-14 text-decoration-line-through mb-1">
+												US$ 7.99
+											</span>
+<h6 class="fs-20">
+												US$ 4.56
+												<span class="d-inline fw-normal text-body fs-14">
+													/year
+												</span>
+</h6>
+<a class="btn btn-sm btn-secondary-subtle fw-medium text-secondary hover:text-light" href="{{root}}cart-rtl.html">
+												أضف إلى السلة
+											</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-5 col-xl-4">
+<div class="bg-white dark:bg-dark-subtle p-6 rounded-3">
+<div class="d-flex gap-4 flex-wrap">
+<h6 class="mb-0">المجموع الفرعي</h6>
+<div class="d-flex align-items-center gap-2">
+<span class="d-block text-body text-decoration-line-through">
+											US$ 15.00
+										</span>
+<span class="d-block fw-bold text-heading">
+											US$ 7.99
+										</span>
+</div>
+</div>
+<div class="d-flex flex-wrap align-items-center justify-content-between my-4">
+<span class="d-block text-heading">
+										خصم الخطة -42%
+									</span>
+<span class="d-block text-success"> -US$ 21.00 </span>
+</div>
+<a class="link d-inline-block text-secondary hover:text-secondary-emphasis fw-semibold" href="#">
+									هل لديك رمز قسيمة؟
+								</a>
+<a class="btn btn-secondary fw-medium text-light w-100 justify-content-center mt-6 text-center" href="{{root}}checkout-rtl.html">
+									تابع
+								</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Cart Section End -->
+
+{% include "partials/footer-7-rtl.html" %} 
+{% endblock %}

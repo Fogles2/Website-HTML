@@ -1,0 +1,23 @@
+@use "../global" as *;
+.hero-5 {
+	padding-top: clamp(6rem, 10vw + 1rem, 11.875rem);
+	padding-bottom: clamp(3.75rem, 6.5vw + 1rem, 7.5rem);
+	position: relative;
+	isolation: isolate;
+	&::after {
+		@include screen(xl) {
+			content: url(../img/shapes/hero-5-shape-1.png);
+			position: absolute;
+			top: 0;
+			right: 0;
+			z-index: -1;
+			opacity: 0.3;
+		}
+	}
+	&__img-1 {
+		@media (min-width: 1920px) {
+			position: relative;
+			transform: scale(1.25) translateX(10%);
+		}
+	}
+}

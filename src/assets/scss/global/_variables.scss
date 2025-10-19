@@ -1,0 +1,20 @@
+:root {
+	// Font Size (19px = 1vw @screen 1920px)
+	--h1: clamp(2.7rem, 3.789vw + 1rem, 4.5rem); //72px
+	--h2: clamp(2.4rem, 3.368vw + 1rem, 4rem); //64px
+	--h3: clamp(1.8rem, 2.526vw + 1rem, 3rem); //48px
+	--h4: clamp(1.35rem, 1.894vw + 1rem, 2.25rem); //36px
+	--h5: clamp(1.05rem, 1.473vw + 1rem, 1.75rem); //28px
+	--h6: clamp(1rem, 1.263vw + 1rem, 1.5rem); //24px
+	--p: clamp(0.875rem, 0.842vw + 0.875rem, 1rem); //16px
+}
+
+$flex-directions: (row, column);
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1400px,
+);

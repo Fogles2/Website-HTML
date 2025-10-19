@@ -1,0 +1,15 @@
+.tab-1 {
+	--bs-nav-pills-border-radius: 0.25rem;
+	--bs-nav-pills-link-active-color: var(--bs-primary-text-emphasis);
+	--bs-nav-pills-link-active-bg: var(--bs-primary-bg-subtle);
+	display: inline-flex;
+	.nav-link {
+		color: var(--bs-nav-pills-link-active-color);
+	}
+	&__text-hilight {
+		background: linear-gradient(270deg, #4d89f9 1.21%, #704ee7 21.78%, #e8428c 71.65%, #ed6d4b 100%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}

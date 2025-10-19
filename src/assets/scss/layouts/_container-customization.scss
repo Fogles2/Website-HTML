@@ -1,0 +1,25 @@
+@use "../global" as *;
+.container-max {
+	margin-inline: auto;
+	@media (min-width: 1600px) {
+		max-width: rem(1552);
+	}
+	@media (min-width: 1800px) {
+		max-width: rem(1752);
+	}
+	@media (min-width: 2100px) {
+		max-width: rem(2052);
+	}
+	@media (min-width: 2500px) {
+		max-width: rem(2452);
+	}
+}
+.container-fhd {
+	margin-inline: auto;
+	@media (min-width: 1600px) {
+		max-width: rem(1552);
+	}
+	@media (min-width: 1800px) {
+		max-width: rem(1752);
+	}
+}

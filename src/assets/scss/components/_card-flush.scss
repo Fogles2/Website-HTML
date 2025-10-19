@@ -1,0 +1,56 @@
+@use "../global" as *;
+.card-flush {
+	--border-color: var(--bs-primary);
+	padding: 1rem;
+	@include screen(md) {
+		padding: 1.5rem;
+	}
+	@include screen(xl) {
+		padding: 1.75rem;
+	}
+	@include screen(lg) {
+		&:nth-child(1) {
+			border-bottom: 1px solid;
+			border-image: linear-gradient(88deg, transparent, var(--border-color)) 1;
+		}
+		&:nth-child(2) {
+			border: 1px solid;
+			border-image: linear-gradient(transparent, var(--border-color)) 1;
+			border-top: 0;
+		}
+		&:nth-child(3) {
+			border-bottom: 1px solid;
+			border-image: linear-gradient(88deg, var(--border-color), transparent) 1;
+		}
+		&:nth-child(5) {
+			border: 1px solid;
+			border-image: linear-gradient(var(--border-color), transparent) 1;
+			border-top: 0;
+			border-bottom: 0;
+		}
+	}
+	&--secondary {
+		--border-color: var(--bs-secondary);
+	}
+	&--warning {
+		--border-color: var(--bs-warning);
+	}
+	&--danger {
+		--border-color: var(--bs-danger);
+	}
+	&--success {
+		--border-color: var(--bs-success);
+	}
+	&--info {
+		--border-color: var(--bs-info);
+	}
+	&--light {
+		--border-color: var(--bs-light);
+	}
+	&--dark {
+		--border-color: var(--bs-dark);
+	}
+	&--border-color {
+		--border-color: var(--bs-border-color);
+	}
+}

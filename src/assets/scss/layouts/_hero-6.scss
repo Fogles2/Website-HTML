@@ -1,0 +1,23 @@
+.hero-6 {
+	position: relative;
+	isolation: isolate;
+	padding-top: clamp(8rem, 10.5vw + 1rem, 12.5rem);
+	background-image: linear-gradient(180deg, #1433d6 0%, #0e2496 100%);
+	-webkit-mask-image: url(../img/shapes/cloud-server-mask-shape.png);
+	mask-image: url(../img/shapes/cloud-server-mask-shape.png);
+	mask-size: 100% 100%;
+	mask-position: center bottom;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background-image: url(../img/shapes/cloud-server-hero-shape.png);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		opacity: 0.25;
+		z-index: -1;
+	}
+}

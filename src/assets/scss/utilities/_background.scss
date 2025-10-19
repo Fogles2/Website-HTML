@@ -1,0 +1,464 @@
+@use "../global" as *;
+
+.bg-primary-emphasis {
+	background-color: var(--bs-primary-text-emphasis) !important;
+}
+.bg-primary-emphasis-rgb {
+	--bs-bg-opacity: 1;
+	background-color: rgb(
+		from var(--bs-primary-text-emphasis) r g b / var(--bs-bg-opacity)
+	) !important;
+}
+.bg-primary-subtle-rgb {
+	--bs-bg-opacity: 1;
+	background-color: rgb(
+		from var(--bs-primary-bg-subtle) r g b / var(--bs-bg-opacity)
+	) !important;
+}
+.bg-secondary-emphasis {
+	background-color: var(--bs-secondary-text-emphasis) !important;
+}
+.bg-secondary-emphasis-rgb {
+	--bs-bg-opacity: 1;
+	background-color: rgb(
+		from var(--bs-secondary-text-emphasis) r g b / var(--bs-bg-opacity)
+	) !important;
+}
+.bg-secondary-subtle-rgb {
+	--bs-bg-opacity: 1;
+	background-color: rgb(
+		from var(--bs-secondary-bg-subtle) r g b / var(--bs-bg-opacity)
+	) !important;
+}
+.bg-success-emphasis {
+	background-color: var(--bs-success-text-emphasis) !important;
+}
+.bg-success-emphasis-rgb {
+	--bs-bg-opacity: 1;
+	background-color: rgb(
+		from var(--bs-success-text-emphasis) r g b / var(--bs-bg-opacity)
+	) !important;
+}
+.bg-success-subtle-rgb {
+	--bs-bg-opacity: 1;
+	background-color: rgb(
+		from var(--bs-success-bg-subtle) r g b / var(--bs-bg-opacity)
+	) !important;
+}
+.bg-danger-emphasis {
+	background-color: var(--bs-danger-text-emphasis) !important;
+}
+.bg-danger-emphasis-rgb {
+	--bs-bg-opacity: 1;
+	background-color: rgb(
+		from var(--bs-danger-text-emphasis) r g b / var(--bs-bg-opacity)
+	) !important;
+}
+.bg-danger-subtle-rgb {
+	--bs-bg-opacity: 1;
+	background-color: rgb(
+		from var(--bs-danger-bg-subtle) r g b / var(--bs-bg-opacity)
+	) !important;
+}
+.bg-warning-emphasis {
+	background-color: var(--bs-warning-text-emphasis) !important;
+}
+.bg-warning-emphasis-rgb {
+	--bs-bg-opacity: 1;
+	background-color: rgb(
+		from var(--bs-warning-text-emphasis) r g b / var(--bs-bg-opacity)
+	) !important;
+}
+.bg-warning-subtle-rgb {
+	--bs-bg-opacity: 1;
+	background-color: rgb(
+		from var(--bs-warning-bg-subtle) r g b / var(--bs-bg-opacity)
+	) !important;
+}
+.bg-info-emphasis {
+	background-color: var(--bs-info-text-emphasis) !important;
+}
+.bg-info-emphasis-rgb {
+	--bs-bg-opacity: 1;
+	background-color: rgb(
+		from var(--bs-info-text-emphasis) r g b / var(--bs-bg-opacity)
+	) !important;
+}
+.bg-info-subtle-rgb {
+	--bs-bg-opacity: 1;
+	background-color: rgb(
+		from var(--bs-info-bg-subtle) r g b / var(--bs-bg-opacity)
+	) !important;
+}
+.bg-light-emphasis {
+	background-color: var(--bs-light-text-emphasis) !important;
+}
+.bg-light-emphasis-rgb {
+	--bs-bg-opacity: 1;
+	background-color: rgb(
+		from var(--bs-light-text-emphasis) r g b / var(--bs-bg-opacity)
+	) !important;
+}
+.bg-light-subtle-rgb {
+	--bs-bg-opacity: 1;
+	background-color: rgb(
+		from var(--bs-light-bg-subtle) r g b / var(--bs-bg-opacity)
+	) !important;
+}
+.bg-dark-emphasis {
+	background-color: var(--bs-dark-text-emphasis) !important;
+}
+.bg-dark-emphasis-rgb {
+	--bs-bg-opacity: 1;
+	background-color: rgb(
+		from var(--bs-dark-text-emphasis) r g b / var(--bs-bg-opacity)
+	) !important;
+}
+.bg-dark-subtle-rgb {
+	--bs-bg-opacity: 1;
+	background-color: rgb(
+		from var(--bs-dark-bg-subtle) r g b / var(--bs-bg-opacity)
+	) !important;
+}
+// Theme Specific Background
+.bg-gradient-1 {
+	background-image: linear-gradient(
+		180deg,
+		var(--bs-secondary-text-emphasis) 0%,
+		var(--bs-secondary) 100%
+	) !important;
+}
+.bg-gradient-2 {
+	background-image: linear-gradient(
+		180deg,
+		var(--bs-primary-text-emphasis) 0%,
+		var(--bs-primary) 100%
+	) !important;
+}
+.bg-gradient-3 {
+	background-image: linear-gradient(
+		234deg,
+		var(--bs-primary-text-emphasis) 17.25%,
+		var(--bs-primary) 75.19%
+	) !important;
+}
+.bg-gradient-4 {
+	background-image: linear-gradient(
+		232deg,
+		var(--bs-secondary-text-emphasis) 4%,
+		var(--bs-secondary) 76%
+	) !important;
+}
+
+.hover\:bg-body:hover {
+	--bs-bg-opacity: 1;
+	background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
+}
+.hover\:bg-body-secondary:hover {
+	--bs-bg-opacity: 1;
+	background-color: rgba(var(--bs-secondary-bg-rgb), var(--bs-bg-opacity)) !important;
+}
+.hover\:bg-body-tertiary:hover {
+	--bs-bg-opacity: 1;
+	background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity)) !important;
+}
+.hover\:bg-black:hover {
+	--bs-bg-opacity: 1;
+	background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
+}
+.hover\:bg-white:hover {
+	--bs-bg-opacity: 1;
+	background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
+}
+.hover\:bg-transparent:hover {
+	--bs-bg-opacity: 1;
+	background-color: transparent !important;
+}
+
+.hover\:bg-primary:hover {
+	--bs-bg-opacity: 1;
+	background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+}
+.hover\:bg-primary-subtle:hover {
+	background-color: var(--bs-primary-bg-subtle) !important;
+}
+.hover\:bg-primary-emphasis:hover {
+	background-color: var(--bs-primary-text-emphasis) !important;
+}
+.hover\:bg-primary-emphasis-rgb:hover {
+	--bs-bg-opacity: 1;
+	background-color: rgb(
+		from var(--bs-primary-text-emphasis) r g b / var(--bs-bg-opacity)
+	) !important;
+}
+.hover\:bg-primary-subtle-rgb:hover {
+	--bs-bg-opacity: 1;
+	background-color: rgb(
+		from var(--bs-primary-bg-subtle) r g b / var(--bs-bg-opacity)
+	) !important;
+}
+
+.hover\:bg-secondary:hover {
+	--bs-bg-opacity: 1;
+	background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
+}
+.hover\:bg-secondary-subtle:hover {
+	background-color: var(--bs-secondary-bg-subtle) !important;
+}
+.hover\:bg-secondary-emphasis:hover {
+	background-color: var(--bs-secondary-text-emphasis) !important;
+}
+.hover\:bg-secondary-emphasis-rgb:hover {
+	--bs-bg-opacity: 1;
+	background-color: rgb(
+		from var(--bs-secondary-text-emphasis) r g b / var(--bs-bg-opacity)
+	) !important;
+}
+.hover\:bg-secondary-subtle-rgb:hover {
+	--bs-bg-opacity: 1;
+	background-color: rgb(
+		from var(--bs-secondary-bg-subtle) r g b / var(--bs-bg-opacity)
+	) !important;
+}
+
+.hover\:bg-success:hover {
+	--bs-bg-opacity: 1;
+	background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
+}
+.hover\:bg-success-subtle:hover {
+	background-color: var(--bs-success-bg-subtle) !important;
+}
+.hover\:bg-success-emphasis:hover {
+	background-color: var(--bs-success-text-emphasis) !important;
+}
+.hover\:bg-success-emphasis-rgb:hover {
+	--bs-bg-opacity: 1;
+	background-color: rgb(
+		from var(--bs-success-text-emphasis) r g b / var(--bs-bg-opacity)
+	) !important;
+}
+.hover\:bg-success-subtle-rgb:hover {
+	--bs-bg-opacity: 1;
+	background-color: rgb(
+		from var(--bs-success-bg-subtle) r g b / var(--bs-bg-opacity)
+	) !important;
+}
+
+.hover\:bg-danger:hover {
+	--bs-bg-opacity: 1;
+	background-color: rgba(var(--bs-danger-rgb), var(--bs-bg-opacity)) !important;
+}
+.hover\:bg-danger-subtle:hover {
+	background-color: var(--bs-danger-bg-subtle) !important;
+}
+.hover\:bg-danger-emphasis:hover {
+	background-color: var(--bs-danger-text-emphasis) !important;
+}
+.hover\:bg-danger-emphasis-rgb:hover {
+	--bs-bg-opacity: 1;
+	background-color: rgb(
+		from var(--bs-danger-text-emphasis) r g b / var(--bs-bg-opacity)
+	) !important;
+}
+.hover\:bg-danger-subtle-rgb:hover {
+	--bs-bg-opacity: 1;
+	background-color: rgb(
+		from var(--bs-danger-bg-subtle) r g b / var(--bs-bg-opacity)
+	) !important;
+}
+
+.hover\:bg-warning:hover {
+	--bs-bg-opacity: 1;
+	background-color: rgba(var(--bs-warning-rgb), var(--bs-bg-opacity)) !important;
+}
+.hover\:bg-warning-subtle:hover {
+	background-color: var(--bs-warning-bg-subtle) !important;
+}
+.hover\:bg-warning-emphasis:hover {
+	background-color: var(--bs-warning-text-emphasis) !important;
+}
+.hover\:bg-warning-emphasis-rgb:hover {
+	--bs-bg-opacity: 1;
+	background-color: rgb(
+		from var(--bs-warning-text-emphasis) r g b / var(--bs-bg-opacity)
+	) !important;
+}
+.hover\:bg-warning-subtle-rgb:hover {
+	--bs-bg-opacity: 1;
+	background-color: rgb(
+		from var(--bs-warning-bg-subtle) r g b / var(--bs-bg-opacity)
+	) !important;
+}
+
+.hover\:bg-info:hover {
+	--bs-bg-opacity: 1;
+	background-color: rgba(var(--bs-info-rgb), var(--bs-bg-opacity)) !important;
+}
+.hover\:bg-info-subtle:hover {
+	background-color: var(--bs-info-bg-subtle) !important;
+}
+.hover\:bg-info-emphasis:hover {
+	background-color: var(--bs-info-text-emphasis) !important;
+}
+.hover\:bg-info-emphasis-rgb:hover {
+	--bs-bg-opacity: 1;
+	background-color: rgb(
+		from var(--bs-info-text-emphasis) r g b / var(--bs-bg-opacity)
+	) !important;
+}
+.hover\:bg-info-subtle-rgb:hover {
+	--bs-bg-opacity: 1;
+	background-color: rgb(
+		from var(--bs-info-bg-subtle) r g b / var(--bs-bg-opacity)
+	) !important;
+}
+
+.hover\:bg-light:hover {
+	--bs-bg-opacity: 1;
+	background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+.hover\:bg-light-subtle:hover {
+	background-color: var(--bs-light-bg-subtle) !important;
+}
+.hover\:bg-light-emphasis:hover {
+	background-color: var(--bs-light-text-emphasis) !important;
+}
+.hover\:bg-light-emphasis-rgb:hover {
+	--bs-bg-opacity: 1;
+	background-color: rgb(
+		from var(--bs-light-text-emphasis) r g b / var(--bs-bg-opacity)
+	) !important;
+}
+.hover\:bg-light-subtle-rgb:hover {
+	--bs-bg-opacity: 1;
+	background-color: rgb(
+		from var(--bs-light-bg-subtle) r g b / var(--bs-bg-opacity)
+	) !important;
+}
+
+.hover\:bg-dark:hover {
+	--bs-bg-opacity: 1;
+	background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
+.hover\:bg-dark-subtle:hover {
+	background-color: var(--bs-dark-bg-subtle) !important;
+}
+.hover\:bg-dark-emphasis:hover {
+	background-color: var(--bs-dark-text-emphasis) !important;
+}
+.hover\:bg-dark-emphasis-rgb:hover {
+	--bs-bg-opacity: 1;
+	background-color: rgb(
+		from var(--bs-dark-text-emphasis) r g b / var(--bs-bg-opacity)
+	) !important;
+}
+.hover\:bg-dark-subtle-rgb:hover {
+	--bs-bg-opacity: 1;
+	background-color: rgb(
+		from var(--bs-dark-bg-subtle) r g b / var(--bs-bg-opacity)
+	) !important;
+}
+
+.bg-opacity-0 {
+	--bs-bg-opacity: 0;
+}
+.bg-opacity-5 {
+	--bs-bg-opacity: 0.05;
+}
+
+.bg-opacity-10 {
+	--bs-bg-opacity: 0.1;
+}
+
+.bg-opacity-20 {
+	--bs-bg-opacity: 0.2;
+}
+
+.bg-opacity-30 {
+	--bs-bg-opacity: 0.3;
+}
+
+.bg-opacity-40 {
+	--bs-bg-opacity: 0.4;
+}
+
+.bg-opacity-50 {
+	--bs-bg-opacity: 0.5;
+}
+
+.bg-opacity-60 {
+	--bs-bg-opacity: 0.6;
+}
+
+.bg-opacity-70 {
+	--bs-bg-opacity: 0.7;
+}
+
+.bg-opacity-80 {
+	--bs-bg-opacity: 0.8;
+}
+
+.bg-opacity-90 {
+	--bs-bg-opacity: 0.9;
+}
+.bg-opacity-95 {
+	--bs-bg-opacity: 0.95;
+}
+.bg-opacity-97 {
+	--bs-bg-opacity: 0.97;
+}
+.bg-opacity-100 {
+	--bs-bg-opacity: 1;
+}
+
+.hover\:bg-opacity-0:hover {
+	--bs-bg-opacity: 0;
+}
+.hover\:bg-opacity-5:hover {
+	--bs-bg-opacity: 0.05;
+}
+
+.hover\:bg-opacity-10:hover {
+	--bs-bg-opacity: 0.1;
+}
+
+.hover\:bg-opacity-20:hover {
+	--bs-bg-opacity: 0.2;
+}
+
+.hover\:bg-opacity-30:hover {
+	--bs-bg-opacity: 0.3;
+}
+
+.hover\:bg-opacity-40:hover {
+	--bs-bg-opacity: 0.4;
+}
+
+.hover\:bg-opacity-50:hover {
+	--bs-bg-opacity: 0.5;
+}
+
+.hover\:bg-opacity-60:hover {
+	--bs-bg-opacity: 0.6;
+}
+
+.hover\:bg-opacity-70:hover {
+	--bs-bg-opacity: 0.7;
+}
+
+.hover\:bg-opacity-80:hover {
+	--bs-bg-opacity: 0.8;
+}
+
+.hover\:bg-opacity-90:hover {
+	--bs-bg-opacity: 0.9;
+}
+.hover\:bg-opacity-95:hover {
+	--bs-bg-opacity: 0.95;
+}
+.hover\:bg-opacity-97:hover {
+	--bs-bg-opacity: 0.97;
+}
+.hover\:bg-opacity-100:hover {
+	--bs-bg-opacity: 1;
+}

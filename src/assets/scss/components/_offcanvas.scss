@@ -1,0 +1,26 @@
+/* Offcanvas */
+.offcanvas {
+	&-body {
+		scrollbar-color: transparent transparent;
+		scrollbar-width: thin;
+
+		&::-webkit-scrollbar {
+			width: 0.5rem;
+			height: 0.5rem;
+		}
+
+		&::-webkit-scrollbar-track {
+			background: transparent;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background: transparent;
+		}
+		&:hover {
+			scrollbar-color: var(--bs-bg-dark-subtle) transparent;
+			&::-webkit-scrollbar-thumb {
+				background: var(--bs-bg-dark-subtle);
+			}
+		}
+	}
+}

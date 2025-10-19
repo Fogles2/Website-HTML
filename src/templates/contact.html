@@ -1,0 +1,203 @@
+{% extends "layouts/default.html" %}
+{% set dataTheme = "domain" %}
+{% set bodyClass = "bg-light dark:bg-dark-subtle" %}
+{% set navbar = true %} 
+{% set navBtnColor = "fw-medium" %}
+{% set primaryHeader = "primary-header--light primary-header--boxed primary-header--fixed top-md-3 primary-header-crossed:top-0" %}
+{% set rtlLink = "contact-rtl.html" %}
+{% set breadcrumb = "Contact Us" %}
+{% set breadcrumbLink = "text-light hover:text-secondary" %}
+{% set breadcrumbIcon = "text-light" %}
+{% set breadcrumbActive = "text-light" %}
+{% set logoLight = "logo-dark.png" %}
+{% set logoDark = "logo-light.png" %}
+<!-- Content Block -->
+{% block content %}
+
+<!-- Banner  -->
+{% include "partials/banner-11.html" %}
+<!-- Banner End -->
+<!-- Contact Form  -->
+<div class="mt-n60 position-relative z-1">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="bg-body section-space-md-y px-4 px-sm-6 px-md-8 px-lg-12 px-xl-15 rounded-4">
+<div class="row g-4 align-items-center justify-content-between">
+<div class="col-lg-6 col-xxl-5">
+<span class="d-block mb-2 fs-14 fw-semibold text-primary">
+								Get in Touch
+							</span>
+<h4>We Can't Wait to Meet You</h4>
+<p class="mb-8 max-text-12">
+								Have service-related questions or interested in other
+								collaborations? We're here to support
+							</p>
+<h6 class="mb-1 fs-18 fw-medium">Learn about our services</h6>
+<div class="d-flex align-items-center flex-wrap row-gap-2 column-gap-6 mb-8">
+<span class="d-block"> sales@example.com </span>
+<span class="d-block"> +1 302-803-5506 </span>
+</div>
+<h6 class="mb-1 fs-18 fw-medium">
+								Talk to our PR department
+							</h6>
+<div class="d-flex align-items-center flex-wrap row-gap-2 column-gap-6 mb-8">
+<span class="d-block"> support@example.com </span>
+</div>
+<h6 class="mb-1 fs-18 fw-medium">Join Belkins team</h6>
+<div class="d-flex align-items-center flex-wrap row-gap-2 column-gap-6 mb-8">
+<span class="d-block"> info@example.com </span>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="row g-4">
+<div class="col-md-6">
+<input class="form-control" placeholder="First Name" type="text"/>
+</div>
+<div class="col-md-6">
+<input class="form-control" placeholder="Last Name" type="text"/>
+</div>
+<div class="col-12">
+<input class="form-control" placeholder="Job Title" type="text"/>
+</div>
+<div class="col-md-6">
+<input class="form-control" placeholder="Phone Number" type="number"/>
+</div>
+<div class="col-md-6">
+<input class="form-control" placeholder="Email Address" type="email"/>
+</div>
+<div class="col-12">
+<textarea class="form-control" placeholder="Message"></textarea>
+</div>
+<div class="col-12">
+<a class="btn btn-secondary fs-14 fw-medium text-light" href="#">
+										Send Query
+									</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Contact Form End -->
+<!-- Info  -->
+<div class="section-space-y">
+<div class="section-space-sm-bottom">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<h3 class="mb-0">Build To Impress</h3>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row g-4">
+<div class="col-md-6 col-lg-4">
+<div class="bg-body rounded p-4 p-md-8 p-lg-4 p-xl-8 h-100">
+<div class="d-inline-block mb-6">
+<i class="fs-48 ti ti-network-tower"></i>
+</div>
+<h6>Press &amp; Partnership Enquiries</h6>
+<p class="mb-0">
+						Just add a trade-in when you choose a new product. Once your
+						eligible device has been received and verified, we'll credit the
+						value
+					</p>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="bg-body rounded p-4 p-md-8 p-lg-4 p-xl-8 h-100">
+<div class="d-inline-block mb-6">
+<i class="fs-48 ti ti-truck-fast-outline"></i>
+</div>
+<h6>Fast &amp; Quick Deliver Response</h6>
+<p class="mb-0">
+						Just add a trade-in when you choose a new product. Once your
+						eligible device has been received and verified, we'll credit the
+						value
+					</p>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="bg-body rounded p-4 p-md-8 p-lg-4 p-xl-8 h-100">
+<div class="d-inline-block mb-6">
+<i class="fs-48 ti ti-phone-vibrate"></i>
+</div>
+<h6>Press &amp; Partnership Enquiries</h6>
+<p class="mb-0">
+						Just add a trade-in when you choose a new product. Once your
+						eligible device has been received and verified, we'll credit the
+						value
+					</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Info End -->
+<!-- Map View -->
+<div class="section-space-bottom">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="position-relative z-1 rounded-3 overflow-hidden">
+<div class="map-view">
+<img alt="image" class="w-100 h-100 object-fit-cover" src="{{root}}assets/img/map-img.png"/>
+</div>
+<div class="map-view__info d-inline-block rounded bg-body p-4 p-md-8 max-text-9 z-1 start-6 bottom-6 shadow-lg">
+<h6>Our global presence</h6>
+<p>
+							Having 5 offices around the world helps us build flexible
+							teams with ultimate expertise and provide top-quality
+							services.
+						</p>
+<button class="btn btn-sm btn-primary align-items-center" type="button">
+<span class="d-inline-block flex-grow-1"> More Of Us </span>
+<i class="align-middle fs-20 flex-shrink-0 ti ti-left-arrow"></i>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Map View End -->
+<!-- CTA  -->
+<div class="cta-7">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="section-space-y px-4 px-sm-6 px-md-12 bg-body rounded-4 text-center position-relative z-1">
+<div class="row justify-content-center">
+<div class="col-md-11">
+<h3>Get a free web host migration</h3>
+<p class="mb-8 max-text-15 mx-auto">
+								We'll take care of the process of moving your website from
+								your old web hosting company to our platform so you can
+								focus on what matters
+							</p>
+<div class="d-flex align-items-center justify-content-center gap-4 flex-wrap">
+<a class="btn btn-secondary text-light" href="{{root}}sign-in-2.html">
+									Get Started now
+								</a>
+<a class="btn btn-dark-emphasis" href="{{root}}contact.html">
+									Contact Us
+								</a>
+</div>
+</div>
+</div>
+<img alt="image" class="img-fluid d-none d-xl-block position-absolute start-0 top-50 translate-middle-y z-n1 pointer-none" src="{{root}}assets/img/cta-img-16.png"/>
+<img alt="image" class="img-fluid d-none d-xl-block position-absolute end-0 top-50 translate-middle-y z-n1 pointer-none" src="{{root}}assets/img/cta-img-17.png"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA End -->
+
+{% include "partials/footer-7.html" %} 
+{% endblock %}

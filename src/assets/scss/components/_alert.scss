@@ -1,0 +1,10 @@
+/* Alert Style */
+.alert {
+	--bs-alert-margin-bottom: 0;
+	&-quote {
+		--bs-border-width: 0.25rem;
+		--bs-alert-border-radius: 0;
+		border: 0;
+		border-inline-start: var(--bs-alert-border);
+	}
+}

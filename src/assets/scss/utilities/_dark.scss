@@ -1,0 +1,539 @@
+@use "../global" as *;
+[data-bs-theme="dark"] {
+	--bs-body-color: #f5f5ff;
+	--bs-heading-color: #ffffff;
+
+	--bs-primary-bg-subtle: #1a3c9b;
+	--bs-primary-text-emphasis: #eaefff;
+
+	--bs-secondary-bg-subtle: #03063a;
+	--bs-secondary-text-emphasis: #f6f7fd;
+
+	--bs-success-bg-subtle: #044d1d;
+	--bs-success-text-emphasis: #e8f9ee;
+
+	--bs-info-bg-subtle: #024153;
+	--bs-info-text-emphasis: #e6f9ff;
+
+	--bs-warning-bg-subtle: #966c00;
+	--bs-warning-text-emphasis: #fef7e6;
+
+	--bs-danger-bg-subtle: #971837;
+	--bs-danger-text-emphasis: #feeaef;
+
+	--bs-light-bg-subtle: #495058;
+	--bs-light-text-emphasis: #f8f9fa;
+
+	--bs-dark-bg-subtle: #0d0e10;
+	--bs-dark-text-emphasis: #ced4da;
+
+	// Shadow Color
+	--bs-box-shadow: 0px 10px 20px -4px rgba(145, 158, 171, 0.16);
+	--bs-box-shadow-sm: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+	--bs-box-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+	&[data-theme="home-2"] {
+		--bs-light: #f2f5ff;
+		--bs-light-rgb: 242, 245, 255;
+	}
+	&[data-theme="home-3"] {
+		--bs-light: #f2f5ff;
+		--bs-light-rgb: 242, 245, 255;
+	}
+	&[data-theme="wp-hosting"] {
+		--bs-light: #f2f5ff;
+		--bs-light-rgb: 242, 245, 255;
+		--bs-primary: #f67a3c;
+		--bs-primary-rgb: 246, 122, 60;
+		--bs-primary-bg-subtle: #964a25;
+		--bs-primary-text-emphasis: #fbc8af;
+		--bs-secondary: #7734f9;
+		--bs-secondary-rgb: 119, 52, 249;
+		--bs-secondary-bg-subtle: #2e1a6d;
+		--bs-secondary-text-emphasis: #ebebfe;
+	}
+	&[data-theme="cloud-server-hosting"] {
+		--bs-light: #f2f5ff;
+		--bs-light-rgb: 242, 245, 255;
+
+		--bs-secondary: #1dffff;
+		--bs-secondary-rgb: 29, 255, 255;
+		--bs-secondary-bg-subtle: #035a67;
+		--bs-secondary-text-emphasis: #c0ffff;
+	}
+	&[data-theme="dedicated-server-hosting"] {
+		--bs-light: #f2f5ff;
+		--bs-light-rgb: 242, 245, 255;
+	}
+	&[data-theme="vps-hosting"] {
+		--bs-light: #f2f5ff;
+		--bs-light-rgb: 242, 245, 255;
+	}
+	&[data-theme="cloud-hosting"] {
+		--bs-light: #f2f5ff;
+		--bs-light-rgb: 242, 245, 255;
+	}
+	&[data-theme="web-hosting"] {
+		--bs-light: #f2f5ff;
+		--bs-light-rgb: 242, 245, 255;
+	}
+	&[data-theme="reseller-hosting"] {
+		--bs-light: #f2f5ff;
+		--bs-light-rgb: 242, 245, 255;
+		--bs-primary-rgb: 119, 52, 249;
+		--bs-primary: #7734f9;
+		--bs-primary-bg-subtle: #492098;
+		--bs-primary-text-emphasis: #f1ebfe;
+	}
+	&[data-theme="email-hosting"] {
+		--bs-light: #f2f5ff;
+		--bs-light-rgb: 242, 245, 255;
+	}
+	&[data-theme="cpanel-hosting"] {
+		--bs-light: #f2f5ff;
+		--bs-light-rgb: 242, 245, 255;
+		--bs-primary: #f67a3c;
+		--bs-primary-rgb: 246, 122, 60;
+		--bs-primary-bg-subtle: #964a25;
+		--bs-primary-text-emphasis: #fbc8af;
+		--bs-secondary: #7734f9;
+		--bs-secondary-rgb: 119, 52, 249;
+		--bs-secondary-bg-subtle: #2e1a6d;
+		--bs-secondary-text-emphasis: #ebebfe;
+	}
+	&[data-theme="domain"] {
+		--bs-light: #f2f5ff;
+		--bs-light-rgb: 242, 245, 255;
+
+		--bs-primary: #2a62fe;
+		--bs-primary-rgb: 42, 98, 254;
+		--bs-primary-bg-subtle: #1a3c9b;
+		--bs-primary-text-emphasis: #eaefff;
+
+		--bs-secondary: #5c65ff;
+		--bs-secondary-rgb: 92, 101, 255;
+		--bs-secondary-bg-subtle: #03063a;
+		--bs-secondary-text-emphasis: #f6f7fd;
+	}
+	.dark\:bg-dark {
+		background-color: var(--bs-dark) !important;
+	}
+	.dark\:bg-dark-subtle {
+		background-color: var(--bs-dark-bg-subtle) !important;
+	}
+	.dark\:bg-dark-emphasis {
+		background-color: var(--bs-dark-text-emphasis) !important;
+	}
+
+	.dark\:bg-light {
+		background-color: var(--bs-light) !important;
+	}
+	.dark\:bg-light-emphasis {
+		background-color: var(--bs-light-text-emphasis) !important;
+	}
+	.dark\:bg-light-subtle {
+		background-color: var(--bs-light-bg-subtle) !important;
+	}
+
+	.dark\:bg-primary {
+		background-color: var(--bs-primary) !important;
+	}
+	.dark\:bg-primary-subtle {
+		background-color: var(--bs-primary-bg-subtle) !important;
+	}
+	.dark\:bg-primary-emphasis {
+		background-color: var(--bs-primary-text-emphasis) !important;
+	}
+
+	.dark\:bg-secondary {
+		background-color: var(--bs-secondary) !important;
+	}
+	.dark\:bg-secondary-subtle {
+		background-color: var(--bs-secondary-bg-subtle) !important;
+	}
+	.dark\:bg-secondary-emphasis {
+		background-color: var(--bs-secondary-text-emphasis) !important;
+	}
+
+	.dark\:bg-success {
+		background-color: var(--bs-success) !important;
+	}
+	.dark\:bg-success-subtle {
+		background-color: var(--bs-success-bg-subtle) !important;
+	}
+	.dark\:bg-success-emphasis {
+		background-color: var(--bs-success-text-emphasis) !important;
+	}
+
+	.dark\:bg-danger {
+		background-color: var(--bs-danger) !important;
+	}
+	.dark\:bg-danger-subtle {
+		background-color: var(--bs-danger-bg-subtle) !important;
+	}
+	.dark\:bg-danger-emphasis {
+		background-color: var(--bs-danger-text-emphasis) !important;
+	}
+
+	.dark\:bg-warning {
+		background-color: var(--bs-warning) !important;
+	}
+	.dark\:bg-warning-subtle {
+		background-color: var(--bs-warning-bg-subtle) !important;
+	}
+	.dark\:bg-warning-emphasis {
+		background-color: var(--bs-warning-text-emphasis) !important;
+	}
+
+	.dark\:bg-info {
+		background-color: var(--bs-info) !important;
+	}
+	.dark\:bg-info-subtle {
+		background-color: var(--bs-info-bg-subtle) !important;
+	}
+	.dark\:bg-info-emphasis {
+		background-color: var(--bs-info-text-emphasis) !important;
+	}
+
+	.dark\:bg-heading {
+		background-color: var(--bs-heading-color) !important;
+	}
+	.dark\:bg-body {
+		background-color: var(--bs-body-color) !important;
+	}
+
+	.dark\:text-dark {
+		color: var(--bs-dark) !important;
+	}
+	.dark\:text-dark-subtle {
+		color: var(--bs-dark-bg-subtle) !important;
+	}
+	.dark\:text-dark-emphasis {
+		color: var(--bs-dark-text-emphasis) !important;
+	}
+
+	.dark\:text-light {
+		color: var(--bs-light) !important;
+	}
+	.dark\:text-light-subtle {
+		color: var(--bs-light-bg-subtle) !important;
+	}
+	.dark\:text-light-emphasis {
+		color: var(--bs-light-text-emphasis) !important;
+	}
+
+	.dark\:text-primary {
+		color: var(--bs-primary) !important;
+	}
+	.dark\:text-primary-subtle {
+		color: var(--bs-primary-bg-subtle) !important;
+	}
+	.dark\:text-primary-emphasis {
+		color: var(--bs-primary-text-emphasis) !important;
+	}
+
+	.dark\:text-secondary {
+		color: var(--bs-secondary) !important;
+	}
+	.dark\:text-secondary-subtle {
+		color: var(--bs-secondary-bg-subtle) !important;
+	}
+	.dark\:text-secondary-emphasis {
+		color: var(--bs-secondary-text-emphasis) !important;
+	}
+
+	.dark\:text-success {
+		color: var(--bs-success) !important;
+	}
+	.dark\:text-success-subtle {
+		color: var(--bs-success-bg-subtle) !important;
+	}
+	.dark\:text-success-emphasis {
+		color: var(--bs-success-text-emphasis) !important;
+	}
+
+	.dark\:text-warning {
+		color: var(--bs-warning) !important;
+	}
+	.dark\:text-warning-subtle {
+		color: var(--bs-warning-bg-subtle) !important;
+	}
+	.dark\:text-warning-emphasis {
+		color: var(--bs-warning-text-emphasis) !important;
+	}
+
+	.dark\:text-danger {
+		color: var(--bs-danger) !important;
+	}
+	.dark\:text-danger-subtle {
+		color: var(--bs-danger-bg-subtle) !important;
+	}
+	.dark\:text-danger-emphasis {
+		color: var(--bs-danger-text-emphasis) !important;
+	}
+
+	.dark\:text-info {
+		color: var(--bs-info) !important;
+	}
+	.dark\:text-info-subtle {
+		color: var(--bs-info-bg-subtle) !important;
+	}
+	.dark\:text-info-emphasis {
+		color: var(--bs-info-text-emphasis) !important;
+	}
+
+	.dark\:text-heading {
+		color: var(--bs-heading-color) !important;
+	}
+
+	.dark\:d-none {
+		display: none !important;
+	}
+	.dark\:d-block {
+		display: block !important;
+	}
+	.dark\:d-inline-block {
+		display: inline-block !important;
+	}
+	.bg-gradient-1 {
+		background-image: linear-gradient(
+			180deg,
+			var(--bs-secondary-bg-subtle) 0%,
+			var(--bs-secondary) 100%
+		) !important;
+	}
+	.bg-gradient-2 {
+		background-image: linear-gradient(
+			180deg,
+			var(--bs-primary-bg-subtle) 0%,
+			var(--bs-primary) 100%
+		) !important;
+	}
+
+	.bg-gradient-3 {
+		background-image: linear-gradient(
+			234deg,
+			var(--bs-primary-bg-subtle) 17.25%,
+			var(--bs-primary) 75.19%
+		) !important;
+	}
+	.bg-gradient-4 {
+		background-image: linear-gradient(
+			232deg,
+			var(--bs-secondary-bg-subtle) 4%,
+			var(--bs-secondary) 76%
+		) !important;
+	}
+	.cta-7 {
+		&::after {
+			background-color: var(--bs-secondary-bg-subtle);
+		}
+	}
+	.banner-5 {
+		background-image: linear-gradient(
+			180deg,
+			var(--bs-primary) -23.87%,
+			var(--bs-primary-bg-subtle) 89.73%
+		);
+	}
+	.testimonial-slider-4__container {
+		&::after {
+			background-image: linear-gradient(
+				270deg,
+				rgba(248, 249, 250, 0) -0.61%,
+				var(--bs-dark) 28.79%,
+				var(--bs-dark) 72.57%,
+				rgba(248, 249, 250, 0) 100%
+			);
+		}
+	}
+	.hero-4 {
+		&::after {
+			background-color: var(--bs-dark-bg-subtle);
+		}
+	}
+	.hero-8 {
+		&::after {
+			background-color: var(--bs-dark);
+		}
+	}
+	.triangle-shape-bottom {
+		&::after {
+			background-image: linear-gradient(
+				180deg,
+				var(--bs-secondary-bg-subtle) 0%,
+				var(--bs-secondary) 100%
+			);
+		}
+	}
+	.triangle-shape-top {
+		&::after {
+			background-image: linear-gradient(
+				180deg,
+				var(--bs-secondary) 0%,
+				var(--bs-secondary-bg-subtle) 100%
+			);
+		}
+	}
+	.testimonial-slider-8 {
+		&::after {
+			@include screen(md) {
+				background-color: var(--bs-dark);
+			}
+		}
+	}
+	.hero-10 {
+		&::after {
+			background-color: rgba(var(--bs-dark-rgb), 0.5);
+		}
+	}
+	.testimonial-section-4 {
+		&::after {
+			background-color: var(--bs-secondary-bg-subtle);
+		}
+	}
+	.hero-11 {
+		background-color: var(--bs-dark);
+		&::before {
+			background-image: linear-gradient(
+				180deg,
+				rgba(var(--bs-light-rgb), 0.035) 71.14%,
+				transparent 94.19%
+			);
+		}
+		&::after {
+			background-image: linear-gradient(
+				232deg,
+				var(--bs-secondary-bg-subtle) 4%,
+				var(--bs-secondary) 76%
+			);
+		}
+	}
+	.hero-12 {
+		&::after {
+			background-image: linear-gradient(
+				109deg,
+				var(--bs-primary) 13.06%,
+				#090f91 46.34%,
+				var(--bs-secondary-bg-subtle) 83.11%
+			);
+		}
+	}
+	.hero-13 {
+		&::before {
+			@include screen(md) {
+				background-image: linear-gradient(
+					180deg,
+					var(--bs-dark-bg-subtle) 45.04%,
+					transparent 83.94%
+				);
+			}
+		}
+		&::after {
+			@include screen(md) {
+				background-image: linear-gradient(
+					184deg,
+					var(--bs-primary) 10.5%,
+					var(--bs-primary-bg-subtle) 71.34%
+				);
+			}
+		}
+	}
+	.hero-14 {
+		&::after {
+			background-image: linear-gradient(
+				180deg,
+				var(--bs-secondary-bg-subtle) 0%,
+				var(--bs-secondary) 100%
+			);
+		}
+	}
+	.feature-section-3 {
+		&::after {
+			background-color: var(--bs-dark);
+		}
+	}
+	.table {
+		--bs-table-bg: #090a0a;
+	}
+}
+
+
+/* Enhanced text visibility for dark mode */
+[data-bs-theme="dark"] {
+	/* Improve general text contrast */
+	p, span, li, td, th {
+		color: rgba(255, 255, 255, 0.92);
+	}
+	
+	/* Ensure headings are highly visible */
+	h1, h2, h3, h4, h5, h6 {
+		color: rgba(255, 255, 255, 0.98);
+		font-weight: 600;
+	}
+	
+	/* Links should be clearly visible */
+	a:not(.btn) {
+		color: rgba(255, 255, 255, 0.9);
+		
+		&:hover {
+			color: rgba(255, 255, 255, 1);
+		}
+	}
+	
+	/* Muted text should still be readable */
+	.text-muted {
+		color: rgba(255, 255, 255, 0.65) !important;
+	}
+	
+	/* Card text visibility */
+	.card {
+		color: rgba(255, 255, 255, 0.95);
+		
+		.card-title {
+			color: rgba(255, 255, 255, 0.98);
+		}
+		
+		.card-text {
+			color: rgba(255, 255, 255, 0.9);
+		}
+		
+		.card-subtitle {
+			color: rgba(255, 255, 255, 0.7);
+		}
+	}
+	
+	/* Form elements visibility */
+	.form-control,
+	.form-select {
+		color: rgba(255, 255, 255, 0.95);
+		background-color: rgba(255, 255, 255, 0.05);
+		border-color: rgba(255, 255, 255, 0.15);
+		
+		&::placeholder {
+			color: rgba(255, 255, 255, 0.5);
+		}
+		
+		&:focus {
+			color: rgba(255, 255, 255, 0.98);
+			background-color: rgba(255, 255, 255, 0.08);
+			border-color: rgba(255, 255, 255, 0.25);
+		}
+	}
+	
+	/* Table text visibility */
+	.table {
+		color: rgba(255, 255, 255, 0.92);
+		
+		th {
+			color: rgba(255, 255, 255, 0.95);
+		}
+	}
+	
+	/* List text visibility */
+	.list-group-item {
+		color: rgba(255, 255, 255, 0.92);
+		background-color: rgba(255, 255, 255, 0.05);
+		border-color: rgba(255, 255, 255, 0.1);
+	}
+}
+

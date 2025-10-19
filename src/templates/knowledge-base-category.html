@@ -1,0 +1,169 @@
+{% extends "layouts/default.html" %}
+{% set dataTheme = "domain" %}
+{% set bodyClass = "bg-light dark:bg-dark-subtle" %}
+{% set navbar = true %} 
+{% set navBtnColor = "fw-medium btn-primary" %}
+{% set primaryHeader = "primary-header--light primary-header--boxed primary-header--fixed top-md-3 primary-header-crossed:top-0" %}
+{% set rtlLink = "knowledge-base-category-rtl.html" %}
+{% set logoLight = "logo-dark.png" %}
+{% set logoDark = "logo-light.png" %}
+<!-- Content Block -->
+{% block content %}
+
+<!-- Banner -->
+<div class="banner-5">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-10">
+<h2 class="mb-3 text-light text-center">Hosting Knowledge Base</h2>
+<p class="mb-8 text-light text-center max-text-12 mx-auto">
+					In depth walkthroughs to help you get the most out of your website and
+					hosting experience
+				</p>
+<div class="search-filter search-filter--light bg-white rounded-1 max-text-15 mx-auto">
+<input class="form-control search-filter__input placeholder::text-dark-subtle text-dark" placeholder="Search Now..." type="text"/>
+<button class="btn btn-primary align-items-center flex-shrink-0" type="button">
+<i class="align-middle flex-shrink-0 ti ti-search-duotone"></i>
+						Search
+					</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Banner End -->
+<!-- Info Categories  -->
+<div class="section-space-bottom position-relative mt-n60">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="section-space-y bg-white dark:bg-dark rounded-4 px-4 px-md-12 px-lg-20 px-xxl-30">
+<div class="section-space-sm-bottom">
+<div class="row g-4 justify-content-center">
+<div class="col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+<ol class="breadcrumb breadcrumb-modifier justify-content-center mb-4">
+<li class="breadcrumb-item">
+<a class="link fs-14 text-heading fw-medium" href="#">
+											Home
+										</a>
+</li>
+<li class="breadcrumb-item text-heading">
+<i class="align-middle fs-14 ti ti-chevron-right"></i>
+</li>
+<li aria-current="page" class="breadcrumb-item fs-14 fw-medium active text-secondary">
+										cPanel
+									</li>
+</ol>
+<h3 class="mb-0 text-center">In-Depth Walkthroughs</h3>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-12">
+<h6 class="fs-20">cPanel</h6>
+<ul class="list gap-4">
+<li>
+<a class="link d-flex gap-4 align-items-center text-heading border rounded px-6 py-3 transition hover:border-primary hover:text-primary" href="{{root}}knowledge-base-details.html">
+<span class="d-block flex-grow-1">
+											cPanel File Upload Not Working
+										</span>
+<span class="d-block flex-shrink-0">
+<i class="ti ti-chevron-right"></i>
+</span>
+</a>
+</li>
+<li>
+<a class="link d-flex gap-4 align-items-center text-heading border rounded px-6 py-3 transition hover:border-primary hover:text-primary" href="{{root}}knowledge-base-details.html">
+<span class="d-block flex-grow-1">
+											A Step-By-Step Guide To Download Files Using
+											cPanel File Manager
+										</span>
+<span class="d-block flex-shrink-0">
+<i class="ti ti-chevron-right"></i>
+</span>
+</a>
+</li>
+<li>
+<a class="link d-flex gap-4 align-items-center text-heading border rounded px-6 py-3 transition hover:border-primary hover:text-primary" href="{{root}}knowledge-base-details.html">
+<span class="d-block flex-grow-1">
+											How To Access a cPanel File Manager?
+										</span>
+<span class="d-block flex-shrink-0">
+<i class="ti ti-chevron-right"></i>
+</span>
+</a>
+</li>
+<li>
+<a class="link d-flex gap-4 align-items-center text-heading border rounded px-6 py-3 transition hover:border-primary hover:text-primary" href="{{root}}knowledge-base-details.html">
+<span class="d-block flex-grow-1">
+											cPanel File Manager Backup: A Complete Guide
+										</span>
+<span class="d-block flex-shrink-0">
+<i class="ti ti-chevron-right"></i>
+</span>
+</a>
+</li>
+<li>
+<a class="link d-flex gap-4 align-items-center text-heading border rounded px-6 py-3 transition hover:border-primary hover:text-primary" href="{{root}}knowledge-base-details.html">
+<span class="d-block flex-grow-1">
+											How-To Guide For Resetting cPanel File Manager
+										</span>
+<span class="d-block flex-shrink-0">
+<i class="ti ti-chevron-right"></i>
+</span>
+</a>
+</li>
+<li>
+<a class="link d-flex gap-4 align-items-center text-heading border rounded px-6 py-3 transition hover:border-primary hover:text-primary" href="{{root}}knowledge-base-details.html">
+<span class="d-block flex-grow-1">
+											What is cPanel File Manager?
+										</span>
+<span class="d-block flex-shrink-0">
+<i class="ti ti-chevron-right"></i>
+</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Info Categories End -->
+<!-- CTA  -->
+<div class="cta-7">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="section-space-y px-4 px-sm-6 px-md-12 bg-body rounded-4 text-center position-relative z-1">
+<div class="row justify-content-center">
+<div class="col-md-11">
+<h3>Get a free web host migration</h3>
+<p class="mb-8 max-text-15 mx-auto">
+								We'll take care of the process of moving your website from
+								your old web hosting company to our platform so you can
+								focus on what matters
+							</p>
+<div class="d-flex align-items-center justify-content-center gap-4 flex-wrap">
+<a class="btn btn-secondary text-light" href="{{root}}sign-in-2.html">
+									Get Started now
+								</a>
+<a class="btn btn-dark-emphasis" href="{{root}}contact.html">
+									Contact Us
+								</a>
+</div>
+</div>
+</div>
+<img alt="image" class="img-fluid d-none d-xl-block position-absolute start-0 top-50 translate-middle-y z-n1 pointer-none" src="{{root}}assets/img/cta-img-16.png"/>
+<img alt="image" class="img-fluid d-none d-xl-block position-absolute end-0 top-50 translate-middle-y z-n1 pointer-none" src="{{root}}assets/img/cta-img-17.png"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA End -->
+
+{% include "partials/footer-7.html" %} 
+{% endblock %}

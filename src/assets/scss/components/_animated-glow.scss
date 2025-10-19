@@ -1,0 +1,90 @@
+/* Animated Back Glow Effect for Cards */
+
+@mixin backlight($x, $y, $spread, $size, $colorA, $colorB, $duration) {
+  &::after {
+    position: absolute;
+    content: "";
+    top: $y;
+    left: $x;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale($size);
+    -webkit-filter: blur($spread);
+    -moz-filter: blur($spread);
+    -ms-filter: blur($spread);
+    filter: blur($spread);
+    background: linear-gradient(270deg, $colorA, $colorB);
+    background-size: 200% 200%;
+    animation: animateGlow $duration ease infinite;
+    border-radius: inherit;
+    
+    @keyframes animateGlow {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+    }
+  }
+}
+
+/* Card with animated glow - Primary colors */
+.card-glow-primary {
+  position: relative;
+  @include backlight(0, 0.5rem, 2rem, 0.85, #2A62FE, #5C65FF, 8s);
+}
+
+/* Card with animated glow - Secondary colors */
+.card-glow-secondary {
+  position: relative;
+  @include backlight(0, 0.5rem, 2rem, 0.85, #7734F9, #F67A3C, 10s);
+}
+
+/* Card with animated glow - Success colors */
+.card-glow-success {
+  position: relative;
+  @include backlight(0, 0.5rem, 2rem, 0.85, #0fffc1, #00d9ff, 12s);
+}
+
+/* Card with animated glow - Danger colors */
+.card-glow-danger {
+  position: relative;
+  @include backlight(0, 0.5rem, 2rem, 0.85, #ff0057, #e64a19, 9s);
+}
+
+/* Card with animated glow - Purple gradient */
+.card-glow-purple {
+  position: relative;
+  @include backlight(0, 0.5rem, 2rem, 0.85, #8a24ff, #e040fb, 11s);
+}
+
+/* Card with animated glow - Blue gradient */
+.card-glow-blue {
+  position: relative;
+  @include backlight(0, 0.5rem, 2rem, 0.85, #2196f3, #1de9b6, 10s);
+}
+
+/* Card with animated glow - Custom cyan/purple */
+.card-glow-cyber {
+  position: relative;
+  @include backlight(0, 0.5rem, 2.5rem, 0.9, #0fffc1, #7e0fff, 10s);
+}
+
+/* Ensure cards with glow have proper stacking context */
+.card-glow-primary,
+.card-glow-secondary,
+.card-glow-success,
+.card-glow-danger,
+.card-glow-purple,
+.card-glow-blue,
+.card-glow-cyber {
+  overflow: visible;
+  z-index: 1;
+  
+  > * {
+    position: relative;
+    z-index: 2;
+  }
+}
+

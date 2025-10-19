@@ -1,0 +1,186 @@
+{% extends "layouts/default.html" %}
+{% set dataTheme = "domain" %}
+{% set bodyClass = "bg-light dark:bg-dark-subtle" %}
+{% set navbar = true %} 
+{% set navBtnColor = "fw-medium" %}
+{% set primaryHeader = "primary-header--light primary-header--boxed primary-header--fixed top-md-3 primary-header-crossed:top-0" %}
+{% set rtlLink = "blog-4-rtl.html" %}
+{% set breadcrumb = "Blog" %}
+{% set breadcrumbLink = "text-light hover:text-secondary" %}
+{% set breadcrumbIcon = "text-light" %}
+{% set breadcrumbActive ="text-light" %}
+{% set logoLight = "logo-dark.png" %}
+{% set logoDark = "logo-light.png" %}
+<!-- Content Block -->
+{% block content %}
+
+<!-- Banner -->
+{% include "partials/banner-11.html" %}
+<!-- Banner End -->
+<!-- Blog List  -->
+<div class="section-space-y">
+<div class="container">
+<div class="row g-4 justify-content-center">
+<div class="col-md-7">
+<ul class="list gap-15">
+<li>
+<div class="rounded p-4 p-xl-6 p-xxl-8 bg-body">
+<a class="link d-block" href="{{root}}blog-details-2.html">
+<img alt="image" class="img-fluid w-100 rounded" src="{{root}}assets/img/blog-post-img-1.png"/>
+</a>
+<div class="pt-4">
+<ul class="list list-row flex-wrap gap-4 gap-xl-6 align-items-center mb-3">
+<li>
+<a class="badge bg-light-subtle text-light-emphasis shadow-lg" href="{{root}}blog-2.html">
+<span class="d-inline-block w-2 h-2 rounded-circle bg-secondary-emphasis flex-shrink-0"></span>
+											SEO Optimization
+										</a>
+</li>
+<li>
+<a class="badge bg-light-subtle text-light-emphasis shadow-lg" href="{{root}}blog-2.html">
+<span class="d-inline-block w-2 h-2 rounded-circle bg-secondary-emphasis flex-shrink-0"></span>
+											14 Sep, 2024
+										</a>
+</li>
+</ul>
+<h5>
+<a class="link d-inline-block text-heading hover:text-primary" href="{{root}}blog-details-2.html">
+										The Future of AI: What to Expect in the Next
+										Decade
+									</a>
+</h5>
+<p class="mb-6">
+									Explore upcoming trends in AI technology and how they
+									will impact various industries and our daily lives.
+									including credit cards, Internet banking, and
+									e-wallets.
+								</p>
+<a class="btn fs-14 btn-primary-subtle fw-medium align-items-center" href="{{root}}blog-details-2.html">
+<span class="d-inline-block flex-grow-1">
+										Explore More
+									</span>
+<i class="align-middle flex-shrink-0 ti ti-arrow-right-broken"></i>
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="rounded p-4 p-xl-6 p-xxl-8 bg-body">
+<a class="link d-block" href="{{root}}blog-details-2.html">
+<img alt="image" class="img-fluid w-100 rounded" src="{{root}}assets/img/blog-post-img-2.png"/>
+</a>
+<div class="pt-4">
+<ul class="list list-row flex-wrap gap-4 gap-xl-6 align-items-center mb-3">
+<li>
+<a class="badge bg-light-subtle text-light-emphasis shadow-lg" href="{{root}}blog-2.html">
+<span class="d-inline-block w-2 h-2 rounded-circle bg-secondary-emphasis flex-shrink-0"></span>
+											SEO Optimization
+										</a>
+</li>
+<li>
+<a class="badge bg-light-subtle text-light-emphasis shadow-lg" href="{{root}}blog-2.html">
+<span class="d-inline-block w-2 h-2 rounded-circle bg-secondary-emphasis flex-shrink-0"></span>
+											14 Sep, 2024
+										</a>
+</li>
+</ul>
+<h5>
+<a class="link d-inline-block text-heading hover:text-primary" href="{{root}}blog-details-2.html">
+										Understanding Machine Learning: A Beginner’s Guide
+									</a>
+</h5>
+<p class="mb-6">
+									A comprehensive introduction to machine learning,
+									covering its basics, applications, and significance in
+									the AI landscape
+								</p>
+<a class="btn fs-14 btn-primary-subtle fw-medium align-items-center" href="{{root}}blog-details-2.html">
+<span class="d-inline-block flex-grow-1">
+										Explore More
+									</span>
+<i class="align-middle flex-shrink-0 ti ti-arrow-right-broken"></i>
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="rounded p-4 p-xl-6 p-xxl-8 bg-body">
+<a class="link d-block" href="{{root}}blog-details-2.html">
+<img alt="image" class="img-fluid w-100 rounded" src="{{root}}assets/img/blog-post-img-3.png"/>
+</a>
+<div class="pt-4">
+<ul class="list list-row flex-wrap gap-4 gap-xl-6 align-items-center mb-3">
+<li>
+<a class="badge bg-light-subtle text-light-emphasis shadow-lg" href="{{root}}blog-2.html">
+<span class="d-inline-block w-2 h-2 rounded-circle bg-secondary-emphasis flex-shrink-0"></span>
+											SEO Optimization
+										</a>
+</li>
+<li>
+<a class="badge bg-light-subtle text-light-emphasis shadow-lg" href="{{root}}blog-2.html">
+<span class="d-inline-block w-2 h-2 rounded-circle bg-secondary-emphasis flex-shrink-0"></span>
+											14 Sep, 2024
+										</a>
+</li>
+</ul>
+<h5>
+<a class="link d-inline-block text-heading hover:text-primary" href="{{root}}blog-details-2.html">
+										The Impact of AI on Job Markets: Threat or
+										Opportunity
+									</a>
+</h5>
+<p class="mb-6">
+									Examine how AI technologies can help tackle climate
+									issues, from optimizing energy usage to modeling
+									environmental impacts.
+								</p>
+<a class="btn fs-14 btn-primary-subtle fw-medium align-items-center" href="{{root}}blog-details-2.html">
+<span class="d-inline-block flex-grow-1">
+										Explore More
+									</span>
+<i class="align-middle flex-shrink-0 ti ti-arrow-right-broken"></i>
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Blog List End  -->
+<!-- CTA -->
+<div class="cta-7">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="section-space-y px-4 px-sm-6 px-md-12 bg-body rounded-4 text-center position-relative z-1">
+<div class="row justify-content-center">
+<div class="col-md-11">
+<h3>Get a free web host migration</h3>
+<p class="mb-8 max-text-15 mx-auto">
+								We'll take care of the process of moving your website from
+								your old web hosting company to our platform so you can
+								focus on what matters
+							</p>
+<div class="d-flex align-items-center justify-content-center gap-4 flex-wrap">
+<a class="btn btn-secondary text-light" href="{{root}}sign-in-2.html">
+									Get Started now
+								</a>
+<a class="btn btn-dark-emphasis" href="{{root}}contact.html">
+									Contact Us
+								</a>
+</div>
+</div>
+</div>
+<img alt="image" class="img-fluid d-none d-xl-block position-absolute start-0 top-50 translate-middle-y z-n1 pointer-none" src="{{root}}assets/img/cta-img-16.png"/>
+<img alt="image" class="img-fluid d-none d-xl-block position-absolute end-0 top-50 translate-middle-y z-n1 pointer-none" src="{{root}}assets/img/cta-img-17.png"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA End -->
+
+{% include "partials/footer-7.html" %} 
+{% endblock %}

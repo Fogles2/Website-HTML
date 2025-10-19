@@ -1,0 +1,474 @@
+{% extends "layouts/default.html" %}
+{% set dataTheme = "domain" %}
+{% set bodyClass = "bg-light dark:bg-dark-subtle" %}
+{% set navbar = true %} 
+{% set navBtnColor = "fw-medium" %}
+{% set primaryHeader = "primary-header--light primary-header--boxed primary-header--fixed top-md-3 primary-header-crossed:top-0" %}
+{% set rtlLink = "blog-2-rtl.html" %}
+{% set breadcrumb = "Blog" %}
+{% set breadcrumbLink = "text-light hover:text-secondary" %}
+{% set breadcrumbIcon = "text-light" %}
+{% set breadcrumbActive ="text-light" %}
+{% set logoLight = "logo-dark.png" %}
+{% set logoDark = "logo-light.png" %}
+<!-- Content Block -->
+{% block content %}
+
+<!-- Banner -->
+{% include "partials/banner-11.html" %}
+<!-- Banner End -->
+<!-- Category Blog Post -->
+<div class="section-space-top section-space-sm-bottom">
+<div class="section-space-xsm-bottom">
+<div class="container">
+<div class="row g-4 gy-md-0 align-items-center">
+<div class="col-md-8 col-lg-9 col-xxl-10">
+<ul class="list list-row flex-wrap gap-4 align-items-center">
+<li>
+<a class="btn btn-sm bg-primary hover:bg-primary text-white hover:text-white fw-medium" href="{{root}}blog-2.html">
+								All Blog
+							</a>
+</li>
+<li>
+<a class="btn btn-sm bg-body hover:bg-primary text-heading hover:text-white fw-medium" href="{{root}}blog-2.html">
+								Call Center
+							</a>
+</li>
+<li>
+<a class="btn btn-sm bg-body hover:bg-primary text-heading hover:text-white fw-medium" href="{{root}}blog-2.html">
+								Lead Generation
+							</a>
+</li>
+<li>
+<a class="btn btn-sm bg-body hover:bg-primary text-heading hover:text-white fw-medium" href="{{root}}blog-2.html">
+								Support
+							</a>
+</li>
+<li>
+<a class="btn btn-sm bg-body hover:bg-primary text-heading hover:text-white fw-medium" href="{{root}}blog-2.html">
+								Remote Teams
+							</a>
+</li>
+</ul>
+</div>
+<div class="col-md-4 col-lg-3 col-xxl-2">
+<div class="input-group">
+<span class="input-group-text bg-body d-grid place-content-center rounded-start-1 pe-0">
+<i class="ti ti-search"></i>
+</span>
+<input class="form-control form-control-sm bg-body border-start-0" placeholder="Search.." type="text"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section-space-xsm-bottom">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="row align-items-center bg-body rounded p-4 p-md-6">
+<div class="col-lg-6">
+<a class="badge bg-primary-emphasis text-primary-subtle mb-2" href="{{root}}blog-2.html">
+<span class="d-inline-block w-2 h-2 rounded-circle bg-primary-subtle flex-shrink-0"></span>
+								Tech
+							</a>
+<h4>
+<a class="link d-inline-block text-heading hover:text-primary" href="{{root}}blog-details-1.html">
+									How Analytics and Smart Routing Help to Maximize
+									Inbound Call Efficiency
+								</a>
+</h4>
+<p class="mb-6">
+								Payment gateway integrations The platform should support
+								multiple payment methods including credit cards, Internet
+								banking, and e-wallets.
+							</p>
+<div class="d-flex align-items-center justify-content-between gap-3 px-4 py-3 bg-body-tertiary rounded">
+<div class="d-flex align-items-center gap-2">
+<div class="avatar avatar-md">
+<img alt="image" class="avatar__img" src="{{root}}assets/img/team-member-1.png"/>
+</div>
+<a class="link d-block group" href="{{root}}blog-1.html">
+<span class="d-block fs-14 fw-medium text-heading group-hover:text-primary">
+											Peter Parker
+										</span>
+<span class="d-block fs-12 text-body">
+											CEO, Company Inc
+										</span>
+</a>
+</div>
+<button class="btn btn-icon btn-sm btn-primary rounded-circle flex-shrink-0" type="button">
+<i class="ti ti-left-arrow"></i>
+</button>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="ps-xxl-12 mt-6 mt-lg-0">
+<img alt="image" class="img-fluid rounded-4 w-100" src="{{root}}assets/img/blog-post-img-7.png"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row g-4">
+<div class="col-md-6 col-lg-3">
+<div class="rounded bg-body p-3">
+<a class="link d-block" href="{{root}}blog-details-1.html">
+<img alt="image" class="img-fluid rounded w-100" src="{{root}}assets/img/blog-post-img-8.png"/>
+</a>
+<div class="pt-4">
+<a class="badge bg-light-subtle text-light-emphasis shadow mb-2" href="{{root}}blog-2.html">
+<span class="d-inline-block w-1 h-1 rounded-circle bg-secondary-emphasis flex-shrink-0"></span>
+							Call Center
+						</a>
+<a class="link line-clamp line-clamp--2 mb-2 fs-18 fw-bold text-heading hover:text-primary" href="{{root}}blog-details-1.html">
+							How does writing influence your personal brand?
+						</a>
+<ul class="list list-row list-dot list-dot--md list-dot--light-emphasis flex-wrap">
+<li>
+<span class="d-block fs-14"> 31 May 2023 </span>
+</li>
+<li>
+<span class="d-block fs-14"> 14m </span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-3">
+<div class="rounded bg-body p-3">
+<a class="link d-block" href="{{root}}blog-details-1.html">
+<img alt="image" class="img-fluid rounded w-100" src="{{root}}assets/img/blog-post-img-9.png"/>
+</a>
+<div class="pt-4">
+<a class="badge bg-light-subtle text-light-emphasis shadow mb-2" href="{{root}}blog-2.html">
+<span class="d-inline-block w-1 h-1 rounded-circle bg-secondary-emphasis flex-shrink-0"></span>
+							Call Center
+						</a>
+<a class="link line-clamp line-clamp--2 mb-2 fs-18 fw-bold text-heading hover:text-primary" href="{{root}}blog-details-1.html">
+							Start a blog to reach your creative peak
+						</a>
+<ul class="list list-row list-dot list-dot--md list-dot--light-emphasis flex-wrap">
+<li>
+<span class="d-block fs-14"> 31 May 2023 </span>
+</li>
+<li>
+<span class="d-block fs-14"> 14m </span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-3">
+<div class="rounded bg-body p-3">
+<a class="link d-block" href="{{root}}blog-details-1.html">
+<img alt="image" class="img-fluid rounded w-100" src="{{root}}assets/img/blog-post-img-10.png"/>
+</a>
+<div class="pt-4">
+<a class="badge bg-light-subtle text-light-emphasis shadow mb-2" href="{{root}}blog-2.html">
+<span class="d-inline-block w-1 h-1 rounded-circle bg-secondary-emphasis flex-shrink-0"></span>
+							Call Center
+						</a>
+<a class="link line-clamp line-clamp--2 mb-2 fs-18 fw-bold text-heading hover:text-primary" href="{{root}}blog-details-1.html">
+							How a visual artist redefines success in graphic design
+						</a>
+<ul class="list list-row list-dot list-dot--md list-dot--light-emphasis flex-wrap">
+<li>
+<span class="d-block fs-14"> 31 May 2023 </span>
+</li>
+<li>
+<span class="d-block fs-14"> 14m </span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-3">
+<div class="rounded bg-body p-3">
+<a class="link d-block" href="{{root}}blog-details-1.html">
+<img alt="image" class="img-fluid rounded w-100" src="{{root}}assets/img/blog-post-img-11.png"/>
+</a>
+<div class="pt-4">
+<a class="badge bg-light-subtle text-light-emphasis shadow mb-2" href="{{root}}blog-2.html">
+<span class="d-inline-block w-1 h-1 rounded-circle bg-secondary-emphasis flex-shrink-0"></span>
+							Call Center
+						</a>
+<a class="link line-clamp line-clamp--2 mb-2 fs-18 fw-bold text-heading hover:text-primary" href="{{root}}blog-details-1.html">
+							Starting your traveling blog with Vasco AI
+						</a>
+<ul class="list list-row list-dot list-dot--md list-dot--light-emphasis flex-wrap">
+<li>
+<span class="d-block fs-14"> 31 May 2023 </span>
+</li>
+<li>
+<span class="d-block fs-14"> 14m </span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Category Blog Post End -->
+<!-- Popular Blog Post -->
+<div class="section-space-sm-y">
+<div class="section-space-xsm-bottom">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<h4 class="mb-0">Most Popular Posts</h4>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row g-4">
+<div class="col-lg-6">
+<div class="rounded bg-body p-4">
+<a class="link d-block" href="{{root}}blog-details-1.html">
+<img alt="image" class="img-fluid rounded w-100" src="{{root}}assets/img/blog-post-img-12.png"/>
+</a>
+<div class="py-6 pb-xxl-0 pt-xxl-4 px-md-3 px-xxl-2">
+<a class="badge bg-light-subtle text-light-emphasis shadow mb-4 mb-xxl-2" href="{{root}}blog-2.html">
+<span class="d-inline-block w-1 h-1 rounded-circle bg-secondary-emphasis flex-shrink-0"></span>
+							Technology
+						</a>
+<h5>
+<a class="link line-clamp line-clamp--2 text-heading hover:text-primary" href="{{root}}blog-details-1.html">
+								Tom Hanks is alone again in Finch with dog &amp; robot for
+								Company
+							</a>
+</h5>
+<p class="line-clamp line-clamp--2 mb-8 mb-xxl-5">
+							A wonderful world with with my whole heart. I am alone, and
+							feel the charm existence in this spot, which was created for
+							the bliss of souls like
+						</p>
+<ul class="list list-row list-dot list-dot--md flex-wrap align-items-center">
+<li>
+<div class="d-flex align-items-center gap-2">
+<div class="avatar avatar-md">
+<img alt="image" class="avatar__img" src="{{root}}assets/img/team-member-3.png"/>
+</div>
+<a class="link d-block fs-14 fw-medium text-heading hover:text-primary" href="{{root}}blog-details-1.html">
+										Peter Parker
+									</a>
+</div>
+</li>
+<li>
+<span class="d-block fs-14"> November 5, 2024 </span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-lg-6">
+<ul class="list gap-6">
+<li>
+<div class="d-flex align-items-center gap-3 gap-sm-4 rounded bg-body p-4">
+<a class="link d-block post-img-size flex-shrink-0" href="{{root}}blog-details-1.html">
+<img alt="image" class="rounded w-100 h-100 object-fit-cover" src="{{root}}assets/img/blog-post-img-13.png"/>
+</a>
+<div class="flex-grow-1">
+<ul class="list list-row list-dot list-dot--md list-dot--light-emphasis flex-wrap mb-2">
+<li>
+<span class="d-block fs-12"> 31 May 2023 </span>
+</li>
+<li>
+<span class="d-block fs-12"> 14m </span>
+</li>
+</ul>
+<a class="link line-clamp line-clamp--2 mb-2 fs-20 fw-bold text-heading hover:text-primary" href="{{root}}blog-details-1.html">
+									Bangladesh Bank starts releasing new taka notes for
+									exchange
+								</a>
+<p class="mb-0 line-clamp line-clamp--2">
+									The group decided that the vaccine should also target
+									only There was general strain
+								</p>
+</div>
+</div>
+</li>
+<li>
+<div class="d-flex align-items-center gap-3 gap-sm-4 rounded bg-body p-4">
+<a class="link d-block post-img-size flex-shrink-0" href="{{root}}blog-details-1.html">
+<img alt="image" class="rounded w-100 h-100 object-fit-cover" src="{{root}}assets/img/blog-post-img-14.png"/>
+</a>
+<div class="flex-grow-1">
+<ul class="list list-row list-dot list-dot--md list-dot--light-emphasis flex-wrap mb-2">
+<li>
+<span class="d-block fs-12"> 31 May 2023 </span>
+</li>
+<li>
+<span class="d-block fs-12"> 14m </span>
+</li>
+</ul>
+<a class="link line-clamp line-clamp--2 mb-2 fs-20 fw-bold text-heading hover:text-primary" href="{{root}}blog-details-1.html">
+									How does writing influence your personal brand value
+								</a>
+<p class="mb-0 line-clamp line-clamp--2">
+									The group decided that the vaccine should also target
+									only There was general strain
+								</p>
+</div>
+</div>
+</li>
+<li>
+<div class="d-flex align-items-center gap-3 gap-sm-4 rounded bg-body p-4">
+<a class="link d-block post-img-size flex-shrink-0" href="{{root}}blog-details-1.html">
+<img alt="image" class="rounded w-100 h-100 object-fit-cover" src="{{root}}assets/img/blog-post-img-15.png"/>
+</a>
+<div class="flex-grow-1">
+<ul class="list list-row list-dot list-dot--md list-dot--light-emphasis flex-wrap mb-2">
+<li>
+<span class="d-block fs-12"> 31 May 2023 </span>
+</li>
+<li>
+<span class="d-block fs-12"> 14m </span>
+</li>
+</ul>
+<a class="link line-clamp line-clamp--2 mb-2 fs-20 fw-bold text-heading hover:text-primary" href="{{root}}blog-details-1.html">
+									How a visual artist redefines success in graphic
+									design
+								</a>
+<p class="mb-0 line-clamp line-clamp--2">
+									The group decided that the vaccine should also target
+									only There was general strain
+								</p>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Popular Blog Post End -->
+<!-- Latest News -->
+<div class="section-space-sm-top section-space-bottom">
+<div class="section-space-xsm-bottom">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<h4 class="mb-0">Latest News</h4>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row g-4">
+<div class="col-md-6 col-lg-4">
+<div class="rounded bg-body p-3">
+<a class="link d-block" href="{{root}}blog-details-1.html">
+<img alt="image" class="img-fluid rounded w-100" src="{{root}}assets/img/blog-post-img-16.png"/>
+</a>
+<div class="pt-4">
+<a class="badge bg-light-subtle text-light-emphasis shadow mb-2" href="{{root}}blog-2.html">
+<span class="d-inline-block w-1 h-1 rounded-circle bg-secondary-emphasis flex-shrink-0"></span>
+							Call Center
+						</a>
+<a class="link line-clamp line-clamp--2 mb-2 fs-18 fw-bold text-heading hover:text-primary" href="{{root}}blog-details-1.html">
+							How does writing influence your personal brand value?
+						</a>
+<ul class="list list-row list-dot list-dot--md list-dot--light-emphasis flex-wrap">
+<li>
+<span class="d-block fs-14"> 31 May 2023 </span>
+</li>
+<li>
+<span class="d-block fs-14"> 14m </span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="rounded bg-body p-3">
+<a class="link d-block" href="{{root}}blog-details-1.html">
+<img alt="image" class="img-fluid rounded w-100" src="{{root}}assets/img/blog-post-img-17.png"/>
+</a>
+<div class="pt-4">
+<a class="badge bg-light-subtle text-light-emphasis shadow mb-2" href="{{root}}blog-2.html">
+<span class="d-inline-block w-1 h-1 rounded-circle bg-secondary-emphasis flex-shrink-0"></span>
+							Technology
+						</a>
+<a class="link line-clamp line-clamp--2 mb-2 fs-18 fw-bold text-heading hover:text-primary" href="{{root}}blog-details-1.html">
+							Tom Hanks is alone again in Finch with dog &amp; robot for Company
+						</a>
+<ul class="list list-row list-dot list-dot--md list-dot--light-emphasis flex-wrap">
+<li>
+<span class="d-block fs-14"> 31 May 2023 </span>
+</li>
+<li>
+<span class="d-block fs-14"> 14m </span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4">
+<div class="rounded bg-body p-3">
+<a class="link d-block" href="{{root}}blog-details-1.html">
+<img alt="image" class="img-fluid rounded w-100" src="{{root}}assets/img/blog-post-img-18.png"/>
+</a>
+<div class="pt-4">
+<a class="badge bg-light-subtle text-light-emphasis shadow mb-2" href="{{root}}blog-2.html">
+<span class="d-inline-block w-1 h-1 rounded-circle bg-secondary-emphasis flex-shrink-0"></span>
+							Web Server
+						</a>
+<a class="link line-clamp line-clamp--2 mb-2 fs-18 fw-bold text-heading hover:text-primary" href="{{root}}blog-details-1.html">
+							How a visual artist redefines success in graphic design
+						</a>
+<ul class="list list-row list-dot list-dot--md list-dot--light-emphasis flex-wrap">
+<li>
+<span class="d-block fs-14"> 31 May 2023 </span>
+</li>
+<li>
+<span class="d-block fs-14"> 14m </span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Latest News End -->
+<!-- CTA  -->
+<div class="cta-7">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="section-space-y px-4 px-sm-6 px-md-12 bg-body rounded-4 text-center position-relative z-1">
+<div class="row justify-content-center">
+<div class="col-md-11">
+<h3>Get a free web host migration</h3>
+<p class="mb-8 max-text-15 mx-auto">
+								We'll take care of the process of moving your website from
+								your old web hosting company to our platform so you can
+								focus on what matters
+							</p>
+<div class="d-flex align-items-center justify-content-center gap-4 flex-wrap">
+<a class="btn btn-secondary text-light" href="{{root}}sign-in-2.html">
+									Get Started now
+								</a>
+<a class="btn btn-dark-emphasis" href="{{root}}contact.html">
+									Contact Us
+								</a>
+</div>
+</div>
+</div>
+<img alt="image" class="img-fluid d-none d-xl-block position-absolute start-0 top-50 translate-middle-y z-n1 pointer-none" src="{{root}}assets/img/cta-img-16.png"/>
+<img alt="image" class="img-fluid d-none d-xl-block position-absolute end-0 top-50 translate-middle-y z-n1 pointer-none" src="{{root}}assets/img/cta-img-17.png"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA End -->
+
+{% include "partials/footer-7.html" %} 
+{% endblock %}

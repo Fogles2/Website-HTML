@@ -1,0 +1,28 @@
+@use "../global" as *;
+.testimonial-9 {
+	position: relative;
+	isolation: isolate;
+	&-container {
+		@include screen(xl) {
+			position: relative;
+			isolation: isolate;
+		}
+		&::after {
+			@include screen(xl) {
+				content: "";
+				position: absolute;
+				top: -#{rem(50)};
+				left: -#{rem(50)};
+				width: rem(260);
+				height: rem(440);
+				background-color: #080d54;
+				-webkit-mask-image: url(../img/shapes/testimonial-mask-shape-1.png);
+				mask-image: url(../img/shapes/testimonial-mask-shape-1.png);
+				mask-size: 100% 100%;
+				mask-position: center;
+				-webkit-mask-repeat: no-repeat;
+				mask-repeat: no-repeat;
+			}
+		}
+	}
+}

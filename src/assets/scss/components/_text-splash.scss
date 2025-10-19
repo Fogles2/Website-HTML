@@ -1,0 +1,94 @@
+@use "../global" as *;
+.text-splash {
+	--text-splash-clr: var(--bs-border-color);
+	&--primary {
+		--text-splash-clr: var(--bs-primary);
+	}
+	&--primary-subtle {
+		--text-splash-clr: var(--bs-primary-bg-subtle);
+	}
+	&--primary-emphasis {
+		--text-splash-clr: var(--bs-primary-text-emphasis);
+	}
+	&--secondary {
+		--text-splash-clr: var(--bs-secondary);
+	}
+	&--secondary-subtle {
+		--text-splash-clr: var(--bs-secondary-bg-subtle);
+	}
+	&--secondary-emphasis {
+		--text-splash-clr: var(--bs-secondary-text-emphasis);
+	}
+	&--success {
+		--text-splash-clr: var(--bs-success);
+	}
+	&--success-subtle {
+		--text-splash-clr: var(--bs-success-bg-subtle);
+	}
+	&--success-emphasis {
+		--text-splash-clr: var(--bs-success-text-emphasis);
+	}
+	&--danger {
+		--text-splash-clr: var(--bs-danger);
+	}
+	&--danger-subtle {
+		--text-splash-clr: var(--bs-danger-bg-subtle);
+	}
+	&--danger-emphasis {
+		--text-splash-clr: var(--bs-danger-text-emphasis);
+	}
+	&--warning {
+		--text-splash-clr: var(--bs-warning);
+	}
+	&--warning-subtle {
+		--text-splash-clr: var(--bs-warning-bg-subtle);
+	}
+	&--warning-emphasis {
+		--text-splash-clr: var(--bs-warning-text-emphasis);
+	}
+	&--info {
+		--text-splash-clr: var(--bs-info);
+	}
+	&--info-subtle {
+		--text-splash-clr: var(--bs-info-bg-subtle);
+	}
+	&--info-emphasis {
+		--text-splash-clr: var(--bs-info-text-emphasis);
+	}
+	&--light {
+		--text-splash-clr: var(--bs-light);
+	}
+	&--light-subtle {
+		--text-splash-clr: var(--bs-light-bg-subtle);
+	}
+	&--light-emphasis {
+		--text-splash-clr: var(--bs-light-text-emphasis);
+	}
+	&--dark {
+		--text-splash-clr: var(--bs-dark);
+	}
+	&--dark-subtle {
+		--text-splash-clr: var(--bs-dark-bg-subtle);
+	}
+	&--dark-emphasis {
+		--text-splash-clr: var(--bs-dark-text-emphasis);
+	}
+	&::before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		right: calc(100% + 1rem);
+		width: rem(1920);
+		height: 1px;
+		background-color: var(--text-splash-clr);
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: calc(100% + 1rem);
+		width: rem(1920);
+		height: 1px;
+		background-color: var(--text-splash-clr);
+	}
+}
